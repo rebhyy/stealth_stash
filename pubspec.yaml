@@ -80,7 +80,7 @@ dependencies:
   ton_dart: ^2.1.0
   # ton_dart:
   #   path: ../ton_dart
-  polkadot_dart: ^5.0.0
+  polkadot_dart: ^5.1.0
   # polkadot_dart:
   #   path: ../polkadot_dart
   stellar_dart: ^2.1.0

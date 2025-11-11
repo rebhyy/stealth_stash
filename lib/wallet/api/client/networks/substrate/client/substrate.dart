@@ -100,11 +100,17 @@ class SubstrateClient extends NetworkClient<SubstrateWalletTransaction,
 
   Future<SubstrateTxIdWithBlock> broadcastTransaction(
       List<int> extrinsic) async {
-    final blockHeader =
-        await provider.request(SubstrateRequestChainChainGetHeader());
+    int? blockId;
+    try {
+      final finalizeHash =
+          await provider.request(SubstrateRequestChainChainGetFinalizedHead());
+      final finalBlockHead = await provider
+          .request(SubstrateRequestChainGetBlock(atBlockHash: finalizeHash));
+      blockId = finalBlockHead.block.header.number;
+    } catch (_) {}
     final txId = await provider.request(SubstrateRequestAuthorSubmitExtrinsic(
         BytesUtils.toHexString(extrinsic, prefix: "0x")));
-    return SubstrateTxIdWithBlock(txId: txId, block: blockHeader.number);
+    return SubstrateTxIdWithBlock(txId: txId, block: blockId);
   }
 
   Future<SubstrateBlockWithEra> finalizeBlockWithEra() async {
@@ -421,11 +427,15 @@ class SubstrateClient extends NetworkClient<SubstrateWalletTransaction,
     Future<WalletTransactionStatus> transactionStatus(
         SubstrateWalletTransaction transaction) async {
       try {
+        final block = transaction.block;
+        if (block == null) {
+          return WalletTransactionStatus.unknown;
+        }
         final stream = SubstrateTransactionBuilder.findEextrinsic(
             txId: transaction.txId,
             provider: metadataWitPorvider(),
             extrinsic: transaction.extrinsics,
-            blockId: transaction.block);
+            blockId: block);
         final result = await stream.first;
         final eventResult = result.txEvents;
         appLogger.error(

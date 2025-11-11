@@ -285,7 +285,7 @@ class SubstrateTransactionXCMTransferOperation
               ISubstrateAddress>>> _buildWalletTransaction(
       {required ISubstrateSignedTransaction signedTx,
       required String txId,
-      required int block}) async {
+      required int? block}) async {
     final destinations = signedTx.transaction.transactionData.payment ?? [];
     final outputs = destinations
         .map((e) => SubstrateWalletTransactionTransferOutput(
@@ -407,6 +407,9 @@ class SubstrateTransactionXCMTransferOperation
     _tracker = SubmitedXCMTransferDestinationTracker(txData.destination);
     _trakcerSubscription = stream.listen(
       (event) {},
+      onError: (e) {
+        Logg.error("got error $e");
+      },
       onDone: () {
         _tracker?.dispose();
       },

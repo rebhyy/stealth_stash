@@ -8,6 +8,7 @@ class APPConst {
   static const APPAssetUri cosmosChains =
       APPAssetUri(url: "assets/chains.json", package: 'cosmos_sdk');
   static const String assetWebviewScript = "assets/webview/script.js";
+  static const String logoPath = "assets/image/wallet.png";
   static const String assetWebviewPageScript = "assets/webview/script_page.js";
   static const String assetsTronWeb = "assets/webview/tron_web.js";
   static const String bnJs = "assets/webview/bn.js";

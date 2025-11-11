@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:on_chain_bridge/platform_interface.dart';
@@ -25,6 +26,11 @@ Future<void> _configDesktop(APPSetting setting) async {
   if (!PlatformInterface.appPlatform.isDesktop) return;
   await PlatformInterface.instance.desktop.init();
   await PlatformInterface.instance.desktop.waitUntilReadyToShow();
+  // final path =
+  //     await PlatformUtils.writeAssetToSupport(assetPath: APPConst.logoPath);
+  // Logg.log("oh ${path}");
+  // await PlatformInterface.instance.desktop.setIcon(path);
+
   await PlatformInterface.instance.desktop.setMaximumSize(const WidgetSize(
       width: APPConst.desktopAppWidth, height: APPConst.desktopAppHeight));
   if (setting.size?.devicePixelRatio != null) {

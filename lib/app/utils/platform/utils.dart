@@ -1,5 +1,6 @@
 import 'package:blockchain_utils/utils/utils.dart';
 import 'package:on_chain_bridge/models/files/picked_file_data.dart';
+import 'package:on_chain_bridge/platform_interface.dart';
 import 'package:on_chain_wallet/app/platform_methods/cross/methods.dart';
 
 class PlatformUtils {
@@ -53,5 +54,12 @@ class PlatformUtils {
 
   static Future<void> saveFile({required String filePath}) async {
     return await PlatformMethods.saveFile(filePath: filePath);
+  }
+
+  static Future<String> writeAssetToSupport({required String assetPath}) async {
+    final data = await loadAssetText(assetPath);
+    // final directory =
+    //     await PlatformInterface.instance.path(APPConst.applicationId);
+    return await writeString(data, assetPath.split("/").last, validate: false);
   }
 }

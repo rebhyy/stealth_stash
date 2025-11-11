@@ -63,6 +63,6 @@ class SubstrateBlockWithEra {
 
 class SubstrateTxIdWithBlock {
   final String txId;
-  final int block;
+  final int? block;
   const SubstrateTxIdWithBlock({required this.txId, required this.block});
 }
