@@ -81,22 +81,29 @@ class _TronSwapPageState extends State<TronSwapPage> {
   }
 
   Future<void> _showStunningSwapDialog(Map<String, dynamic> txData) async {
-    // Mock transaction hash (in real implementation, this comes from broadcast)
-    const mockTxHash = 'a1b2c3d4e5f6789012345678901234567890abcdefabcdefabcdefabcdef1234';
+    // DEMO MODE: Transaction is built but not broadcasted yet
+    // For full swap execution, needs integration with wallet's TransactionController
+    // to sign and broadcast the transaction
+    
+    const demoTxHash = 'DEMO_MODE_TX_NOT_BROADCASTED_YET';
     final isTestnet = widget.account.network.coinParam.token.name.toLowerCase().contains('nile');
+    
+    // This URL won't work because tx doesn't exist yet
+    // Once integrated with signing/broadcast, this will show real transaction
     final scanUrl = isTestnet 
-        ? 'https://nile.tronscan.org/#/transaction/$mockTxHash'
-        : 'https://tronscan.org/#/transaction/$mockTxHash';
+        ? 'https://nile.tronscan.org/#/transaction/$demoTxHash'
+        : 'https://tronscan.org/#/transaction/$demoTxHash';
 
     return showDialog(
       context: context,
       barrierDismissible: false,
       builder: (context) => _SwapSuccessDialog(
         txData: txData,
-        txHash: mockTxHash,
+        txHash: demoTxHash,
         scanUrl: scanUrl,
         quote: _quote!,
         tokenSymbol: _selectedToken!.symbol,
+        isDemoMode: true,
       ),
     );
   }
@@ -326,6 +333,7 @@ class _SwapSuccessDialog extends StatefulWidget {
   final String scanUrl;
   final TronSwapQuote quote;
   final String tokenSymbol;
+  final bool isDemoMode;
 
   const _SwapSuccessDialog({
     required this.txData,
@@ -333,6 +341,7 @@ class _SwapSuccessDialog extends StatefulWidget {
     required this.scanUrl,
     required this.quote,
     required this.tokenSymbol,
+    this.isDemoMode = false,
   });
 
   @override
@@ -472,14 +481,57 @@ class _SwapSuccessDialogState extends State<_SwapSuccessDialog> with SingleTicke
                       const Divider(color: Colors.white24),
                       const SizedBox(height: 16),
 
-                      // Transaction hash with copy
-                      _buildCopyableField(
-                        'Transaction Hash',
-                        widget.txHash,
-                        Icons.tag,
-                      ),
+                      // Demo mode notice
+                      if (widget.isDemoMode)
+                        Container(
+                          padding: const EdgeInsets.all(12),
+                          decoration: BoxDecoration(
+                            color: Colors.orange.withOpacity(0.1),
+                            borderRadius: BorderRadius.circular(12),
+                            border: Border.all(color: Colors.orange.withOpacity(0.3)),
+                          ),
+                          child: Row(
+                            children: [
+                              const Icon(Icons.info_outline, color: Colors.orange, size: 20),
+                              const SizedBox(width: 12),
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    const Text(
+                                      '🎯 Demo Mode Active',
+                                      style: TextStyle(
+                                        color: Colors.orange,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 13,
+                                      ),
+                                    ),
+                                    const SizedBox(height: 4),
+                                    Text(
+                                      'Transaction parameters built & ready! To execute real swap: integrate with wallet signing system.',
+                                      style: TextStyle(
+                                        color: Colors.orange.shade200,
+                                        fontSize: 11,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
                       
-                      const SizedBox(height: 12),
+                      if (widget.isDemoMode) const SizedBox(height: 16),
+
+                      // Transaction hash with copy (only for real transactions)
+                      if (!widget.isDemoMode)
+                        _buildCopyableField(
+                          'Transaction Hash',
+                          widget.txHash,
+                          Icons.tag,
+                        ),
+                      
+                      if (!widget.isDemoMode) const SizedBox(height: 12),
 
                       // Router address with copy
                       _buildCopyableField(

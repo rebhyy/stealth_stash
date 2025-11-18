@@ -58,19 +58,28 @@ class TronSwapService {
     );
   }
 
-  /// Build swap transaction (placeholder for demo)
-  /// Real implementation would build TriggerSmartContract for router
+  /// Build swap transaction data
+  /// NOTE: This prepares the transaction but DOES NOT broadcast yet
+  /// For full swap execution, this needs to be integrated with TransactionController
   Future<Map<String, dynamic>> buildSwapTransaction({
     required TronSwapParams params,
     required TronSwapQuote quote,
   }) async {
-    // This would build the actual contract call:
-    // router.swapExactTokensForTokens(
-    //   amountIn,
-    //   amountOutMin,
-    //   path,
-    //   to,
-    //   deadline
+    // IMPORTANT: For demo purposes - transaction is built but not broadcasted
+    // Real swap requires:
+    // 1. Build TriggerSmartContract with router.swapExactTokensForTokens()
+    // 2. Sign transaction with user's private key  
+    // 3. Broadcast to Tron network
+    // 4. Wait for confirmation
+    // 5. Return real transaction hash
+    
+    // Transaction would call:
+    // function swapExactTokensForTokens(
+    //   uint amountIn,
+    //   uint amountOutMin,
+    //   address[] calldata path,
+    //   address to,
+    //   uint deadline
     // )
     
     return {
@@ -80,6 +89,8 @@ class TronSwapService {
       'path': [params.tokenIn.toAddress(), params.tokenOut.toAddress()],
       'to': params.recipient.toAddress(),
       'deadline': params.deadline,
+      'status': 'ready_to_sign', // Indicates tx is built but not broadcasted
+      'note': 'Transaction built successfully. Integration with wallet signing needed for execution.',
     };
   }
 
