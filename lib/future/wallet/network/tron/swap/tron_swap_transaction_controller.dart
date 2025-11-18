@@ -3,6 +3,7 @@ import 'package:on_chain/solidity/contract/fragments.dart';
 import 'package:on_chain/tron/tron.dart';
 import 'package:stealth_stash/future/wallet/network/tron/transaction/controllers/controller.dart';
 import 'package:stealth_stash/future/wallet/network/tron/transaction/types/types.dart';
+import 'package:stealth_stash/future/wallet/network/tron/transaction/widgets/widgets/swap.dart';
 import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
 import 'package:stealth_stash/wallet/wallet.dart';
 import 'package:stealth_stash/wallet/models/swap/tron/tron_swap.dart';
@@ -113,9 +114,7 @@ class TronSwapTransactionController
 
   @override
   Widget widgetBuilder(BuildContext context) {
-    // Return a simple widget for the transaction page
-    // Can be enhanced later with swap-specific UI
-    return const SizedBox();
+    return TronSwapTransactionWidget(controller: this);
   }
 
   @override
