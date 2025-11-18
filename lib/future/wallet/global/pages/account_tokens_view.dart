@@ -27,7 +27,6 @@ class AccountTokensView<TOKEN extends TokenCore, ACCOUNT extends ChainAccount>
         builder: (context, chain, lastNotify) {
           final tokens = address.tokens.whereType<TOKEN>().toList();
           final isTron = account.network.type == NetworkType.tron;
-          // Stablecoins first for Tron to make them immediately visible.
           tokens.sort((a, b) {
             int score(TokenCore t) {
               final sym = t.token.symbol.toUpperCase();
@@ -38,38 +37,40 @@ class AccountTokensView<TOKEN extends TokenCore, ACCOUNT extends ChainAccount>
             if (s != 0) return s;
             return a.token.symbol.compareTo(b.token.symbol);
           });
+
           return AccountTabbarScrollWidget(slivers: [
             EmptyItemSliverWidgetView(
-                isEmpty: tokens.isEmpty,
-                onEmpty: (context) => Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        const Icon(Icons.token, size: APPConst.double80),
-                        WidgetConstant.height8,
-                        Text("no_tokens_found".tr),
-                        WidgetConstant.height20,
-                        FilledButton(
-                            onPressed: () {
-                              context.to(PageRouter.manageTokens);
-                            },
-                            child: Text("monitor_my_tokens".tr))
-                      ],
-                    ),
-                itemBuilder: (context) => SliverToBoxAdapter(
-                    child: AppListTile(
-                        leading: const Icon(Icons.token),
-                        onTap: () {
-                          context.to(PageRouter.manageTokens);
-                        },
-                        title: Text("manage_tokens".tr),
-                        subtitle: Text("add_or_remove_tokens".tr))))),
+              isEmpty: tokens.isEmpty,
+              onEmpty: (context) => Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Icon(Icons.token, size: APPConst.double80),
+                  WidgetConstant.height8,
+                  Text("no_tokens_found".tr),
+                  WidgetConstant.height20,
+                  FilledButton(
+                      onPressed: () {
+                        context.to(PageRouter.manageTokens);
+                      },
+                      child: Text("monitor_my_tokens".tr))
+                ],
+              ),
+              itemBuilder: (context) => SliverToBoxAdapter(
+                child: AppListTile(
+                    leading: const Icon(Icons.token),
+                    onTap: () {
+                      context.to(PageRouter.manageTokens);
+                    },
+                    title: Text("manage_tokens".tr),
+                    subtitle: Text("add_or_remove_tokens".tr)),
+              ),
+            ),
             if (isTron)
               SliverToBoxAdapter(
                   child: Padding(
                 padding: WidgetConstant.paddingHorizontal20,
                 child: AlertTextContainer(
-                    title: "tron_fee_tip".tr,
                     message: "tron_fee_tip_desc".tr,
                     icon: Icons.info_outline),
               )),

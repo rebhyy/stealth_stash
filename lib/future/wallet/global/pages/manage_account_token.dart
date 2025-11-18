@@ -14,7 +14,11 @@ import 'package:on_chain_wallet/wallet/models/token/network/token.dart';
 import 'package:on_chain_wallet/wallet/models/token/token/token.dart';
 import 'package:on_chain_wallet/wallet/models/transaction/core/transaction.dart';
 import 'package:on_chain_wallet/wallet/models/networks/tron/models/chain_type.dart';
-import 'package:on_chain_wallet/wallet/chain/chain.dart';
+import 'package:on_chain_wallet/wallet/models/network/core/network/network.dart';
+import 'package:on_chain_wallet/wallet/chain/account.dart';
+import 'package:on_chain_wallet/wallet/chain/chain/chain.dart'
+    show TronTRC20Token, TronNetworkToken, TronToken;
+import 'package:on_chain/tron/tron.dart' show TronAddress;
 
 class ManageAccountTokenView extends StatefulWidget {
   const ManageAccountTokenView({super.key});
@@ -147,7 +151,8 @@ mixin ManageAccountTokenState<
 
   List<BaseNetworkToken> _tronPopularTokens() {
     // Popular defaults for Tron networks.
-    final tronChain = account.network.tronNetworkType;
+    if (account.network is! WalletTronNetwork) return const [];
+    final tronChain = (account.network as WalletTronNetwork).tronNetworkType;
     final popular = <TronChainType, List<(String, String, int, String)>>{
       TronChainType.mainnet: const [
         ("Tether USD", "USDT", 6, "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"),
@@ -177,18 +182,20 @@ mixin ManageAccountTokenState<
     // Merge without duplicates.
     final currentContracts = tokens
         .whereType<TronNetworkToken>()
-        .map((t) => t.token.contractAddress.toAddress())
+        .map((t) => t.token)
+        .whereType<TronTRC20Token>()
+        .map((t) => t.contractAddress.toAddress())
         .toSet();
     final ownedContracts = address.tokens
         .whereType<TronTRC20Token>()
         .map((t) => t.contractAddress.toAddress())
         .toSet();
-    final filtered = popular
-        .where((t) =>
-            !currentContracts.contains(t.token.contractAddress.toAddress()))
-        .where(
-            (t) => !ownedContracts.contains(t.token.contractAddress.toAddress()))
-        .toList();
+    final filtered = popular.where((t) {
+      final tron = t.token;
+      if (tron is! TronTRC20Token) return false;
+      final c = tron.contractAddress.toAddress();
+      return !currentContracts.contains(c) && !ownedContracts.contains(c);
+    }).toList();
     if (filtered.isEmpty) return;
     tokens.addAll(filtered);
     updateState();
@@ -228,13 +235,13 @@ mixin ManageAccountTokenState<
               if (account.network.type == NetworkType.tron)
                 SliverToBoxAdapter(
                     child: Padding(
-                  padding: WidgetConstant.padding16,
+                  padding: WidgetConstant.padding20,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text("popular_on_tron".tr,
                           style: context.textTheme.titleMedium),
-                      WidgetConstant.height4,
+                      WidgetConstant.height5,
                       Text("tron_popular_tokens_desc".tr,
                           style: context.textTheme.bodySmall),
                     ],
