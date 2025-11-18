@@ -339,7 +339,6 @@ class PageRouter {
         pageBuilder: (context, animation, secondaryAnimation) {
           return MaterialPageView(child: _page(settings.name, settings.arguments));
         },
-        settings: settings,
         transitionsBuilder: (context, animation, secondaryAnimation, child) {
           return FadeTransition(opacity: animation, child: child);
         },
