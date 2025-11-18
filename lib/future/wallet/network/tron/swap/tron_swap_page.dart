@@ -5,7 +5,9 @@ import 'package:stealth_stash/future/state_managment/extension/extension.dart';
 import 'package:stealth_stash/wallet/chain/account.dart';
 import 'package:stealth_stash/wallet/models/swap/tron/tron_swap.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:stealth_stash/future/router/page_router.dart';
 import 'tron_swap_service.dart';
+import 'tron_swap_transaction_controller.dart';
 
 class TronSwapPage extends StatefulWidget {
   final TronChain account;
@@ -24,6 +26,9 @@ class _TronSwapPageState extends State<TronSwapPage> {
 
   final TextEditingController _amountController = TextEditingController();
   TronSwapToken? _selectedToken;
+  
+  // Feature flag: set to true to enable REAL swap execution
+  static const bool _enableRealSwap = false; // TODO: Set to true when ready to test!
 
   @override
   void initState() {
@@ -46,6 +51,63 @@ class _TronSwapPageState extends State<TronSwapPage> {
       return;
     }
 
+    // Choose between demo mode or real execution
+    if (_enableRealSwap) {
+      await _executeRealSwap();
+    } else {
+      await _executeDemoSwap();
+    }
+  }
+
+  /// REAL SWAP EXECUTION - Broadcasts to blockchain!
+  Future<void> _executeRealSwap() async {
+    try {
+      final params = TronSwapParams(
+        tokenIn: TronAddress('T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb'),
+        tokenOut: _selectedToken!.address,
+        amountIn: _quote!.amountIn,
+        slippage: TronSwapConstants.defaultSlippage,
+        recipient: widget.account.addresses.first.networkAddress,
+        deadline: TronSwapConstants.deadline,
+      );
+
+      // 1. Create transaction controller
+      final controller = TronSwapTransactionController(
+        walletProvider: context.wallet,
+        account: widget.account,
+        address: widget.account.addresses.first,
+        params: params,
+        quote: _quote!,
+        routerAddress: _swapService.routerAddress,
+      );
+
+      // 2. Show confirmation dialog
+      final confirmed = await _showConfirmationDialog(controller);
+      if (!confirmed || !mounted) return;
+
+      // 3. Navigate to transaction page (handles building, signing, broadcasting)
+      // This follows the same pattern as other Tron transactions in your app
+      context.to(PageRouter.transaction, argruments: controller);
+
+      // Note: The transaction page will handle the rest and return when complete
+      // You may want to listen for the result if the transaction page returns it
+      
+    } catch (e) {
+      setState(() {
+        _error = e.toString();
+        _status = TronSwapStatus.error;
+      });
+      
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Swap failed: $e')),
+        );
+      }
+    }
+  }
+
+  /// DEMO MODE - Shows transaction params without broadcasting
+  Future<void> _executeDemoSwap() async {
     setState(() {
       _status = TronSwapStatus.swapping;
     });
@@ -78,6 +140,82 @@ class _TronSwapPageState extends State<TronSwapPage> {
         _status = TronSwapStatus.error;
       });
     }
+  }
+
+  /// Confirmation dialog before executing swap
+  Future<bool> _showConfirmationDialog(TronSwapTransactionController controller) async {
+    // Estimate fees
+    try {
+      await controller.estimateFee();
+    } catch (e) {
+      // Fee estimation failed, continue anyway
+    }
+
+    return await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Confirm Swap'),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            _buildConfirmRow('From', 'TRX'),
+            _buildConfirmRow('Amount In', '${_quote!.amountIn ~/ BigInt.from(1000000)} TRX'),
+            const SizedBox(height: 8),
+            _buildConfirmRow('To', _selectedToken!.symbol),
+            _buildConfirmRow('Min Amount Out', '${_quote!.minimumAmountOut} ${_selectedToken!.symbol}'),
+            const Divider(height: 24),
+            _buildConfirmRow('Price Impact', '${_quote!.priceImpact.toStringAsFixed(2)}%'),
+            _buildConfirmRow('Slippage', '${_quote!.slippage.toStringAsFixed(1)}%'),
+            _buildConfirmRow('Network Fee', '~${controller.txFee.fee.toString()} TRX'),
+            const SizedBox(height: 16),
+            Container(
+              padding: const EdgeInsets.all(12),
+              decoration: BoxDecoration(
+                color: Colors.orange.withOpacity(0.1),
+                borderRadius: BorderRadius.circular(8),
+                border: Border.all(color: Colors.orange),
+              ),
+              child: Row(
+                children: [
+                  const Icon(Icons.warning_amber, color: Colors.orange, size: 20),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: Text(
+                      'This will execute a REAL swap on ${widget.account.network.coinParam.token.name}',
+                      style: const TextStyle(fontSize: 12, color: Colors.orange),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context, false),
+            child: const Text('Cancel'),
+          ),
+          ElevatedButton(
+            onPressed: () => Navigator.pop(context, true),
+            child: const Text('Confirm Swap'),
+          ),
+        ],
+      ),
+    ) ?? false;
+  }
+
+  Widget _buildConfirmRow(String label, String value) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 4),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text(label, style: const TextStyle(fontSize: 13)),
+          Text(value, style: const TextStyle(fontSize: 13, fontWeight: FontWeight.bold)),
+        ],
+      ),
+    );
   }
 
   Future<void> _showStunningSwapDialog(Map<String, dynamic> txData) async {

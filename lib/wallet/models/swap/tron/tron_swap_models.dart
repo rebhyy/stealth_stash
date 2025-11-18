@@ -60,7 +60,11 @@ enum TronSwapStatus {
   idle,
   fetching,
   ready,
-  swapping,
+  building,      // Building transaction
+  signing,       // Waiting for signature
+  broadcasting,  // Broadcasting to network
+  confirming,    // Waiting for confirmation
+  swapping,      // Legacy - same as broadcasting
   success,
   error,
 }

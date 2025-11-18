@@ -1,6 +1,11 @@
+import 'package:flutter/material.dart';
 import 'package:on_chain/solidity/contract/fragments.dart';
 import 'package:on_chain/tron/tron.dart';
+import 'package:stealth_stash/future/wallet/network/tron/transaction/controllers/controller.dart';
 import 'package:stealth_stash/future/wallet/network/tron/transaction/types/types.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 import 'package:stealth_stash/wallet/models/swap/tron/tron_swap.dart';
 
 /// SunSwap V2 Router ABI Fragments
@@ -35,14 +40,14 @@ class SunSwapABI {
     required BigInt amountOutMin,
     required List<TronAddress> path,
     required TronAddress recipient,
-    required BigInt deadline,
+    required int deadline,
   }) {
     return swapExactTokensForTokens.encode([
       amountIn,
       amountOutMin,
       path.map((addr) => addr.toAddress()).toList(),
       recipient.toAddress(),
-      deadline,
+      BigInt.from(deadline),
     ]);
   }
 }
@@ -73,7 +78,7 @@ class SunSwapABI {
 /// final txHash = result.txId;
 /// ```
 class TronSwapTransactionController
-    extends BaseTronTransactionController<TriggerSmartContract> {
+    extends TronTransactionStateController2<TriggerSmartContract> {
   final TronSwapParams params;
   final TronSwapQuote quote;
   final TronAddress routerAddress;
@@ -82,8 +87,6 @@ class TronSwapTransactionController
     required super.walletProvider,
     required super.account,
     required super.address,
-    required super.network,
-    required super.apiProvider,
     required this.params,
     required this.quote,
     required this.routerAddress,
@@ -92,6 +95,28 @@ class TronSwapTransactionController
   @override
   TransactionContractType get transactionType {
     return TransactionContractType.triggerSmartContract;
+  }
+
+  @override
+  TransactionStateController cloneController(ITronAddress address) {
+    return TronSwapTransactionController(
+      walletProvider: walletProvider,
+      account: account,
+      address: address,
+      params: params,
+      quote: quote,
+      routerAddress: routerAddress,
+    );
+  }
+
+  @override
+  List<LiveFormField<Object?, Object>> get fields => [];
+
+  @override
+  Widget widgetBuilder(BuildContext context) {
+    // Return a simple widget for the transaction page
+    // Can be enhanced later with swap-specific UI
+    return const SizedBox();
   }
 
   @override
@@ -120,19 +145,21 @@ class TronSwapTransactionController
       fee: txFee.fee,
       blockData: blockData,
       memo: 'SunSwap V2: Swap Tokens',
-      feeLimit: BigInt.from(100000000), // 100 TRX fee limit for swap
+      feeLimit: BigInt.from(100000000), // 100 TRX energy fee limit for swap
       contract: contract,
     );
   }
 
   @override
-  Future<List<IWalletTransaction>> buildWalletTransaction({
+  Future<List<IWalletTransaction<TronWalletTransaction, ITronAddress>>>
+      buildWalletTransaction({
     required ITronSignedTransaction<ITronTransactionData<TriggerSmartContract>>
         signedTx,
     required SubmitTransactionSuccess txId,
   }) async {
     // Build wallet transaction record for history
     // This is called after successful broadcast
+    // For now return empty, can be enhanced to create proper swap transaction record
     return [];
   }
 }
