@@ -48,30 +48,38 @@ class WalletController extends _WalletController
         if (backup != null) {
           return await ChainsHandler.fromBackup(backup: backup, wallet: wallet);
         } else {
-          // OPTIMIZATION: Only deserialize existing chains from database
-          // Instead of ALL chains, we only load what's already stored
-          // This dramatically speeds up wallet unlock
+          // FAST UNLOCK: Load only the current chain, others loaded on-demand
           final List<Chain> chains = [];
           final values = await core._readAccounts(wallet);
 
-          // Only deserialize chains that exist in the database
-          // No need to deserialize all chains if user hasn't used them yet
+          // Load only the active network's chain for instant unlock
           for (final i in values) {
             try {
               final chain = Chain.deserialize(bytes: i);
-              chains.add(chain);
+              // Only load the current active chain
+              if (chain.network.value == wallet.network) {
+                chains.add(chain);
+                break; // Stop immediately after finding active chain
+              }
             } catch (e, s) {
               appLogger.error(
                   runtime: "WalletController",
                   functionName: "_setup",
                   msg: e,
                   trace: s);
-              // rethrow;
             }
           }
 
-          // ChainsHandler.setup will now only create controllers for chains we have
-          // This is much faster than creating all 77 default networks
+          // Fallback: if no active chain, load first available
+          if (chains.isEmpty && values.isNotEmpty) {
+            try {
+              final chain = Chain.deserialize(bytes: values.first);
+              chains.add(chain);
+            } catch (e) {
+              // Will show empty state if deserialization fails
+            }
+          }
+
           return ChainsHandler.setup(chains: chains, wallet: wallet);
         }
       }();
