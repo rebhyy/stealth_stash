@@ -1,9 +1,13 @@
 import 'package:blockchain_utils/crypto/crypto/crypto.dart';
 import 'package:blockchain_utils/crypto/quick_crypto.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:stealth_stash/wallet/constant/tags/constant.dart';
 
 class WorkerCryptoUtils {
-  static const int keyItration = 25000;
+  // Adaptive PBKDF2 iterations:
+  // Web (browser): 25000 - fast with WebCrypto hardware acceleration
+  // Mobile/Desktop: 10000 - optimized for pure Dart on mobile CPUs
+  static const int keyItration = kIsWeb ? 25000 : 10000;
   static List<int> generateNonce(List<int> seed) {
     final hasher = SHAKE128();
     final digest = List<int>.unmodifiable(hasher.update(seed).digest(12));
