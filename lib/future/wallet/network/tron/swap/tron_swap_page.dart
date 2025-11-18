@@ -27,8 +27,6 @@ class _TronSwapPageState extends State<TronSwapPage> {
   final TextEditingController _amountController = TextEditingController();
   TronSwapToken? _selectedToken;
   
-  // Feature flag: set to true to enable REAL swap execution
-  static const bool _enableRealSwap = false; // TODO: Set to true when ready to test!
 
   @override
   void initState() {
@@ -51,16 +49,7 @@ class _TronSwapPageState extends State<TronSwapPage> {
       return;
     }
 
-    // Choose between demo mode or real execution
-    if (_enableRealSwap) {
-      await _executeRealSwap();
-    } else {
-      await _executeDemoSwap();
-    }
-  }
-
-  /// REAL SWAP EXECUTION - Broadcasts to blockchain!
-  Future<void> _executeRealSwap() async {
+    // Execute REAL swap - broadcasts to blockchain!
     try {
       final params = TronSwapParams(
         tokenIn: TronAddress('T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb'),
@@ -402,7 +391,7 @@ class _TronSwapPageState extends State<TronSwapPage> {
                   style: ElevatedButton.styleFrom(
                     padding: const EdgeInsets.symmetric(vertical: 16),
                   ),
-                  child: Text(_status == TronSwapStatus.swapping ? 'Building Transaction...' : 'Execute Swap 🚀'),
+                  child: Text(_status == TronSwapStatus.swapping ? 'Preparing Swap...' : 'Execute Swap 🚀'),
                 ),
               ),
             ],
@@ -430,15 +419,15 @@ class _TronSwapPageState extends State<TronSwapPage> {
                     children: [
                       const Icon(Icons.info_outline, size: 16),
                       const SizedBox(width: 8),
-                      Text('Testnet Swap', style: context.textTheme.titleSmall),
+                      Text('SunSwap Integration', style: context.textTheme.titleSmall),
                     ],
                   ),
                   const SizedBox(height: 8),
                   Text(
                     '• Using SunSwap V2 DEX\n'
                     '• ${widget.account.network.coinParam.token.name} Network\n'
-                    '• Transaction builder ready\n'
-                    '• Click Execute to test!',
+                    '• Real swaps on blockchain\n'
+                    '• Verify on TronScan',
                     style: context.textTheme.bodySmall,
                   ),
                 ],
