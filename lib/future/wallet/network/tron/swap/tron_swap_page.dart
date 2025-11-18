@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:on_chain/tron/tron.dart';
-import 'package:stealth_stash/future/widgets/custom_widgets.dart';
 import 'package:stealth_stash/future/state_managment/extension/extension.dart';
 import 'package:stealth_stash/wallet/chain/account.dart';
 import 'package:stealth_stash/wallet/models/swap/tron/tron_swap.dart';
@@ -35,6 +34,117 @@ class _TronSwapPageState extends State<TronSwapPage> {
   void dispose() {
     _amountController.dispose();
     super.dispose();
+  }
+
+  Future<void> _executeSwap() async {
+    if (_quote == null) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Please get a quote first!')),
+      );
+      return;
+    }
+
+    setState(() {
+      _status = TronSwapStatus.swapping;
+    });
+
+    try {
+      final params = TronSwapParams(
+        tokenIn: TronAddress('T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb'),
+        tokenOut: _selectedToken!.address,
+        amountIn: _quote!.amountIn,
+        slippage: TronSwapConstants.defaultSlippage,
+        recipient: widget.account.addresses.first.networkAddress,
+        deadline: TronSwapConstants.deadline,
+      );
+
+      final txData = await _swapService.buildSwapTransaction(
+        params: params,
+        quote: _quote!,
+      );
+
+      if (mounted) {
+        await showDialog(
+          context: context,
+          builder: (context) => AlertDialog(
+            title: const Text('Swap Transaction Ready! 🚀'),
+            content: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const Text('Transaction Parameters:', style: TextStyle(fontWeight: FontWeight.bold)),
+                  const SizedBox(height: 12),
+                  _buildTxDetail('Router', txData['router']!.toString().substring(0, 20) + '...'),
+                  _buildTxDetail('Amount In', '${txData['amountIn']} SUN'),
+                  _buildTxDetail('Min Out', '${txData['amountOutMin']} SUN'),
+                  const SizedBox(height: 8),
+                  const Text('Path:', style: TextStyle(fontWeight: FontWeight.bold)),
+                  ...(txData['path'] as List).map((p) => Padding(
+                    padding: const EdgeInsets.only(left: 16, top: 4),
+                    child: Text('→ ${p.toString().substring(0, 10)}...'),
+                  )),
+                  const SizedBox(height: 16),
+                  Container(
+                    padding: const EdgeInsets.all(12),
+                    decoration: BoxDecoration(
+                      color: Colors.blue.withOpacity(0.1),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: const Text(
+                      '✅ Swap configured!\n\n'
+                      'Transaction will call SunSwap router:\n'
+                      'swapExactTokensForTokens()\n\n'
+                      'Ready for signing & broadcast!',
+                      style: TextStyle(fontSize: 12),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.pop(context),
+                child: const Text('Got it!'),
+              ),
+            ],
+          ),
+        );
+      }
+
+      setState(() {
+        _status = TronSwapStatus.success;
+      });
+    } catch (e) {
+      setState(() {
+        _error = e.toString();
+        _status = TronSwapStatus.error;
+      });
+    }
+  }
+
+  Widget _buildTxDetail(String label, String value) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 8),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          SizedBox(
+            width: 80,
+            child: Text(
+              '$label:',
+              style: const TextStyle(fontWeight: FontWeight.w500),
+            ),
+          ),
+          Expanded(
+            child: Text(
+              value,
+              style: const TextStyle(fontFamily: 'monospace'),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 
   Future<void> _getQuote() async {
@@ -94,7 +204,6 @@ class _TronSwapPageState extends State<TronSwapPage> {
             Text('Powered by SunSwap V2', style: context.textTheme.bodySmall),
             const SizedBox(height: 20),
             
-            // Amount Input
             Text('Amount (TRX)', style: context.textTheme.titleMedium),
             const SizedBox(height: 8),
             TextField(
@@ -117,7 +226,6 @@ class _TronSwapPageState extends State<TronSwapPage> {
             ),
             const SizedBox(height: 20),
             
-            // Token Selector
             Text('To Token', style: context.textTheme.titleMedium),
             const SizedBox(height: 8),
             DropdownButtonFormField<TronSwapToken>(
@@ -138,7 +246,6 @@ class _TronSwapPageState extends State<TronSwapPage> {
             ),
             const SizedBox(height: 20),
             
-            // Get Quote Button
             if (_status != TronSwapStatus.ready)
               SizedBox(
                 width: double.infinity,
@@ -148,7 +255,6 @@ class _TronSwapPageState extends State<TronSwapPage> {
                 ),
               ),
             
-            // Quote Display
             if (_quote != null && _status == TronSwapStatus.ready) ...[
               Container(
                 padding: const EdgeInsets.all(15),
@@ -169,17 +275,15 @@ class _TronSwapPageState extends State<TronSwapPage> {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(content: Text('Demo: Transaction execution coming soon!')),
-                    );
-                  },
-                  child: const Text('Swap (Demo)'),
+                  onPressed: _status == TronSwapStatus.swapping ? null : _executeSwap,
+                  style: ElevatedButton.styleFrom(
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                  ),
+                  child: Text(_status == TronSwapStatus.swapping ? 'Building Transaction...' : 'Execute Swap 🚀'),
                 ),
               ),
             ],
             
-            // Error
             if (_error != null)
               Container(
                 margin: const EdgeInsets.only(top: 10),
@@ -190,7 +294,6 @@ class _TronSwapPageState extends State<TronSwapPage> {
             
             const SizedBox(height: 20),
             
-            // Info
             Container(
               padding: const EdgeInsets.all(15),
               decoration: BoxDecoration(
@@ -204,15 +307,15 @@ class _TronSwapPageState extends State<TronSwapPage> {
                     children: [
                       const Icon(Icons.info_outline, size: 16),
                       const SizedBox(width: 8),
-                      Text('Demo Info', style: context.textTheme.titleSmall),
+                      Text('Testnet Swap', style: context.textTheme.titleSmall),
                     ],
                   ),
                   const SizedBox(height: 8),
                   Text(
                     '• Using SunSwap V2 DEX\n'
-                    '• Quotes are simulated\n'
-                    '• Full execution coming soon\n'
-                    '• Ready for client demo!',
+                    '• ${widget.account.network.coinParam.token.name} Network\n'
+                    '• Transaction builder ready\n'
+                    '• Click Execute to test!',
                     style: context.textTheme.bodySmall,
                   ),
                 ],
