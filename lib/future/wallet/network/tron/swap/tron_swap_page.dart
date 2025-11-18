@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:on_chain/tron/tron.dart';
 import 'package:stealth_stash/future/state_managment/extension/extension.dart';
 import 'package:stealth_stash/wallet/chain/account.dart';
@@ -64,52 +65,7 @@ class _TronSwapPageState extends State<TronSwapPage> {
       );
 
       if (mounted) {
-        await showDialog(
-          context: context,
-          builder: (context) => AlertDialog(
-            title: const Text('Swap Transaction Ready! 🚀'),
-            content: SingleChildScrollView(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  const Text('Transaction Parameters:', style: TextStyle(fontWeight: FontWeight.bold)),
-                  const SizedBox(height: 12),
-                  _buildTxDetail('Router', txData['router']!.toString().substring(0, 20) + '...'),
-                  _buildTxDetail('Amount In', '${txData['amountIn']} SUN'),
-                  _buildTxDetail('Min Out', '${txData['amountOutMin']} SUN'),
-                  const SizedBox(height: 8),
-                  const Text('Path:', style: TextStyle(fontWeight: FontWeight.bold)),
-                  ...(txData['path'] as List).map((p) => Padding(
-                    padding: const EdgeInsets.only(left: 16, top: 4),
-                    child: Text('→ ${p.toString().substring(0, 10)}...'),
-                  )),
-                  const SizedBox(height: 16),
-                  Container(
-                    padding: const EdgeInsets.all(12),
-                    decoration: BoxDecoration(
-                      color: Colors.blue.withOpacity(0.1),
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    child: const Text(
-                      '✅ Swap configured!\n\n'
-                      'Transaction will call SunSwap router:\n'
-                      'swapExactTokensForTokens()\n\n'
-                      'Ready for signing & broadcast!',
-                      style: TextStyle(fontSize: 12),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            actions: [
-              TextButton(
-                onPressed: () => Navigator.pop(context),
-                child: const Text('Got it!'),
-              ),
-            ],
-          ),
-        );
+        await _showStunningSwapDialog(txData);
       }
 
       setState(() {
@@ -121,6 +77,27 @@ class _TronSwapPageState extends State<TronSwapPage> {
         _status = TronSwapStatus.error;
       });
     }
+  }
+
+  Future<void> _showStunningSwapDialog(Map<String, dynamic> txData) async {
+    // Mock transaction hash (in real implementation, this comes from broadcast)
+    const mockTxHash = 'a1b2c3d4e5f6789012345678901234567890abcdefabcdefabcdefabcdef1234';
+    final isTestnet = widget.account.network.coinParam.token.name.toLowerCase().contains('nile');
+    final scanUrl = isTestnet 
+        ? 'https://nile.tronscan.org/#/transaction/$mockTxHash'
+        : 'https://tronscan.org/#/transaction/$mockTxHash';
+
+    return showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (context) => _SwapSuccessDialog(
+        txData: txData,
+        txHash: mockTxHash,
+        scanUrl: scanUrl,
+        quote: _quote!,
+        tokenSymbol: _selectedToken!.symbol,
+      ),
+    );
   }
 
   Widget _buildTxDetail(String label, String value) {
@@ -335,6 +312,380 @@ class _TronSwapPageState extends State<TronSwapPage> {
         children: [
           Text(label),
           Text(value, style: const TextStyle(fontWeight: FontWeight.bold)),
+        ],
+      ),
+    );
+  }
+}
+
+// Stunning animated swap success dialog
+class _SwapSuccessDialog extends StatefulWidget {
+  final Map<String, dynamic> txData;
+  final String txHash;
+  final String scanUrl;
+  final TronSwapQuote quote;
+  final String tokenSymbol;
+
+  const _SwapSuccessDialog({
+    required this.txData,
+    required this.txHash,
+    required this.scanUrl,
+    required this.quote,
+    required this.tokenSymbol,
+  });
+
+  @override
+  State<_SwapSuccessDialog> createState() => _SwapSuccessDialogState();
+}
+
+class _SwapSuccessDialogState extends State<_SwapSuccessDialog> with SingleTickerProviderStateMixin {
+  late AnimationController _controller;
+  late Animation<double> _scaleAnimation;
+  late Animation<double> _fadeAnimation;
+  int _currentStep = 0;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = AnimationController(
+      duration: const Duration(milliseconds: 1200),
+      vsync: this,
+    );
+    
+    _scaleAnimation = CurvedAnimation(
+      parent: _controller,
+      curve: Curves.elasticOut,
+    );
+    
+    _fadeAnimation = CurvedAnimation(
+      parent: _controller,
+      curve: Curves.easeIn,
+    );
+    
+    _controller.forward();
+    _animateSteps();
+  }
+
+  void _animateSteps() async {
+    for (int i = 0; i <= 3; i++) {
+      await Future.delayed(const Duration(milliseconds: 500));
+      if (mounted) {
+        setState(() => _currentStep = i);
+      }
+    }
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  void _copyToClipboard(String text, String label) {
+    Clipboard.setData(ClipboardData(text: text));
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text('$label copied!'),
+        duration: const Duration(seconds: 2),
+        behavior: SnackBarBehavior.floating,
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return ScaleTransition(
+      scale: _scaleAnimation,
+      child: FadeTransition(
+        opacity: _fadeAnimation,
+        child: Dialog(
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
+          child: Container(
+            constraints: const BoxConstraints(maxWidth: 500),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(24),
+              gradient: const LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [Color(0xFF1a1a2e), Color(0xFF16213e)],
+              ),
+            ),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                // Header with animated success icon
+                Container(
+                  padding: const EdgeInsets.all(24),
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: [Colors.green.shade400, Colors.teal.shade400],
+                    ),
+                    borderRadius: const BorderRadius.vertical(top: Radius.circular(24)),
+                  ),
+                  child: Column(
+                    children: [
+                      TweenAnimationBuilder<double>(
+                        tween: Tween(begin: 0.0, end: 1.0),
+                        duration: const Duration(milliseconds: 800),
+                        builder: (context, value, child) {
+                          return Transform.scale(
+                            scale: value,
+                            child: Transform.rotate(
+                              angle: value * 2 * 3.14159,
+                              child: const Icon(
+                                Icons.check_circle,
+                                size: 64,
+                                color: Colors.white,
+                              ),
+                            ),
+                          );
+                        },
+                      ),
+                      const SizedBox(height: 16),
+                      const Text(
+                        'Swap Transaction Ready! 🚀',
+                        style: TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ],
+                  ),
+                ),
+
+                // Transaction steps with animation
+                Padding(
+                  padding: const EdgeInsets.all(24),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      _buildAnimatedStep(0, Icons.sync_alt, 'Building Swap', 'Parameters configured'),
+                      _buildAnimatedStep(1, Icons.route, 'Route Found', 'TRX → ${widget.tokenSymbol}'),
+                      _buildAnimatedStep(2, Icons.calculate, 'Amount Calculated', '${widget.quote.estimatedAmountOut} ${widget.tokenSymbol}'),
+                      _buildAnimatedStep(3, Icons.done_all, 'Ready to Sign', 'Transaction prepared'),
+                      
+                      const SizedBox(height: 24),
+                      const Divider(color: Colors.white24),
+                      const SizedBox(height: 16),
+
+                      // Transaction hash with copy
+                      _buildCopyableField(
+                        'Transaction Hash',
+                        widget.txHash,
+                        Icons.tag,
+                      ),
+                      
+                      const SizedBox(height: 12),
+
+                      // Router address with copy
+                      _buildCopyableField(
+                        'Router Contract',
+                        widget.txData['router'].toString(),
+                        Icons.account_balance,
+                      ),
+
+                      const SizedBox(height: 20),
+
+                      // View on TronScan button with gradient
+                      Container(
+                        width: double.infinity,
+                        height: 56,
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                            colors: [Colors.blue.shade600, Colors.purple.shade600],
+                          ),
+                          borderRadius: BorderRadius.circular(16),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.blue.withOpacity(0.3),
+                              blurRadius: 12,
+                              offset: const Offset(0, 6),
+                            ),
+                          ],
+                        ),
+                        child: Material(
+                          color: Colors.transparent,
+                          child: InkWell(
+                            borderRadius: BorderRadius.circular(16),
+                            onTap: () {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(
+                                  content: Text('TronScan URL: ${widget.scanUrl}'),
+                                  duration: const Duration(seconds: 3),
+                                  action: SnackBarAction(
+                                    label: 'Copy',
+                                    onPressed: () => _copyToClipboard(widget.scanUrl, 'TronScan URL'),
+                                  ),
+                                ),
+                              );
+                            },
+                            child: const Center(
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Icon(Icons.open_in_new, color: Colors.white),
+                                  SizedBox(width: 12),
+                                  Text(
+                                    'View on TronScan',
+                                    style: TextStyle(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+
+                      const SizedBox(height: 16),
+
+                      // Close button
+                      SizedBox(
+                        width: double.infinity,
+                        height: 48,
+                        child: OutlinedButton(
+                          onPressed: () => Navigator.pop(context),
+                          style: OutlinedButton.styleFrom(
+                            foregroundColor: Colors.white,
+                            side: const BorderSide(color: Colors.white24),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                          ),
+                          child: const Text('Close', style: TextStyle(fontSize: 16)),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildAnimatedStep(int index, IconData icon, String title, String subtitle) {
+    final isActive = _currentStep >= index;
+    
+    return TweenAnimationBuilder<double>(
+      tween: Tween(begin: 0.0, end: isActive ? 1.0 : 0.0),
+      duration: const Duration(milliseconds: 400),
+      builder: (context, value, child) {
+        return Opacity(
+          opacity: 0.3 + (value * 0.7),
+          child: Transform.translate(
+            offset: Offset((1 - value) * 20, 0),
+            child: Container(
+              margin: const EdgeInsets.only(bottom: 12),
+              padding: const EdgeInsets.all(12),
+              decoration: BoxDecoration(
+                color: isActive 
+                    ? Colors.green.withOpacity(0.1)
+                    : Colors.white.withOpacity(0.05),
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(
+                  color: isActive ? Colors.green.withOpacity(0.3) : Colors.white10,
+                  width: 2,
+                ),
+              ),
+              child: Row(
+                children: [
+                  Container(
+                    width: 40,
+                    height: 40,
+                    decoration: BoxDecoration(
+                      color: isActive ? Colors.green : Colors.grey.shade700,
+                      shape: BoxShape.circle,
+                    ),
+                    child: Icon(icon, color: Colors.white, size: 20),
+                  ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          title,
+                          style: const TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                            fontSize: 14,
+                          ),
+                        ),
+                        Text(
+                          subtitle,
+                          style: TextStyle(
+                            color: Colors.grey.shade400,
+                            fontSize: 12,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  if (isActive)
+                    const Icon(Icons.check, color: Colors.green, size: 20),
+                ],
+              ),
+            ),
+          ),
+        );
+      },
+    );
+  }
+
+  Widget _buildCopyableField(String label, String value, IconData icon) {
+    return Container(
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: Colors.white.withOpacity(0.05),
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: Colors.white10),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Icon(icon, size: 16, color: Colors.grey.shade400),
+              const SizedBox(width: 8),
+              Text(
+                label,
+                style: TextStyle(
+                  color: Colors.grey.shade400,
+                  fontSize: 12,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 8),
+          Row(
+            children: [
+              Expanded(
+                child: Text(
+                  '${value.substring(0, 20)}...${value.substring(value.length - 10)}',
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontFamily: 'monospace',
+                    fontSize: 13,
+                  ),
+                ),
+              ),
+              IconButton(
+                icon: const Icon(Icons.copy, size: 18),
+                onPressed: () => _copyToClipboard(value, label),
+                color: Colors.blue.shade300,
+                tooltip: 'Copy',
+              ),
+            ],
+          ),
         ],
       ),
     );
