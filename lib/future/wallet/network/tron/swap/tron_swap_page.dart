@@ -4,6 +4,7 @@ import 'package:on_chain/tron/tron.dart';
 import 'package:stealth_stash/future/state_managment/extension/extension.dart';
 import 'package:stealth_stash/wallet/chain/account.dart';
 import 'package:stealth_stash/wallet/models/swap/tron/tron_swap.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'tron_swap_service.dart';
 
 class TronSwapPage extends StatefulWidget {
@@ -510,17 +511,23 @@ class _SwapSuccessDialogState extends State<_SwapSuccessDialog> with SingleTicke
                           color: Colors.transparent,
                           child: InkWell(
                             borderRadius: BorderRadius.circular(16),
-                            onTap: () {
-                              ScaffoldMessenger.of(context).showSnackBar(
-                                SnackBar(
-                                  content: Text('TronScan URL: ${widget.scanUrl}'),
-                                  duration: const Duration(seconds: 3),
-                                  action: SnackBarAction(
-                                    label: 'Copy',
-                                    onPressed: () => _copyToClipboard(widget.scanUrl, 'TronScan URL'),
-                                  ),
-                                ),
-                              );
+                            onTap: () async {
+                              final uri = Uri.parse(widget.scanUrl);
+                              if (await canLaunchUrl(uri)) {
+                                await launchUrl(uri, mode: LaunchMode.externalApplication);
+                              } else {
+                                if (context.mounted) {
+                                  ScaffoldMessenger.of(context).showSnackBar(
+                                    SnackBar(
+                                      content: Text('Cannot open URL: ${widget.scanUrl}'),
+                                      action: SnackBarAction(
+                                        label: 'Copy',
+                                        onPressed: () => _copyToClipboard(widget.scanUrl, 'TronScan URL'),
+                                      ),
+                                    ),
+                                  );
+                                }
+                              }
                             },
                             child: const Center(
                               child: Row(
