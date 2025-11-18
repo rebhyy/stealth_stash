@@ -113,21 +113,22 @@ final class TronChain extends Chain<
   }
 
   List<TronTRC20Token> _defaultStableTokens(WalletTronNetwork network) {
-    if (network.tronNetworkType != TronChainType.mainnet) return const [];
-    return const [
-      (
-        "Tether USD",
-        "USDT",
-        6,
-        "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
-      ),
-      (
-        "USD Coin",
-        "USDC",
-        6,
-        "TEkxiTehnzSmSe2XqrBj4w32RUN966rdz8",
-      ),
-    ]
+    final tokensByChain = <TronChainType, List<(String, String, int, String)>>{
+      TronChainType.mainnet: const [
+        ("Tether USD", "USDT", 6, "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"),
+        ("USD Coin", "USDC", 6, "TEkxiTehnzSmSe2XqrBj4w32RUN966rdz8"),
+      ],
+      // Common testnet USDT contract used on Shasta/Nile.
+      TronChainType.shasta: const [
+        ("Tether USD (testnet)", "USDT", 6, "TXYZopYRdj2D9XRtbG411XZZ3kM5VkAeBf"),
+      ],
+      TronChainType.nile: const [
+        ("Tether USD (testnet)", "USDT", 6, "TXYZopYRdj2D9XRtbG411XZZ3kM5VkAeBf"),
+      ],
+    };
+    final entries = tokensByChain[network.tronNetworkType];
+    if (entries == null) return const [];
+    return entries
         .map((e) => TronTRC20Token.create(
             balance: BigInt.zero,
             token: Token(name: e.$1, symbol: e.$2, decimal: e.$3),

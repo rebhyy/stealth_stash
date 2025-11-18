@@ -28,6 +28,7 @@ import 'package:on_chain_wallet/wallet/models/networks/stellar/models/account.da
 import 'package:on_chain_wallet/wallet/models/networks/substrate/models/multisig.dart';
 import 'package:on_chain_wallet/wallet/models/networks/sui/models/types.dart';
 import 'package:on_chain_wallet/wallet/models/networks/ton/models/account_context.dart';
+import 'package:on_chain_wallet/wallet/models/networks/tron/models/chain_type.dart';
 import 'package:on_chain_wallet/wallet/models/networks/tron/models/tron_account_info.dart';
 import 'package:on_chain_wallet/wallet/models/nfts/core/core.dart';
 import 'package:on_chain_wallet/wallet/models/nfts/networks/ripple.dart';
