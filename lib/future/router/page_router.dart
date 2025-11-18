@@ -178,7 +178,7 @@ class PageRouter {
 
   static const String publicKeyDeration = "account/public_key_derivation";
 
-  static Widget _page(String? name, {dynamic argruments}) {
+  static Widget _page(String? name, dynamic argruments) {
     switch (name) {
       case cardanoMultisigAccountInfo:
         return const CardanoMultisigAccountInfoView();
@@ -337,8 +337,9 @@ class PageRouter {
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
     return PageRouteBuilder(
         pageBuilder: (context, animation, secondaryAnimation) {
-          return MaterialPageView(child: _page(settings.name));
+          return MaterialPageView(child: _page(settings.name, settings.arguments));
         },
+        settings: settings,
         transitionsBuilder: (context, animation, secondaryAnimation, child) {
           return FadeTransition(opacity: animation, child: child);
         },
