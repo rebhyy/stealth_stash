@@ -496,6 +496,12 @@ class Localization {
           "fetching_account_token_please_wait":
               "Retrieving account tokens. please wait.",
           "no_items_found": "No items found.",
+          "popular_on_tron": "Popular on Tron",
+          "tron_popular_tokens_desc":
+              "Quick add stablecoins commonly used on Tron. You still need TRX to pay network fees.",
+          "tron_fee_tip": "TRX still required for fees",
+          "tron_fee_tip_desc":
+              "Keep a small TRX balance to cover network fees when sending USDT/USDC.",
           "yes": "Yes",
           "no": "No",
           "add_token_to_your_account": "Add token to your account?",

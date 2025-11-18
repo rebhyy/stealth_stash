@@ -13,6 +13,8 @@ import 'package:on_chain_wallet/wallet/models/nfts/core/core.dart';
 import 'package:on_chain_wallet/wallet/models/token/network/token.dart';
 import 'package:on_chain_wallet/wallet/models/token/token/token.dart';
 import 'package:on_chain_wallet/wallet/models/transaction/core/transaction.dart';
+import 'package:on_chain_wallet/wallet/models/networks/tron/models/chain_type.dart';
+import 'package:on_chain_wallet/wallet/chain/chain.dart';
 
 class ManageAccountTokenView extends StatefulWidget {
   const ManageAccountTokenView({super.key});
@@ -140,6 +142,57 @@ mixin ManageAccountTokenState<
         onDone: onDone,
         cancelOnError: true);
     wallet = context.wallet;
+    _seedPopularTokens();
+  }
+
+  List<BaseNetworkToken> _tronPopularTokens() {
+    // Popular defaults for Tron networks.
+    final tronChain = account.network.tronNetworkType;
+    final popular = <TronChainType, List<(String, String, int, String)>>{
+      TronChainType.mainnet: const [
+        ("Tether USD", "USDT", 6, "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"),
+        ("USD Coin", "USDC", 6, "TEkxiTehnzSmSe2XqrBj4w32RUN966rdz8"),
+      ],
+      TronChainType.shasta: const [
+        ("Tether USD (testnet)", "USDT", 6, "TXYZopYRdj2D9XRtbG411XZZ3kM5VkAeBf"),
+      ],
+      TronChainType.nile: const [
+        ("Tether USD (testnet)", "USDT", 6, "TXYZopYRdj2D9XRtbG411XZZ3kM5VkAeBf"),
+      ],
+    }[tronChain];
+    if (popular == null) return const [];
+    return popular
+        .map((e) => TronNetworkToken(
+            token: TronTRC20Token.create(
+                balance: BigInt.zero,
+                token: Token(name: e.$1, symbol: e.$2, decimal: e.$3),
+                contractAddress: TronAddress(e.$4))))
+        .toList();
+  }
+
+  void _seedPopularTokens() {
+    if (account.network.type != NetworkType.tron) return;
+    final popular = _tronPopularTokens();
+    if (popular.isEmpty) return;
+    // Merge without duplicates.
+    final currentContracts = tokens
+        .whereType<TronNetworkToken>()
+        .map((t) => t.token.contractAddress.toAddress())
+        .toSet();
+    final ownedContracts = address.tokens
+        .whereType<TronTRC20Token>()
+        .map((t) => t.contractAddress.toAddress())
+        .toSet();
+    final filtered = popular
+        .where((t) =>
+            !currentContracts.contains(t.token.contractAddress.toAddress()))
+        .where(
+            (t) => !ownedContracts.contains(t.token.contractAddress.toAddress()))
+        .toList();
+    if (filtered.isEmpty) return;
+    tokens.addAll(filtered);
+    updateState();
+    if (progressKey.inProgress) progressKey.backToIdle();
   }
 
   @override
@@ -172,6 +225,21 @@ mixin ManageAccountTokenState<
           allowNotify: [DefaultChainNotify.token],
           builder: (context, value, _) => CustomScrollView(
             slivers: [
+              if (account.network.type == NetworkType.tron)
+                SliverToBoxAdapter(
+                    child: Padding(
+                  padding: WidgetConstant.padding16,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("popular_on_tron".tr,
+                          style: context.textTheme.titleMedium),
+                      WidgetConstant.height4,
+                      Text("tron_popular_tokens_desc".tr,
+                          style: context.textTheme.bodySmall),
+                    ],
+                  ),
+                )),
               EmptyItemSliverWidgetView(
                 isEmpty: tokens.isEmpty,
                 itemBuilder: (context) => SliverConstraintsBoxView(

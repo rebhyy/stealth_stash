@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:on_chain_wallet/app/constant/global/app.dart';
+import 'package:on_chain_wallet/crypto/types/networks.dart';
 import 'package:on_chain_wallet/future/router/page_router.dart';
 import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
 import 'package:on_chain_wallet/future/wallet/global/global.dart';
@@ -25,6 +26,18 @@ class AccountTokensView<TOKEN extends TokenCore, ACCOUNT extends ChainAccount>
         allowNotify: [DefaultChainNotify.token],
         builder: (context, chain, lastNotify) {
           final tokens = address.tokens.whereType<TOKEN>().toList();
+          final isTron = account.network.type == NetworkType.tron;
+          // Stablecoins first for Tron to make them immediately visible.
+          tokens.sort((a, b) {
+            int score(TokenCore t) {
+              final sym = t.token.symbol.toUpperCase();
+              return (sym == "USDT" || sym == "USDC") ? 0 : 1;
+            }
+
+            final s = score(a).compareTo(score(b));
+            if (s != 0) return s;
+            return a.token.symbol.compareTo(b.token.symbol);
+          });
           return AccountTabbarScrollWidget(slivers: [
             EmptyItemSliverWidgetView(
                 isEmpty: tokens.isEmpty,
@@ -50,7 +63,16 @@ class AccountTokensView<TOKEN extends TokenCore, ACCOUNT extends ChainAccount>
                           context.to(PageRouter.manageTokens);
                         },
                         title: Text("manage_tokens".tr),
-                        subtitle: Text("add_or_remove_tokens".tr)))),
+                        subtitle: Text("add_or_remove_tokens".tr))))),
+            if (isTron)
+              SliverToBoxAdapter(
+                  child: Padding(
+                padding: WidgetConstant.paddingHorizontal20,
+                child: AlertTextContainer(
+                    title: "tron_fee_tip".tr,
+                    message: "tron_fee_tip_desc".tr,
+                    icon: Icons.info_outline),
+              )),
             SliverList.builder(
                 itemBuilder: (context, index) {
                   final token = tokens[index];
@@ -67,7 +89,7 @@ class AccountTokensView<TOKEN extends TokenCore, ACCOUNT extends ChainAccount>
                     },
                   );
                 },
-                itemCount: address.tokens.length,
+                itemCount: tokens.length,
                 addAutomaticKeepAlives: false,
                 addRepaintBoundaries: false)
           ]);
