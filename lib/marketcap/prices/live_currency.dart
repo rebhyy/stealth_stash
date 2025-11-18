@@ -1,10 +1,10 @@
 import 'dart:async';
 
 import 'package:blockchain_utils/utils/atomic/atomic.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/marketcap/prices/coingecko.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/models/models.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/marketcap/prices/coingecko.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/models/models.dart';
 
 class LiveCurrencies with HttpImpl {
   final _syncRequest = SafeAtomicLock();

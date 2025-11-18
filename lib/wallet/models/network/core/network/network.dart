@@ -1,15 +1,15 @@
 import 'package:bitcoin_base/bitcoin_base.dart';
 import 'package:blockchain_utils/blockchain_utils.dart';
-import 'package:on_chain_wallet/app/error/exception/wallet_ex.dart';
-import 'package:on_chain_wallet/app/serialization/serialization.dart';
-import 'package:on_chain_wallet/app/utils/extensions/numbers.dart';
-import 'package:on_chain_wallet/crypto/coins/custom_coins/coins.dart';
-import 'package:on_chain_wallet/crypto/types/networks.dart';
-import 'package:on_chain_wallet/wallet/constant/chain/const.dart';
-import 'package:on_chain_wallet/wallet/constant/tags/constant.dart';
-import 'package:on_chain_wallet/wallet/models/network/network.dart';
-import 'package:on_chain_wallet/wallet/models/networks/tron/models/chain_type.dart';
-import 'package:on_chain_wallet/wallet/models/token/token/token.dart';
+import 'package:stealth_stash/app/error/exception/wallet_ex.dart';
+import 'package:stealth_stash/app/serialization/serialization.dart';
+import 'package:stealth_stash/app/utils/extensions/numbers.dart';
+import 'package:stealth_stash/crypto/coins/custom_coins/coins.dart';
+import 'package:stealth_stash/crypto/types/networks.dart';
+import 'package:stealth_stash/wallet/constant/chain/const.dart';
+import 'package:stealth_stash/wallet/constant/tags/constant.dart';
+import 'package:stealth_stash/wallet/models/network/network.dart';
+import 'package:stealth_stash/wallet/models/networks/tron/models/chain_type.dart';
+import 'package:stealth_stash/wallet/models/token/token/token.dart';
 import 'package:polkadot_dart/polkadot_dart.dart';
 
 abstract class WalletNetwork<PARAMS extends NetworkCoinParams>

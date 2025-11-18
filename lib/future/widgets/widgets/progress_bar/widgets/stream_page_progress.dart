@@ -1,10 +1,10 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/app/live_listener/progress_bar.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/app/live_listener/progress_bar.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
 
 class StreamPageProgressController extends StreamValue<PageProgressStatus> {
   final PageProgressStatus initialStatus;

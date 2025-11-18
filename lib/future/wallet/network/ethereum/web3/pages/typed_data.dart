@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:on_chain/solidity/abi/abi.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/network/ethereum/web3/operations/typed_data.dart';
-import 'package:on_chain_wallet/future/wallet/web3/pages/web3_request_page_builder.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/wallet/models/networks/ethereum/models/typed_data.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/network/ethereum/web3/operations/typed_data.dart';
+import 'package:stealth_stash/future/wallet/web3/pages/web3_request_page_builder.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/wallet/models/networks/ethereum/models/typed_data.dart';
 
 class Web3EthereumSignTypedDataStateView extends StatelessWidget {
   const Web3EthereumSignTypedDataStateView(

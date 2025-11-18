@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/wallet/account/pages/account_controller.dart';
-import 'package:on_chain_wallet/future/wallet/global/pages/importing_custom_key_view.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
-import 'package:on_chain_wallet/crypto/worker.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/wallet/account/pages/account_controller.dart';
+import 'package:stealth_stash/future/wallet/global/pages/importing_custom_key_view.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
+import 'package:stealth_stash/crypto/worker.dart';
 import 'package:xrpl_dart/xrpl_dart.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
 
 class SolanaKeyConversionView extends StatelessWidget {
   const SolanaKeyConversionView({super.key});

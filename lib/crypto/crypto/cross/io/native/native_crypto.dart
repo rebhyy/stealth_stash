@@ -4,10 +4,10 @@ import 'dart:typed_data';
 import 'package:blockchain_utils/blockchain_utils.dart' hide Pointer;
 import 'package:monero_dart/monero_dart.dart';
 import 'package:on_chain_bridge/io/database/fifi/fifi.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/crypto/cross/constants/constants.dart';
-import 'package:on_chain_wallet/crypto/crypto/cross/io/native/types.dart';
-import 'package:on_chain_wallet/crypto/crypto/types/types.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/crypto/cross/constants/constants.dart';
+import 'package:stealth_stash/crypto/crypto/cross/io/native/types.dart';
+import 'package:stealth_stash/crypto/crypto/types/types.dart';
 
 class AppCryptoNative {
   final DynamicLibrary library;

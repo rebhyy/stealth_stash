@@ -1,10 +1,10 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/router/page_router.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/webview/controller/controller/controller.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/router/page_router.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/webview/controller/controller/controller.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
 
 class WebViewHistoriesView extends StatefulWidget {
   final WebViewController model;

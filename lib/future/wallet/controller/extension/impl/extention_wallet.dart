@@ -5,13 +5,13 @@ import 'package:blockchain_utils/blockchain_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:on_chain_bridge/models/models.dart';
 import 'package:on_chain_bridge/web/web.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/crypto/requests/chacha.dart';
-import 'package:on_chain_wallet/future/state_managment/extension/extension.dart';
-import 'package:on_chain_wallet/future/wallet/controller/extension/models/models.dart';
-import 'package:on_chain_wallet/future/wallet/global/global.dart';
-import 'package:on_chain_wallet/future/wallet/web3/controller/web3_request_controller.dart';
-import 'package:on_chain_wallet/wallet/web3/web3.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/requets/messages/crypto/requests/chacha.dart';
+import 'package:stealth_stash/future/state_managment/extension/extension.dart';
+import 'package:stealth_stash/future/wallet/controller/extension/models/models.dart';
+import 'package:stealth_stash/future/wallet/global/global.dart';
+import 'package:stealth_stash/future/wallet/web3/controller/web3_request_controller.dart';
+import 'package:stealth_stash/wallet/web3/web3.dart';
 
 mixin ExtentionWalletHandler on Web3RequestControllerImpl {
   ExtensionWalletContext _context = ExtensionWalletContext.init;

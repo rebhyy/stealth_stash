@@ -1,12 +1,12 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:on_chain_bridge/models/files/picked_file_data.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/global/pages/address_details.dart';
-import 'package:on_chain_wallet/future/wallet/setup/controller/form.dart';
-import 'package:on_chain_wallet/future/wallet/setup/types/types.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/wallet/models/wallet/models/backup.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/global/pages/address_details.dart';
+import 'package:stealth_stash/future/wallet/setup/controller/form.dart';
+import 'package:stealth_stash/future/wallet/setup/types/types.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/wallet/models/wallet/models/backup.dart';
 
 class RestoreWalletBackupView extends StatefulWidget {
   const RestoreWalletBackupView({super.key});

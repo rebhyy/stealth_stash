@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/models/models/typedef.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/network/substrate/metadata/fields/fields.dart';
-import 'package:on_chain_wallet/future/wallet/network/substrate/metadata/forms/metadata.dart';
-import 'package:on_chain_wallet/future/wallet/network/substrate/transaction/operations/extrinsic.dart';
-import 'package:on_chain_wallet/future/wallet/network/substrate/transaction/widgets/payload.dart';
-import 'package:on_chain_wallet/future/wallet/network/substrate/transaction/widgets/send_transaction.dart';
-import 'package:on_chain_wallet/future/wallet/network/substrate/transaction/widgets/substrate_transaction_fee.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/app/models/models/typedef.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/network/substrate/metadata/fields/fields.dart';
+import 'package:stealth_stash/future/wallet/network/substrate/metadata/forms/metadata.dart';
+import 'package:stealth_stash/future/wallet/network/substrate/transaction/operations/extrinsic.dart';
+import 'package:stealth_stash/future/wallet/network/substrate/transaction/widgets/payload.dart';
+import 'package:stealth_stash/future/wallet/network/substrate/transaction/widgets/send_transaction.dart';
+import 'package:stealth_stash/future/wallet/network/substrate/transaction/widgets/substrate_transaction_fee.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
 
 class SubstrateTransactionExtrinsicWidget extends StatelessWidget {
   final SubstrateTransactionExtrinsicOperation form;

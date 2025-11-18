@@ -1,11 +1,11 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/models/models/signing.dart';
-import 'package:on_chain_wallet/future/wallet/network/ethereum/web3/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/web3/pages/web3_request_page_builder.dart';
-import 'package:on_chain_wallet/future/wallet/web3/core/state.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/ethereum/params/models/personal_sign.dart';
+import 'package:stealth_stash/crypto/requets/messages/models/models/signing.dart';
+import 'package:stealth_stash/future/wallet/network/ethereum/web3/types/types.dart';
+import 'package:stealth_stash/future/wallet/web3/pages/web3_request_page_builder.dart';
+import 'package:stealth_stash/future/wallet/web3/core/state.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
+import 'package:stealth_stash/wallet/web3/networks/ethereum/params/models/personal_sign.dart';
 
 class Web3EthereumEthSignStateController extends Web3EthereumStateController<
     String, EthereumClient?, Web3EthreumPersonalSign> {

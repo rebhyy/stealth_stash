@@ -1,19 +1,19 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/app/live_listener/progress_bar.dart';
-import 'package:on_chain_wallet/crypto/keys/access/crypto_keys/crypto_keys.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/crypto/requests/generate_mnemonic.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/crypto/requests/generate_monero_mnemonic.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/crypto/requests/ton.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/controller/controller.dart';
-import 'package:on_chain_wallet/future/wallet/setup/types/types.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/progress_bar/widgets/stream_page_progress.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/text_field.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/text_or_file_picker.dart';
-import 'package:on_chain_wallet/wallet/constant/networks/ton.dart';
-import 'package:on_chain_wallet/wallet/models/wallet/models/backup.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/app/live_listener/progress_bar.dart';
+import 'package:stealth_stash/crypto/keys/access/crypto_keys/crypto_keys.dart';
+import 'package:stealth_stash/crypto/requets/messages/crypto/requests/generate_mnemonic.dart';
+import 'package:stealth_stash/crypto/requets/messages/crypto/requests/generate_monero_mnemonic.dart';
+import 'package:stealth_stash/crypto/requets/messages/crypto/requests/ton.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/controller/controller.dart';
+import 'package:stealth_stash/future/wallet/setup/types/types.dart';
+import 'package:stealth_stash/future/widgets/widgets/progress_bar/widgets/stream_page_progress.dart';
+import 'package:stealth_stash/future/widgets/widgets/text_field.dart';
+import 'package:stealth_stash/future/widgets/widgets/text_or_file_picker.dart';
+import 'package:stealth_stash/wallet/constant/networks/ton.dart';
+import 'package:stealth_stash/wallet/models/wallet/models/backup.dart';
 
 class MnemonicStateController with DisposableMixin, StreamStateController {
   final WalletProvider walletProvider;

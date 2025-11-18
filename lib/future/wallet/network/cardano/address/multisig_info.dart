@@ -1,12 +1,12 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/keys/access/crypto_keys/crypto_keys.dart';
-import 'package:on_chain_wallet/future/future.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/security/pages/accsess_wallet.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/json/json/widgets.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/keys/access/crypto_keys/crypto_keys.dart';
+import 'package:stealth_stash/future/future.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/security/pages/accsess_wallet.dart';
+import 'package:stealth_stash/future/widgets/widgets/json/json/widgets.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 
 class CardanoMultisigAccountInfoView extends StatelessWidget {
   const CardanoMultisigAccountInfoView({super.key});

@@ -1,6 +1,6 @@
-import 'package:on_chain_wallet/app/live_listener/live.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/fields/fields.dart';
+import 'package:stealth_stash/app/live_listener/live.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/transaction/fields/fields.dart';
 
 mixin CosmosTransactionMemoController on DisposableMixin {
   final LiveFormField<String?, String?> memo = LiveFormField(

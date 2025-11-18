@@ -1,4 +1,4 @@
-import 'package:on_chain_wallet/wallet/web3/web3.dart';
+import 'package:stealth_stash/wallet/web3/web3.dart';
 
 class Web3CosmosExceptionConstant {
   static Web3RequestException get mismatchChainId =>

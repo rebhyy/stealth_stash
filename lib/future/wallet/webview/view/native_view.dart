@@ -6,8 +6,8 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:on_chain_bridge/platform_interface.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/app/models/models/typedef.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/app/models/models/typedef.dart';
 
 class APPAndroidViewController<T> {
   final T controller;

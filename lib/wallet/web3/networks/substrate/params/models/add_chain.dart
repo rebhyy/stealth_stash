@@ -1,13 +1,13 @@
 import 'package:blockchain_utils/cbor/cbor.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/wallet/api/services/models/models/protocols.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/core/core.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/substrate/methods/methods.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/substrate/params/core/request.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/substrate/permission/models/account.dart';
-import 'package:on_chain_wallet/wallet/web3/utils/web3_validator_utils.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/wallet/api/services/models/models/protocols.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant/exception.dart';
+import 'package:stealth_stash/wallet/web3/core/core.dart';
+import 'package:stealth_stash/wallet/web3/networks/substrate/methods/methods.dart';
+import 'package:stealth_stash/wallet/web3/networks/substrate/params/core/request.dart';
+import 'package:stealth_stash/wallet/web3/networks/substrate/permission/models/account.dart';
+import 'package:stealth_stash/wallet/web3/utils/web3_validator_utils.dart';
 
 class Web3SubstrateAddNewChain extends Web3SubstrateRequestParam<bool> {
   final String chain;

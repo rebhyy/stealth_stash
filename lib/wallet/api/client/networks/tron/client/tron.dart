@@ -2,19 +2,19 @@ import 'dart:async';
 
 import 'package:blockchain_utils/blockchain_utils.dart';
 import 'package:on_chain/on_chain.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/worker.dart';
-import 'package:on_chain_wallet/wallet/api/client/core/client.dart';
-import 'package:on_chain_wallet/wallet/api/client/networks/ethereum/client/ethereum.dart';
-import 'package:on_chain_wallet/wallet/api/client/networks/tron/tron.dart';
-import 'package:on_chain_wallet/wallet/api/provider/networks/tron.dart';
-import 'package:on_chain_wallet/wallet/api/services/service.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/models/network/network.dart';
-import 'package:on_chain_wallet/wallet/models/networks/networks.dart';
-import 'package:on_chain_wallet/wallet/models/token/token.dart';
-import 'package:on_chain_wallet/wallet/models/transaction/core/transaction.dart';
-import 'package:on_chain_wallet/wallet/models/transaction/networks/tron.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/worker.dart';
+import 'package:stealth_stash/wallet/api/client/core/client.dart';
+import 'package:stealth_stash/wallet/api/client/networks/ethereum/client/ethereum.dart';
+import 'package:stealth_stash/wallet/api/client/networks/tron/tron.dart';
+import 'package:stealth_stash/wallet/api/provider/networks/tron.dart';
+import 'package:stealth_stash/wallet/api/services/service.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/models/network/network.dart';
+import 'package:stealth_stash/wallet/models/networks/networks.dart';
+import 'package:stealth_stash/wallet/models/token/token.dart';
+import 'package:stealth_stash/wallet/models/transaction/core/transaction.dart';
+import 'package:stealth_stash/wallet/models/transaction/networks/tron.dart';
 
 class TronClient extends NetworkClient<TronWalletTransaction, TronAPIProvider,
     TronNetworkToken, TronAddress> with CryptoWokerImpl, HttpImpl {

@@ -1,6 +1,6 @@
-import 'package:on_chain_wallet/future/wallet/network/aptos/web3/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/types/types.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/aptos/params/core/request.dart';
+import 'package:stealth_stash/future/wallet/network/aptos/web3/types/types.dart';
+import 'package:stealth_stash/future/wallet/transaction/types/types.dart';
+import 'package:stealth_stash/wallet/web3/networks/aptos/params/core/request.dart';
 
 abstract class Web3AptosTransactionStateController<
         RESPONSE,

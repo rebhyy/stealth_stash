@@ -1,4 +1,4 @@
-import 'package:on_chain_wallet/app/websocket/core/core.dart';
+import 'package:stealth_stash/app/websocket/core/core.dart';
 
 Future<PlatformWebScoket> connectSoc(
         {required String url,

@@ -1,13 +1,13 @@
-import 'package:on_chain_wallet/future/wallet/network/stellar/transaction/controllers/signer.dart';
-import 'package:on_chain_wallet/future/wallet/network/stellar/web3/controllers/provider.dart';
-import 'package:on_chain_wallet/future/wallet/network/stellar/web3/types/types.dart';
+import 'package:stealth_stash/future/wallet/network/stellar/transaction/controllers/signer.dart';
+import 'package:stealth_stash/future/wallet/network/stellar/web3/controllers/provider.dart';
+import 'package:stealth_stash/future/wallet/network/stellar/web3/types/types.dart';
 
-import 'package:on_chain_wallet/wallet/web3/networks/stellar/params/core/request.dart';
+import 'package:stealth_stash/wallet/web3/networks/stellar/params/core/request.dart';
 import 'dart:async';
 import 'package:blockchain_utils/utils/string/string.dart';
-import 'package:on_chain_wallet/app/utils/method/utiils.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/types/types.dart';
+import 'package:stealth_stash/app/utils/method/utiils.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/transaction/types/types.dart';
 
 abstract class Web3StellarTransactionStateController<
         RESPONSE,

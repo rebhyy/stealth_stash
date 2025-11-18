@@ -1,5 +1,5 @@
 import 'package:blockchain_utils/helper/helper.dart';
-import 'package:on_chain_wallet/crypto/keys/keys.dart';
+import 'package:stealth_stash/crypto/keys/keys.dart';
 
 final class CryptoCreateWalletResponse {
   final EncryptedMasterKey masterKey;

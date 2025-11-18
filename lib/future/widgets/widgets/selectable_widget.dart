@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/state_managment/extension/extension.dart';
+import 'package:stealth_stash/future/state_managment/extension/extension.dart';
 
 class SelectableView extends StatelessWidget {
   const SelectableView({super.key, this.text});

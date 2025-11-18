@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/state_managment/core/observer.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/theme/theme.dart';
-import 'package:on_chain_wallet/future/wallet/controller/controller.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/state_managment/core/observer.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/theme/theme.dart';
+import 'package:stealth_stash/future/wallet/controller/controller.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
 
 extension CustomColorsSchame on ColorScheme {
   Color get disable => onSurface.wOpacity(0.38);

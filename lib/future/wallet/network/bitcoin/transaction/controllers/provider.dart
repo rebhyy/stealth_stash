@@ -1,7 +1,7 @@
 import 'package:bitcoin_base/bitcoin_base.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/wallet/constant/networks/bitcoin.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/wallet/constant/networks/bitcoin.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 
 mixin BtocinTransactionApiController on DisposableMixin {
   BitcoinClient get client;

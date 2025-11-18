@@ -1,10 +1,10 @@
 import 'package:blockchain_utils/bip/mnemonic/mnemonic_utils.dart';
 import 'package:blockchain_utils/blockchain_utils.dart';
 import 'package:blockchain_utils/signer/types/types.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/coins/coins.dart';
-import 'package:on_chain_wallet/crypto/constant/tags.dart';
-import 'package:on_chain_wallet/crypto/utils/crypto/utils.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/coins/coins.dart';
+import 'package:stealth_stash/crypto/constant/tags.dart';
+import 'package:stealth_stash/crypto/utils/crypto/utils.dart';
 import 'package:ton_dart/ton_dart.dart';
 import 'package:xrpl_dart/xrpl_dart.dart';
 

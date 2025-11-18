@@ -1,9 +1,9 @@
 import 'dart:js_interop';
-import 'package:on_chain_wallet/app/utils/list/extension.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/core/core.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/substrate/substrate.dart';
-import 'package:on_chain_wallet/wallet/web3/state/state.dart';
+import 'package:stealth_stash/app/utils/list/extension.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant/exception.dart';
+import 'package:stealth_stash/wallet/web3/core/core.dart';
+import 'package:stealth_stash/wallet/web3/networks/substrate/substrate.dart';
+import 'package:stealth_stash/wallet/web3/state/state.dart';
 import 'package:polkadot_dart/polkadot_dart.dart';
 import '../../js_wallet.dart';
 import '../../models/models/networks/substrate.dart';

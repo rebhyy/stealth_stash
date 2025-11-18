@@ -1,9 +1,9 @@
 import 'package:blockchain_utils/cbor/cbor.dart';
 import 'package:blockchain_utils/utils/binary/utils.dart';
-import 'package:on_chain_wallet/wallet/api/provider/core/provider.dart';
-import 'package:on_chain_wallet/wallet/api/provider/networks/bitcoin/providers/bitcoin.dart';
-import 'package:on_chain_wallet/wallet/api/provider/networks/bitcoin/providers/electrum.dart';
-import 'package:on_chain_wallet/wallet/constant/tags/constant.dart';
+import 'package:stealth_stash/wallet/api/provider/core/provider.dart';
+import 'package:stealth_stash/wallet/api/provider/networks/bitcoin/providers/bitcoin.dart';
+import 'package:stealth_stash/wallet/api/provider/networks/bitcoin/providers/electrum.dart';
+import 'package:stealth_stash/wallet/constant/tags/constant.dart';
 
 enum BitcoinAPIProviderType { electrum, explorer }
 

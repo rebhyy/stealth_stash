@@ -1,11 +1,11 @@
 import 'package:blockchain_utils/utils/numbers/rational/big_rational.dart';
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/future.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/text_field/input_formaters.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/future.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/text_field/input_formaters.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 
 class UpdateCosmosTokenView extends StatefulWidget {
   final CosmosFeeToken? token;

@@ -1,12 +1,12 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
 import 'package:on_chain/ada/src/models/transaction/input/models/transaction_unspent_output.dart';
-import 'package:on_chain_wallet/app/serialization/cbor/cbor.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/core/core.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/cardano/methods/methods.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/cardano/params/core/request.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/cardano/permission/models/account.dart';
+import 'package:stealth_stash/app/serialization/cbor/cbor.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant/exception.dart';
+import 'package:stealth_stash/wallet/web3/core/core.dart';
+import 'package:stealth_stash/wallet/web3/networks/cardano/methods/methods.dart';
+import 'package:stealth_stash/wallet/web3/networks/cardano/params/core/request.dart';
+import 'package:stealth_stash/wallet/web3/networks/cardano/permission/models/account.dart';
 
 class Web3ADAGetCollateral
     extends Web3ADARequestParam<List<TransactionUnspentOutput>> {

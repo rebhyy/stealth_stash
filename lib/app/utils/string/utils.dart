@@ -1,5 +1,5 @@
 import 'package:blockchain_utils/utils/utils.dart';
-import 'package:on_chain_wallet/app/utils/method/utiils.dart';
+import 'package:stealth_stash/app/utils/method/utiils.dart';
 
 class StrUtils {
   static bool isHtml(String error) {

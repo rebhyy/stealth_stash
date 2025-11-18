@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/constant/global/app.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/web3/pages/client_info.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
-import 'package:on_chain_wallet/wallet/web3/core/request/web_request.dart';
+import 'package:stealth_stash/app/constant/global/app.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/web3/pages/client_info.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
+import 'package:stealth_stash/wallet/web3/core/request/web_request.dart';
 
 class Web3PermissionAppbarActionView extends StatelessWidget {
   const Web3PermissionAppbarActionView({required this.request, super.key});

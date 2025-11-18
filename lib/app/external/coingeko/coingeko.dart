@@ -1,4 +1,4 @@
-import 'package:on_chain_wallet/app/models/models/image.dart';
+import 'package:stealth_stash/app/models/models/image.dart';
 
 class CoinGeckoUtils {
   static const String _coingeckoPublicCurrenciesAPI =

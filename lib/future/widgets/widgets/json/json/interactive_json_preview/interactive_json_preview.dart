@@ -18,7 +18,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
 
 class InteractiveJsonPreview extends StatefulWidget {
   /// {@macro interactive_json_preview}

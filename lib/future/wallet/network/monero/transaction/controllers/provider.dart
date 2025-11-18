@@ -1,12 +1,12 @@
 import 'package:blockchain_utils/utils/binary/utils.dart';
 import 'package:blockchain_utils/utils/numbers/utils/int_utils.dart';
 import 'package:monero_dart/monero_dart.dart';
-import 'package:on_chain_wallet/app/error/exception/app_exception.dart';
-import 'package:on_chain_wallet/app/live_listener/live.dart';
-import 'package:on_chain_wallet/app/utils/sync/cached_object.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/non_encrypted/requests/monero_generate_ring_output.dart';
-import 'package:on_chain_wallet/future/wallet/controller/controller.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/app/error/exception/app_exception.dart';
+import 'package:stealth_stash/app/live_listener/live.dart';
+import 'package:stealth_stash/app/utils/sync/cached_object.dart';
+import 'package:stealth_stash/crypto/requets/messages/non_encrypted/requests/monero_generate_ring_output.dart';
+import 'package:stealth_stash/future/wallet/controller/controller.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 
 mixin MoneroTransactionApiController on DisposableMixin {
   MoneroClient get client;

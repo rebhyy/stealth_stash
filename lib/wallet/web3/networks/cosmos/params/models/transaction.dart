@@ -1,14 +1,14 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
 import 'package:cosmos_sdk/cosmos_sdk.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/core/core.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/cosmos/constant/constants/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/cosmos/methods/methods.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/cosmos/params/core/request.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/cosmos/permission/models/account.dart';
-import 'package:on_chain_wallet/wallet/web3/utils/web3_validator_utils.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant/exception.dart';
+import 'package:stealth_stash/wallet/web3/core/core.dart';
+import 'package:stealth_stash/wallet/web3/networks/cosmos/constant/constants/exception.dart';
+import 'package:stealth_stash/wallet/web3/networks/cosmos/methods/methods.dart';
+import 'package:stealth_stash/wallet/web3/networks/cosmos/params/core/request.dart';
+import 'package:stealth_stash/wallet/web3/networks/cosmos/permission/models/account.dart';
+import 'package:stealth_stash/wallet/web3/utils/web3_validator_utils.dart';
 
 abstract class Web3CosmosSignTransactionResponse with CborSerializable {
   final Web3CosmosRequestMethods method;

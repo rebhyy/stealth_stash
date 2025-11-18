@@ -1,8 +1,8 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
-import 'package:on_chain_wallet/app/core.dart';
+import 'package:stealth_stash/app/core.dart';
 
-import 'package:on_chain_wallet/wallet/models/contact/core/contract_core.dart';
-import 'package:on_chain_wallet/wallet/constant/tags/constant.dart';
+import 'package:stealth_stash/wallet/models/contact/core/contract_core.dart';
+import 'package:stealth_stash/wallet/constant/tags/constant.dart';
 import 'package:on_chain/on_chain.dart';
 
 class SuiContact extends ContactCore<SuiAddress> {

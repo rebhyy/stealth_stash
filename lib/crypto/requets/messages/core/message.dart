@@ -1,12 +1,12 @@
 import 'dart:async';
 import 'package:blockchain_utils/blockchain_utils.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/constant/tags.dart';
-import 'package:on_chain_wallet/crypto/requets/argruments/argruments.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/crypto/crypto.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/non_encrypted/requests.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/stream/requests/monero_block_tracking.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/wallet/wallet.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/constant/tags.dart';
+import 'package:stealth_stash/crypto/requets/argruments/argruments.dart';
+import 'package:stealth_stash/crypto/requets/messages/crypto/crypto.dart';
+import 'package:stealth_stash/crypto/requets/messages/non_encrypted/requests.dart';
+import 'package:stealth_stash/crypto/requets/messages/stream/requests/monero_block_tracking.dart';
+import 'package:stealth_stash/crypto/requets/messages/wallet/wallet.dart';
 
 class WorkerMessageConst {
   static const List<int> workerMessagResponse = [2, 24, 4, 26];

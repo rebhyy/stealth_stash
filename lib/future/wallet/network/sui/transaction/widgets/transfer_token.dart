@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:on_chain/sui/sui.dart';
-import 'package:on_chain_wallet/app/constant/global/app.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
-import 'package:on_chain_wallet/future/wallet/wallet.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/app/constant/global/app.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/future/wallet/wallet.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
 
 class SuiTransactionTransferTokenWidget extends StatelessWidget {
   final SuiTransactionTransferTokenOperation form;

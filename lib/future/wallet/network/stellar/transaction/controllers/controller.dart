@@ -2,14 +2,14 @@ import 'dart:async';
 
 import 'package:blockchain_utils/utils/string/string.dart';
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/controller/controller.dart';
-import 'package:on_chain_wallet/future/wallet/network/stellar/transaction/types/operations.dart';
-import 'package:on_chain_wallet/future/wallet/network/stellar/transaction/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/network/stellar/transaction/widgets/operations/operations.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/controller/controller.dart';
+import 'package:stealth_stash/future/wallet/network/stellar/transaction/types/operations.dart';
+import 'package:stealth_stash/future/wallet/network/stellar/transaction/types/types.dart';
+import 'package:stealth_stash/future/wallet/network/stellar/transaction/widgets/operations/operations.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 import 'package:stellar_dart/stellar_dart.dart';
 
 import 'fee.dart';

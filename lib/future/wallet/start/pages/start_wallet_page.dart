@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/constant/global/app.dart';
-import 'package:on_chain_wallet/future/router/page_router.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/theme/theme.dart';
-import 'package:on_chain_wallet/future/wallet/setting/color_selector.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/assets_image.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/button.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/widget_constant.dart';
+import 'package:stealth_stash/app/constant/global/app.dart';
+import 'package:stealth_stash/future/router/page_router.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/theme/theme.dart';
+import 'package:stealth_stash/future/wallet/setting/color_selector.dart';
+import 'package:stealth_stash/future/widgets/widgets/assets_image.dart';
+import 'package:stealth_stash/future/widgets/widgets/button.dart';
+import 'package:stealth_stash/future/widgets/widgets/widget_constant.dart';
 
 import 'platform_widgets/widgets.dart';
 

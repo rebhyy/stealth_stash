@@ -1,12 +1,12 @@
 import 'package:blockchain_utils/utils/binary/utils.dart';
-import 'package:on_chain_wallet/app/error/exception/wallet_ex.dart';
-import 'package:on_chain_wallet/app/live_listener/live.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/models/models/signing.dart';
-import 'package:on_chain_wallet/crypto/utils/ripple/ripple.dart';
-import 'package:on_chain_wallet/future/future.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/models/network/core/network/network.dart';
-import 'package:on_chain_wallet/wallet/models/signing/signing.dart';
+import 'package:stealth_stash/app/error/exception/wallet_ex.dart';
+import 'package:stealth_stash/app/live_listener/live.dart';
+import 'package:stealth_stash/crypto/requets/messages/models/models/signing.dart';
+import 'package:stealth_stash/crypto/utils/ripple/ripple.dart';
+import 'package:stealth_stash/future/future.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/models/network/core/network/network.dart';
+import 'package:stealth_stash/wallet/models/signing/signing.dart';
 import 'package:xrpl_dart/xrpl_dart.dart';
 
 mixin RippleTransactionSignerController on DisposableMixin {

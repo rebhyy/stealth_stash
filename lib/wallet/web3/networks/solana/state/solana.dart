@@ -3,13 +3,13 @@ import 'package:blockchain_utils/utils/string/string.dart';
 import 'package:on_chain/ethereum/src/eip_4361/exception/exception.dart';
 import 'package:on_chain/solana/src/address/sol_address.dart';
 import 'package:on_chain/solana/src/transaction/transaction.dart';
-import 'package:on_chain_wallet/crypto/types/networks.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/core/messages/types/message.dart';
-import 'package:on_chain_wallet/wallet/web3/core/permission/types/account.dart';
-import 'package:on_chain_wallet/wallet/web3/state/core/network.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/solana/solana.dart';
-import 'package:on_chain_wallet/wallet/web3/utils/web3_validator_utils.dart';
+import 'package:stealth_stash/crypto/types/networks.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant/exception.dart';
+import 'package:stealth_stash/wallet/web3/core/messages/types/message.dart';
+import 'package:stealth_stash/wallet/web3/core/permission/types/account.dart';
+import 'package:stealth_stash/wallet/web3/state/core/network.dart';
+import 'package:stealth_stash/wallet/web3/networks/solana/solana.dart';
+import 'package:stealth_stash/wallet/web3/utils/web3_validator_utils.dart';
 
 mixin SolanaWeb3StateHandler<
         STATEADDRESS,

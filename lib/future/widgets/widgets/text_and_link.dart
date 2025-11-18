@@ -1,8 +1,8 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart' show UriUtils;
-import 'package:on_chain_wallet/future/state_managment/extension/extension.dart';
-import 'package:on_chain_wallet/future/constant/constant.dart';
+import 'package:stealth_stash/app/core.dart' show UriUtils;
+import 'package:stealth_stash/future/state_managment/extension/extension.dart';
+import 'package:stealth_stash/future/constant/constant.dart';
 
 class TextAndLinkView extends StatelessWidget {
   const TextAndLinkView(

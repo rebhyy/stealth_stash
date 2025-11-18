@@ -2,10 +2,10 @@ import 'dart:async';
 
 import 'package:blockchain_utils/utils/atomic/atomic.dart';
 import 'package:on_chain_swap/on_chain_swap.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/text_field/input_formaters.dart';
-import 'package:on_chain_wallet/marketcap/prices/live_currency.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/text_field/input_formaters.dart';
+import 'package:stealth_stash/marketcap/prices/live_currency.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 
 typedef ONSELECTSOURCEACCOUNTS = Future<ChainAccount?> Function(Chain);
 mixin SwapSourceController on StreamStateController {

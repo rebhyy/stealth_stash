@@ -3,12 +3,12 @@ import 'package:blockchain_utils/bip/mnemonic/mnemonic.dart';
 import 'package:blockchain_utils/bip/ton/mnemonic/ton_mnemonic_validator.dart';
 import 'package:blockchain_utils/cbor/cbor.dart';
 import 'package:blockchain_utils/utils/utils.dart';
-import 'package:on_chain_wallet/app/serialization/cbor/cbor.dart';
-import 'package:on_chain_wallet/crypto/coins/coins.dart';
-import 'package:on_chain_wallet/crypto/keys/access/crypto_keys/crypto_keys.dart';
-import 'package:on_chain_wallet/crypto/requets/argruments/argruments.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/core/message.dart';
-import 'package:on_chain_wallet/crypto/utils/ton/ton.dart';
+import 'package:stealth_stash/app/serialization/cbor/cbor.dart';
+import 'package:stealth_stash/crypto/coins/coins.dart';
+import 'package:stealth_stash/crypto/keys/access/crypto_keys/crypto_keys.dart';
+import 'package:stealth_stash/crypto/requets/argruments/argruments.dart';
+import 'package:stealth_stash/crypto/requets/messages/core/message.dart';
+import 'package:stealth_stash/crypto/utils/ton/ton.dart';
 
 class TonMnemonicToPrivateKeyMessage
     extends CryptoRequest<ImportCustomKeys, MessageArgsOneBytes> {

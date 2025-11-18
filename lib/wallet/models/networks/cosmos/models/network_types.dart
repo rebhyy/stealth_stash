@@ -1,4 +1,4 @@
-import 'package:on_chain_wallet/app/error/exception/app_exception.dart';
+import 'package:stealth_stash/app/error/exception/app_exception.dart';
 
 class CosmosNetworkTypes {
   final int value;

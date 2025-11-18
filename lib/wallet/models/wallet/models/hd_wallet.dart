@@ -2,12 +2,12 @@ import 'package:blockchain_utils/cbor/cbor.dart';
 import 'package:blockchain_utils/crypto/quick_crypto.dart';
 import 'package:blockchain_utils/helper/extensions/extensions.dart';
 import 'package:blockchain_utils/utils/utils.dart';
-import 'package:on_chain_wallet/app/error/exception/wallet_ex.dart';
-import 'package:on_chain_wallet/app/serialization/cbor/cbor.dart';
-import 'package:on_chain_wallet/app/utils/list/extension.dart';
-import 'package:on_chain_wallet/crypto/keys/access/crypto_keys/crypto_keys.dart';
-import 'package:on_chain_wallet/crypto/types/credential.dart';
-import 'package:on_chain_wallet/wallet/constant/tags/constant.dart';
+import 'package:stealth_stash/app/error/exception/wallet_ex.dart';
+import 'package:stealth_stash/app/serialization/cbor/cbor.dart';
+import 'package:stealth_stash/app/utils/list/extension.dart';
+import 'package:stealth_stash/crypto/keys/access/crypto_keys/crypto_keys.dart';
+import 'package:stealth_stash/crypto/types/credential.dart';
+import 'package:stealth_stash/wallet/constant/tags/constant.dart';
 
 final class HDWalletsConst {
   static const String initializeName = "Wallet";

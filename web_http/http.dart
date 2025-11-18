@@ -1,7 +1,7 @@
 import 'dart:js_interop';
 import 'package:on_chain_bridge/models/device/models/platform.dart';
-import 'package:on_chain_wallet/app/http/isolate/impl/caller/caller.dart';
-import 'package:on_chain_wallet/app/http/isolate/models/message.dart';
+import 'package:stealth_stash/app/http/isolate/impl/caller/caller.dart';
+import 'package:stealth_stash/app/http/isolate/models/message.dart';
 
 @JS("postMessage")
 external void postMessage(JSAny data);

@@ -1,6 +1,6 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
-import 'package:on_chain_wallet/app/error/exception/wallet_ex.dart';
-import 'package:on_chain_wallet/wallet/constant/constant.dart';
+import 'package:stealth_stash/app/error/exception/wallet_ex.dart';
+import 'package:stealth_stash/wallet/constant/constant.dart';
 import 'package:stellar_dart/stellar_dart.dart';
 
 class StellarUtils {

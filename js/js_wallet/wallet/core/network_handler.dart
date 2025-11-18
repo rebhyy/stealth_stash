@@ -1,9 +1,9 @@
 import 'dart:js_interop';
 import 'package:blockchain_utils/utils/string/string.dart';
 import 'package:on_chain_bridge/web/web.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/wallet/web3/utils/web3_validator_utils.dart';
-import 'package:on_chain_wallet/wallet/web3/web3.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/wallet/web3/utils/web3_validator_utils.dart';
+import 'package:stealth_stash/wallet/web3/web3.dart';
 import '../../models/models/exception.dart';
 import '../../models/models/networks/solana.dart';
 import '../../models/models/networks/wallet_standard.dart';

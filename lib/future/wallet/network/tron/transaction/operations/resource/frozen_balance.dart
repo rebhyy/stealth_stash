@@ -1,13 +1,13 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:on_chain/on_chain.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/network/tron/transaction/controllers/controller.dart';
-import 'package:on_chain_wallet/future/wallet/network/tron/transaction/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/network/tron/transaction/widgets/widgets/frozen_balance.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/fields/fields.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/core/controller.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/network/tron/transaction/controllers/controller.dart';
+import 'package:stealth_stash/future/wallet/network/tron/transaction/types/types.dart';
+import 'package:stealth_stash/future/wallet/network/tron/transaction/widgets/widgets/frozen_balance.dart';
+import 'package:stealth_stash/future/wallet/transaction/fields/fields.dart';
+import 'package:stealth_stash/future/wallet/transaction/core/controller.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 
 class TronTransactionFreezeBalanceV2ContractOperation
     extends TronTransactionStateController2<FreezeBalanceV2Contract> {

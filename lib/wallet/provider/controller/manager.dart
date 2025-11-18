@@ -1,6 +1,6 @@
 // ignore_for_file: library_private_types_in_public_api
 
-part of 'package:on_chain_wallet/wallet/provider/wallet_provider.dart';
+part of 'package:stealth_stash/wallet/provider/wallet_provider.dart';
 
 mixin WalletManager on _WalletController {
   WStatus _status = WStatus.lock;

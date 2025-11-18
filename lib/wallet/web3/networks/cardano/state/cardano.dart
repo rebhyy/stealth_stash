@@ -1,18 +1,18 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
 import 'package:on_chain/ada/ada.dart';
-import 'package:on_chain_wallet/crypto/types/networks.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/core/exception/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/core/messages/models/models/wallet_response.dart';
-import 'package:on_chain_wallet/wallet/web3/core/messages/types/message.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/cardano/constant/constants/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/cardano/methods/methods.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/cardano/params/params.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/cardano/permission/permission.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/cardano/state/types/types.dart';
-import 'package:on_chain_wallet/wallet/web3/state/core/network.dart';
-import 'package:on_chain_wallet/wallet/web3/state/core/types.dart';
-import 'package:on_chain_wallet/wallet/web3/utils/web3_validator_utils.dart';
+import 'package:stealth_stash/crypto/types/networks.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant/exception.dart';
+import 'package:stealth_stash/wallet/web3/core/exception/exception.dart';
+import 'package:stealth_stash/wallet/web3/core/messages/models/models/wallet_response.dart';
+import 'package:stealth_stash/wallet/web3/core/messages/types/message.dart';
+import 'package:stealth_stash/wallet/web3/networks/cardano/constant/constants/exception.dart';
+import 'package:stealth_stash/wallet/web3/networks/cardano/methods/methods.dart';
+import 'package:stealth_stash/wallet/web3/networks/cardano/params/params.dart';
+import 'package:stealth_stash/wallet/web3/networks/cardano/permission/permission.dart';
+import 'package:stealth_stash/wallet/web3/networks/cardano/state/types/types.dart';
+import 'package:stealth_stash/wallet/web3/state/core/network.dart';
+import 'package:stealth_stash/wallet/web3/state/core/types.dart';
+import 'package:stealth_stash/wallet/web3/utils/web3_validator_utils.dart';
 
 mixin ADAWeb3StateHandler<
         STATEADDRESS,

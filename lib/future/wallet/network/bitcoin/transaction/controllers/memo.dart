@@ -1,8 +1,8 @@
 import 'package:blockchain_utils/utils/string/string.dart';
-import 'package:on_chain_wallet/app/dev/logger.dart';
-import 'package:on_chain_wallet/future/state_managment/extension/app_extensions/string.dart';
-import 'package:on_chain_wallet/future/wallet/network/bitcoin/transaction/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/fields/fields.dart';
+import 'package:stealth_stash/app/dev/logger.dart';
+import 'package:stealth_stash/future/state_managment/extension/app_extensions/string.dart';
+import 'package:stealth_stash/future/wallet/network/bitcoin/transaction/types/types.dart';
+import 'package:stealth_stash/future/wallet/transaction/fields/fields.dart';
 
 mixin BitcoinTransactionMempController on BaseBitcoinTransactionController {
   final LiveFormFields<BitcoinMemo> memos =

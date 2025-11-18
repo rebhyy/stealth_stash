@@ -1,7 +1,7 @@
 import 'package:on_chain/on_chain.dart';
-import 'package:on_chain_wallet/future/wallet/network/cardano/transaction/controllers/provider.dart';
-import 'package:on_chain_wallet/future/wallet/network/cardano/transaction/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/network/cardano/web3/types/types.dart';
+import 'package:stealth_stash/future/wallet/network/cardano/transaction/controllers/provider.dart';
+import 'package:stealth_stash/future/wallet/network/cardano/transaction/types/types.dart';
+import 'package:stealth_stash/future/wallet/network/cardano/web3/types/types.dart';
 
 mixin CardanoWeb3TransactionApiController on ADATransactionApiController {
   List<Web3ADAAssetInputDetails> extractMultiAssetAssets(

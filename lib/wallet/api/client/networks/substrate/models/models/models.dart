@@ -1,6 +1,6 @@
 import 'package:blockchain_utils/helper/extensions/extensions.dart';
 import 'package:blockchain_utils/utils/numbers/rational/big_rational.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 import 'package:polkadot_dart/polkadot_dart.dart';
 
 class SubstrateFeeInfos {

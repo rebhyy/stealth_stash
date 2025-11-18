@@ -2,16 +2,16 @@ import 'dart:async';
 
 import 'package:blockchain_utils/exception/exception/rpc_error.dart';
 import 'package:blockchain_utils/utils/utils.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/types/networks.dart';
-import 'package:on_chain_wallet/wallet/api/client/core/client.dart';
-import 'package:on_chain_wallet/wallet/api/client/networks/ton/methods/methods.dart';
-import 'package:on_chain_wallet/wallet/api/provider/networks/ton.dart';
-import 'package:on_chain_wallet/wallet/api/services/service.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/constant/networks/ton.dart';
-import 'package:on_chain_wallet/wallet/models/models.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/ton/params/params.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/types/networks.dart';
+import 'package:stealth_stash/wallet/api/client/core/client.dart';
+import 'package:stealth_stash/wallet/api/client/networks/ton/methods/methods.dart';
+import 'package:stealth_stash/wallet/api/provider/networks/ton.dart';
+import 'package:stealth_stash/wallet/api/services/service.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/constant/networks/ton.dart';
+import 'package:stealth_stash/wallet/models/models.dart';
+import 'package:stealth_stash/wallet/web3/networks/ton/params/params.dart';
 import 'package:ton_dart/ton_dart.dart';
 
 class TonClient extends NetworkClient<TonWalletTransaction, TonAPIProvider,

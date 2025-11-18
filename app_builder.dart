@@ -2,9 +2,9 @@
 
 import 'dart:io';
 
-// import 'package:on_chain_wallet/app/core.dart';
+// import 'package:stealth_stash/app/core.dart';
 
-// import 'package:on_chain_wallet/app/core.dart';
+// import 'package:stealth_stash/app/core.dart';
 
 const _extensionDir = "requirement/extensions/";
 const _webviewDir = "requirement/webview/";
@@ -639,7 +639,7 @@ bool _isWalletContext() {
   file = File("pubspec.yaml");
   final lines = file.readAsLinesSync();
   if (lines.isEmpty) return false;
-  if (lines.first.startsWith("name: on_chain_wallet")) return true;
+  if (lines.first.startsWith("name: stealth_stash")) return true;
   return false;
 }
 

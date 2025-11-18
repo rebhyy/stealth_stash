@@ -1,9 +1,9 @@
 import 'dart:async';
 import 'package:blockchain_utils/uuid/uuid.dart';
-import 'package:on_chain_wallet/wallet/web3/core/core.dart';
-import 'package:on_chain_wallet/wallet/web3/state/core/network.dart';
+import 'package:stealth_stash/wallet/web3/core/core.dart';
+import 'package:stealth_stash/wallet/web3/state/core/network.dart';
 import 'package:blockchain_utils/blockchain_utils.dart';
-import 'package:on_chain_wallet/crypto/types/networks.dart';
+import 'package:stealth_stash/crypto/types/networks.dart';
 
 class MessageCompleterHandler {
   final Map<String, MessageCompleter> _awaitingMessages = {};

@@ -1,8 +1,8 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
-import 'package:on_chain_wallet/app/utils/map/extension.dart';
-import 'package:on_chain_wallet/wallet/web3/core/request/params.dart';
-import 'package:on_chain_wallet/wc/wallet/core/network.dart';
-import 'package:on_chain_wallet/wc/core/types/types.dart';
+import 'package:stealth_stash/app/utils/map/extension.dart';
+import 'package:stealth_stash/wallet/web3/core/request/params.dart';
+import 'package:stealth_stash/wc/wallet/core/network.dart';
+import 'package:stealth_stash/wc/core/types/types.dart';
 
 abstract class WalletConnectAddress {
   final String address;

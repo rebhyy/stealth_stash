@@ -1,5 +1,5 @@
 import 'package:blockchain_utils/utils/utils.dart';
-import 'package:on_chain_wallet/app/core.dart';
+import 'package:stealth_stash/app/core.dart';
 
 class QuickCryptoValidator {
   static String asValidHexBytes(String hex, {int? lengthInBytes}) {

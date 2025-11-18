@@ -1,12 +1,12 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:on_chain/on_chain.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/network/tron/transaction/controllers/controller.dart';
-import 'package:on_chain_wallet/future/wallet/network/tron/transaction/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/network/tron/transaction/widgets/widgets/transfer.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/network/tron/transaction/controllers/controller.dart';
+import 'package:stealth_stash/future/wallet/network/tron/transaction/types/types.dart';
+import 'package:stealth_stash/future/wallet/network/tron/transaction/widgets/widgets/transfer.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 
 abstract class TronTransactionBaseTransferOperation<
         CONTRACT extends TronBaseContract>

@@ -1,19 +1,19 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/wallet/network/ton/transaction/controllers/fee.dart';
-import 'package:on_chain_wallet/future/wallet/network/ton/transaction/controllers/provider.dart';
-import 'package:on_chain_wallet/future/wallet/network/ton/transaction/controllers/signer.dart';
-import 'package:on_chain_wallet/future/wallet/network/ton/transaction/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/network/ton/web3/controllers/controllers.dart';
-import 'package:on_chain_wallet/future/wallet/network/ton/web3/controllers/provider.dart';
-import 'package:on_chain_wallet/future/wallet/network/ton/web3/pages/send_transaction.dart';
-import 'package:on_chain_wallet/future/wallet/network/ton/web3/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/core/web3.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/types/types.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/ton/params/models/transaction.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/wallet/network/ton/transaction/controllers/fee.dart';
+import 'package:stealth_stash/future/wallet/network/ton/transaction/controllers/provider.dart';
+import 'package:stealth_stash/future/wallet/network/ton/transaction/controllers/signer.dart';
+import 'package:stealth_stash/future/wallet/network/ton/transaction/types/types.dart';
+import 'package:stealth_stash/future/wallet/network/ton/web3/controllers/controllers.dart';
+import 'package:stealth_stash/future/wallet/network/ton/web3/controllers/provider.dart';
+import 'package:stealth_stash/future/wallet/network/ton/web3/pages/send_transaction.dart';
+import 'package:stealth_stash/future/wallet/network/ton/web3/types/types.dart';
+import 'package:stealth_stash/future/wallet/transaction/core/web3.dart';
+import 'package:stealth_stash/future/wallet/transaction/types/types.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
+import 'package:stealth_stash/wallet/web3/networks/ton/params/models/transaction.dart';
 import 'package:ton_dart/ton_dart.dart';
 
 class WebTonSendTransactionStateController

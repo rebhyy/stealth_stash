@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:on_chain/aptos/src/address/address/address.dart';
-import 'package:on_chain_wallet/app/constant/global/app.dart';
-import 'package:on_chain_wallet/future/state_managment/extension/app_extensions/context.dart';
-import 'package:on_chain_wallet/future/state_managment/extension/app_extensions/string.dart';
-import 'package:on_chain_wallet/future/wallet/global/pages/token_details_view.dart';
-import 'package:on_chain_wallet/future/wallet/network/aptos/transaction/operations/transfer_token.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart'
+import 'package:stealth_stash/app/constant/global/app.dart';
+import 'package:stealth_stash/future/state_managment/extension/app_extensions/context.dart';
+import 'package:stealth_stash/future/state_managment/extension/app_extensions/string.dart';
+import 'package:stealth_stash/future/wallet/global/pages/token_details_view.dart';
+import 'package:stealth_stash/future/wallet/network/aptos/transaction/operations/transfer_token.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart'
     show WidgetConstant;
-import 'package:on_chain_wallet/future/widgets/widgets/sliver/widgets/multi.dart';
-import 'package:on_chain_wallet/wallet/models/networks/aptos/aptos.dart';
+import 'package:stealth_stash/future/widgets/widgets/sliver/widgets/multi.dart';
+import 'package:stealth_stash/wallet/models/networks/aptos/aptos.dart';
 
 class AptosTransactionTransferTokenWidget extends StatelessWidget {
   final AptosTransactionTransferTokenOperation form;

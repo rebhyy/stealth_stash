@@ -2,11 +2,11 @@ import 'package:blockchain_utils/bip/bip/bip.dart';
 import 'package:blockchain_utils/bip/ecc/curve/elliptic_curve_types.dart';
 import 'package:blockchain_utils/bip/substrate/substrate.dart';
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/crypto/utils/utils.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart' show BlockchainConst;
-import 'package:on_chain_wallet/crypto/keys/access/crypto_keys/crypto_keys.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/crypto/utils/utils.dart';
+import 'package:stealth_stash/wallet/wallet.dart' show BlockchainConst;
+import 'package:stealth_stash/crypto/keys/access/crypto_keys/crypto_keys.dart';
 
 class Bip32KeyDerivationView extends StatefulWidget {
   const Bip32KeyDerivationView(

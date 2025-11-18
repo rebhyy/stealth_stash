@@ -1,7 +1,7 @@
 import 'package:blockchain_utils/cbor/cbor.dart';
-import 'package:on_chain_wallet/app/external/coingeko/coingeko.dart';
-import 'package:on_chain_wallet/app/serialization/serialization.dart';
-import 'package:on_chain_wallet/wallet/constant/tags/constant.dart';
+import 'package:stealth_stash/app/external/coingeko/coingeko.dart';
+import 'package:stealth_stash/app/serialization/serialization.dart';
+import 'package:stealth_stash/wallet/constant/tags/constant.dart';
 
 class CoingeckoCoin with CborSerializable {
   final String apiId;

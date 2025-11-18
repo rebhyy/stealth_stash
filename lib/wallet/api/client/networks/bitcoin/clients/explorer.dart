@@ -1,12 +1,12 @@
 import 'package:bitcoin_base/bitcoin_base.dart';
 import 'package:blockchain_utils/utils/numbers/rational/big_rational.dart';
-import 'package:on_chain_wallet/app/utils/datetime/datetime.dart';
-import 'package:on_chain_wallet/wallet/api/client/networks/bitcoin/core/core.dart';
-import 'package:on_chain_wallet/wallet/api/provider/networks/bitcoin/bitcoin.dart';
-import 'package:on_chain_wallet/wallet/api/services/service.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/models/network/network.dart';
-import 'package:on_chain_wallet/wallet/models/transaction/core/transaction.dart';
+import 'package:stealth_stash/app/utils/datetime/datetime.dart';
+import 'package:stealth_stash/wallet/api/client/networks/bitcoin/core/core.dart';
+import 'package:stealth_stash/wallet/api/provider/networks/bitcoin/bitcoin.dart';
+import 'package:stealth_stash/wallet/api/services/service.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/models/network/network.dart';
+import 'package:stealth_stash/wallet/models/transaction/core/transaction.dart';
 import 'package:on_chain_swap/on_chain_swap.dart';
 
 class BitcoinExplorerApiProvider extends BitcoinClient<IBitcoinAddress> {

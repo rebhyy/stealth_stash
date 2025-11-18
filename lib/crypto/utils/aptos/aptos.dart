@@ -1,5 +1,5 @@
 import 'package:blockchain_utils/bip/ecc/curve/elliptic_curve_types.dart';
-import 'package:on_chain_wallet/app/error/exception/app_exception.dart';
+import 'package:stealth_stash/app/error/exception/app_exception.dart';
 import 'package:on_chain/on_chain.dart';
 
 class AptosUtils {

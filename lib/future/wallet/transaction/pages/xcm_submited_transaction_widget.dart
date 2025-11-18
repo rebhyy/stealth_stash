@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/future.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/network/substrate/transaction/types/xcm_types.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/json/json/widgets.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/models/transaction/core/transaction.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/future.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/network/substrate/transaction/types/xcm_types.dart';
+import 'package:stealth_stash/future/widgets/widgets/json/json/widgets.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/models/transaction/core/transaction.dart';
 import 'package:polkadot_dart/polkadot_dart.dart'
     show SubstrateXCMTransctionTrackerStatus;
 

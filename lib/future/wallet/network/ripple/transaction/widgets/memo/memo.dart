@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/state_managment/extension/extension.dart';
-import 'package:on_chain_wallet/future/wallet/network/ripple/transaction/controllers/memo.dart';
-import 'package:on_chain_wallet/future/wallet/network/ripple/transaction/widgets/memo/create_ripple_memo.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/pages/live_form_widget.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/conditional_widget.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/container_with_border.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/text_widget.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/widget_constant.dart';
+import 'package:stealth_stash/future/state_managment/extension/extension.dart';
+import 'package:stealth_stash/future/wallet/network/ripple/transaction/controllers/memo.dart';
+import 'package:stealth_stash/future/wallet/network/ripple/transaction/widgets/memo/create_ripple_memo.dart';
+import 'package:stealth_stash/future/wallet/transaction/pages/live_form_widget.dart';
+import 'package:stealth_stash/future/widgets/widgets/conditional_widget.dart';
+import 'package:stealth_stash/future/widgets/widgets/container_with_border.dart';
+import 'package:stealth_stash/future/widgets/widgets/text_widget.dart';
+import 'package:stealth_stash/future/widgets/widgets/widget_constant.dart';
 import 'package:xrpl_dart/xrpl_dart.dart';
 
 class RippleTransactionMemoWidget extends StatelessWidget {

@@ -1,13 +1,13 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/keys/keys.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/models/networks/cardano/models/address_details.dart';
-import 'package:on_chain_wallet/crypto/coins/custom_coins/coins.dart';
-import 'package:on_chain_wallet/crypto/requets/argruments/argruments.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/core/message.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/models/models/derive_address_response.dart';
-import 'package:on_chain_wallet/wallet/models/networks/monero/models/account_related.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/keys/keys.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/models/networks/cardano/models/address_details.dart';
+import 'package:stealth_stash/crypto/coins/custom_coins/coins.dart';
+import 'package:stealth_stash/crypto/requets/argruments/argruments.dart';
+import 'package:stealth_stash/crypto/requets/messages/core/message.dart';
+import 'package:stealth_stash/crypto/requets/messages/models/models/derive_address_response.dart';
+import 'package:stealth_stash/wallet/models/networks/monero/models/account_related.dart';
 import 'package:on_chain/aptos/src/address/address/address.dart';
 import 'package:on_chain/sui/src/address/address/address.dart';
 

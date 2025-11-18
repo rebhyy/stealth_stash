@@ -1,10 +1,10 @@
 import 'package:flutter/widgets.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/platform_methods/cross/methods.dart';
-import 'package:on_chain_wallet/crypto/types/credential.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/wallet/models/wallet/models/hd_wallet.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/platform_methods/cross/methods.dart';
+import 'package:stealth_stash/crypto/types/credential.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/wallet/models/wallet/models/hd_wallet.dart';
 
 typedef OnUpdateWidget = void Function(WalletUpdateInfosData);
 

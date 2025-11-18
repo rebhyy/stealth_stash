@@ -1,6 +1,6 @@
 import 'package:blockchain_utils/utils/numbers/rational/big_rational.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/models/network/core/network/network.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/models/network/core/network/network.dart';
 import 'package:ton_dart/ton_dart.dart';
 
 class TonTransactionFeeDetails {

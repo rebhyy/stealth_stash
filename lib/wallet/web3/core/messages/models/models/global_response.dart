@@ -1,8 +1,8 @@
 import 'package:blockchain_utils/cbor/cbor.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/wallet/web3/core/messages/types/message.dart';
-import 'package:on_chain_wallet/wallet/web3/core/messages/types/message_types.dart';
-import 'package:on_chain_wallet/wallet/web3/core/permission/models/authenticated.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/wallet/web3/core/messages/types/message.dart';
+import 'package:stealth_stash/wallet/web3/core/messages/types/message_types.dart';
+import 'package:stealth_stash/wallet/web3/core/permission/models/authenticated.dart';
 
 class Web3GlobalResponseMessage extends Web3MessageCore {
   final Web3APPData? authenticated;

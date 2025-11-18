@@ -3,14 +3,14 @@ import 'dart:async';
 import 'package:blockchain_utils/blockchain_utils.dart';
 import 'package:flutter/foundation.dart';
 import 'package:on_chain_bridge/platform_interface.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/state_managment/core/observer.dart';
-import 'package:on_chain_wallet/future/wallet/controller/wallet/ui_wallet.dart';
-import 'package:on_chain_wallet/future/wallet/webview/controller/controller/tab_controller.dart';
-import 'package:on_chain_wallet/future/wallet/webview/controller/controller/tab_handler.dart';
-import 'package:on_chain_wallet/future/wallet/web3/controller/web3_request_controller.dart';
-import 'package:on_chain_wallet/wallet/web3/web3.dart';
-import 'package:on_chain_wallet/crypto/impl/worker_impl.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/state_managment/core/observer.dart';
+import 'package:stealth_stash/future/wallet/controller/wallet/ui_wallet.dart';
+import 'package:stealth_stash/future/wallet/webview/controller/controller/tab_controller.dart';
+import 'package:stealth_stash/future/wallet/webview/controller/controller/tab_handler.dart';
+import 'package:stealth_stash/future/wallet/web3/controller/web3_request_controller.dart';
+import 'package:stealth_stash/wallet/web3/web3.dart';
+import 'package:stealth_stash/crypto/impl/worker_impl.dart';
 
 class WebViewController
     with

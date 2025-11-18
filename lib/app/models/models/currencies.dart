@@ -1,7 +1,7 @@
 // ignore_for_file: constant_identifier_names
 
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/wallet/models/token/token/token.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/wallet/models/token/token/token.dart';
 
 enum Currency {
   BTC("Bitcoin", 8, coingeckoId: "bitcoin"),

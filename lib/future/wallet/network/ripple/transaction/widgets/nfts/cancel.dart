@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/network/ripple/transaction/operations/nfts/cancel_offer.dart';
-import 'package:on_chain_wallet/future/wallet/network/ripple/transaction/widgets/memo/memo.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/wallet/constant/networks/ripple.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/network/ripple/transaction/operations/nfts/cancel_offer.dart';
+import 'package:stealth_stash/future/wallet/network/ripple/transaction/widgets/memo/memo.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/wallet/constant/networks/ripple.dart';
 
 /// 00000000CAEC86DA62241D461CB7903710FC94DBC751342E742354D1002A6942
 class RippleTransactionNFTokenCancelOfferWidget extends StatelessWidget {

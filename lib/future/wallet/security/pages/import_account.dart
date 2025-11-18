@@ -1,14 +1,14 @@
 import 'package:blockchain_utils/bip/bip/bip.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/wallet/global/pages/restore_backup.dart';
-import 'package:on_chain_wallet/future/wallet/security/pages/accsess_wallet.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
-import 'package:on_chain_wallet/future/wallet/controller/controller.dart';
-import 'package:on_chain_wallet/crypto/worker.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/wallet/global/pages/restore_backup.dart';
+import 'package:stealth_stash/future/wallet/security/pages/accsess_wallet.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
+import 'package:stealth_stash/future/wallet/controller/controller.dart';
+import 'package:stealth_stash/crypto/worker.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
 
 enum _PrivateKeyTypes {
   extendKey("Extended key"),

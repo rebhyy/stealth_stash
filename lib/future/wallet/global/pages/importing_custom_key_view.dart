@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/router/page_router.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/crypto/keys/access/crypto_keys/crypto_keys.dart';
+import 'package:stealth_stash/future/router/page_router.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/crypto/keys/access/crypto_keys/crypto_keys.dart';
 
 class ImportCustomKeyToWalletView extends StatefulWidget {
   const ImportCustomKeyToWalletView({required this.keypair, super.key});

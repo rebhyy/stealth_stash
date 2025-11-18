@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:monero_dart/monero_dart.dart';
-import 'package:on_chain_wallet/app/constant/constant.dart';
-import 'package:on_chain_wallet/crypto/types/networks.dart';
-import 'package:on_chain_wallet/future/router/page_router.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/global/pages/receipt_address_view.dart';
-import 'package:on_chain_wallet/future/wallet/global/pages/types.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/models/others/models/receipt_address.dart';
-import 'package:on_chain_wallet/wallet/models/transaction/transaction.dart';
+import 'package:stealth_stash/app/constant/constant.dart';
+import 'package:stealth_stash/crypto/types/networks.dart';
+import 'package:stealth_stash/future/router/page_router.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/global/pages/receipt_address_view.dart';
+import 'package:stealth_stash/future/wallet/global/pages/types.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/models/others/models/receipt_address.dart';
+import 'package:stealth_stash/wallet/models/transaction/transaction.dart';
 
 class TransactionView<CHAINACCOUNT extends ChainAccount,
     TRANSACTION extends ChainTransaction> extends StatelessWidget {

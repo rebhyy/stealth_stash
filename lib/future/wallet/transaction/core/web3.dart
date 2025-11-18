@@ -1,14 +1,14 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/future.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/global/pages/types.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/pages/state_warning.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/types/types.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
-import 'package:on_chain_wallet/wallet/web3/web3.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/future.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/global/pages/types.dart';
+import 'package:stealth_stash/future/wallet/transaction/pages/state_warning.dart';
+import 'package:stealth_stash/future/wallet/transaction/types/types.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
+import 'package:stealth_stash/wallet/web3/web3.dart';
 
 class Web3RequestTransactionResponseData<RESPONSE,
         SUCCESS extends SubmitTransactionSuccess>

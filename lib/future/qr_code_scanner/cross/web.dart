@@ -3,11 +3,11 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/utils/method/utiils.dart';
+import 'package:stealth_stash/app/utils/method/utiils.dart';
 
-import 'package:on_chain_wallet/future/qr_code_scanner/state/barcode_scanner.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/future/qr_code_scanner/state/barcode_scanner.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
 import 'package:on_chain_bridge/web/web.dart';
 import 'dart:ui_web' as ui_web;
 

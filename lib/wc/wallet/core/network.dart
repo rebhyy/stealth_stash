@@ -1,7 +1,7 @@
-import 'package:on_chain_wallet/crypto/types/networks.dart';
-import 'package:on_chain_wallet/wallet/web3/web3.dart';
-import 'package:on_chain_wallet/wc/wallet/types/types.dart';
-import 'package:on_chain_wallet/wc/core/types/types.dart';
+import 'package:stealth_stash/crypto/types/networks.dart';
+import 'package:stealth_stash/wallet/web3/web3.dart';
+import 'package:stealth_stash/wc/wallet/types/types.dart';
+import 'package:stealth_stash/wc/core/types/types.dart';
 
 abstract class Web3WalletConnectStateAddress<
         NETWORKADDRESS,

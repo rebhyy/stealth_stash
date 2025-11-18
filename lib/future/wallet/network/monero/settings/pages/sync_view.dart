@@ -2,14 +2,14 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:monero_dart/monero_dart.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/future.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/network/monero/account/state.dart';
-import 'package:on_chain_wallet/wallet/api/client/networks/monero/monero.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/models/networks/monero/monero.dart';
-import 'package:on_chain_wallet/wallet/models/others/models/receipt_address.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/future.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/network/monero/account/state.dart';
+import 'package:stealth_stash/wallet/api/client/networks/monero/monero.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/models/networks/monero/monero.dart';
+import 'package:stealth_stash/wallet/models/others/models/receipt_address.dart';
 
 class MoneroAccountSyncView extends StatelessWidget {
   const MoneroAccountSyncView({super.key});

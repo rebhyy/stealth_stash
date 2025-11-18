@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
+import 'package:stealth_stash/app/core.dart';
 
 class TooltipConstrainsWidget extends StatelessWidget {
   const TooltipConstrainsWidget({required this.child, super.key});

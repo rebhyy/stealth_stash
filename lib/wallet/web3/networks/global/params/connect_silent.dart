@@ -1,8 +1,8 @@
 import 'package:blockchain_utils/cbor/cbor.dart';
-import 'package:on_chain_wallet/app/serialization/serialization.dart';
-import 'package:on_chain_wallet/crypto/types/networks.dart' show NetworkType;
-import 'package:on_chain_wallet/wallet/web3/core/core.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/global/methods/methods.dart';
+import 'package:stealth_stash/app/serialization/serialization.dart';
+import 'package:stealth_stash/crypto/types/networks.dart' show NetworkType;
+import 'package:stealth_stash/wallet/web3/core/core.dart';
+import 'package:stealth_stash/wallet/web3/networks/global/methods/methods.dart';
 
 class Web3SilentConnectApplication
     extends Web3GlobalRequestParams<List<NetworkType>> {

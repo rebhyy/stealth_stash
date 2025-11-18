@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/global/pages/address_details.dart';
-import 'package:on_chain_wallet/future/wallet/global/pages/receipt_address_view.dart';
-import 'package:on_chain_wallet/future/wallet/network/cardano/web3/operations/send_transaction.dart';
-import 'package:on_chain_wallet/future/wallet/network/cardano/web3/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/web3/pages/web3_request_page_builder.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/json/json/widgets.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/cardano/methods/methods.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/global/pages/address_details.dart';
+import 'package:stealth_stash/future/wallet/global/pages/receipt_address_view.dart';
+import 'package:stealth_stash/future/wallet/network/cardano/web3/operations/send_transaction.dart';
+import 'package:stealth_stash/future/wallet/network/cardano/web3/types/types.dart';
+import 'package:stealth_stash/future/wallet/web3/pages/web3_request_page_builder.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/future/widgets/widgets/json/json/widgets.dart';
+import 'package:stealth_stash/wallet/web3/networks/cardano/methods/methods.dart';
 
 class Web3CardanoSignTransactionStateView extends StatelessWidget {
   final WebCardanoSignTransactionStateController controller;

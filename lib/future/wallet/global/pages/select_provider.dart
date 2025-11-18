@@ -1,15 +1,15 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/types/networks.dart';
-import 'package:on_chain_wallet/future/constant/constant.dart';
-import 'package:on_chain_wallet/future/future.dart';
-import 'package:on_chain_wallet/future/router/page_router.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/global/pages/types.dart';
-import 'package:on_chain_wallet/future/wallet/network/aptos/provider/select_provider.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/types/networks.dart';
+import 'package:stealth_stash/future/constant/constant.dart';
+import 'package:stealth_stash/future/future.dart';
+import 'package:stealth_stash/future/router/page_router.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/global/pages/types.dart';
+import 'package:stealth_stash/future/wallet/network/aptos/provider/select_provider.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 
 class AccountManageProviderIcon extends StatelessWidget {
   const AccountManageProviderIcon({super.key, required this.service});

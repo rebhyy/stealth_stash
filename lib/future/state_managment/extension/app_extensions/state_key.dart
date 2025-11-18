@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart'
     show GlobalKey, Scrollable, Curves, Rect, RenderBox, Offset, FormState;
-import 'package:on_chain_wallet/app/models/models/typedef.dart';
+import 'package:stealth_stash/app/models/models/typedef.dart';
 
 extension QuickWidgetKeys on GlobalKey {
   Future<void> ensureKeyVisible(

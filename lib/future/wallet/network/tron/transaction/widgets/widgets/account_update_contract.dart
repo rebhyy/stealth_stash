@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/future/state_managment/extension/extension.dart';
-import 'package:on_chain_wallet/future/wallet/network/tron/transaction/operations/account/account_update_contract.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/future/state_managment/extension/extension.dart';
+import 'package:stealth_stash/future/wallet/network/tron/transaction/operations/account/account_update_contract.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
 import 'fee.dart';
 
 class TronTransactionAccountUpdateContractWidget extends StatelessWidget {

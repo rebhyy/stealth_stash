@@ -5,20 +5,20 @@ import 'package:on_chain/ethereum/src/rpc/core/methods.dart'
     show EthereumMethods;
 import 'package:on_chain/ethereum/src/rpc/methds/dynamic.dart';
 import 'package:on_chain/ethereum/src/rpc/provider/provider.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/app/error/exception/exception.dart'
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/app/error/exception/exception.dart'
     show ApiProviderException;
-import 'package:on_chain_wallet/wallet/api/provider/networks/ethereum.dart';
-import 'package:on_chain_wallet/wallet/api/services/core/base_service.dart'
+import 'package:stealth_stash/wallet/api/provider/networks/ethereum.dart';
+import 'package:stealth_stash/wallet/api/services/core/base_service.dart'
     show NetworkServiceProtocol;
-import 'package:on_chain_wallet/wallet/api/services/models/models/protocols.dart';
-import 'package:on_chain_wallet/wallet/api/services/models/networks/ethereum.dart';
-import 'package:on_chain_wallet/wallet/api/services/networks/http/services/ethereum.dart';
-import 'package:on_chain_wallet/wallet/api/services/networks/websocket/services/ethereum.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/core/exception/exception.dart'
+import 'package:stealth_stash/wallet/api/services/models/models/protocols.dart';
+import 'package:stealth_stash/wallet/api/services/models/networks/ethereum.dart';
+import 'package:stealth_stash/wallet/api/services/networks/http/services/ethereum.dart';
+import 'package:stealth_stash/wallet/api/services/networks/websocket/services/ethereum.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant/exception.dart';
+import 'package:stealth_stash/wallet/web3/core/exception/exception.dart'
     show Web3RequestException;
-import 'package:on_chain_wallet/wallet/web3/networks/ethereum/constant/exception.dart';
+import 'package:stealth_stash/wallet/web3/networks/ethereum/constant/exception.dart';
 
 typedef ONETHSubsribe = void Function(EthereumSubscribeResult);
 

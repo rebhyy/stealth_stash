@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/future.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/future.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
 
 class DuplicateExtensionInstanceAlert extends StatelessWidget {
   const DuplicateExtensionInstanceAlert({super.key});

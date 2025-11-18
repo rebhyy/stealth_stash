@@ -1,8 +1,8 @@
 import 'package:blockchain_utils/utils/utils.dart';
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/future.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/json/json/interactive_json_preview/interactive_json_preview.dart';
+import 'package:stealth_stash/future/future.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/widgets/widgets/json/json/interactive_json_preview/interactive_json_preview.dart';
 
 class JsonView extends StatefulWidget {
   final Object text;

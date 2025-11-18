@@ -1,11 +1,11 @@
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant/exception.dart';
-import 'package:on_chain_wallet/wc/wallet/core/network.dart';
-import 'package:on_chain_wallet/wc/wallet/types/types.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant/exception.dart';
+import 'package:stealth_stash/wc/wallet/core/network.dart';
+import 'package:stealth_stash/wc/wallet/types/types.dart';
 import 'package:polkadot_dart/polkadot_dart.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/substrate/substrate.dart';
-import 'package:on_chain_wallet/wallet/web3/state/state.dart';
-import 'package:on_chain_wallet/wallet/web3/core/core.dart';
+import 'package:stealth_stash/wallet/web3/networks/substrate/substrate.dart';
+import 'package:stealth_stash/wallet/web3/state/state.dart';
+import 'package:stealth_stash/wallet/web3/core/core.dart';
 
 class SubstrateWalletConnectKnownMetadata {
   final String genesisHash;

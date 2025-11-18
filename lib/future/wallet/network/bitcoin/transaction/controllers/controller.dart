@@ -2,11 +2,11 @@ import 'dart:async';
 
 import 'package:bitcoin_base/bitcoin_base.dart';
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/wallet/network/bitcoin/transaction/controllers/utxos.dart';
-import 'package:on_chain_wallet/future/wallet/network/bitcoin/transaction/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/wallet/network/bitcoin/transaction/controllers/utxos.dart';
+import 'package:stealth_stash/future/wallet/network/bitcoin/transaction/types/types.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 
 import 'fee.dart';
 import 'memo.dart';

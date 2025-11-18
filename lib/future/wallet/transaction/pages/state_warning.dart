@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/alarm.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/dialog_view.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/widget_constant.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/widgets/widgets/alarm.dart';
+import 'package:stealth_stash/future/widgets/widgets/dialog_view.dart';
+import 'package:stealth_stash/future/widgets/widgets/widget_constant.dart';
 
 class TransactionStateWarningView extends StatelessWidget {
   const TransactionStateWarningView({super.key, required this.warning});

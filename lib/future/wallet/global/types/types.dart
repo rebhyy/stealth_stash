@@ -1,5 +1,5 @@
 import 'package:blockchain_utils/bip/bip/types/types.dart';
-import 'package:on_chain_wallet/crypto/keys/access/crypto_keys/crypto_keys.dart';
+import 'package:stealth_stash/crypto/keys/access/crypto_keys/crypto_keys.dart';
 
 class PublicKeyDerivationWithMode {
   final PublicKeyDerivationResult derivation;

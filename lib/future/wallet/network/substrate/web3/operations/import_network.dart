@@ -1,20 +1,20 @@
 import 'package:blockchain_utils/bip/bip/bip32/bip32_key_data.dart';
 import 'package:blockchain_utils/bip/bip/conf/core/coin_conf.dart';
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/global/global.dart';
-import 'package:on_chain_wallet/future/wallet/network/substrate/web3/pages/import_network.dart';
-import 'package:on_chain_wallet/future/wallet/network/substrate/web3/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/web3/core/state.dart';
-import 'package:on_chain_wallet/wallet/api/api.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/constant/networks/substrate.dart';
-import 'package:on_chain_wallet/wallet/models/network/core/network/network.dart';
-import 'package:on_chain_wallet/wallet/models/network/params/substrate.dart';
-import 'package:on_chain_wallet/wallet/models/token/token/token.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/substrate/constant/constants/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/substrate/params/models/add_chain.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/global/global.dart';
+import 'package:stealth_stash/future/wallet/network/substrate/web3/pages/import_network.dart';
+import 'package:stealth_stash/future/wallet/network/substrate/web3/types/types.dart';
+import 'package:stealth_stash/future/wallet/web3/core/state.dart';
+import 'package:stealth_stash/wallet/api/api.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/constant/networks/substrate.dart';
+import 'package:stealth_stash/wallet/models/network/core/network/network.dart';
+import 'package:stealth_stash/wallet/models/network/params/substrate.dart';
+import 'package:stealth_stash/wallet/models/token/token/token.dart';
+import 'package:stealth_stash/wallet/web3/networks/substrate/constant/constants/exception.dart';
+import 'package:stealth_stash/wallet/web3/networks/substrate/params/models/add_chain.dart';
 
 class Web3SubstrateImportOrUpdateNetworkStateController
     extends Web3SubstrateStateController<bool, SubstrateClient?,

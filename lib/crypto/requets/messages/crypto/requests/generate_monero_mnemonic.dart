@@ -1,9 +1,9 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
-import 'package:on_chain_wallet/app/serialization/cbor/cbor.dart';
-import 'package:on_chain_wallet/crypto/coins/coins.dart';
-import 'package:on_chain_wallet/crypto/keys/access/crypto_keys/crypto_keys.dart';
-import 'package:on_chain_wallet/crypto/requets/argruments/argruments.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/core/message.dart';
+import 'package:stealth_stash/app/serialization/cbor/cbor.dart';
+import 'package:stealth_stash/crypto/coins/coins.dart';
+import 'package:stealth_stash/crypto/keys/access/crypto_keys/crypto_keys.dart';
+import 'package:stealth_stash/crypto/requets/argruments/argruments.dart';
+import 'package:stealth_stash/crypto/requets/messages/core/message.dart';
 
 final class MoneroMnemonicToPrivateKeyMessage
     extends CryptoRequest<ImportCustomKeys, MessageArgsOneBytes> {

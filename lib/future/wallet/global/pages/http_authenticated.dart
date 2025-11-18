@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/wallet/api/services/models/models/auth.dart';
-import 'package:on_chain_wallet/wallet/api/services/models/models/protocols.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/wallet/api/services/models/models/auth.dart';
+import 'package:stealth_stash/wallet/api/services/models/models/protocols.dart';
 
 class HTTPServiceProviderFields extends StatefulWidget {
   const HTTPServiceProviderFields(

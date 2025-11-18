@@ -1,10 +1,10 @@
 import 'package:blockchain_utils/bip/bip/bip.dart';
 import 'package:blockchain_utils/bip/ecc/curve/elliptic_curve_types.dart';
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/crypto/worker.dart' show Bip32AddressIndex;
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/crypto/worker.dart' show Bip32AddressIndex;
 
 class ByronLegacyKeyDerivationView extends StatefulWidget {
   const ByronLegacyKeyDerivationView(

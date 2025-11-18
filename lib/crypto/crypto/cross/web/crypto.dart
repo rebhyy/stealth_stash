@@ -1,4 +1,4 @@
-import 'package:on_chain_wallet/crypto/crypto/core/app_crypto.dart';
+import 'package:stealth_stash/crypto/crypto/core/app_crypto.dart';
 
 AppCrypto getAppCrypto() => AppCryptoWeb._();
 

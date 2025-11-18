@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/state_managment/typdef/typedef.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/state_managment/typdef/typedef.dart';
 
 class _MeasureSizeRenderObject extends RenderProxyBox {
   Size? oldSize;

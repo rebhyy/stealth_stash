@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/state_managment/extension/app_extensions/context.dart'
+import 'package:stealth_stash/future/state_managment/extension/app_extensions/context.dart'
     show QuickContextAccsess;
 
 class MaterialPageView extends StatelessWidget {

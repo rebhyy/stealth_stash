@@ -1,14 +1,14 @@
 import 'package:bitcoin_base/bitcoin_base.dart';
 import 'package:blockchain_utils/blockchain_utils.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/wallet/constant/tags/constant.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/core/core.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/bitcoin/constant/constants/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/bitcoin/methods/methods.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/bitcoin/params/core/request.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/bitcoin/permission/models/account.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/wallet/constant/tags/constant.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant/exception.dart';
+import 'package:stealth_stash/wallet/web3/core/core.dart';
+import 'package:stealth_stash/wallet/web3/networks/bitcoin/constant/constants/exception.dart';
+import 'package:stealth_stash/wallet/web3/networks/bitcoin/methods/methods.dart';
+import 'package:stealth_stash/wallet/web3/networks/bitcoin/params/core/request.dart';
+import 'package:stealth_stash/wallet/web3/networks/bitcoin/permission/models/account.dart';
 
 class Web3BitcoinSendTransactionOutput with CborSerializable {
   final BigInt value;

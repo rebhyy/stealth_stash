@@ -2,13 +2,13 @@ import 'package:bitcoin_base/bitcoin_base.dart' show TaprootUtils;
 import 'package:blockchain_utils/blockchain_utils.dart';
 import 'package:cosmos_sdk/cosmos_sdk.dart';
 import 'package:monero_dart/monero_dart.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/keys/access/crypto_keys/crypto_keys.dart';
-import 'package:on_chain_wallet/crypto/requets/argruments/argruments.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/core/message.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/models/models/signing.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/models/models/signing_response.dart';
-import 'package:on_chain_wallet/wallet/models/networks/monero/monero.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/keys/access/crypto_keys/crypto_keys.dart';
+import 'package:stealth_stash/crypto/requets/argruments/argruments.dart';
+import 'package:stealth_stash/crypto/requets/messages/core/message.dart';
+import 'package:stealth_stash/crypto/requets/messages/models/models/signing.dart';
+import 'package:stealth_stash/crypto/requets/messages/models/models/signing_response.dart';
+import 'package:stealth_stash/wallet/models/networks/monero/monero.dart';
 
 final class WalletRequestSign
     extends WalletRequest<GlobalSignResponse, MessageArgsOneBytes> {

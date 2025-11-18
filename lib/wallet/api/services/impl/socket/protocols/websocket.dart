@@ -1,13 +1,13 @@
 import 'dart:async';
 
 import 'package:blockchain_utils/utils/utils.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/wallet/api/provider/core/provider.dart';
-import 'package:on_chain_wallet/wallet/api/services/core/tracker.dart';
-import 'package:on_chain_wallet/wallet/api/services/impl/socket/core/socket_provider.dart';
-import 'package:on_chain_wallet/wallet/api/services/models/models/protocols.dart';
-import 'package:on_chain_wallet/wallet/api/services/models/models/request_completer.dart';
-import 'package:on_chain_wallet/wallet/api/services/models/models/socket_status.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/wallet/api/provider/core/provider.dart';
+import 'package:stealth_stash/wallet/api/services/core/tracker.dart';
+import 'package:stealth_stash/wallet/api/services/impl/socket/core/socket_provider.dart';
+import 'package:stealth_stash/wallet/api/services/models/models/protocols.dart';
+import 'package:stealth_stash/wallet/api/services/models/models/request_completer.dart';
+import 'package:stealth_stash/wallet/api/services/models/models/socket_status.dart';
 
 class WebSocketService<T extends APIProvider> extends BaseSocketService<T> {
   WebSocketService({required this.provider, this.requestTimeout});

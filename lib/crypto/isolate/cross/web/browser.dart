@@ -1,4 +1,4 @@
-part of 'package:on_chain_wallet/crypto/isolate/cross/web/web.dart';
+part of 'package:stealth_stash/crypto/isolate/cross/web/web.dart';
 
 @JS("workerListener_")
 external set workerListener(JSFunction? f);

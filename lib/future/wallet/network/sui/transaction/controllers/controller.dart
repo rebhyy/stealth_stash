@@ -1,13 +1,13 @@
 import 'dart:async';
 import 'package:on_chain/sui/src/address/address/address.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/network/sui/transaction/controllers/signer.dart';
-import 'package:on_chain_wallet/future/wallet/network/sui/transaction/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/network/sui/transaction/controllers/signer.dart';
+import 'package:stealth_stash/future/wallet/network/sui/transaction/types/types.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
 import 'fee.dart';
 import 'package:on_chain/sui/src/transaction/types/types.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
-import 'package:on_chain_wallet/future/wallet/network/sui/web3/types/types.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
+import 'package:stealth_stash/future/wallet/network/sui/web3/types/types.dart';
 import 'provider.dart';
 
 abstract class SuiTransactionStateController<T extends ISuiTransactionData>

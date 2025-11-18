@@ -1,9 +1,9 @@
 import 'dart:async';
 import 'package:bitcoin_base/bitcoin_base.dart';
 import 'package:blockchain_utils/service/models/params.dart';
-import 'package:on_chain_wallet/wallet/api/provider/networks/bitcoin/providers/electrum.dart';
-import 'package:on_chain_wallet/wallet/api/services/impl/protocols.dart';
-import 'package:on_chain_wallet/wallet/api/services/models/models.dart';
+import 'package:stealth_stash/wallet/api/provider/networks/bitcoin/providers/electrum.dart';
+import 'package:stealth_stash/wallet/api/services/impl/protocols.dart';
+import 'package:stealth_stash/wallet/api/services/models/models.dart';
 import 'electrum_service.dart';
 
 class ElectrumSSLSocketService extends SSLService<ElectrumAPIProvider>

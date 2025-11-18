@@ -5,10 +5,10 @@ import 'package:blockchain_utils/helper/helper.dart';
 import 'package:blockchain_utils/utils/binary/utils.dart';
 import 'package:cosmos_sdk/cosmos_sdk.dart';
 import 'package:monero_dart/monero_dart.dart';
-import 'package:on_chain_wallet/app/error/exception/app_exception.dart';
-import 'package:on_chain_wallet/app/error/exception/wallet_ex.dart';
-import 'package:on_chain_wallet/app/serialization/serialization.dart';
-import 'package:on_chain_wallet/crypto/keys/access/crypto_keys/crypto_keys.dart';
+import 'package:stealth_stash/app/error/exception/app_exception.dart';
+import 'package:stealth_stash/app/error/exception/wallet_ex.dart';
+import 'package:stealth_stash/app/serialization/serialization.dart';
+import 'package:stealth_stash/crypto/keys/access/crypto_keys/crypto_keys.dart';
 import 'signing_response.dart';
 
 typedef OnSignRequest = Future<GlobalSignResponse> Function(SignRequest);

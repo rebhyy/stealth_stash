@@ -1,9 +1,9 @@
 import 'package:blockchain_utils/bip/bip/bip.dart';
 import 'package:blockchain_utils/bip/substrate/conf/substrate_coins.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/coins/custom_coins/coins.dart';
-import 'package:on_chain_wallet/crypto/keys/access/crypto_keys/crypto_keys.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/coins/custom_coins/coins.dart';
+import 'package:stealth_stash/crypto/keys/access/crypto_keys/crypto_keys.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
 
 class BipDerivationUtils {
   static const String substrateBaseAccount = "//44//60//0/0/";

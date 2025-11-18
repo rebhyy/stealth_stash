@@ -1,12 +1,12 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
-import 'package:on_chain_wallet/app/serialization/cbor/cbor.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/core/core.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/stellar/methods/methods.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/stellar/params/models/sign_message.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/stellar/params/models/transaction.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/stellar/permission/permission.dart';
+import 'package:stealth_stash/app/serialization/cbor/cbor.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant/exception.dart';
+import 'package:stealth_stash/wallet/web3/core/core.dart';
+import 'package:stealth_stash/wallet/web3/networks/stellar/methods/methods.dart';
+import 'package:stealth_stash/wallet/web3/networks/stellar/params/models/sign_message.dart';
+import 'package:stealth_stash/wallet/web3/networks/stellar/params/models/transaction.dart';
+import 'package:stealth_stash/wallet/web3/networks/stellar/permission/permission.dart';
 import 'package:stellar_dart/stellar_dart.dart';
 
 abstract class Web3StellarRequestParam<RESPONSE> extends Web3RequestParams<

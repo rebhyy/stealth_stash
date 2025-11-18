@@ -1,15 +1,15 @@
 import 'package:blockchain_utils/utils/numbers/rational/big_rational.dart';
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/utils/sync/cached_object.dart';
-import 'package:on_chain_wallet/crypto/utils/ripple/ripple.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/controller/controller.dart';
-import 'package:on_chain_wallet/future/wallet/network/ripple/transaction/controllers/controller.dart';
-import 'package:on_chain_wallet/future/wallet/network/ripple/transaction/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/network/ripple/transaction/widgets/trust_set/trust_set.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/core/controller.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/fields/fields.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/app/utils/sync/cached_object.dart';
+import 'package:stealth_stash/crypto/utils/ripple/ripple.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/controller/controller.dart';
+import 'package:stealth_stash/future/wallet/network/ripple/transaction/controllers/controller.dart';
+import 'package:stealth_stash/future/wallet/network/ripple/transaction/types/types.dart';
+import 'package:stealth_stash/future/wallet/network/ripple/transaction/widgets/trust_set/trust_set.dart';
+import 'package:stealth_stash/future/wallet/transaction/core/controller.dart';
+import 'package:stealth_stash/future/wallet/transaction/fields/fields.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 import 'package:xrpl_dart/xrpl_dart.dart';
 
 class RippleTransactionTrustSetOperation

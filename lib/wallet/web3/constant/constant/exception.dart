@@ -1,7 +1,7 @@
 import 'package:blockchain_utils/exception/exceptions.dart';
 import 'package:blockchain_utils/utils/string/string.dart';
-import 'package:on_chain_wallet/app/error/exception/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/core/exception/exception.dart';
+import 'package:stealth_stash/app/error/exception/exception.dart';
+import 'package:stealth_stash/wallet/web3/core/exception/exception.dart';
 
 class Web3RequestExceptionConst {
   // static const int userRejectedCode = 3

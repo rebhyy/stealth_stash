@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/wallet/network/stellar/transaction/types/operations.dart';
-import 'package:on_chain_wallet/future/wallet/network/stellar/transaction/widgets/widgets/live_widgets.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/pages/live_form_widget.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/future/wallet/network/stellar/transaction/types/operations.dart';
+import 'package:stealth_stash/future/wallet/network/stellar/transaction/widgets/widgets/live_widgets.dart';
+import 'package:stealth_stash/future/wallet/transaction/pages/live_form_widget.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
 
 class StellarTransactionPaymentWidget extends StatelessWidget {
   final StellarPaymentOperationForm form;

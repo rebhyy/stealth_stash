@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/state_managment/extension/extension.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/sliver/sliver.dart';
+import 'package:stealth_stash/future/state_managment/extension/extension.dart';
+import 'package:stealth_stash/future/widgets/widgets/sliver/sliver.dart';
 
 import 'widget_constant.dart';
 

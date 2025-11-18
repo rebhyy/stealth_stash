@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/constant/constant.dart';
+import 'package:stealth_stash/app/constant/constant.dart';
 
 class OneLineTextWidget extends StatelessWidget {
   const OneLineTextWidget(this.text,

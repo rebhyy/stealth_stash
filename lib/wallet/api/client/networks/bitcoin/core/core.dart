@@ -1,14 +1,14 @@
 import 'package:bitcoin_base/bitcoin_base.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/types/networks.dart';
-import 'package:on_chain_wallet/wallet/api/client/core/client.dart';
-import 'package:on_chain_wallet/wallet/api/client/networks/bitcoin/types/types.dart';
-import 'package:on_chain_wallet/wallet/api/provider/networks/bitcoin/bitcoin.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/models/network/core/network/network.dart';
-import 'package:on_chain_wallet/wallet/models/token/network/token.dart';
-import 'package:on_chain_wallet/wallet/models/transaction/core/transaction.dart';
-import 'package:on_chain_wallet/wallet/models/transaction/networks/bitcoin.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/types/networks.dart';
+import 'package:stealth_stash/wallet/api/client/core/client.dart';
+import 'package:stealth_stash/wallet/api/client/networks/bitcoin/types/types.dart';
+import 'package:stealth_stash/wallet/api/provider/networks/bitcoin/bitcoin.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/models/network/core/network/network.dart';
+import 'package:stealth_stash/wallet/models/token/network/token.dart';
+import 'package:stealth_stash/wallet/models/transaction/core/transaction.dart';
+import 'package:stealth_stash/wallet/models/transaction/networks/bitcoin.dart';
 import 'package:on_chain_swap/on_chain_swap.dart';
 
 abstract class BitcoinClient<T extends IBitcoinAddress> extends NetworkClient<

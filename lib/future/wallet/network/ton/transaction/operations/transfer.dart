@@ -1,16 +1,16 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/error/exception/app_exception.dart';
-import 'package:on_chain_wallet/future/wallet/network/ton/transaction/controllers/controller.dart';
-import 'package:on_chain_wallet/future/wallet/network/ton/transaction/types/transfer.dart';
-import 'package:on_chain_wallet/future/wallet/network/ton/transaction/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/network/ton/transaction/widgets/transfer.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/app/error/exception/app_exception.dart';
+import 'package:stealth_stash/future/wallet/network/ton/transaction/controllers/controller.dart';
+import 'package:stealth_stash/future/wallet/network/ton/transaction/types/transfer.dart';
+import 'package:stealth_stash/future/wallet/network/ton/transaction/types/types.dart';
+import 'package:stealth_stash/future/wallet/network/ton/transaction/widgets/transfer.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 import 'package:ton_dart/ton_dart.dart';
 import 'package:blockchain_utils/utils/numbers/rational/big_rational.dart';
-import 'package:on_chain_wallet/crypto/utils/ton/ton.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/crypto/utils/ton/ton.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
 
 class TonTransactionTransferOperation extends TonTransactionStateController2 {
   TonTransactionTransferOperation(

@@ -1,15 +1,15 @@
 import 'package:blockchain_utils/utils/numbers/rational/big_rational.dart';
 import 'package:flutter/widgets.dart';
-import 'package:on_chain_wallet/app/core.dart' show APPConst;
-import 'package:on_chain_wallet/app/models/models/typedef.dart'
+import 'package:stealth_stash/app/core.dart' show APPConst;
+import 'package:stealth_stash/app/models/models/typedef.dart'
     show NullStringString;
-import 'package:on_chain_wallet/future/text_field/input_formaters.dart';
+import 'package:stealth_stash/future/text_field/input_formaters.dart';
 import 'button.dart';
 import 'constraints_box_view.dart';
 import 'paste_icon_widget.dart';
 import 'text_field.dart';
 import 'widget_constant.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
 
 class NumberWriteView extends StatefulWidget {
   const NumberWriteView({

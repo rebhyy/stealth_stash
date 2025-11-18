@@ -1,9 +1,9 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
 import 'package:flutter/widgets.dart';
-import 'package:on_chain_wallet/app/utils/method/utiils.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/animated/widgets/animated_size.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/paste_icon_widget.dart';
+import 'package:stealth_stash/app/utils/method/utiils.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/widgets/widgets/animated/widgets/animated_size.dart';
+import 'package:stealth_stash/future/widgets/widgets/paste_icon_widget.dart';
 import 'button.dart';
 import 'container_with_border.dart';
 import 'copy_icon_widget.dart';

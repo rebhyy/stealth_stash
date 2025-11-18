@@ -1,10 +1,10 @@
 import 'package:on_chain_bridge/platform_interface.dart';
-import 'package:on_chain_wallet/app/error/exception/wallet_ex.dart';
-import 'package:on_chain_wallet/app/http/models/auth.dart';
-import 'package:on_chain_wallet/crypto/types/networks.dart';
-import 'package:on_chain_wallet/wallet/api/api.dart';
-import 'package:on_chain_wallet/wallet/models/network/network.dart';
-import 'package:on_chain_wallet/wallet/models/networks/tron/models/chain_type.dart'
+import 'package:stealth_stash/app/error/exception/wallet_ex.dart';
+import 'package:stealth_stash/app/http/models/auth.dart';
+import 'package:stealth_stash/crypto/types/networks.dart';
+import 'package:stealth_stash/wallet/api/api.dart';
+import 'package:stealth_stash/wallet/models/network/network.dart';
+import 'package:stealth_stash/wallet/models/networks/tron/models/chain_type.dart'
     show TronChainType;
 import 'package:ton_dart/ton_dart.dart';
 

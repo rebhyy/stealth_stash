@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/wallet/network/aptos/address/setup.dart';
-import 'package:on_chain_wallet/future/wallet/network/cosmos/address/setup_address.dart';
-import 'package:on_chain_wallet/future/wallet/network/monero/address/setup_address.dart';
-import 'package:on_chain_wallet/future/wallet/network/ripple/address/pages/setup_address.dart';
-import 'package:on_chain_wallet/future/wallet/network/stellar/stellar.dart';
-import 'package:on_chain_wallet/future/wallet/network/substrate/address/setup_address.dart';
-import 'package:on_chain_wallet/future/wallet/network/sui/address/setup.dart';
-import 'package:on_chain_wallet/future/wallet/network/ton/address/address.dart';
-import 'package:on_chain_wallet/crypto/types/networks.dart';
+import 'package:stealth_stash/future/wallet/network/aptos/address/setup.dart';
+import 'package:stealth_stash/future/wallet/network/cosmos/address/setup_address.dart';
+import 'package:stealth_stash/future/wallet/network/monero/address/setup_address.dart';
+import 'package:stealth_stash/future/wallet/network/ripple/address/pages/setup_address.dart';
+import 'package:stealth_stash/future/wallet/network/stellar/stellar.dart';
+import 'package:stealth_stash/future/wallet/network/substrate/address/setup_address.dart';
+import 'package:stealth_stash/future/wallet/network/sui/address/setup.dart';
+import 'package:stealth_stash/future/wallet/network/ton/address/address.dart';
+import 'package:stealth_stash/crypto/types/networks.dart';
 import 'controller.dart';
 
 class SetupGenericAddressView extends StatelessWidget {

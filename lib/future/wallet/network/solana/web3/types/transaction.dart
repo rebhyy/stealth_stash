@@ -1,8 +1,8 @@
 import 'package:blockchain_utils/helper/helper.dart';
 import 'package:blockchain_utils/utils/utils.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/solana/params/models/transaction.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
+import 'package:stealth_stash/wallet/web3/networks/solana/params/models/transaction.dart';
 import 'package:on_chain/solana/solana.dart';
 import 'package:on_chain/solana/src/borsh_serialization/program_layout.dart';
 

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart' show APPConst;
-import 'package:on_chain_wallet/app/models/models/typedef.dart'
+import 'package:stealth_stash/app/core.dart' show APPConst;
+import 'package:stealth_stash/app/models/models/typedef.dart'
     show DynamicVoid;
 import 'container_with_border.dart';
 import 'widget_constant.dart';
-import 'package:on_chain_wallet/future/state_managment/extension/extension.dart';
+import 'package:stealth_stash/future/state_managment/extension/extension.dart';
 
 class AlertTextContainer extends StatelessWidget {
   const AlertTextContainer(

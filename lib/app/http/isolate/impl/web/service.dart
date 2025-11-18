@@ -7,13 +7,13 @@ import 'dart:typed_data';
 import 'package:blockchain_utils/utils/atomic/atomic.dart';
 import 'package:on_chain_bridge/web/api/api.dart';
 import 'package:on_chain_bridge/web/web.dart' as web;
-import 'package:on_chain_wallet/app/error/exception/exception.dart';
-import 'package:on_chain_wallet/app/http/isolate/core/service.dart';
-import 'package:on_chain_wallet/app/http/isolate/exception/exception.dart';
-import 'package:on_chain_wallet/app/http/isolate/models/message.dart';
-import 'package:on_chain_wallet/app/http/isolate/models/mode.dart';
-import 'package:on_chain_wallet/app/http/models/models.dart';
-import 'package:on_chain_wallet/app/utils/utils.dart';
+import 'package:stealth_stash/app/error/exception/exception.dart';
+import 'package:stealth_stash/app/http/isolate/core/service.dart';
+import 'package:stealth_stash/app/http/isolate/exception/exception.dart';
+import 'package:stealth_stash/app/http/isolate/models/message.dart';
+import 'package:stealth_stash/app/http/isolate/models/mode.dart';
+import 'package:stealth_stash/app/http/models/models.dart';
+import 'package:stealth_stash/app/utils/utils.dart';
 
 @JS("serviceWorkerListener_")
 external set workerListener(JSFunction? f);

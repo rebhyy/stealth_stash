@@ -1,9 +1,9 @@
 import 'package:blockchain_utils/cbor/cbor.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/app/serialization/serialization.dart';
-import 'package:on_chain_wallet/crypto/types/networks.dart';
-import 'package:on_chain_wallet/wallet/models/network/core/network/network.dart';
-import 'package:on_chain_wallet/wallet/models/transaction/core/transaction.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/app/serialization/serialization.dart';
+import 'package:stealth_stash/crypto/types/networks.dart';
+import 'package:stealth_stash/wallet/models/network/core/network/network.dart';
+import 'package:stealth_stash/wallet/models/transaction/core/transaction.dart';
 import 'package:ton_dart/ton_dart.dart';
 
 class TonWalletTransaction extends ChainTransaction {

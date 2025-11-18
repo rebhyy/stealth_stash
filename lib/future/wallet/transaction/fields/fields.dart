@@ -1,5 +1,5 @@
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/state_managment/extension/app_extensions/string.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/state_managment/extension/app_extensions/string.dart';
 
 typedef ONUPDATEVALUE<T> = bool Function(T previous, T current);
 typedef ONVALIDATEERROR<T, E extends Object?> = String? Function(

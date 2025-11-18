@@ -1,7 +1,7 @@
 import 'package:blockchain_utils/bip/mnemonic/mnemonic_utils.dart';
 import 'package:blockchain_utils/blockchain_utils.dart';
-import 'package:on_chain_wallet/crypto/keys/access/crypto_keys/crypto_keys.dart';
-import 'package:on_chain_wallet/wallet/models/wallet/models/backup.dart';
+import 'package:stealth_stash/crypto/keys/access/crypto_keys/crypto_keys.dart';
+import 'package:stealth_stash/wallet/models/wallet/models/backup.dart';
 
 enum WalletStupPage {
   main,

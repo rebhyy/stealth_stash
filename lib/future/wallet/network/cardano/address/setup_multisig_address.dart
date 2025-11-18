@@ -3,13 +3,13 @@ import 'dart:async';
 import 'package:blockchain_utils/blockchain_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:on_chain/on_chain.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/worker.dart';
-import 'package:on_chain_wallet/future/future.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/wallet/api/client/networks/cardano/cardano.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/models/others/models/receipt_address.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/worker.dart';
+import 'package:stealth_stash/future/future.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/wallet/api/client/networks/cardano/cardano.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/models/others/models/receipt_address.dart';
 
 class SetupCardanoMultisigAddress extends StatelessWidget {
   const SetupCardanoMultisigAddress({super.key});

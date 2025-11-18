@@ -1,10 +1,10 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/requets/argruments/argruments.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/core/message.dart';
-import 'package:on_chain_wallet/crypto/keys/access/crypto_keys/crypto_keys.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/models/models/generate_master_key.dart';
-import 'package:on_chain_wallet/crypto/utils/crypto/utils.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/requets/argruments/argruments.dart';
+import 'package:stealth_stash/crypto/requets/messages/core/message.dart';
+import 'package:stealth_stash/crypto/keys/access/crypto_keys/crypto_keys.dart';
+import 'package:stealth_stash/crypto/requets/messages/models/models/generate_master_key.dart';
+import 'package:stealth_stash/crypto/utils/crypto/utils.dart';
 
 class CryptoRequestRestoreBackupMasterKey extends CryptoRequest<
     CryptoRestoreBackupMasterKeyResponse, MessageArgsFourBytes> {

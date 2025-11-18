@@ -1,13 +1,13 @@
 import 'dart:async';
 
 import 'package:flutter/widgets.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/global/pages/transaction.dart';
-import 'package:on_chain_wallet/future/wallet/network/monero/transaction/controllers/utxos.dart';
-import 'package:on_chain_wallet/future/wallet/network/monero/transaction/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/global/pages/transaction.dart';
+import 'package:stealth_stash/future/wallet/network/monero/transaction/controllers/utxos.dart';
+import 'package:stealth_stash/future/wallet/network/monero/transaction/types/types.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 
 import 'fee.dart';
 import 'provider.dart';

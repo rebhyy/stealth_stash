@@ -1,9 +1,9 @@
 import 'package:monero_dart/monero_dart.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/core/core.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/monero/monero.dart';
-import 'package:on_chain_wallet/wallet/web3/state/state.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant/exception.dart';
+import 'package:stealth_stash/wallet/web3/core/core.dart';
+import 'package:stealth_stash/wallet/web3/networks/monero/monero.dart';
+import 'package:stealth_stash/wallet/web3/state/state.dart';
 import '../../models/models/networks/monero.dart';
 import '../../models/models/networks/wallet_standard.dart';
 import '../../models/models/requests.dart';

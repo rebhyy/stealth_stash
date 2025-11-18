@@ -1,7 +1,7 @@
 import 'package:blockchain_utils/cbor/cbor.dart';
 import 'package:blockchain_utils/crypto/quick_crypto.dart';
 import 'package:blockchain_utils/utils/binary/utils.dart';
-import 'package:on_chain_wallet/app/core.dart';
+import 'package:stealth_stash/app/core.dart';
 
 class ExtentionWalletKey with CborSerializable {
   final String key;

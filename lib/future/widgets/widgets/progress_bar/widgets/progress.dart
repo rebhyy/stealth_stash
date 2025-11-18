@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
 
 export 'page_progress.dart';
 export 'progress_widgets.dart';

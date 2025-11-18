@@ -1,7 +1,7 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
-import 'package:on_chain_wallet/app/core.dart';
+import 'package:stealth_stash/app/core.dart';
 import 'package:flutter/widgets.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
 import 'animated/widgets/animated_size.dart';
 import 'button.dart';
 import 'container_with_border.dart';

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/future.dart';
-import 'package:on_chain_wallet/future/router/page_router.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/wc/wc.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/future.dart';
+import 'package:stealth_stash/future/router/page_router.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/wc/wc.dart';
 
 class WalletConnectIcon extends StatelessWidget {
   const WalletConnectIcon({super.key});

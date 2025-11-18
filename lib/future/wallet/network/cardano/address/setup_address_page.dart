@@ -2,14 +2,14 @@ import 'package:blockchain_utils/bip/bip/bip.dart';
 import 'package:blockchain_utils/blockchain_utils.dart'
     show ADAAddressType, Bip32PathParser, Bip44Coins, BytesUtils, Cip1852Coins;
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/wallet/global/global.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/wallet/global/global.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
 
-import 'package:on_chain_wallet/wallet/wallet.dart';
-import 'package:on_chain_wallet/future/wallet/controller/controller.dart';
-import 'package:on_chain_wallet/crypto/worker.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
+import 'package:stealth_stash/future/wallet/controller/controller.dart';
+import 'package:stealth_stash/crypto/worker.dart';
 
 typedef _OnChangeShellyAddrType = void Function(ADAAddressType? addrType);
 

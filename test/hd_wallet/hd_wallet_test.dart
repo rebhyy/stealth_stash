@@ -1,7 +1,7 @@
-import 'package:on_chain_wallet/wallet/provider/wallet_provider.dart';
-import 'package:on_chain_wallet/wallet/web3/core/permission/models/authenticated.dart';
-import 'package:on_chain_wallet/wallet/web3/core/request/params.dart';
-import 'package:on_chain_wallet/wallet/web3/core/request/web_request.dart';
+import 'package:stealth_stash/wallet/provider/wallet_provider.dart';
+import 'package:stealth_stash/wallet/web3/core/permission/models/authenticated.dart';
+import 'package:stealth_stash/wallet/web3/core/request/params.dart';
+import 'package:stealth_stash/wallet/web3/core/request/web_request.dart';
 
 class TestWallet extends WalletCore {
   @override

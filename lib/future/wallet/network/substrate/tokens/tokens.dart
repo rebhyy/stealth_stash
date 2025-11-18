@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/future.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/wallet/api/api.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
+import 'package:stealth_stash/future/future.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/wallet/api/api.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
 
 class ManageSubstrateAccountToken extends StatefulWidget {
   final SubstrateClient client;

@@ -1,11 +1,11 @@
 import 'package:on_chain/solana/src/address/sol_address.dart';
-import 'package:on_chain_wallet/app/utils/utils.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant/exception.dart';
-import 'package:on_chain_wallet/wc/wallet/core/network.dart';
-import 'package:on_chain_wallet/wc/wallet/types/types.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/solana/solana.dart';
-import 'package:on_chain_wallet/wallet/web3/state/state.dart';
-import 'package:on_chain_wallet/wallet/web3/core/core.dart';
+import 'package:stealth_stash/app/utils/utils.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant/exception.dart';
+import 'package:stealth_stash/wc/wallet/core/network.dart';
+import 'package:stealth_stash/wc/wallet/types/types.dart';
+import 'package:stealth_stash/wallet/web3/networks/solana/solana.dart';
+import 'package:stealth_stash/wallet/web3/state/state.dart';
+import 'package:stealth_stash/wallet/web3/core/core.dart';
 
 class SolanaWalletConnectAddress extends WalletConnectAddress {
   SolanaWalletConnectAddress(

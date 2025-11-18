@@ -1,7 +1,7 @@
 import 'package:blockchain_utils/helper/helper.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/app/utils/method/utiils.dart';
-import 'package:on_chain_wallet/wallet/models/transaction/core/transaction.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/app/utils/method/utiils.dart';
+import 'package:stealth_stash/wallet/models/transaction/core/transaction.dart';
 import 'package:ton_dart/ton_dart.dart';
 
 class TonRquestTransactionStatus

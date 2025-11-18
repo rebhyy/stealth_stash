@@ -1,15 +1,15 @@
 import 'package:blockchain_utils/helper/extensions/extensions.dart';
 import 'package:blockchain_utils/utils/utils.dart';
 import 'package:cosmos_sdk/cosmos_sdk.dart';
-import 'package:on_chain_wallet/app/live_listener/live.dart';
-import 'package:on_chain_wallet/app/utils/method/utiils.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/network/cosmos/transaction/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/types/types.dart';
-import 'package:on_chain_wallet/wallet/constant/networks/cosmos.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/models/network/core/network/network.dart';
-import 'package:on_chain_wallet/wallet/models/networks/cosmos/models/network_types.dart';
+import 'package:stealth_stash/app/live_listener/live.dart';
+import 'package:stealth_stash/app/utils/method/utiils.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/network/cosmos/transaction/types/types.dart';
+import 'package:stealth_stash/future/wallet/transaction/types/types.dart';
+import 'package:stealth_stash/wallet/constant/networks/cosmos.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/models/network/core/network/network.dart';
+import 'package:stealth_stash/wallet/models/networks/cosmos/models/network_types.dart';
 
 class CosmosWeb3SimulateMessageResponse {
   final String typeUrl;

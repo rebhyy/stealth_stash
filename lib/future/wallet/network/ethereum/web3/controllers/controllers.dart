@@ -1,6 +1,6 @@
-import 'package:on_chain_wallet/future/wallet/network/ethereum/web3/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/types/types.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/ethereum/etherum.dart';
+import 'package:stealth_stash/future/wallet/network/ethereum/web3/types/types.dart';
+import 'package:stealth_stash/future/wallet/transaction/types/types.dart';
+import 'package:stealth_stash/wallet/web3/networks/ethereum/etherum.dart';
 
 abstract class Web3EthereumTransactionStateController<
         RESPONSE,

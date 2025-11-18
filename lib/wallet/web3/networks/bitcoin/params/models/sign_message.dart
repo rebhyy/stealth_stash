@@ -1,14 +1,14 @@
 import 'package:blockchain_utils/cbor/cbor.dart';
 import 'package:blockchain_utils/helper/extensions/extensions.dart';
 import 'package:blockchain_utils/utils/utils.dart';
-import 'package:on_chain_wallet/app/serialization/cbor/cbor.dart';
-import 'package:on_chain_wallet/wallet/constant/tags/constant.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant.dart';
-import 'package:on_chain_wallet/wallet/web3/core/core.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/bitcoin/methods/methods.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/bitcoin/params/core/request.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/bitcoin/permission/models/account.dart';
+import 'package:stealth_stash/app/serialization/cbor/cbor.dart';
+import 'package:stealth_stash/wallet/constant/tags/constant.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant.dart';
+import 'package:stealth_stash/wallet/web3/core/core.dart';
+import 'package:stealth_stash/wallet/web3/networks/bitcoin/methods/methods.dart';
+import 'package:stealth_stash/wallet/web3/networks/bitcoin/params/core/request.dart';
+import 'package:stealth_stash/wallet/web3/networks/bitcoin/permission/models/account.dart';
 
 class Web3BitcoinSignMessageResponse with CborSerializable {
   final List<int> signature;

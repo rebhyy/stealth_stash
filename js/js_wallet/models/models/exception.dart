@@ -1,6 +1,6 @@
 import 'dart:js_interop';
 
-import 'package:on_chain_wallet/wallet/web3/core/messages/models/models/exception.dart';
+import 'package:stealth_stash/wallet/web3/core/messages/models/models/exception.dart';
 
 @JS("Error")
 extension type JSError._(JSAny _) implements JSAny {

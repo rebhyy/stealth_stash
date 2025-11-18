@@ -1,8 +1,8 @@
 import 'dart:js_interop';
 
 import 'package:on_chain_bridge/web/web.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant/exception.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant/exception.dart';
 
 import '../models.dart';
 

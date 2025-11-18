@@ -1,11 +1,11 @@
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/models/models/signing.dart';
-import 'package:on_chain_wallet/crypto/utils/substrate/substrate.dart';
-import 'package:on_chain_wallet/future/wallet/controller/controller.dart';
-import 'package:on_chain_wallet/future/wallet/network/substrate/transaction/types/types.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/models/network/core/network/network.dart';
-import 'package:on_chain_wallet/wallet/models/signing/signing.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/requets/messages/models/models/signing.dart';
+import 'package:stealth_stash/crypto/utils/substrate/substrate.dart';
+import 'package:stealth_stash/future/wallet/controller/controller.dart';
+import 'package:stealth_stash/future/wallet/network/substrate/transaction/types/types.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/models/network/core/network/network.dart';
+import 'package:stealth_stash/wallet/models/signing/signing.dart';
 
 mixin SubstrateTransactionSignerController on DisposableMixin {
   WalletProvider get walletProvider;

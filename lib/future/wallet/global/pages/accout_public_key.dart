@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-import 'package:on_chain_wallet/app/core.dart' show APPConst, MethodUtils;
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/global/pages/address_details.dart';
-import 'package:on_chain_wallet/future/wallet/security/pages/accsess_wallet.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
-import 'package:on_chain_wallet/crypto/keys/keys.dart';
-import 'package:on_chain_wallet/crypto/types/networks.dart';
-import 'package:on_chain_wallet/crypto/utils/ripple/ripple.dart';
+import 'package:stealth_stash/app/core.dart' show APPConst, MethodUtils;
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/global/pages/address_details.dart';
+import 'package:stealth_stash/future/wallet/security/pages/accsess_wallet.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
+import 'package:stealth_stash/crypto/keys/keys.dart';
+import 'package:stealth_stash/crypto/types/networks.dart';
+import 'package:stealth_stash/crypto/utils/ripple/ripple.dart';
 
 class AccountPublicKeyView extends StatelessWidget {
   const AccountPublicKeyView({super.key});

@@ -1,5 +1,5 @@
 import 'package:on_chain/on_chain.dart';
-import 'package:on_chain_wallet/wallet/models/networks/tron/models/chain_type.dart';
+import 'package:stealth_stash/wallet/models/networks/tron/models/chain_type.dart';
 
 class TronClientUtils {
   static const tronScanMaxTokenLimit = 50;

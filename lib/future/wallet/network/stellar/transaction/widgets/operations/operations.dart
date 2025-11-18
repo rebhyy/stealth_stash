@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/constant/global/app.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/global/global.dart';
-import 'package:on_chain_wallet/future/wallet/network/stellar/transaction/controllers/controller.dart';
-import 'package:on_chain_wallet/future/wallet/network/stellar/transaction/types/operations.dart';
-import 'package:on_chain_wallet/future/wallet/network/stellar/transaction/widgets/widgets/create_memo.dart';
-import 'package:on_chain_wallet/future/wallet/network/stellar/transaction/widgets/widgets/extensions.dart';
-import 'package:on_chain_wallet/future/wallet/network/stellar/transaction/widgets/widgets/timebound.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/wallet/constant/networks/stellar.dart';
+import 'package:stealth_stash/app/constant/global/app.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/global/global.dart';
+import 'package:stealth_stash/future/wallet/network/stellar/transaction/controllers/controller.dart';
+import 'package:stealth_stash/future/wallet/network/stellar/transaction/types/operations.dart';
+import 'package:stealth_stash/future/wallet/network/stellar/transaction/widgets/widgets/create_memo.dart';
+import 'package:stealth_stash/future/wallet/network/stellar/transaction/widgets/widgets/extensions.dart';
+import 'package:stealth_stash/future/wallet/network/stellar/transaction/widgets/widgets/timebound.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/wallet/constant/networks/stellar.dart';
 import 'package:stellar_dart/stellar_dart.dart';
-import 'package:on_chain_wallet/future/wallet/network/stellar/transaction/types/types.dart';
+import 'package:stealth_stash/future/wallet/network/stellar/transaction/types/types.dart';
 
 class StellarTransactionGlobalOperationWidget extends StatelessWidget {
   final StellarTransactionStateController form;

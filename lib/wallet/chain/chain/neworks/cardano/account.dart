@@ -1,4 +1,4 @@
-part of 'package:on_chain_wallet/wallet/chain/chain/chain.dart';
+part of 'package:stealth_stash/wallet/chain/chain/chain.dart';
 
 class ADANetworkStorageId extends DefaultNetworkStorageId {
   static const ADANetworkStorageId utxos = ADANetworkStorageId(11);

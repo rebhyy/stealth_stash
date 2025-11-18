@@ -1,9 +1,9 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
 import 'package:monero_dart/monero_dart.dart';
-import 'package:on_chain_wallet/app/live_listener/live.dart';
-import 'package:on_chain_wallet/app/models/models/typedef.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/app/live_listener/live.dart';
+import 'package:stealth_stash/app/models/models/typedef.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 
 enum MoneroTransactionOperations implements TransactionOperations {
   transfer("transfer"),

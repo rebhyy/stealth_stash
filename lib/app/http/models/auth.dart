@@ -1,9 +1,9 @@
 import 'package:blockchain_utils/cbor/cbor.dart';
 import 'package:blockchain_utils/utils/utils.dart';
-import 'package:on_chain_wallet/app/constant/global/serialization.dart';
-import 'package:on_chain_wallet/app/error/exception/app_exception.dart';
-import 'package:on_chain_wallet/app/error/exception/wallet_ex.dart';
-import 'package:on_chain_wallet/app/serialization/cbor/cbor.dart';
+import 'package:stealth_stash/app/constant/global/serialization.dart';
+import 'package:stealth_stash/app/error/exception/app_exception.dart';
+import 'package:stealth_stash/app/error/exception/wallet_ex.dart';
+import 'package:stealth_stash/app/serialization/cbor/cbor.dart';
 
 enum ProviderAuthType {
   header(APPSerializationConst.basicProviderAuth),

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/global/pages/http_authenticated.dart';
-import 'package:on_chain_wallet/future/wallet/network/substrate/web3/operations/import_network.dart';
-import 'package:on_chain_wallet/future/wallet/web3/pages/web3_request_page_builder.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/global/pages/http_authenticated.dart';
+import 'package:stealth_stash/future/wallet/network/substrate/web3/operations/import_network.dart';
+import 'package:stealth_stash/future/wallet/web3/pages/web3_request_page_builder.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 
 class Web3SubstrateImportNetworkStateView extends StatelessWidget {
   final Web3SubstrateImportOrUpdateNetworkStateController controller;

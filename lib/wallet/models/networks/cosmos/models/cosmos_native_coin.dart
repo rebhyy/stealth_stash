@@ -1,12 +1,12 @@
 import 'package:blockchain_utils/cbor/cbor.dart';
 import 'package:blockchain_utils/utils/numbers/rational/big_rational.dart';
 import 'package:cosmos_sdk/cosmos_sdk.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/wallet/api/provider/networks/cosmos.dart';
-import 'package:on_chain_wallet/wallet/constant/networks/cosmos.dart';
-import 'package:on_chain_wallet/wallet/constant/tags/constant.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/models/token/token/token.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/wallet/api/provider/networks/cosmos.dart';
+import 'package:stealth_stash/wallet/constant/networks/cosmos.dart';
+import 'package:stealth_stash/wallet/constant/tags/constant.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/models/token/token/token.dart';
 import 'network_types.dart';
 
 class CosmosFeeToken with CborSerializable {

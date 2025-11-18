@@ -4,14 +4,14 @@ import 'package:blockchain_utils/exception/exceptions.dart';
 import 'package:on_chain/on_chain.dart';
 import 'package:on_chain/solidity/address/core.dart';
 import 'package:on_chain_swap/on_chain_swap.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/types/networks.dart';
-import 'package:on_chain_wallet/wallet/api/client/core/client.dart';
-import 'package:on_chain_wallet/wallet/api/client/networks/ethereum/methods/methods.dart';
-import 'package:on_chain_wallet/wallet/api/provider/networks/ethereum.dart';
-import 'package:on_chain_wallet/wallet/api/services/service.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/models/models.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/types/networks.dart';
+import 'package:stealth_stash/wallet/api/client/core/client.dart';
+import 'package:stealth_stash/wallet/api/client/networks/ethereum/methods/methods.dart';
+import 'package:stealth_stash/wallet/api/provider/networks/ethereum.dart';
+import 'package:stealth_stash/wallet/api/services/service.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/models/models.dart';
 
 class EthereumClient extends NetworkClient<
     EthWalletTransaction,

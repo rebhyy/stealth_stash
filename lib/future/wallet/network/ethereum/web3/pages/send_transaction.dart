@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:on_chain/solidity/address/core.dart';
 import 'package:on_chain/tron/tron.dart';
-import 'package:on_chain_wallet/app/constant/global/app.dart';
-import 'package:on_chain_wallet/crypto/types/networks.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/global/global.dart';
+import 'package:stealth_stash/app/constant/global/app.dart';
+import 'package:stealth_stash/crypto/types/networks.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/global/global.dart';
 
-import 'package:on_chain_wallet/future/wallet/network/ethereum/transaction/widgets/select_fee.dart';
-import 'package:on_chain_wallet/future/wallet/network/ethereum/web3/operations/send_transaction.dart';
-import 'package:on_chain_wallet/future/wallet/network/ethereum/web3/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/pages/fee.dart';
-import 'package:on_chain_wallet/future/wallet/web3/pages/web3_request_page_builder.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/wallet/models/network/network.dart';
+import 'package:stealth_stash/future/wallet/network/ethereum/transaction/widgets/select_fee.dart';
+import 'package:stealth_stash/future/wallet/network/ethereum/web3/operations/send_transaction.dart';
+import 'package:stealth_stash/future/wallet/network/ethereum/web3/types/types.dart';
+import 'package:stealth_stash/future/wallet/transaction/pages/fee.dart';
+import 'package:stealth_stash/future/wallet/web3/pages/web3_request_page_builder.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/wallet/models/network/network.dart';
 
 class Web3EthereumSendTransactionStateView extends StatelessWidget {
   final Web3EthereumSendTransactionStateController controller;

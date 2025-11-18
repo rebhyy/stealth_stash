@@ -1,4 +1,4 @@
-part of 'package:on_chain_wallet/wallet/chain/chain/chain.dart';
+part of 'package:stealth_stash/wallet/chain/chain/chain.dart';
 
 class XRPNetworkController extends NetworkController<IXRPAddress, XRPChain,
     Web3XRPChainAccount, Web3InternalDefaultChain, ChainConfig> {

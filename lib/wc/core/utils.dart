@@ -1,4 +1,4 @@
-part of 'package:on_chain_wallet/wc/wc.dart';
+part of 'package:stealth_stash/wc/wc.dart';
 
 class WalletConnectUtils {
   static WcUriData parseUri(Uri uri) {

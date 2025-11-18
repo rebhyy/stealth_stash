@@ -1,11 +1,11 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/global/global.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart' show Chain, WalletNetwork;
-import 'package:on_chain_wallet/crypto/worker.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/global/global.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/wallet/wallet.dart' show Chain, WalletNetwork;
+import 'package:stealth_stash/crypto/worker.dart';
 
 typedef _OnGenerateDerivation = Future<AddressDerivationIndex?> Function();
 typedef ADDRESSDNEXTDERIVATION = AddressDerivationIndex Function(

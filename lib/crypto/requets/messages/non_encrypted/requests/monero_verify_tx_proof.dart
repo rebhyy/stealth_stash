@@ -1,10 +1,10 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
 import 'package:monero_dart/monero_dart.dart';
-import 'package:on_chain_wallet/app/isolate/types.dart';
-import 'package:on_chain_wallet/app/serialization/serialization.dart';
-import 'package:on_chain_wallet/crypto/requets/argruments/argruments.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/core/message.dart';
-import 'package:on_chain_wallet/wallet/api/api.dart';
+import 'package:stealth_stash/app/isolate/types.dart';
+import 'package:stealth_stash/app/serialization/serialization.dart';
+import 'package:stealth_stash/crypto/requets/argruments/argruments.dart';
+import 'package:stealth_stash/crypto/requets/messages/core/message.dart';
+import 'package:stealth_stash/wallet/api/api.dart';
 
 final class NoneEncryptedRequestMoneroVerifyTxProof
     extends NoneEncryptedCryptoRequest<BigInt?, MessageArgsOneBytes> {

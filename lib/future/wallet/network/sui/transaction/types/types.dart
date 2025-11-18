@@ -1,7 +1,7 @@
 import 'package:blockchain_utils/helper/helper.dart';
 import 'package:on_chain/sui/sui.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 
 enum SuiTransactionOperations implements TransactionOperations {
   transfer("transfer"),

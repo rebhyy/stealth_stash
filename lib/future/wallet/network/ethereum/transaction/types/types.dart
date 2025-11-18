@@ -3,9 +3,9 @@ import 'dart:async';
 import 'package:blockchain_utils/helper/extensions/extensions.dart';
 import 'package:on_chain/ethereum/ethereum.dart';
 import 'package:on_chain/on_chain.dart';
-import 'package:on_chain_wallet/crypto/utils/ethereum/utils.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/crypto/utils/ethereum/utils.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 
 enum EthereumFeeMode {
   eip1559,

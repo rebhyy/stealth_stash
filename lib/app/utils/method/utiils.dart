@@ -2,12 +2,12 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:blockchain_utils/exception/exceptions.dart';
-import 'package:on_chain_wallet/app/dev/logger.dart';
-import 'package:on_chain_wallet/app/error/exception/app_exception.dart';
-import 'package:on_chain_wallet/app/error/exception/exception.dart';
-import 'package:on_chain_wallet/app/error/exception/wallet_ex.dart';
-import 'package:on_chain_wallet/app/localization/localization.dart';
-// import 'package:on_chain_wallet/app/core.dart';
+import 'package:stealth_stash/app/dev/logger.dart';
+import 'package:stealth_stash/app/error/exception/app_exception.dart';
+import 'package:stealth_stash/app/error/exception/exception.dart';
+import 'package:stealth_stash/app/error/exception/wallet_ex.dart';
+import 'package:stealth_stash/app/localization/localization.dart';
+// import 'package:stealth_stash/app/core.dart';
 
 class MethodUtils {
   static Future<void> wait(

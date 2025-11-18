@@ -1,16 +1,16 @@
-import 'package:on_chain_wallet/app/dev/logger.dart';
-import 'package:on_chain_wallet/future/wallet/controller/controller.dart';
-import 'package:on_chain_wallet/future/wallet/network/ripple/web3/operations/send_transaction.dart';
-import 'package:on_chain_wallet/future/wallet/network/ripple/web3/operations/sign_message.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/core/web3.dart';
-import 'package:on_chain_wallet/future/wallet/web3/core/state.dart';
-import 'package:on_chain_wallet/wallet/api/client/client.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/models/network/core/network/network.dart';
-import 'package:on_chain_wallet/wallet/models/others/others.dart';
-import 'package:on_chain_wallet/wallet/models/transaction/networks/xrp.dart';
-import 'package:on_chain_wallet/wallet/web3/web3.dart';
+import 'package:stealth_stash/app/dev/logger.dart';
+import 'package:stealth_stash/future/wallet/controller/controller.dart';
+import 'package:stealth_stash/future/wallet/network/ripple/web3/operations/send_transaction.dart';
+import 'package:stealth_stash/future/wallet/network/ripple/web3/operations/sign_message.dart';
+import 'package:stealth_stash/future/wallet/transaction/types/types.dart';
+import 'package:stealth_stash/future/wallet/transaction/core/web3.dart';
+import 'package:stealth_stash/future/wallet/web3/core/state.dart';
+import 'package:stealth_stash/wallet/api/client/client.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/models/network/core/network/network.dart';
+import 'package:stealth_stash/wallet/models/others/others.dart';
+import 'package:stealth_stash/wallet/models/transaction/networks/xrp.dart';
+import 'package:stealth_stash/wallet/web3/web3.dart';
 import 'package:xrpl_dart/xrpl_dart.dart';
 
 enum XRPWeb3SigningMode {

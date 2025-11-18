@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/wallet/controller/controller.dart';
-import 'package:on_chain_wallet/future/wallet/web3/global/connect/controller/connect.dart';
-import 'package:on_chain_wallet/future/wallet/web3/pages/permission_view.dart';
-import 'package:on_chain_wallet/future/wallet/web3/pages/view_controller.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/global/params/core/core.dart';
+import 'package:stealth_stash/future/wallet/controller/controller.dart';
+import 'package:stealth_stash/future/wallet/web3/global/connect/controller/connect.dart';
+import 'package:stealth_stash/future/wallet/web3/pages/permission_view.dart';
+import 'package:stealth_stash/future/wallet/web3/pages/view_controller.dart';
+import 'package:stealth_stash/wallet/web3/networks/global/params/core/core.dart';
 
 class GlobalWeb3ConnectView extends StatelessWidget {
   const GlobalWeb3ConnectView(

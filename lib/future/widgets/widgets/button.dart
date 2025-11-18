@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/models/models/typedef.dart'
+import 'package:stealth_stash/app/models/models/typedef.dart'
     show DynamicVoid;
 
 class FixedElevatedButton extends StatelessWidget {

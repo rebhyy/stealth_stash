@@ -2,12 +2,12 @@ import 'dart:async';
 
 import 'package:blockchain_utils/service/service.dart';
 import 'package:blockchain_utils/utils/atomic/atomic.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/app/http/isolate/models/message.dart';
-import 'package:on_chain_wallet/wallet/api/provider/core/provider.dart';
-import 'package:on_chain_wallet/wallet/api/services/core/base_service.dart';
-import 'package:on_chain_wallet/wallet/api/services/core/tracker.dart';
-import 'package:on_chain_wallet/wallet/api/services/models/models.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/app/http/isolate/models/message.dart';
+import 'package:stealth_stash/wallet/api/provider/core/provider.dart';
+import 'package:stealth_stash/wallet/api/services/core/base_service.dart';
+import 'package:stealth_stash/wallet/api/services/core/tracker.dart';
+import 'package:stealth_stash/wallet/api/services/models/models.dart';
 
 abstract class HTTPService<P extends APIProvider>
     with HttpImpl

@@ -1,12 +1,12 @@
 import 'package:bitcoin_base/bitcoin_base.dart';
 import 'package:blockchain_utils/blockchain_utils.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/core/core.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/bitcoin/methods/methods.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/bitcoin/params/core/request.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/bitcoin/permission/models/account.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant/exception.dart';
+import 'package:stealth_stash/wallet/web3/core/core.dart';
+import 'package:stealth_stash/wallet/web3/networks/bitcoin/methods/methods.dart';
+import 'package:stealth_stash/wallet/web3/networks/bitcoin/params/core/request.dart';
+import 'package:stealth_stash/wallet/web3/networks/bitcoin/permission/models/account.dart';
 
 abstract class BaseWeb3BitcoinSignTransaction<ADDRESS extends IBitcoinAddress,
         WEB3CHAINACCOUNT extends Web3BitcoinChainAccount>

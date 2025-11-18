@@ -1,7 +1,7 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
 import 'package:on_chain_swap/on_chain_swap.dart';
-import 'package:on_chain_wallet/app/serialization/serialization.dart';
-import 'package:on_chain_wallet/wallet/constant/tags/constant.dart';
+import 'package:stealth_stash/app/serialization/serialization.dart';
+import 'package:stealth_stash/wallet/constant/tags/constant.dart';
 
 class APPSwapSettingsConst {
   static const double minTelerance = 0;

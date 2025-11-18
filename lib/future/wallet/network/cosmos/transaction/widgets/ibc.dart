@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/constant/global/app.dart';
-// import 'package:on_chain_wallet/future/future.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/global/global.dart';
-import 'package:on_chain_wallet/future/wallet/network/cosmos/transaction/operations/ibc.dart';
-import 'package:on_chain_wallet/future/wallet/network/cosmos/transaction/types/transfer.dart';
-import 'package:on_chain_wallet/future/wallet/network/cosmos/transaction/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/network/cosmos/transaction/widgets/pick_channel_id.dart';
-import 'package:on_chain_wallet/future/wallet/network/cosmos/transaction/widgets/pick_token.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/pages/fee.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/pages/live_form_widget.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/pages/send_transaction.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
+import 'package:stealth_stash/app/constant/global/app.dart';
+// import 'package:stealth_stash/future/future.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/global/global.dart';
+import 'package:stealth_stash/future/wallet/network/cosmos/transaction/operations/ibc.dart';
+import 'package:stealth_stash/future/wallet/network/cosmos/transaction/types/transfer.dart';
+import 'package:stealth_stash/future/wallet/network/cosmos/transaction/types/types.dart';
+import 'package:stealth_stash/future/wallet/network/cosmos/transaction/widgets/pick_channel_id.dart';
+import 'package:stealth_stash/future/wallet/network/cosmos/transaction/widgets/pick_token.dart';
+import 'package:stealth_stash/future/wallet/transaction/pages/fee.dart';
+import 'package:stealth_stash/future/wallet/transaction/pages/live_form_widget.dart';
+import 'package:stealth_stash/future/wallet/transaction/pages/send_transaction.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
 
 import 'transfer.dart';
 

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/keys/access/crypto_keys/crypto_keys.dart';
-import 'package:on_chain_wallet/future/future.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/security/pages/accsess_wallet.dart';
-import 'package:on_chain_wallet/wallet/api/client/client.dart';
-import 'package:on_chain_wallet/wallet/models/access/wallet_access.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/keys/access/crypto_keys/crypto_keys.dart';
+import 'package:stealth_stash/future/future.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/security/pages/accsess_wallet.dart';
+import 'package:stealth_stash/wallet/api/client/client.dart';
+import 'package:stealth_stash/wallet/models/access/wallet_access.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
 
 class SuiMultisigAccountInfoView extends StatelessWidget {
   const SuiMultisigAccountInfoView({super.key});

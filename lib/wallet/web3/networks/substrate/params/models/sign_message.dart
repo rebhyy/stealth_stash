@@ -1,12 +1,12 @@
 import 'package:blockchain_utils/cbor/cbor.dart';
 import 'package:blockchain_utils/utils/utils.dart';
-import 'package:on_chain_wallet/app/serialization/cbor/cbor.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/web3/core/core.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/substrate/methods/methods.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/substrate/params/core/request.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/substrate/params/models/transaction.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/substrate/permission/models/account.dart';
+import 'package:stealth_stash/app/serialization/cbor/cbor.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/web3/core/core.dart';
+import 'package:stealth_stash/wallet/web3/networks/substrate/methods/methods.dart';
+import 'package:stealth_stash/wallet/web3/networks/substrate/params/core/request.dart';
+import 'package:stealth_stash/wallet/web3/networks/substrate/params/models/transaction.dart';
+import 'package:stealth_stash/wallet/web3/networks/substrate/permission/models/account.dart';
 
 class Web3SubstrateSignMessage
     extends Web3SubstrateRequestParam<Web3SubstrateSendTransactionResponse> {

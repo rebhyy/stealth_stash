@@ -1,6 +1,6 @@
 import 'package:blockchain_utils/utils/numbers/rational/big_rational.dart';
-import 'package:on_chain_wallet/app/constant/global/app.dart';
-import 'package:on_chain_wallet/app/utils/price/utils.dart';
+import 'package:stealth_stash/app/constant/global/app.dart';
+import 'package:stealth_stash/app/utils/price/utils.dart';
 
 class SolanaConst {
   static const int memoLength = (566 * 2) - 1;

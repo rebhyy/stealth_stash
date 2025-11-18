@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/json/json/widgets.dart';
-import 'package:on_chain_wallet/wallet/models/networks/substrate/models/metadata_fields.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/future/widgets/widgets/json/json/widgets.dart';
+import 'package:stealth_stash/wallet/models/networks/substrate/models/metadata_fields.dart';
 
 class SubstrateShowPayloadInfoWidget extends StatelessWidget {
   final ExtrinsicPayloadInfo payload;

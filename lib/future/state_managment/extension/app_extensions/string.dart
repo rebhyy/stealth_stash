@@ -1,5 +1,5 @@
-import 'package:on_chain_wallet/app/utils/string/utils.dart';
-import 'package:on_chain_wallet/app/localization/localization.dart';
+import 'package:stealth_stash/app/utils/string/utils.dart';
+import 'package:stealth_stash/app/localization/localization.dart';
 
 extension Translate on String {
   static Map<APPLocale, Map<String, String>> get localization =>

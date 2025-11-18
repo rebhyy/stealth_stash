@@ -1,9 +1,9 @@
 import 'package:blockchain_utils/cbor/cbor.dart';
 import 'package:on_chain_bridge/models/models.dart';
-import 'package:on_chain_wallet/app/constant/global/serialization.dart';
-import 'package:on_chain_wallet/app/models/models/currencies.dart';
-import 'package:on_chain_wallet/app/serialization/serialization.dart';
-import 'package:on_chain_wallet/app/utils/method/utiils.dart';
+import 'package:stealth_stash/app/constant/global/serialization.dart';
+import 'package:stealth_stash/app/models/models/currencies.dart';
+import 'package:stealth_stash/app/serialization/serialization.dart';
+import 'package:stealth_stash/app/utils/method/utiils.dart';
 
 class APPWalletSetting with CborSerializable {
   final bool showTestnetNetworks;

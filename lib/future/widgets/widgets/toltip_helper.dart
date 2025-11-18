@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart' show APPConst;
+import 'package:stealth_stash/app/core.dart' show APPConst;
 
 import 'tooltip/widgets/tooltip.dart';
 

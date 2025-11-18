@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:blockchain_utils/utils/utils.dart';
-import 'package:on_chain_wallet/app/core.dart';
+import 'package:stealth_stash/app/core.dart';
 
 typedef ONFETCHCACHEDOBJECT<T extends Object?> = Future<T> Function();
 

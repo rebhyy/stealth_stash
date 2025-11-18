@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:on_chain/ethereum/src/eip_4361/types/eip_4631.dart';
-import 'package:on_chain_wallet/app/constant/global/app.dart';
-import 'package:on_chain_wallet/future/wallet/global/global.dart';
-import 'package:on_chain_wallet/future/wallet/web3/pages/web3_request_page_builder.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/network/solana/web3/operations/sign_message.dart';
-import 'package:on_chain_wallet/future/wallet/network/solana/web3/types/types.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/solana/params/models/sign_message.dart';
+import 'package:stealth_stash/app/constant/global/app.dart';
+import 'package:stealth_stash/future/wallet/global/global.dart';
+import 'package:stealth_stash/future/wallet/web3/pages/web3_request_page_builder.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/network/solana/web3/operations/sign_message.dart';
+import 'package:stealth_stash/future/wallet/network/solana/web3/types/types.dart';
+import 'package:stealth_stash/wallet/web3/networks/solana/params/models/sign_message.dart';
 
 class Web3SolanaSignMessageStateView extends StatelessWidget {
   final Web3SolanaSignMessageStateController controller;

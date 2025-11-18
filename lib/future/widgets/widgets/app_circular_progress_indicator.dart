@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/widget_constant.dart';
+import 'package:stealth_stash/future/widgets/widgets/widget_constant.dart';
 
 class APPCircularProgressIndicator extends StatelessWidget {
   const APPCircularProgressIndicator(

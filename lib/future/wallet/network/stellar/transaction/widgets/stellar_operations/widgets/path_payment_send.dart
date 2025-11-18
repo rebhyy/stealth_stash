@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/constant/global/app.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/global/pages/token_details_view.dart';
-import 'package:on_chain_wallet/future/wallet/network/stellar/transaction/types/operations.dart';
-import 'package:on_chain_wallet/future/wallet/network/stellar/transaction/widgets/widgets/live_widgets.dart';
-import 'package:on_chain_wallet/future/wallet/network/stellar/transaction/widgets/widgets/pick_asset.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/pages/live_form_widget.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/future/wallet/network/stellar/transaction/types/types.dart';
+import 'package:stealth_stash/app/constant/global/app.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/global/pages/token_details_view.dart';
+import 'package:stealth_stash/future/wallet/network/stellar/transaction/types/operations.dart';
+import 'package:stealth_stash/future/wallet/network/stellar/transaction/widgets/widgets/live_widgets.dart';
+import 'package:stealth_stash/future/wallet/network/stellar/transaction/widgets/widgets/pick_asset.dart';
+import 'package:stealth_stash/future/wallet/transaction/pages/live_form_widget.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/future/wallet/network/stellar/transaction/types/types.dart';
 
 class StellarTransactionPathPaymentStrictSendWidget extends StatelessWidget {
   final StellarPathPaymentStrictSendOperationForm form;

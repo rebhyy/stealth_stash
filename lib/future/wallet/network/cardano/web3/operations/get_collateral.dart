@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:on_chain/ada/src/models/transaction/input/models/transaction_unspent_output.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/network/cardano/transaction/controllers/provider.dart';
-import 'package:on_chain_wallet/future/wallet/network/cardano/transaction/controllers/utxos.dart';
-import 'package:on_chain_wallet/future/wallet/network/cardano/transaction/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/network/cardano/web3/controllers/provider.dart';
-import 'package:on_chain_wallet/future/wallet/network/cardano/web3/pages/get_collateral.dart';
-import 'package:on_chain_wallet/future/wallet/network/cardano/web3/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/fields/fields.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/web3/core/state.dart';
-import 'package:on_chain_wallet/wallet/api/api.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/cardano/cardano.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/network/cardano/transaction/controllers/provider.dart';
+import 'package:stealth_stash/future/wallet/network/cardano/transaction/controllers/utxos.dart';
+import 'package:stealth_stash/future/wallet/network/cardano/transaction/types/types.dart';
+import 'package:stealth_stash/future/wallet/network/cardano/web3/controllers/provider.dart';
+import 'package:stealth_stash/future/wallet/network/cardano/web3/pages/get_collateral.dart';
+import 'package:stealth_stash/future/wallet/network/cardano/web3/types/types.dart';
+import 'package:stealth_stash/future/wallet/transaction/fields/fields.dart';
+import 'package:stealth_stash/future/wallet/transaction/types/types.dart';
+import 'package:stealth_stash/future/wallet/web3/core/state.dart';
+import 'package:stealth_stash/wallet/api/api.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/web3/networks/cardano/cardano.dart';
 
 class Web3ADGetCollateralStateController extends Web3CardanoStateController<
         List<TransactionUnspentOutput>, ADAClient, Web3ADAGetCollateral>

@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/theme/theme.dart';
-import 'package:on_chain_wallet/future/wallet/security/pages/accsess_wallet.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/theme/theme.dart';
+import 'package:stealth_stash/future/wallet/security/pages/accsess_wallet.dart';
 
-import 'package:on_chain_wallet/future/wallet/setting/color_selector.dart';
-import 'package:on_chain_wallet/future/wallet/swap/pages/pages/swap.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/future/router/page_router.dart';
-import 'package:on_chain_wallet/future/wallet/controller/controller.dart';
-import 'package:on_chain_wallet/wallet/models/access/wallet_access.dart';
-import 'package:on_chain_wallet/wallet/models/wallet/models/hd_wallet.dart';
+import 'package:stealth_stash/future/wallet/setting/color_selector.dart';
+import 'package:stealth_stash/future/wallet/swap/pages/pages/swap.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/future/router/page_router.dart';
+import 'package:stealth_stash/future/wallet/controller/controller.dart';
+import 'package:stealth_stash/wallet/models/access/wallet_access.dart';
+import 'package:stealth_stash/wallet/models/wallet/models/hd_wallet.dart';
 
 class DrawerView extends StatefulWidget {
   const DrawerView({super.key});

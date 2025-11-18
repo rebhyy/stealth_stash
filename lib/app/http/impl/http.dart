@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:on_chain_bridge/models/device/models/platform.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/app/http/isolate/models/message.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/app/http/isolate/models/message.dart';
 import 'package:http/http.dart' as http;
 
 class HTTPCaller {

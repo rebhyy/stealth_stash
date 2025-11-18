@@ -1,13 +1,13 @@
 import 'package:bitcoin_base/bitcoin_base.dart';
 import 'package:blockchain_utils/signer/const/constants.dart';
 import 'package:blockchain_utils/utils/binary/utils.dart';
-import 'package:on_chain_wallet/app/live_listener/live.dart';
-import 'package:on_chain_wallet/crypto/keys/keys.dart';
-import 'package:on_chain_wallet/crypto/types/networks.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/models/models/signing.dart';
-import 'package:on_chain_wallet/future/wallet/controller/controller.dart';
-import 'package:on_chain_wallet/future/wallet/network/bitcoin/transaction/types/types.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/app/live_listener/live.dart';
+import 'package:stealth_stash/crypto/keys/keys.dart';
+import 'package:stealth_stash/crypto/types/networks.dart';
+import 'package:stealth_stash/crypto/requets/messages/models/models/signing.dart';
+import 'package:stealth_stash/future/wallet/controller/controller.dart';
+import 'package:stealth_stash/future/wallet/network/bitcoin/transaction/types/types.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 
 mixin BitcoinTransactionSignerController on DisposableMixin {
   WalletProvider get walletProvider;

@@ -2,12 +2,12 @@ import 'dart:async';
 import 'dart:isolate';
 
 import 'package:blockchain_utils/utils/atomic/atomic.dart';
-import 'package:on_chain_wallet/app/http/http.dart';
-import 'package:on_chain_wallet/app/http/isolate/core/service.dart';
-import 'package:on_chain_wallet/app/http/isolate/exception/exception.dart';
-import 'package:on_chain_wallet/app/http/isolate/impl/caller/caller.dart';
-import 'package:on_chain_wallet/app/http/isolate/models/message.dart';
-import 'package:on_chain_wallet/app/http/isolate/models/mode.dart';
+import 'package:stealth_stash/app/http/http.dart';
+import 'package:stealth_stash/app/http/isolate/core/service.dart';
+import 'package:stealth_stash/app/http/isolate/exception/exception.dart';
+import 'package:stealth_stash/app/http/isolate/impl/caller/caller.dart';
+import 'package:stealth_stash/app/http/isolate/models/message.dart';
+import 'package:stealth_stash/app/http/isolate/models/mode.dart';
 
 IoHTTPServiceWorker getHTTPWorker() => IoHTTPServiceWorker();
 

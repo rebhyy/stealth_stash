@@ -1,12 +1,12 @@
 import 'package:blockchain_utils/utils/atomic/atomic.dart';
 import 'package:blockchain_utils/utils/numbers/rational/big_rational.dart';
 import 'package:cosmos_sdk/cosmos_sdk.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/constant/const.dart';
-import 'package:on_chain_wallet/future/wallet/network/cosmos/transaction/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
-import 'package:on_chain_wallet/wallet/constant/networks/cosmos.dart';
-import 'package:on_chain_wallet/wallet/models/token/token/token.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/constant/const.dart';
+import 'package:stealth_stash/future/wallet/network/cosmos/transaction/types/types.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/wallet/constant/networks/cosmos.dart';
+import 'package:stealth_stash/wallet/models/token/token/token.dart';
 
 mixin CosmosTransactionFeeController on BaseCosmosTransactionController {
   final Cancelable _cancelable = Cancelable();

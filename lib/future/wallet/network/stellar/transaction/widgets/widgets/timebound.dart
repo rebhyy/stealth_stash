@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/network/stellar/transaction/widgets/widgets/extensions.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/wallet/constant/constant.dart';
-import 'package:on_chain_wallet/future/wallet/network/stellar/transaction/types/types.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/network/stellar/transaction/widgets/widgets/extensions.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/wallet/constant/constant.dart';
+import 'package:stealth_stash/future/wallet/network/stellar/transaction/types/types.dart';
 
 class StellarTransactionSetupTimeBoundView extends StatefulWidget {
   final TransactionTimeBound currentTimeBound;

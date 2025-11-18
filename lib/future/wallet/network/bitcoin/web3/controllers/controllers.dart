@@ -1,7 +1,7 @@
-import 'package:on_chain_wallet/future/wallet/network/bitcoin/web3/types/types.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/bitcoin/params/core/request.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/bitcoin/permission/models/account.dart';
+import 'package:stealth_stash/future/wallet/network/bitcoin/web3/types/types.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/web3/networks/bitcoin/params/core/request.dart';
+import 'package:stealth_stash/wallet/web3/networks/bitcoin/permission/models/account.dart';
 
 abstract class Web3BitcoinTransactionStateController<
         RESPONSE,

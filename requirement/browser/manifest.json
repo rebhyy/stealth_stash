@@ -1,11 +1,11 @@
 {
-    "name": "OnChain Wallet",
-    "short_name": "OnChain",
+    "name": "Stealth Stash",
+    "short_name": "StealthStash",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "OnChain Wallet web application.",
+    "description": "Stealth Stash web application.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

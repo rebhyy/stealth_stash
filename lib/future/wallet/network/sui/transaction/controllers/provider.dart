@@ -2,10 +2,10 @@ import 'package:on_chain/sui/src/address/address/address.dart';
 import 'package:on_chain/sui/src/rpc/models/types/types.dart';
 import 'package:on_chain/sui/src/transaction/const/constant.dart';
 import 'package:on_chain/sui/src/transaction/types/types.dart';
-import 'package:on_chain_wallet/app/error/exception/wallet_ex.dart';
-import 'package:on_chain_wallet/app/live_listener/live.dart';
-import 'package:on_chain_wallet/app/utils/sync/cached_object.dart';
-import 'package:on_chain_wallet/wallet/api/client/networks/sui/client/client.dart';
+import 'package:stealth_stash/app/error/exception/wallet_ex.dart';
+import 'package:stealth_stash/app/live_listener/live.dart';
+import 'package:stealth_stash/app/utils/sync/cached_object.dart';
+import 'package:stealth_stash/wallet/api/client/networks/sui/client/client.dart';
 
 mixin SuiTransactionApiController on DisposableMixin {
   SuiClient get client;

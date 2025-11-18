@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/network/substrate/transaction/operations/multisig_operation.dart';
-import 'package:on_chain_wallet/future/wallet/network/substrate/transaction/widgets/call_data.dart';
-import 'package:on_chain_wallet/future/wallet/network/substrate/transaction/widgets/substrate_transaction_fee.dart';
-import 'package:on_chain_wallet/future/wallet/network/substrate/transaction/widgets/weight.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/json/json/widgets.dart';
-import 'package:on_chain_wallet/wallet/models/networks/substrate/models/multisig.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/network/substrate/transaction/operations/multisig_operation.dart';
+import 'package:stealth_stash/future/wallet/network/substrate/transaction/widgets/call_data.dart';
+import 'package:stealth_stash/future/wallet/network/substrate/transaction/widgets/substrate_transaction_fee.dart';
+import 'package:stealth_stash/future/wallet/network/substrate/transaction/widgets/weight.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/future/widgets/widgets/json/json/widgets.dart';
+import 'package:stealth_stash/wallet/models/networks/substrate/models/multisig.dart';
 import 'package:polkadot_dart/polkadot_dart.dart';
 
 class SubstrateTransactionMultisigOperationWidget extends StatelessWidget {

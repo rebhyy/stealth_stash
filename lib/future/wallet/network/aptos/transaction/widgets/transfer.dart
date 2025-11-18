@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:on_chain/aptos/src/address/address/address.dart';
-import 'package:on_chain_wallet/future/future.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
-import 'package:on_chain_wallet/wallet/models/networks/aptos/aptos.dart';
+import 'package:stealth_stash/future/future.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/wallet/models/networks/aptos/aptos.dart';
 
 class AptosTransactionTransferWidget extends StatelessWidget {
   final AptosTransactionTransferOperation form;

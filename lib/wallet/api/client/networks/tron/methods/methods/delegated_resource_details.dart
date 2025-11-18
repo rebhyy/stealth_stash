@@ -1,5 +1,5 @@
-import 'package:on_chain_wallet/wallet/models/network/core/network/network.dart';
-import 'package:on_chain_wallet/wallet/models/networks/tron/models/account_delegated_resource_info.dart';
+import 'package:stealth_stash/wallet/models/network/core/network/network.dart';
+import 'package:stealth_stash/wallet/models/networks/tron/models/account_delegated_resource_info.dart';
 import 'package:on_chain/tron/tron.dart';
 
 /// In Stake2.0, query the detail of resource share delegated from fromAddress to toAddress

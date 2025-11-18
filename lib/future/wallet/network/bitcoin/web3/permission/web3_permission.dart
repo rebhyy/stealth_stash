@@ -1,11 +1,11 @@
 import 'package:bitcoin_base/bitcoin_base.dart';
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/crypto/types/networks.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/web3/pages/chain_permission.dart';
-import 'package:on_chain_wallet/future/wallet/web3/pages/permission_view.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/web3/core/permission/models/authenticated.dart';
+import 'package:stealth_stash/crypto/types/networks.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/web3/pages/chain_permission.dart';
+import 'package:stealth_stash/future/wallet/web3/pages/permission_view.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/web3/core/permission/models/authenticated.dart';
 
 class BitcoinWeb3PermissionView extends StatefulWidget {
   const BitcoinWeb3PermissionView({required this.application, super.key});

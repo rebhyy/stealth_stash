@@ -1,4 +1,4 @@
-part of 'package:on_chain_wallet/wallet/provider/wallet_provider.dart';
+part of 'package:stealth_stash/wallet/provider/wallet_provider.dart';
 
 // ignore: library_private_types_in_public_api
 mixin WalletsManager on _WalletCore {

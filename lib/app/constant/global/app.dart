@@ -1,5 +1,5 @@
-import 'package:on_chain_wallet/app/models/models/asset.dart';
-import 'package:on_chain_wallet/app/models/models/image.dart';
+import 'package:stealth_stash/app/models/models/asset.dart';
+import 'package:stealth_stash/app/models/models/image.dart';
 
 class APPConst {
   static const String assetErc20Abi = "assets/solidity/erc20.json";
@@ -60,8 +60,8 @@ class APPConst {
   static final APPImage monero = APPImage.local("assets/image/monero.png");
   static final APPImage aptos = APPImage.local("assets/image/aptos.png");
   static final APPImage sui = APPImage.local("assets/image/sui.png");
-  static const String name = "OnChain";
-  static const String applicationId = "com.mrtnetwork.on_chain_wallet";
+  static const String name = "Stealth Stash";
+  static const String applicationId = "com.mrtnetwork.stealth_stash";
   static const String authenticateReason = "Authenticate to proceed";
   static const Duration animationDuraion = Duration(milliseconds: 400);
   static const Duration milliseconds100 = Duration(milliseconds: 100);

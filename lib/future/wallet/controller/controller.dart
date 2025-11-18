@@ -1,17 +1,17 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:on_chain_bridge/models/size/models/rect.dart';
-import 'package:on_chain_wallet/app/core.dart'
+import 'package:stealth_stash/app/core.dart'
     show APPSetting, APPWalletSetting, StateConst, APPDatabaseConst;
-import 'package:on_chain_wallet/app/utils/method/utiils.dart';
-import 'package:on_chain_wallet/future/future.dart';
-import 'package:on_chain_wallet/future/state_managment/core/observer.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/app/models/models/currencies.dart';
-import 'package:on_chain_wallet/future/tools/frame_tracker/desktop_frame_tracker.dart';
-import 'package:on_chain_wallet/future/wallet/controller/tabs/tabs.dart';
-import 'package:on_chain_wallet/repository/core/repository.dart';
-import 'package:on_chain_wallet/wallet/models/others/models/wallet.dart';
+import 'package:stealth_stash/app/utils/method/utiils.dart';
+import 'package:stealth_stash/future/future.dart';
+import 'package:stealth_stash/future/state_managment/core/observer.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/app/models/models/currencies.dart';
+import 'package:stealth_stash/future/tools/frame_tracker/desktop_frame_tracker.dart';
+import 'package:stealth_stash/future/wallet/controller/tabs/tabs.dart';
+import 'package:stealth_stash/repository/core/repository.dart';
+import 'package:stealth_stash/wallet/models/others/models/wallet.dart';
 import 'wallet/ui_wallet.dart';
 import 'wallet/cross/cross.dart'
     if (dart.library.js_interop) 'wallet/cross/web.dart'

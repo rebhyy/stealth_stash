@@ -1,19 +1,19 @@
 import 'dart:async';
 
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/types/networks.dart';
-import 'package:on_chain_wallet/wallet/api/client/core/client.dart';
-import 'package:on_chain_wallet/wallet/api/client/networks/sui/models/types.dart';
-import 'package:on_chain_wallet/wallet/api/provider/networks/sui.dart';
-import 'package:on_chain_wallet/wallet/api/services/service.dart';
-import 'package:on_chain_wallet/wallet/constant/constant.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/models/network/core/network/network.dart';
-import 'package:on_chain_wallet/wallet/models/network/params/sui.dart';
-import 'package:on_chain_wallet/wallet/models/transaction/core/transaction.dart';
-import 'package:on_chain_wallet/wallet/models/transaction/networks/sui.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/types/networks.dart';
+import 'package:stealth_stash/wallet/api/client/core/client.dart';
+import 'package:stealth_stash/wallet/api/client/networks/sui/models/types.dart';
+import 'package:stealth_stash/wallet/api/provider/networks/sui.dart';
+import 'package:stealth_stash/wallet/api/services/service.dart';
+import 'package:stealth_stash/wallet/constant/constant.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/models/network/core/network/network.dart';
+import 'package:stealth_stash/wallet/models/network/params/sui.dart';
+import 'package:stealth_stash/wallet/models/transaction/core/transaction.dart';
+import 'package:stealth_stash/wallet/models/transaction/networks/sui.dart';
 import 'package:on_chain/sui/src/src.dart';
-import 'package:on_chain_wallet/wallet/models/token/token.dart';
+import 'package:stealth_stash/wallet/models/token/token.dart';
 
 class SuiClient extends NetworkClient<SuiWalletTransaction, SuiAPIProvider,
     SuiNetworkToken, SuiAddress> {

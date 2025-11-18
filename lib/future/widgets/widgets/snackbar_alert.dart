@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/models/models/typedef.dart'
+import 'package:stealth_stash/app/models/models/typedef.dart'
     show DynamicVoid;
 import 'constraints_box_view.dart';
 import 'text_widget.dart';

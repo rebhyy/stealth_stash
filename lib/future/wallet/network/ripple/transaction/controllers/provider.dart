@@ -1,7 +1,7 @@
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/utils/ripple/ripple.dart';
-import 'package:on_chain_wallet/wallet/api/client/networks/ripple/client/ripple.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/utils/ripple/ripple.dart';
+import 'package:stealth_stash/wallet/api/client/networks/ripple/client/ripple.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
 import 'package:xrpl_dart/xrpl_dart.dart';
 
 mixin XRPTransactionApiController on DisposableMixin {

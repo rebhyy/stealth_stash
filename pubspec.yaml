@@ -1,5 +1,5 @@
-name: on_chain_wallet
-description: Open-source decentralized wallet for the future of finance. Securely manage assets, support for Bitcoin, Dogecoin, Ripple, Litecoin, Dash, Ethereum, Tron, Ton, Cosmos, Kusama, and Polkadot witch cross platform Android, Windows, web and macos.
+name: stealth_stash
+description: Stealth Stash is an open-source decentralized wallet for the future of finance. Securely manage assets, with support for Bitcoin, Dogecoin, Ripple, Litecoin, Dash, Ethereum, Tron, Ton, Cosmos, Kusama, Polkadot, and more across Android, Windows, web, and macOS.
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -18,8 +18,8 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # of the product and file versions while build-number is used as the build suffix.
 version: 0.7.0+2
 
-homepage: "https://github.com/mrtnetwork/onchain_wallet"
-repository: "https://github.com/mrtnetwork/onchain_wallet"
+homepage: "https://github.com/rebhyy/stealth_stash"
+repository: "https://github.com/rebhyy/stealth_stash"
 Author: mrhaydari.t@gmail.com
 topics:
   - bitcoin

@@ -1,14 +1,14 @@
 // import 'package:flutter/material.dart';
-// import 'package:on_chain_wallet/app/core.dart';
-// import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-// import 'package:on_chain_wallet/future/wallet/global/global.dart';
-// import 'package:on_chain_wallet/future/wallet/network/substrate/metadata/forms/metadata.dart';
-// import 'package:on_chain_wallet/future/wallet/network/substrate/metadata/metadata.dart';
-// import 'package:on_chain_wallet/future/wallet/network/substrate/metadata/pages/quick_access.dart';
-// import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-// import 'package:on_chain_wallet/wallet/chain/account.dart';
-// import 'package:on_chain_wallet/wallet/models/network/core/network/network.dart';
-// import 'package:on_chain_wallet/wallet/models/networks/substrate/substrate.dart';
+// import 'package:stealth_stash/app/core.dart';
+// import 'package:stealth_stash/future/state_managment/state_managment.dart';
+// import 'package:stealth_stash/future/wallet/global/global.dart';
+// import 'package:stealth_stash/future/wallet/network/substrate/metadata/forms/metadata.dart';
+// import 'package:stealth_stash/future/wallet/network/substrate/metadata/metadata.dart';
+// import 'package:stealth_stash/future/wallet/network/substrate/metadata/pages/quick_access.dart';
+// import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+// import 'package:stealth_stash/wallet/chain/account.dart';
+// import 'package:stealth_stash/wallet/models/network/core/network/network.dart';
+// import 'package:stealth_stash/wallet/models/networks/substrate/substrate.dart';
 // import 'package:polkadot_dart/polkadot_dart.dart';
 
 // class SubstrateMetadataAccess<T extends StateController>

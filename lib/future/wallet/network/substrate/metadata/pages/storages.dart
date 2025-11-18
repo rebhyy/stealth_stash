@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/constant/global/app.dart';
-import 'package:on_chain_wallet/app/utils/method/utiils.dart';
-import 'package:on_chain_wallet/future/future.dart';
-import 'package:on_chain_wallet/future/state_managment/extension/extension.dart';
-import 'package:on_chain_wallet/future/wallet/network/substrate/metadata/fields/fields.dart';
-import 'package:on_chain_wallet/future/wallet/network/substrate/metadata/forms/metadata.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/app/constant/global/app.dart';
+import 'package:stealth_stash/app/utils/method/utiils.dart';
+import 'package:stealth_stash/future/future.dart';
+import 'package:stealth_stash/future/state_managment/extension/extension.dart';
+import 'package:stealth_stash/future/wallet/network/substrate/metadata/fields/fields.dart';
+import 'package:stealth_stash/future/wallet/network/substrate/metadata/forms/metadata.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 import 'package:polkadot_dart/polkadot_dart.dart';
 
 enum _StoragePage { select, query }

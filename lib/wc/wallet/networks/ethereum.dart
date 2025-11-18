@@ -1,15 +1,15 @@
 import 'package:on_chain/ethereum/src/address/evm_address.dart';
 import 'package:on_chain/ethereum/src/rpc/core/methods.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/wallet/api/client/networks/ethereum/client/ethereum.dart';
-import 'package:on_chain_wallet/wallet/api/utils/utils.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/core/core.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/ethereum/etherum.dart';
-import 'package:on_chain_wallet/wallet/web3/state/state.dart';
-import 'package:on_chain_wallet/wc/core/types/types.dart';
-import 'package:on_chain_wallet/wc/wallet/core/network.dart';
-import 'package:on_chain_wallet/wc/wallet/types/types.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/wallet/api/client/networks/ethereum/client/ethereum.dart';
+import 'package:stealth_stash/wallet/api/utils/utils.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant/exception.dart';
+import 'package:stealth_stash/wallet/web3/core/core.dart';
+import 'package:stealth_stash/wallet/web3/networks/ethereum/etherum.dart';
+import 'package:stealth_stash/wallet/web3/state/state.dart';
+import 'package:stealth_stash/wc/core/types/types.dart';
+import 'package:stealth_stash/wc/wallet/core/network.dart';
+import 'package:stealth_stash/wc/wallet/types/types.dart';
 
 class EthereumWalletConnectAddress extends WalletConnectAddress {
   EthereumWalletConnectAddress(

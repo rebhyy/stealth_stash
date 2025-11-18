@@ -1,11 +1,11 @@
 import 'package:blockchain_utils/bip/bip.dart';
 import 'package:blockchain_utils/cbor/cbor.dart';
 import 'package:monero_dart/monero_dart.dart';
-import 'package:on_chain_wallet/app/serialization/serialization.dart';
-import 'package:on_chain_wallet/wallet/api/provider/provider.dart';
-import 'package:on_chain_wallet/wallet/constant/tags/constant.dart';
-import 'package:on_chain_wallet/wallet/models/network/core/params/params.dart';
-import 'package:on_chain_wallet/wallet/models/token/token/token.dart';
+import 'package:stealth_stash/app/serialization/serialization.dart';
+import 'package:stealth_stash/wallet/api/provider/provider.dart';
+import 'package:stealth_stash/wallet/constant/tags/constant.dart';
+import 'package:stealth_stash/wallet/models/network/core/params/params.dart';
+import 'package:stealth_stash/wallet/models/token/token/token.dart';
 
 class MoneroNetworkParams extends NetworkCoinParams {
   final MoneroNetwork network;

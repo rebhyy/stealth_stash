@@ -1,10 +1,10 @@
 import 'package:blockchain_utils/cbor/cbor.dart';
-import 'package:on_chain_wallet/app/serialization/cbor/cbor.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/web3/core/core.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/cardano/methods/methods.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/cardano/params/core/request.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/cardano/permission/models/account.dart';
+import 'package:stealth_stash/app/serialization/cbor/cbor.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/web3/core/core.dart';
+import 'package:stealth_stash/wallet/web3/networks/cardano/methods/methods.dart';
+import 'package:stealth_stash/wallet/web3/networks/cardano/params/core/request.dart';
+import 'package:stealth_stash/wallet/web3/networks/cardano/permission/models/account.dart';
 
 class Web3ADAGetAccountPub extends Web3ADARequestParam<List<int>> {
   final Web3ADAChainAccount accessAccount;

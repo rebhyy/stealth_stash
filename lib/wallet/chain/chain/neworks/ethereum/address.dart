@@ -1,4 +1,4 @@
-part of 'package:on_chain_wallet/wallet/chain/chain/chain.dart';
+part of 'package:stealth_stash/wallet/chain/chain/chain.dart';
 
 final class IEthAddress extends ChainAccount<ETHAddress, ETHERC20Token, NFTCore,
     EthWalletTransaction> {

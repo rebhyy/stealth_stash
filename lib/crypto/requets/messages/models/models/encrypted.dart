@@ -1,7 +1,7 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
-import 'package:on_chain_wallet/app/error/exception.dart';
-import 'package:on_chain_wallet/app/serialization/serialization.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/core/message.dart';
+import 'package:stealth_stash/app/error/exception.dart';
+import 'package:stealth_stash/app/serialization/serialization.dart';
+import 'package:stealth_stash/crypto/requets/messages/core/message.dart';
 
 enum WorkerMessageType {
   encrypted(WorkerMessageConst.encryptedMessage),

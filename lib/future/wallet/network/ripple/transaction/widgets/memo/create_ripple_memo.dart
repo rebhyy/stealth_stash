@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
 import 'package:xrpl_dart/xrpl_dart.dart';
 
 class CreateRippleMemoView extends StatefulWidget {

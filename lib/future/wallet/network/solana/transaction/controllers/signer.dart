@@ -1,11 +1,11 @@
 import 'package:on_chain/solana/src/transaction/transaction/transaction.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/keys/access/crypto_keys/crypto_keys.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/models/models/signing.dart';
-import 'package:on_chain_wallet/future/wallet/controller/controller.dart';
-import 'package:on_chain_wallet/future/wallet/network/solana/transaction/types/types.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/keys/access/crypto_keys/crypto_keys.dart';
+import 'package:stealth_stash/crypto/requets/messages/models/models/signing.dart';
+import 'package:stealth_stash/future/wallet/controller/controller.dart';
+import 'package:stealth_stash/future/wallet/network/solana/transaction/types/types.dart';
 
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 
 mixin SolanaTransactionSignerController on DisposableMixin {
   WalletSolanaNetwork get network;

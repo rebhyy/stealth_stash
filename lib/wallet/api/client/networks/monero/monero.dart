@@ -1,18 +1,18 @@
 import 'package:blockchain_utils/utils/string/string.dart';
 import 'package:monero_dart/monero_dart.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/impl/worker_impl.dart';
-import 'package:on_chain_wallet/crypto/types/networks.dart';
-import 'package:on_chain_wallet/wallet/api/client/core/client.dart';
-import 'package:on_chain_wallet/wallet/api/provider/networks/monero.dart';
-import 'package:on_chain_wallet/wallet/api/services/service.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/constant/networks/monero.dart';
-import 'package:on_chain_wallet/wallet/models/network/network.dart';
-import 'package:on_chain_wallet/wallet/models/networks/monero/monero.dart';
-import 'package:on_chain_wallet/wallet/models/token/network/token.dart';
-import 'package:on_chain_wallet/wallet/models/transaction/core/transaction.dart';
-import 'package:on_chain_wallet/wallet/models/transaction/networks/monero.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/impl/worker_impl.dart';
+import 'package:stealth_stash/crypto/types/networks.dart';
+import 'package:stealth_stash/wallet/api/client/core/client.dart';
+import 'package:stealth_stash/wallet/api/provider/networks/monero.dart';
+import 'package:stealth_stash/wallet/api/services/service.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/constant/networks/monero.dart';
+import 'package:stealth_stash/wallet/models/network/network.dart';
+import 'package:stealth_stash/wallet/models/networks/monero/monero.dart';
+import 'package:stealth_stash/wallet/models/token/network/token.dart';
+import 'package:stealth_stash/wallet/models/transaction/core/transaction.dart';
+import 'package:stealth_stash/wallet/models/transaction/networks/monero.dart';
 
 class _MoneroClientConst {
   static const int maxTxRequestPerCall = 50;

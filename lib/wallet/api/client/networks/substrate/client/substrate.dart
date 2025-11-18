@@ -6,10 +6,10 @@ import 'package:on_chain/ethereum/src/rpc/methds/rpc_call.dart';
 import 'package:on_chain/ethereum/src/rpc/provider/provider.dart';
 import 'package:on_chain/solidity/contract/fragments.dart';
 import 'package:on_chain_swap/on_chain_swap.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/types/networks.dart';
-import 'package:on_chain_wallet/wallet/api/client/networks/substrate/methods/metadata.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/types/networks.dart';
+import 'package:stealth_stash/wallet/api/client/networks/substrate/methods/metadata.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 import 'package:polkadot_dart/polkadot_dart.dart';
 
 class SubstrateClient extends NetworkClient<SubstrateWalletTransaction,

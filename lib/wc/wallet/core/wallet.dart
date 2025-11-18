@@ -1,14 +1,14 @@
 import 'dart:async';
 
 import 'package:blockchain_utils/utils/atomic/atomic.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/worker.dart';
-import 'package:on_chain_wallet/wallet/web3/web3.dart';
-import 'package:on_chain_wallet/wc/core/types/exception.dart';
-import 'package:on_chain_wallet/wc/core/types/types.dart';
-import 'package:on_chain_wallet/wc/wallet/core/network.dart';
-import 'package:on_chain_wallet/wc/wallet/types/types.dart';
-import 'package:on_chain_wallet/wc/wc.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/worker.dart';
+import 'package:stealth_stash/wallet/web3/web3.dart';
+import 'package:stealth_stash/wc/core/types/exception.dart';
+import 'package:stealth_stash/wc/core/types/types.dart';
+import 'package:stealth_stash/wc/wallet/core/network.dart';
+import 'package:stealth_stash/wc/wallet/types/types.dart';
+import 'package:stealth_stash/wc/wc.dart';
 
 import 'session.dart';
 

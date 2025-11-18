@@ -1,12 +1,12 @@
-import 'package:on_chain_wallet/wallet/web3/networks/solana/methods/methods.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/solana/params/models/sign_message.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/solana/params/models/transaction.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/solana/permission/models/account.dart';
+import 'package:stealth_stash/wallet/web3/networks/solana/methods/methods.dart';
+import 'package:stealth_stash/wallet/web3/networks/solana/params/models/sign_message.dart';
+import 'package:stealth_stash/wallet/web3/networks/solana/params/models/transaction.dart';
+import 'package:stealth_stash/wallet/web3/networks/solana/permission/models/account.dart';
 import 'package:blockchain_utils/blockchain_utils.dart';
-import 'package:on_chain_wallet/app/serialization/cbor/cbor.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/core/core.dart';
+import 'package:stealth_stash/app/serialization/cbor/cbor.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant/exception.dart';
+import 'package:stealth_stash/wallet/web3/core/core.dart';
 import 'package:on_chain/solana/solana.dart';
 
 abstract class Web3SolanaRequestParam<RESPONSE> extends Web3RequestParams<

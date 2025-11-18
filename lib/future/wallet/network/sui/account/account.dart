@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/router/page_router.dart';
-import 'package:on_chain_wallet/future/state_managment/extension/extension.dart';
-import 'package:on_chain_wallet/future/wallet/global/pages/account_tokens_view.dart';
-import 'package:on_chain_wallet/future/wallet/global/pages/select_provider.dart';
-import 'package:on_chain_wallet/future/wallet/global/pages/transaction_activity.dart';
-import 'package:on_chain_wallet/future/wallet/network/sui/transaction/operations/transfer_token.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/future/router/page_router.dart';
+import 'package:stealth_stash/future/state_managment/extension/extension.dart';
+import 'package:stealth_stash/future/wallet/global/pages/account_tokens_view.dart';
+import 'package:stealth_stash/future/wallet/global/pages/select_provider.dart';
+import 'package:stealth_stash/future/wallet/global/pages/transaction_activity.dart';
+import 'package:stealth_stash/future/wallet/network/sui/transaction/operations/transfer_token.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 
 class SuiAccountPageView extends StatelessWidget {
   const SuiAccountPageView({required this.chainAccount, super.key});

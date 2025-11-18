@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/models/models/typedef.dart';
-import 'package:on_chain_wallet/app/utils/list/extension.dart';
-import 'package:on_chain_wallet/future/future.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/types/types.dart';
+import 'package:stealth_stash/app/models/models/typedef.dart';
+import 'package:stealth_stash/app/utils/list/extension.dart';
+import 'package:stealth_stash/future/future.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/transaction/types/types.dart';
 
 class TransactionFeeView<FEE extends TransactionFeeData>
     extends StatelessWidget {

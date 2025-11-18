@@ -1,7 +1,7 @@
 import 'package:blockchain_utils/utils/utils.dart';
-import 'package:on_chain_wallet/app/core.dart';
+import 'package:stealth_stash/app/core.dart';
 import 'package:on_chain/on_chain.dart';
-import 'package:on_chain_wallet/wallet/web3/web3.dart';
+import 'package:stealth_stash/wallet/web3/web3.dart';
 import '../../js_wallet.dart';
 import '../../models/models/networks/aptos.dart';
 import '../../models/models/networks/wallet_standard.dart';

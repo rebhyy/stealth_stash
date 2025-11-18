@@ -1,15 +1,15 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
 import 'package:monero_dart/monero_dart.dart';
-import 'package:on_chain_wallet/crypto/types/networks.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/core/messages/types/message.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/monero/constant/constants/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/monero/methods/methods.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/monero/params/models/sign_message.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/monero/params/models/transaction.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/monero/permission/models/account.dart';
-import 'package:on_chain_wallet/wallet/web3/state/core/network.dart';
-import 'package:on_chain_wallet/wallet/web3/utils/web3_validator_utils.dart';
+import 'package:stealth_stash/crypto/types/networks.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant/exception.dart';
+import 'package:stealth_stash/wallet/web3/core/messages/types/message.dart';
+import 'package:stealth_stash/wallet/web3/networks/monero/constant/constants/exception.dart';
+import 'package:stealth_stash/wallet/web3/networks/monero/methods/methods.dart';
+import 'package:stealth_stash/wallet/web3/networks/monero/params/models/sign_message.dart';
+import 'package:stealth_stash/wallet/web3/networks/monero/params/models/transaction.dart';
+import 'package:stealth_stash/wallet/web3/networks/monero/permission/models/account.dart';
+import 'package:stealth_stash/wallet/web3/state/core/network.dart';
+import 'package:stealth_stash/wallet/web3/utils/web3_validator_utils.dart';
 
 mixin MoneroWeb3StateHandler<
         STATEADDRESS,

@@ -1,11 +1,11 @@
 import 'dart:async';
 import 'package:on_chain/aptos/aptos.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/network/aptos/transaction/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
-import 'package:on_chain_wallet/wallet/models/networks/aptos/models/types.dart';
-import 'package:on_chain_wallet/wallet/models/others/models/receipt_address.dart';
-import 'package:on_chain_wallet/wallet/models/token/token/token.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/network/aptos/transaction/types/types.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/wallet/models/networks/aptos/models/types.dart';
+import 'package:stealth_stash/wallet/models/others/models/receipt_address.dart';
+import 'package:stealth_stash/wallet/models/token/token/token.dart';
 import 'fee.dart';
 import 'provider.dart';
 import 'signer.dart';

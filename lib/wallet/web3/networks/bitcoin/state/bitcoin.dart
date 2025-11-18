@@ -1,12 +1,12 @@
 import 'package:bitcoin_base/bitcoin_base.dart';
 import 'package:blockchain_utils/utils/utils.dart';
-import 'package:on_chain_wallet/crypto/types/networks.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/core/messages/models/models/wallet_response.dart';
-import 'package:on_chain_wallet/wallet/web3/core/messages/types/message.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/bitcoin/bitcoin.dart';
-import 'package:on_chain_wallet/wallet/web3/state/state.dart';
-import 'package:on_chain_wallet/wallet/web3/utils/web3_validator_utils.dart';
+import 'package:stealth_stash/crypto/types/networks.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant/exception.dart';
+import 'package:stealth_stash/wallet/web3/core/messages/models/models/wallet_response.dart';
+import 'package:stealth_stash/wallet/web3/core/messages/types/message.dart';
+import 'package:stealth_stash/wallet/web3/networks/bitcoin/bitcoin.dart';
+import 'package:stealth_stash/wallet/web3/state/state.dart';
+import 'package:stealth_stash/wallet/web3/utils/web3_validator_utils.dart';
 
 mixin BitcoinWeb3StateHandler<
         STATEADDRESS,

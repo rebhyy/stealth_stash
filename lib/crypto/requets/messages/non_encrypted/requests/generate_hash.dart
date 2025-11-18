@@ -1,8 +1,8 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/requets/argruments/argruments.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/core/message.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/crypto/requests/hash.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/requets/argruments/argruments.dart';
+import 'package:stealth_stash/crypto/requets/messages/core/message.dart';
+import 'package:stealth_stash/crypto/requets/messages/crypto/requests/hash.dart';
 
 final class NoneEncryptedRequestHashing
     extends NoneEncryptedCryptoRequest<List<int>, MessageArgsOneBytes> {

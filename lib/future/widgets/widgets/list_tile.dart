@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/state_managment/extension/app_extensions/context.dart'
+import 'package:stealth_stash/future/state_managment/extension/app_extensions/context.dart'
     show QuickContextAccsess;
-import 'package:on_chain_wallet/app/models/models/typedef.dart'
+import 'package:stealth_stash/app/models/models/typedef.dart'
     show BoolVoid, DynamicVoid, NullBoolVoid;
-import 'package:on_chain_wallet/future/widgets/widgets/widget_constant.dart';
+import 'package:stealth_stash/future/widgets/widgets/widget_constant.dart';
 
 class AppListTile extends StatelessWidget {
   const AppListTile(

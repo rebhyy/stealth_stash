@@ -2,12 +2,12 @@ import 'dart:js_interop';
 
 import 'package:blockchain_utils/utils/binary/utils.dart';
 import 'package:on_chain/on_chain.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/core/core.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/cardano/cardano.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/cardano/state/types/types.dart';
-import 'package:on_chain_wallet/wallet/web3/state/state.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant/exception.dart';
+import 'package:stealth_stash/wallet/web3/core/core.dart';
+import 'package:stealth_stash/wallet/web3/networks/cardano/cardano.dart';
+import 'package:stealth_stash/wallet/web3/networks/cardano/state/types/types.dart';
+import 'package:stealth_stash/wallet/web3/state/state.dart';
 import '../../models/models.dart';
 import '../../models/models/networks/ada.dart';
 import '../../models/models/networks/wallet_standard.dart';

@@ -1,20 +1,20 @@
 import 'dart:async';
 
 import 'package:blockchain_utils/blockchain_utils.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/types/networks.dart';
-import 'package:on_chain_wallet/wallet/api/client/core/client.dart';
-import 'package:on_chain_wallet/wallet/api/provider/core/provider.dart';
-import 'package:on_chain_wallet/wallet/api/provider/networks/aptos.dart';
-import 'package:on_chain_wallet/wallet/api/services/service.dart';
-import 'package:on_chain_wallet/wallet/constant/chain/const.dart';
-import 'package:on_chain_wallet/wallet/models/network/network.dart';
-import 'package:on_chain_wallet/wallet/models/networks/aptos/models/types.dart';
-import 'package:on_chain_wallet/wallet/models/token/token.dart';
-import 'package:on_chain_wallet/wallet/models/transaction/core/transaction.dart';
-import 'package:on_chain_wallet/wallet/models/transaction/networks/aptos.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/types/networks.dart';
+import 'package:stealth_stash/wallet/api/client/core/client.dart';
+import 'package:stealth_stash/wallet/api/provider/core/provider.dart';
+import 'package:stealth_stash/wallet/api/provider/networks/aptos.dart';
+import 'package:stealth_stash/wallet/api/services/service.dart';
+import 'package:stealth_stash/wallet/constant/chain/const.dart';
+import 'package:stealth_stash/wallet/models/network/network.dart';
+import 'package:stealth_stash/wallet/models/networks/aptos/models/types.dart';
+import 'package:stealth_stash/wallet/models/token/token.dart';
+import 'package:stealth_stash/wallet/models/transaction/core/transaction.dart';
+import 'package:stealth_stash/wallet/models/transaction/networks/aptos.dart';
 import 'package:on_chain/aptos/aptos.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
 
 class AptosClient extends NetworkClient<AptosWalletTransaction,
     AptosAPIProvider, AptosNetworkToken, AptosAddress> {

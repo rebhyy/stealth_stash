@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/crypto/types/networks.dart';
-import 'package:on_chain_wallet/future/future.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/pages/transaction_state_builder.dart';
-import 'package:on_chain_wallet/wallet/models/network/core/network.dart';
+import 'package:stealth_stash/crypto/types/networks.dart';
+import 'package:stealth_stash/future/future.dart';
+import 'package:stealth_stash/future/wallet/transaction/pages/transaction_state_builder.dart';
+import 'package:stealth_stash/wallet/models/network/core/network.dart';
 
 class PageRouter {
   ///TransactionStateBuilder

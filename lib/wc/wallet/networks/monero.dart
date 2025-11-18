@@ -1,15 +1,15 @@
 import 'package:monero_dart/monero_dart.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/monero/methods/methods.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/monero/params/models/sign_message.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/monero/params/models/transaction.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/monero/permission/permission.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/monero/state/monero.dart';
-import 'package:on_chain_wallet/wc/wallet/core/network.dart';
-import 'package:on_chain_wallet/wc/wallet/types/types.dart';
-import 'package:on_chain_wallet/wallet/web3/state/state.dart';
-import 'package:on_chain_wallet/wallet/web3/core/core.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant/exception.dart';
+import 'package:stealth_stash/wallet/web3/networks/monero/methods/methods.dart';
+import 'package:stealth_stash/wallet/web3/networks/monero/params/models/sign_message.dart';
+import 'package:stealth_stash/wallet/web3/networks/monero/params/models/transaction.dart';
+import 'package:stealth_stash/wallet/web3/networks/monero/permission/permission.dart';
+import 'package:stealth_stash/wallet/web3/networks/monero/state/monero.dart';
+import 'package:stealth_stash/wc/wallet/core/network.dart';
+import 'package:stealth_stash/wc/wallet/types/types.dart';
+import 'package:stealth_stash/wallet/web3/state/state.dart';
+import 'package:stealth_stash/wallet/web3/core/core.dart';
 
 class MoneroWalletConnectAddress extends WalletConnectAddress {
   MoneroWalletConnectAddress(

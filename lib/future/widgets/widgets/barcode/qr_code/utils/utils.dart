@@ -1,9 +1,9 @@
 import 'dart:typed_data';
 import 'dart:ui' as ui;
 import 'package:flutter/material.dart' as material;
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/app/platform_methods/cross/methods.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/barcode/qr_code/qr_view.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/app/platform_methods/cross/methods.dart';
+import 'package:stealth_stash/future/widgets/widgets/barcode/qr_code/qr_view.dart';
 
 class QrUtils {
   static Future<List<int>?> qrCodeTobytes(

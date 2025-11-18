@@ -1,9 +1,9 @@
 import 'dart:async';
 import 'package:http/http.dart';
 import 'package:on_chain_bridge/models/device/models/platform.dart';
-import 'package:on_chain_wallet/app/http/impl/http.dart';
-import 'package:on_chain_wallet/app/http/models/models.dart';
-import 'package:on_chain_wallet/app/http/isolate/models/message.dart';
+import 'package:stealth_stash/app/http/impl/http.dart';
+import 'package:stealth_stash/app/http/models/models.dart';
+import 'package:stealth_stash/app/http/isolate/models/message.dart';
 
 class ServicesHTTPCaller {
   static String _getExceptionMessage(Object e) {

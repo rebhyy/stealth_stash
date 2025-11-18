@@ -1,11 +1,11 @@
 import 'package:blockchain_utils/cbor/cbor.dart';
-import 'package:on_chain_wallet/app/constant/global/serialization.dart';
+import 'package:stealth_stash/app/constant/global/serialization.dart';
 import 'package:blockchain_utils/utils/equatable/equatable.dart';
-import 'package:on_chain_wallet/app/serialization/serialization.dart';
-import 'package:on_chain_wallet/app/utils/string/utils.dart';
+import 'package:stealth_stash/app/serialization/serialization.dart';
+import 'package:stealth_stash/app/utils/string/utils.dart';
 import 'content_type.dart';
 
-// import 'package:on_chain_wallet/app/core.dart';
+// import 'package:stealth_stash/app/core.dart';
 typedef OnLoadUrl = Future<String> Function();
 typedef OnLoadCacheKey = Future<String> Function();
 

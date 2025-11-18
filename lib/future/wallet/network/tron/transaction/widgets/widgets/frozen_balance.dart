@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/crypto/utils/tron/tron.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/network/tron/transaction/operations/resource/frozen_balance.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/crypto/utils/tron/tron.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/network/tron/transaction/operations/resource/frozen_balance.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
 import 'fee.dart';
 
 class TronTransactionFreezeBalanceV2ContractWidget extends StatelessWidget {

@@ -2,21 +2,21 @@ import 'dart:async';
 
 import 'package:blockchain_utils/exception/exceptions.dart';
 import 'package:blockchain_utils/utils/utils.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/types/networks.dart';
-import 'package:on_chain_wallet/wallet/api/client/core/client.dart';
-import 'package:on_chain_wallet/wallet/api/client/networks/ripple/methods/methods.dart';
-import 'package:on_chain_wallet/wallet/api/client/networks/ripple/types/types.dart';
-import 'package:on_chain_wallet/wallet/api/client/networks/ripple/utils/utils.dart';
-import 'package:on_chain_wallet/wallet/api/provider/networks/ripple.dart';
-import 'package:on_chain_wallet/wallet/api/services/service.dart';
-import 'package:on_chain_wallet/wallet/models/network/network.dart';
-import 'package:on_chain_wallet/wallet/models/networks/ripple/ripple.dart';
-import 'package:on_chain_wallet/wallet/models/token/token.dart';
-import 'package:on_chain_wallet/wallet/models/transaction/core/transaction.dart';
-import 'package:on_chain_wallet/wallet/models/transaction/networks/xrp.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/types/networks.dart';
+import 'package:stealth_stash/wallet/api/client/core/client.dart';
+import 'package:stealth_stash/wallet/api/client/networks/ripple/methods/methods.dart';
+import 'package:stealth_stash/wallet/api/client/networks/ripple/types/types.dart';
+import 'package:stealth_stash/wallet/api/client/networks/ripple/utils/utils.dart';
+import 'package:stealth_stash/wallet/api/provider/networks/ripple.dart';
+import 'package:stealth_stash/wallet/api/services/service.dart';
+import 'package:stealth_stash/wallet/models/network/network.dart';
+import 'package:stealth_stash/wallet/models/networks/ripple/ripple.dart';
+import 'package:stealth_stash/wallet/models/token/token.dart';
+import 'package:stealth_stash/wallet/models/transaction/core/transaction.dart';
+import 'package:stealth_stash/wallet/models/transaction/networks/xrp.dart';
 import 'package:xrpl_dart/xrpl_dart.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
 
 class _RippleApiProviderConst {
   static const int accountNotFound = 19;

@@ -1,8 +1,8 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
-import 'package:on_chain_wallet/app/serialization/serialization.dart';
-import 'package:on_chain_wallet/wallet/constant/tags/constant.dart';
-import 'package:on_chain_wallet/wallet/models/network/core/params/params.dart';
-import 'package:on_chain_wallet/wallet/models/token/token/token.dart';
+import 'package:stealth_stash/app/serialization/serialization.dart';
+import 'package:stealth_stash/wallet/constant/tags/constant.dart';
+import 'package:stealth_stash/wallet/models/network/core/params/params.dart';
+import 'package:stealth_stash/wallet/models/token/token/token.dart';
 import 'package:ton_dart/ton_dart.dart' as ton;
 
 class TonNetworkParams extends NetworkCoinParams {

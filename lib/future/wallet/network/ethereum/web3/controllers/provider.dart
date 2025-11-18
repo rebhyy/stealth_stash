@@ -6,13 +6,13 @@ import 'package:on_chain/ethereum/src/transaction/eth_transaction.dart';
 import 'package:on_chain/solidity/address/core.dart';
 import 'package:on_chain/solidity/contract/contract_abi.dart';
 import 'package:on_chain/tron/src/address/tron_address.dart';
-import 'package:on_chain_wallet/app/utils/method/utiils.dart';
-import 'package:on_chain_wallet/app/utils/platform/utils.dart';
-import 'package:on_chain_wallet/crypto/types/networks.dart';
-import 'package:on_chain_wallet/crypto/utils/solidity/solidity.dart';
-import 'package:on_chain_wallet/future/wallet/network/ethereum/web3/types/types.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/ethereum/params/models/send_transaction.dart';
+import 'package:stealth_stash/app/utils/method/utiils.dart';
+import 'package:stealth_stash/app/utils/platform/utils.dart';
+import 'package:stealth_stash/crypto/types/networks.dart';
+import 'package:stealth_stash/crypto/utils/solidity/solidity.dart';
+import 'package:stealth_stash/future/wallet/network/ethereum/web3/types/types.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
+import 'package:stealth_stash/wallet/web3/networks/ethereum/params/models/send_transaction.dart';
 
 mixin SolidityWeb3TransactionApiController {
   EthereumClient get solidityClient;

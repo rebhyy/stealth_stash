@@ -2,16 +2,16 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:on_chain/ethereum/src/transaction/eth_transaction.dart';
-import 'package:on_chain_wallet/crypto/utils/solidity/solidity.dart';
-import 'package:on_chain_wallet/future/wallet/network/ethereum/transaction/controllers/controller.dart';
-import 'package:on_chain_wallet/future/wallet/network/ethereum/transaction/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/network/ethereum/transaction/widgets/transfer_token.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
-import 'package:on_chain_wallet/wallet/api/client/networks/ethereum/client/ethereum.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/models/token/token/token.dart';
-import 'package:on_chain_wallet/wallet/models/transaction/core/transaction.dart';
-import 'package:on_chain_wallet/wallet/models/transaction/networks/ethereum.dart';
+import 'package:stealth_stash/crypto/utils/solidity/solidity.dart';
+import 'package:stealth_stash/future/wallet/network/ethereum/transaction/controllers/controller.dart';
+import 'package:stealth_stash/future/wallet/network/ethereum/transaction/types/types.dart';
+import 'package:stealth_stash/future/wallet/network/ethereum/transaction/widgets/transfer_token.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/wallet/api/client/networks/ethereum/client/ethereum.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/models/token/token/token.dart';
+import 'package:stealth_stash/wallet/models/transaction/core/transaction.dart';
+import 'package:stealth_stash/wallet/models/transaction/networks/ethereum.dart';
 
 class EthereumTransactionTransferTokenOperation
     extends EthereumTransactionStateController<

@@ -1,7 +1,7 @@
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/app/isolate/types.dart';
-import 'package:on_chain_wallet/wallet/api/provider/networks/custom.dart';
-import 'package:on_chain_wallet/wallet/api/services/impl/http/http.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/app/isolate/types.dart';
+import 'package:stealth_stash/wallet/api/provider/networks/custom.dart';
+import 'package:stealth_stash/wallet/api/services/impl/http/http.dart';
 import 'package:on_chain_swap/on_chain_swap.dart';
 
 class ChainFlipHTTPService extends HTTPService<CustomAPIProvider>

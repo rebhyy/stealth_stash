@@ -1,10 +1,10 @@
-import 'package:on_chain_wallet/app/live_listener/live.dart';
-import 'package:on_chain_wallet/crypto/constant/const.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/models/models/signing.dart';
-import 'package:on_chain_wallet/future/wallet/wallet.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/models/network/core/network.dart';
-import 'package:on_chain_wallet/wallet/models/signing/signing.dart';
+import 'package:stealth_stash/app/live_listener/live.dart';
+import 'package:stealth_stash/crypto/constant/const.dart';
+import 'package:stealth_stash/crypto/requets/messages/models/models/signing.dart';
+import 'package:stealth_stash/future/wallet/wallet.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/models/network/core/network.dart';
+import 'package:stealth_stash/wallet/models/signing/signing.dart';
 
 mixin CosmosTransactionSignerController on DisposableMixin {
   WalletProvider get walletProvider;

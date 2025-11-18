@@ -1,8 +1,8 @@
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/core/core.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/stellar/stellar.dart';
-import 'package:on_chain_wallet/wallet/web3/state/state.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant/exception.dart';
+import 'package:stealth_stash/wallet/web3/core/core.dart';
+import 'package:stealth_stash/wallet/web3/networks/stellar/stellar.dart';
+import 'package:stealth_stash/wallet/web3/state/state.dart';
 import 'package:stellar_dart/stellar_dart.dart';
 import '../../models/models/networks/stellar.dart';
 import '../../models/models/networks/wallet_standard.dart';

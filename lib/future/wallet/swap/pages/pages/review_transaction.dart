@@ -1,11 +1,11 @@
-import 'package:on_chain_wallet/future/wallet/global/pages/address_details.dart';
-import 'package:on_chain_wallet/future/wallet/global/pages/receipt_address_view.dart';
-import 'package:on_chain_wallet/future/wallet/swap/controller/controller/transaction.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/models/swap/swap/models.dart';
+import 'package:stealth_stash/future/wallet/global/pages/address_details.dart';
+import 'package:stealth_stash/future/wallet/global/pages/receipt_address_view.dart';
+import 'package:stealth_stash/future/wallet/swap/controller/controller/transaction.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/models/swap/swap/models.dart';
 import 'package:on_chain_swap/on_chain_swap.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
 import 'package:flutter/material.dart';
 
 import 'config.dart';

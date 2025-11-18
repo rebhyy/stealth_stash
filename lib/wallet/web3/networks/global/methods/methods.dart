@@ -1,7 +1,7 @@
-import 'package:on_chain_wallet/app/utils/list/extension.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/core/core.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/global/constant/constant.dart';
+import 'package:stealth_stash/app/utils/list/extension.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant/exception.dart';
+import 'package:stealth_stash/wallet/web3/core/core.dart';
+import 'package:stealth_stash/wallet/web3/networks/global/constant/constant.dart';
 
 class Web3GlobalRequestMethods extends Web3RequestMethods {
   @override

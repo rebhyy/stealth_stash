@@ -1,1 +1,1 @@
-# OnChain Wallet Changelog
+# Stealth Stash Changelog

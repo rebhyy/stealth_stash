@@ -1,14 +1,14 @@
 import 'dart:async';
 import 'package:cosmos_sdk/cosmos_sdk.dart';
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/network/cosmos/transaction/controllers/controller.dart';
-import 'package:on_chain_wallet/future/wallet/network/cosmos/transaction/types/transfer.dart';
-import 'package:on_chain_wallet/future/wallet/network/cosmos/transaction/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/network/cosmos/transaction/widgets/transfer.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/network/cosmos/transaction/controllers/controller.dart';
+import 'package:stealth_stash/future/wallet/network/cosmos/transaction/types/transfer.dart';
+import 'package:stealth_stash/future/wallet/network/cosmos/transaction/types/types.dart';
+import 'package:stealth_stash/future/wallet/network/cosmos/transaction/widgets/transfer.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
 
 class CosmosTransactionTransferOperation
     extends CosmosTransactionStateController2 {

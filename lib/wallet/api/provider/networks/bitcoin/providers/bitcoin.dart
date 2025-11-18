@@ -3,12 +3,12 @@ import 'package:bitcoin_base/bitcoin_base.dart'
 import 'package:blockchain_utils/cbor/core/cbor.dart';
 import 'package:blockchain_utils/cbor/types/cbor_tag.dart';
 import 'package:blockchain_utils/cbor/types/list.dart';
-import 'package:on_chain_wallet/app/http/models/auth.dart';
-import 'package:on_chain_wallet/app/serialization/serialization.dart';
-import 'package:on_chain_wallet/app/utils/string/utils.dart';
-import 'package:on_chain_wallet/wallet/api/provider/models/bitcoin_explorer_provider_type.dart';
-import 'package:on_chain_wallet/wallet/api/services/service.dart';
-import 'package:on_chain_wallet/wallet/constant/tags/constant.dart';
+import 'package:stealth_stash/app/http/models/auth.dart';
+import 'package:stealth_stash/app/serialization/serialization.dart';
+import 'package:stealth_stash/app/utils/string/utils.dart';
+import 'package:stealth_stash/wallet/api/provider/models/bitcoin_explorer_provider_type.dart';
+import 'package:stealth_stash/wallet/api/services/service.dart';
+import 'package:stealth_stash/wallet/constant/tags/constant.dart';
 
 import 'provider.dart';
 

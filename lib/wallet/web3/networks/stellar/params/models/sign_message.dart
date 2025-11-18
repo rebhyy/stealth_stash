@@ -1,11 +1,11 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
-import 'package:on_chain_wallet/app/serialization/cbor/cbor.dart';
-import 'package:on_chain_wallet/wallet/constant/tags/constant.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/web3/core/core.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/stellar/methods/methods.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/stellar/params/core/request.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/stellar/permission/models/account.dart';
+import 'package:stealth_stash/app/serialization/cbor/cbor.dart';
+import 'package:stealth_stash/wallet/constant/tags/constant.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/web3/core/core.dart';
+import 'package:stealth_stash/wallet/web3/networks/stellar/methods/methods.dart';
+import 'package:stealth_stash/wallet/web3/networks/stellar/params/core/request.dart';
+import 'package:stealth_stash/wallet/web3/networks/stellar/permission/models/account.dart';
 
 class Web3StellarSignMessageResponse with CborSerializable {
   final List<int> signature;

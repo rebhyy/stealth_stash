@@ -1,8 +1,8 @@
-import 'package:on_chain_wallet/app/utils/list/extension.dart';
-import 'package:on_chain_wallet/crypto/types/networks.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/core/core.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/aptos/constant/constants/constant.dart';
+import 'package:stealth_stash/app/utils/list/extension.dart';
+import 'package:stealth_stash/crypto/types/networks.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant/exception.dart';
+import 'package:stealth_stash/wallet/web3/core/core.dart';
+import 'package:stealth_stash/wallet/web3/networks/aptos/constant/constants/constant.dart';
 
 class Web3AptosRequestMethods extends Web3NetworkRequestMethods {
   const Web3AptosRequestMethods._(

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/live_listener/live.dart';
-import 'package:on_chain_wallet/app/models/models/typedef.dart';
-import 'package:on_chain_wallet/app/utils/string/password.dart';
-import 'package:on_chain_wallet/future/future.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/setup/types/types.dart';
-import 'package:on_chain_wallet/wallet/models/wallet/models/backup.dart';
-import 'package:on_chain_wallet/wallet/models/wallet/models/hd_wallet.dart';
-import 'package:on_chain_wallet/wallet/models/wallet/models/subwallet.dart';
+import 'package:stealth_stash/app/live_listener/live.dart';
+import 'package:stealth_stash/app/models/models/typedef.dart';
+import 'package:stealth_stash/app/utils/string/password.dart';
+import 'package:stealth_stash/future/future.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/setup/types/types.dart';
+import 'package:stealth_stash/wallet/models/wallet/models/backup.dart';
+import 'package:stealth_stash/wallet/models/wallet/models/hd_wallet.dart';
+import 'package:stealth_stash/wallet/models/wallet/models/subwallet.dart';
 
 class SetupWalletStateController with DisposableMixin, StreamStateController {
   final WalletProvider walletProvider;

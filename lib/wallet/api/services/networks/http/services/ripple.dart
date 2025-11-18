@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'package:blockchain_utils/blockchain_utils.dart';
-import 'package:on_chain_wallet/app/isolate/types.dart';
-import 'package:on_chain_wallet/wallet/api/provider/networks/ripple.dart';
-import 'package:on_chain_wallet/wallet/api/services/impl/http/http.dart';
+import 'package:stealth_stash/app/isolate/types.dart';
+import 'package:stealth_stash/wallet/api/provider/networks/ripple.dart';
+import 'package:stealth_stash/wallet/api/services/impl/http/http.dart';
 import 'package:xrpl_dart/xrpl_dart.dart';
 
 class RippleHTTPService extends HTTPService<RippleAPIProvider>

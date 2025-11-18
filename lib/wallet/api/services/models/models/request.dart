@@ -1,4 +1,4 @@
-import 'package:on_chain_wallet/app/error/exception/exception.dart';
+import 'package:stealth_stash/app/error/exception/exception.dart';
 
 class ApiRequest {
   ApiRequest({this.error, required this.uri, required this.identifier})

@@ -1,5 +1,5 @@
 import 'package:on_chain_bridge/models/models.dart';
-import 'package:on_chain_wallet/app/error/exception/exception.dart';
+import 'package:stealth_stash/app/error/exception/exception.dart';
 
 enum ServiceProtocol {
   http("HTTP", 0),

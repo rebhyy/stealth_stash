@@ -1,8 +1,8 @@
 import 'package:blockchain_utils/helper/extensions/extensions.dart';
-import 'package:on_chain_wallet/app/live_listener/live.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/models/models/signing.dart';
-import 'package:on_chain_wallet/future/wallet/controller/controller.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/app/live_listener/live.dart';
+import 'package:stealth_stash/crypto/requets/messages/models/models/signing.dart';
+import 'package:stealth_stash/future/wallet/controller/controller.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 import 'package:stellar_dart/stellar_dart.dart';
 
 mixin StellarTransactionSignerController on DisposableMixin {

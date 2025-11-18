@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 
-import 'package:on_chain_wallet/future/state_managment/extension/extension.dart';
+import 'package:stealth_stash/future/state_managment/extension/extension.dart';
 
 class DotsPainter extends CustomPainter {
   final double progress;

@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'package:bitcoin_base/bitcoin_base.dart' show ApiService;
-import 'package:on_chain_wallet/app/isolate/types.dart';
-import 'package:on_chain_wallet/wallet/api/provider/networks/bitcoin/providers/bitcoin.dart';
-import 'package:on_chain_wallet/wallet/api/services/impl/http/http.dart';
+import 'package:stealth_stash/app/isolate/types.dart';
+import 'package:stealth_stash/wallet/api/provider/networks/bitcoin/providers/bitcoin.dart';
+import 'package:stealth_stash/wallet/api/services/impl/http/http.dart';
 
 class BitcoinHTTPService extends HTTPService<BitcoinExplorerAPIProvider>
     implements ApiService {

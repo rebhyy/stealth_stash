@@ -1,4 +1,4 @@
-part of 'package:on_chain_wallet/wallet/chain/chain/chain.dart';
+part of 'package:stealth_stash/wallet/chain/chain/chain.dart';
 
 class SuiNetworkController extends NetworkController<ISuiAddress, SuiChain,
     Web3SuiChainAccount, Web3InternalDefaultChain, ChainConfig> {

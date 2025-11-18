@@ -1,6 +1,6 @@
 import 'dart:async';
-import 'package:on_chain_wallet/app/dev/logger.dart';
-import 'package:on_chain_wallet/app/models/models/typedef.dart';
+import 'package:stealth_stash/app/dev/logger.dart';
+import 'package:stealth_stash/app/models/models/typedef.dart';
 
 mixin _LiveListenable {
   final Set<DynamicVoid> _noneIdsListeners = {};

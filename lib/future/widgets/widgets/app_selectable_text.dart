@@ -1,7 +1,7 @@
 import 'package:blockchain_utils/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:on_chain_wallet/future/state_managment/extension/extension.dart';
+import 'package:stealth_stash/future/state_managment/extension/extension.dart';
 
 import 'bytes_tools.dart';
 

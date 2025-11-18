@@ -1,12 +1,12 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/utils/address/utils.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/models/network/core/network/network.dart';
-import 'package:on_chain_wallet/wallet/models/others/models/receipt_address.dart';
-import 'package:on_chain_wallet/wallet/models/token/coingecko/coin.dart';
-import 'package:on_chain_wallet/wallet/models/token/token/token.dart';
-// import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/utils/address/utils.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/models/network/core/network/network.dart';
+import 'package:stealth_stash/wallet/models/others/models/receipt_address.dart';
+import 'package:stealth_stash/wallet/models/token/coingecko/coin.dart';
+import 'package:stealth_stash/wallet/models/token/token/token.dart';
+// import 'package:stealth_stash/wallet/wallet.dart';
 import 'package:on_chain_swap/on_chain_swap.dart';
 
 class APPSwapUtils {

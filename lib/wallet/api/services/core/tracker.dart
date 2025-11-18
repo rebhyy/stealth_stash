@@ -1,5 +1,5 @@
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/wallet/api/services/models/models.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/wallet/api/services/models/models.dart';
 
 class APIServiceTracker {
   final StreamValue<APIServiceStatus> status =

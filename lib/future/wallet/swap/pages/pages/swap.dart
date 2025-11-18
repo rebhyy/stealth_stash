@@ -1,12 +1,12 @@
 import 'package:blockchain_utils/bip/bip/conf/core/coin_conf.dart';
 import 'package:blockchain_utils/helper/helper.dart';
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/constant/constant.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/swap/controller/controller/controller.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/models/swap/swap.dart';
+import 'package:stealth_stash/app/constant/constant.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/swap/controller/controller/controller.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/models/swap/swap.dart';
 import 'package:on_chain_swap/on_chain_swap.dart';
 
 import 'address.dart';

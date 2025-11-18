@@ -3,9 +3,9 @@ import 'dart:io';
 
 import 'package:http/http.dart' as http;
 import 'package:http/retry.dart' as r;
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/app/http/isolate/models/message.dart';
-import 'package:on_chain_wallet/app/live_listener/timout.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/app/http/isolate/models/message.dart';
+import 'package:stealth_stash/app/live_listener/timout.dart';
 
 class HttpClientManagerConst {
   static const Duration idleTimeout = Duration(minutes: 3);

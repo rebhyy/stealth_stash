@@ -1,4 +1,4 @@
-part of 'package:on_chain_wallet/wallet/chain/chain/chain.dart';
+part of 'package:stealth_stash/wallet/chain/chain/chain.dart';
 
 class ADANetworkController extends NetworkController<ICardanoAddress, ADAChain,
     Web3ADAChainAccount, Web3InternalADAChain, ChainConfig> {

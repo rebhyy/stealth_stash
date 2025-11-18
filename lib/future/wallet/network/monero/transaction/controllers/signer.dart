@@ -1,9 +1,9 @@
-import 'package:on_chain_wallet/app/live_listener/live.dart';
+import 'package:stealth_stash/app/live_listener/live.dart';
 import 'dart:async';
 import 'package:monero_dart/monero_dart.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/models/models/signing.dart';
-import 'package:on_chain_wallet/future/wallet/wallet.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/crypto/requets/messages/models/models/signing.dart';
+import 'package:stealth_stash/future/wallet/wallet.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 
 mixin MoneroTransactionSignerController on DisposableMixin {
   WalletProvider get walletProvider;

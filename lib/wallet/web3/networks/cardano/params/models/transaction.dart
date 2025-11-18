@@ -1,14 +1,14 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
 import 'package:on_chain/ada/src/models/transaction/transaction/transaction.dart';
 import 'package:on_chain/ada/src/models/transaction/witnesses/models/transaction_witness_set.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/wallet/constant/tags/constant.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant.dart';
-import 'package:on_chain_wallet/wallet/web3/core/core.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/cardano/methods/methods.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/cardano/params/core/request.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/cardano/permission/permission.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/wallet/constant/tags/constant.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant.dart';
+import 'package:stealth_stash/wallet/web3/core/core.dart';
+import 'package:stealth_stash/wallet/web3/networks/cardano/methods/methods.dart';
+import 'package:stealth_stash/wallet/web3/networks/cardano/params/core/request.dart';
+import 'package:stealth_stash/wallet/web3/networks/cardano/permission/permission.dart';
 
 class Web3ADASignTransactionResponse with CborSerializable {
   final TransactionWitnessSet witness;

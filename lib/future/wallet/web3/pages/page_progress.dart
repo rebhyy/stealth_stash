@@ -1,10 +1,10 @@
 import 'package:blockchain_utils/exception/exceptions.dart';
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/wallet/web3/core/exception/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/core/request/web_request.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/wallet/web3/core/exception/exception.dart';
+import 'package:stealth_stash/wallet/web3/core/request/web_request.dart';
 
 enum Web3ProgressStatus {
   progress(true),

@@ -2,11 +2,11 @@ import 'package:blockchain_utils/crypto/quick_crypto.dart';
 import 'package:blockchain_utils/utils/string/string.dart';
 import 'package:on_chain_bridge/models/biometric/types.dart';
 import 'package:on_chain_bridge/web/web.dart';
-import 'package:on_chain_wallet/app/error/exception/wallet_ex.dart';
-import 'package:on_chain_wallet/app/native_impl/core/core.dart';
-import 'package:on_chain_wallet/crypto/keys/access/crypto_keys/crypto_keys.dart';
-import 'package:on_chain_wallet/crypto/types/credential.dart';
-import 'package:on_chain_wallet/crypto/platform_methods/types/types.dart';
+import 'package:stealth_stash/app/error/exception/wallet_ex.dart';
+import 'package:stealth_stash/app/native_impl/core/core.dart';
+import 'package:stealth_stash/crypto/keys/access/crypto_keys/crypto_keys.dart';
+import 'package:stealth_stash/crypto/types/credential.dart';
+import 'package:stealth_stash/crypto/platform_methods/types/types.dart';
 
 WebPlatformInterface get webPlatformInterface =>
     AppNativeMethods.platform as WebPlatformInterface;

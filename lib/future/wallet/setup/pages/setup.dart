@@ -1,19 +1,19 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/wallet/global/pages/update_wallet_infos.dart';
-import 'package:on_chain_wallet/future/wallet/security/pages/accsess_wallet.dart';
+import 'package:stealth_stash/future/wallet/global/pages/update_wallet_infos.dart';
+import 'package:stealth_stash/future/wallet/security/pages/accsess_wallet.dart';
 
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/setup/controller/setup_wallet.dart';
-import 'package:on_chain_wallet/future/wallet/setup/pages/backup.dart';
-import 'package:on_chain_wallet/future/wallet/setup/pages/exists_mnemonic.dart';
-import 'package:on_chain_wallet/future/wallet/setup/pages/generate_mnemonic.dart';
-import 'package:on_chain_wallet/future/wallet/setup/pages/terms.dart';
-import 'package:on_chain_wallet/future/wallet/setup/types/types.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/wallet/models/access/wallet_access.dart';
-import 'package:on_chain_wallet/wallet/models/wallet/models/backup.dart';
-import 'package:on_chain_wallet/wallet/models/wallet/models/hd_wallet.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/setup/controller/setup_wallet.dart';
+import 'package:stealth_stash/future/wallet/setup/pages/backup.dart';
+import 'package:stealth_stash/future/wallet/setup/pages/exists_mnemonic.dart';
+import 'package:stealth_stash/future/wallet/setup/pages/generate_mnemonic.dart';
+import 'package:stealth_stash/future/wallet/setup/pages/terms.dart';
+import 'package:stealth_stash/future/wallet/setup/types/types.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/wallet/models/access/wallet_access.dart';
+import 'package:stealth_stash/wallet/models/wallet/models/backup.dart';
+import 'package:stealth_stash/wallet/models/wallet/models/hd_wallet.dart';
 
 class SubWalletSetupPageView extends StatelessWidget {
   const SubWalletSetupPageView({super.key});

@@ -1,7 +1,7 @@
 import 'package:blockchain_utils/utils/string/string.dart';
 import 'package:on_chain_bridge/platform_interface.dart';
 import 'package:on_chain_bridge/web/web.dart';
-import 'package:on_chain_wallet/app/error/exception/wallet_ex.dart';
+import 'package:stealth_stash/app/error/exception/wallet_ex.dart';
 
 Future<String> writeTOFile(String data, String fileName,
     {bool validate = true}) async {

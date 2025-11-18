@@ -2,14 +2,14 @@ import 'package:blockchain_utils/utils/binary/utils.dart';
 import 'package:blockchain_utils/utils/string/string.dart';
 import 'package:on_chain/sui/src/address/address/address.dart';
 import 'package:on_chain/sui/src/rpc/models/types/types.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/types/networks.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/core/messages/types/message.dart';
-import 'package:on_chain_wallet/wallet/web3/core/permission/types/account.dart';
-import 'package:on_chain_wallet/wallet/web3/state/core/network.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/sui/sui.dart';
-import 'package:on_chain_wallet/wallet/web3/utils/web3_validator_utils.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/types/networks.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant/exception.dart';
+import 'package:stealth_stash/wallet/web3/core/messages/types/message.dart';
+import 'package:stealth_stash/wallet/web3/core/permission/types/account.dart';
+import 'package:stealth_stash/wallet/web3/state/core/network.dart';
+import 'package:stealth_stash/wallet/web3/networks/sui/sui.dart';
+import 'package:stealth_stash/wallet/web3/utils/web3_validator_utils.dart';
 
 mixin SuiWeb3StateHandler<
         STATEADDRESS,

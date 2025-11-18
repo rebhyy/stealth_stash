@@ -1,11 +1,11 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
-import 'package:on_chain_wallet/app/serialization/cbor/cbor.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/core/core.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/ton/methods/methods.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/ton/params/params.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/ton/permission/models/account.dart';
+import 'package:stealth_stash/app/serialization/cbor/cbor.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant/exception.dart';
+import 'package:stealth_stash/wallet/web3/core/core.dart';
+import 'package:stealth_stash/wallet/web3/networks/ton/methods/methods.dart';
+import 'package:stealth_stash/wallet/web3/networks/ton/params/params.dart';
+import 'package:stealth_stash/wallet/web3/networks/ton/permission/models/account.dart';
 import 'package:ton_dart/ton_dart.dart';
 
 abstract class Web3TonRequestParam<RESPONSE> extends Web3RequestParams<RESPONSE,

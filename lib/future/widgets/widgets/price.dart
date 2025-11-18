@@ -1,11 +1,11 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/controller/controller.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/assets_image.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart'
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/controller/controller.dart';
+import 'package:stealth_stash/future/widgets/widgets/assets_image.dart';
+import 'package:stealth_stash/wallet/wallet.dart'
     show APPToken, BalanceCore, IntegerBalance;
 
 import 'tooltip/widgets/tooltip.dart';

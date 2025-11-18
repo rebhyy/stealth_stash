@@ -3,13 +3,13 @@ import 'dart:async';
 import 'package:blockchain_utils/bip/bip/bip.dart';
 import 'package:cosmos_sdk/cosmos_sdk.dart';
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/future.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/network/cosmos/network/import/controller/form.dart';
-import 'package:on_chain_wallet/future/wallet/network/cosmos/network/update_native_token.dart';
-import 'package:on_chain_wallet/future/wallet/security/pages/accsess_wallet.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/future.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/network/cosmos/network/import/controller/form.dart';
+import 'package:stealth_stash/future/wallet/network/cosmos/network/update_native_token.dart';
+import 'package:stealth_stash/future/wallet/security/pages/accsess_wallet.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 
 enum _Page { selectChain, search, review }
 

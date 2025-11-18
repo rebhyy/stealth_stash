@@ -1,6 +1,6 @@
-import 'package:on_chain_wallet/app/live_listener/live.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/models/token/token/token.dart';
+import 'package:stealth_stash/app/live_listener/live.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/models/token/token/token.dart';
 
 enum NetworkTokenFetchingStatus {
   success,

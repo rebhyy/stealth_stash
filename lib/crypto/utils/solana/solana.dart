@@ -1,4 +1,4 @@
-import 'package:on_chain_wallet/app/error/exception/wallet_ex.dart';
+import 'package:stealth_stash/app/error/exception/wallet_ex.dart';
 import 'package:on_chain/on_chain.dart';
 
 class SolanaCryptoUtils {

@@ -1,12 +1,12 @@
-import 'package:on_chain_wallet/wallet/web3/networks/aptos/methods/methods.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/aptos/params/models/sign_message.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/aptos/params/models/transaction.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/aptos/permission/permission.dart';
+import 'package:stealth_stash/wallet/web3/networks/aptos/methods/methods.dart';
+import 'package:stealth_stash/wallet/web3/networks/aptos/params/models/sign_message.dart';
+import 'package:stealth_stash/wallet/web3/networks/aptos/params/models/transaction.dart';
+import 'package:stealth_stash/wallet/web3/networks/aptos/permission/permission.dart';
 import 'package:blockchain_utils/blockchain_utils.dart';
-import 'package:on_chain_wallet/app/serialization/cbor/cbor.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/core/core.dart';
+import 'package:stealth_stash/app/serialization/cbor/cbor.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant/exception.dart';
+import 'package:stealth_stash/wallet/web3/core/core.dart';
 import 'package:on_chain/aptos/aptos.dart';
 
 abstract class Web3AptosRequestParam<RESPONSE> extends Web3RequestParams<

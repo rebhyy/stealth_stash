@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/global/pages/receipt_address_view.dart';
-import 'package:on_chain_wallet/future/wallet/network/substrate/transaction/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/network/substrate/transaction/widgets/payload.dart';
-import 'package:on_chain_wallet/future/wallet/network/substrate/web3/operations/sign_transaction.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/pages/fee.dart';
-import 'package:on_chain_wallet/future/wallet/web3/pages/web3_request_page_builder.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/json/json/widgets.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/global/pages/receipt_address_view.dart';
+import 'package:stealth_stash/future/wallet/network/substrate/transaction/types/types.dart';
+import 'package:stealth_stash/future/wallet/network/substrate/transaction/widgets/payload.dart';
+import 'package:stealth_stash/future/wallet/network/substrate/web3/operations/sign_transaction.dart';
+import 'package:stealth_stash/future/wallet/transaction/pages/fee.dart';
+import 'package:stealth_stash/future/wallet/web3/pages/web3_request_page_builder.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/future/widgets/widgets/json/json/widgets.dart';
 
 class Web3SubstrateSignTransactionStateView extends StatelessWidget {
   final WebSubstrateSignTransactionStateController controller;

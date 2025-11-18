@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:on_chain_bridge/web/api/chrome/api/core.dart';
-import 'package:on_chain_wallet/app/constant/global/state.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/router/page_router.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/controller/controller.dart';
-import 'package:on_chain_wallet/future/wallet/controller/extension/models/models.dart';
-import 'package:on_chain_wallet/future/wallet/controller/wallet/cross/web.dart';
-import 'package:on_chain_wallet/future/wallet/security/pages/accsess_wallet.dart';
+import 'package:stealth_stash/app/constant/global/state.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/router/page_router.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/controller/controller.dart';
+import 'package:stealth_stash/future/wallet/controller/extension/models/models.dart';
+import 'package:stealth_stash/future/wallet/controller/wallet/cross/web.dart';
+import 'package:stealth_stash/future/wallet/security/pages/accsess_wallet.dart';
 
-import 'package:on_chain_wallet/future/wallet/swap/pages/pages/swap.dart';
-import 'package:on_chain_wallet/future/wallet/web3/pages/client_info.dart';
-import 'package:on_chain_wallet/future/wallet/web3/pages/permission_view.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/list_tile.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/widget_constant.dart';
-import 'package:on_chain_wallet/wallet/models/access/wallet_access.dart';
+import 'package:stealth_stash/future/wallet/swap/pages/pages/swap.dart';
+import 'package:stealth_stash/future/wallet/web3/pages/client_info.dart';
+import 'package:stealth_stash/future/wallet/web3/pages/permission_view.dart';
+import 'package:stealth_stash/future/widgets/widgets/list_tile.dart';
+import 'package:stealth_stash/future/widgets/widgets/widget_constant.dart';
+import 'package:stealth_stash/wallet/models/access/wallet_access.dart';
 
 Widget appbarWidgets(bool walletIsUnlock) {
   if (isExtension) return _AppbarExtentionWidget(walletIsUnlock);

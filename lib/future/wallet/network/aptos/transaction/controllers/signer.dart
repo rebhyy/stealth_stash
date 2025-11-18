@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'package:on_chain/aptos/aptos.dart';
-import 'package:on_chain_wallet/future/future.dart';
-import 'package:on_chain_wallet/crypto/worker.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/future/future.dart';
+import 'package:stealth_stash/crypto/worker.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 
 mixin AptosTransactionSignerController {
   WalletProvider get walletProvider;

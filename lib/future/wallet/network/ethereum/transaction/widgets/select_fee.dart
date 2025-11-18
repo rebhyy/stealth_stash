@@ -1,12 +1,12 @@
 import 'package:blockchain_utils/utils/numbers/rational/big_rational.dart';
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/text_field/input_formaters.dart';
-import 'package:on_chain_wallet/future/wallet/network/ethereum/transaction/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/crypto/utils/ethereum/utils.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/text_field/input_formaters.dart';
+import 'package:stealth_stash/future/wallet/network/ethereum/transaction/types/types.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/crypto/utils/ethereum/utils.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
 
 class EthereumGasOptionsView extends StatelessWidget {
   const EthereumGasOptionsView({super.key, required this.fee});

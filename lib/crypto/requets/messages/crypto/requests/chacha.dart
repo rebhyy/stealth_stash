@@ -1,8 +1,8 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/requets/argruments/argruments.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/core/message.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/models/models/chacha.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/requets/argruments/argruments.dart';
+import 'package:stealth_stash/crypto/requets/messages/core/message.dart';
+import 'package:stealth_stash/crypto/requets/messages/models/models/chacha.dart';
 
 class CryptoRequestEncryptChacha
     extends CryptoRequest<CryptoEncryptChachaResponse, MessageArgsTwoBytes> {

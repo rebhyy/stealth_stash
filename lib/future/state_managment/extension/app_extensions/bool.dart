@@ -1,4 +1,4 @@
-import 'package:on_chain_wallet/future/state_managment/extension/app_extensions/string.dart';
+import 'package:stealth_stash/future/state_managment/extension/app_extensions/string.dart';
 
 extension QuickBooleanExtension on bool {
   String get tr {

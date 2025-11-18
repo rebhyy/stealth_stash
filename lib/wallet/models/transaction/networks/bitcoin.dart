@@ -1,10 +1,10 @@
 import 'package:bitcoin_base/bitcoin_base.dart';
 import 'package:blockchain_utils/cbor/cbor.dart';
-import 'package:on_chain_wallet/app/error/exception/wallet_ex.dart';
-import 'package:on_chain_wallet/app/serialization/serialization.dart';
-import 'package:on_chain_wallet/crypto/types/networks.dart';
-import 'package:on_chain_wallet/wallet/models/network/core/network/network.dart';
-import 'package:on_chain_wallet/wallet/models/transaction/core/transaction.dart';
+import 'package:stealth_stash/app/error/exception/wallet_ex.dart';
+import 'package:stealth_stash/app/serialization/serialization.dart';
+import 'package:stealth_stash/crypto/types/networks.dart';
+import 'package:stealth_stash/wallet/models/network/core/network/network.dart';
+import 'package:stealth_stash/wallet/models/transaction/core/transaction.dart';
 
 class BitcoinWalletTransaction extends ChainTransaction {
   final String scriptHash;

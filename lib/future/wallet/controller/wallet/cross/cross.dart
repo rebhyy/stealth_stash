@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/wallet/controller/wallet/ui_wallet.dart';
+import 'package:stealth_stash/future/wallet/controller/wallet/ui_wallet.dart';
 
 UIWallet uiWallet(GlobalKey<NavigatorState> navigatorKey, int storageVersion) =>
     throw UnsupportedError(

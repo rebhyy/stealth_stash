@@ -1,4 +1,4 @@
-part of 'package:on_chain_wallet/future/widgets/widgets/barcode/qr_code/qr_view.dart';
+part of 'package:stealth_stash/future/widgets/widgets/barcode/qr_code/qr_view.dart';
 
 /// Represents a specific element / part of a QR code. This is used to isolate
 /// the different parts so that we can style and modify specific parts

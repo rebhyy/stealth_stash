@@ -1,6 +1,6 @@
 import 'package:blockchain_utils/utils/binary/utils.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/wallet/webview/view/native_view.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/wallet/webview/view/native_view.dart';
 
 class WebViewTabController {
   final APPAndroidViewController controller;

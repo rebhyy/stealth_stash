@@ -1,7 +1,7 @@
 import 'package:bitcoin_base/bitcoin_base.dart';
-import 'package:on_chain_wallet/wallet/api/provider/networks/bitcoin/providers/electrum.dart';
-import 'package:on_chain_wallet/wallet/api/services/models/models.dart';
-import 'package:on_chain_wallet/wallet/api/services/networks/electrum/electrum.dart';
+import 'package:stealth_stash/wallet/api/provider/networks/bitcoin/providers/electrum.dart';
+import 'package:stealth_stash/wallet/api/services/models/models.dart';
+import 'package:stealth_stash/wallet/api/services/networks/electrum/electrum.dart';
 
 abstract class ElectrumService with ElectrumServiceProvider {
   ElectrumService();

@@ -1,7 +1,7 @@
 import 'package:blockchain_utils/utils/equatable/equatable.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/wallet/web3/core/messages/models/models/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/core/permission/models/authenticated.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/wallet/web3/core/messages/models/models/exception.dart';
+import 'package:stealth_stash/wallet/web3/core/permission/models/authenticated.dart';
 
 enum Web3ErrorCode {
   // General / internal errors

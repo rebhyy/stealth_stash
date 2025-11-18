@@ -1,25 +1,25 @@
 import 'package:blockchain_utils/cbor/cbor.dart';
 import 'package:blockchain_utils/helper/extensions/extensions.dart';
 import 'package:blockchain_utils/utils/equatable/equatable.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/keys/access/crypto_keys/crypto_keys.dart';
-import 'package:on_chain_wallet/crypto/types/networks.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/aptos/permission/models/account.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/bitcoin/bitcoin.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/bitcoin_cash/permission/models/account.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/cardano/permission/models/account.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/cosmos/permission/models/account.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/ethereum/permission/models/account.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/monero/permission/models/account.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/ripple/permission/models/account.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/solana/permission/models/account.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/stellar/permission/models/account.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/substrate/permission/models/account.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/sui/permission/models/account.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/ton/permission/models/account.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/tron/permission/models/account.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/keys/access/crypto_keys/crypto_keys.dart';
+import 'package:stealth_stash/crypto/types/networks.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant/exception.dart';
+import 'package:stealth_stash/wallet/web3/networks/aptos/permission/models/account.dart';
+import 'package:stealth_stash/wallet/web3/networks/bitcoin/bitcoin.dart';
+import 'package:stealth_stash/wallet/web3/networks/bitcoin_cash/permission/models/account.dart';
+import 'package:stealth_stash/wallet/web3/networks/cardano/permission/models/account.dart';
+import 'package:stealth_stash/wallet/web3/networks/cosmos/permission/models/account.dart';
+import 'package:stealth_stash/wallet/web3/networks/ethereum/permission/models/account.dart';
+import 'package:stealth_stash/wallet/web3/networks/monero/permission/models/account.dart';
+import 'package:stealth_stash/wallet/web3/networks/ripple/permission/models/account.dart';
+import 'package:stealth_stash/wallet/web3/networks/solana/permission/models/account.dart';
+import 'package:stealth_stash/wallet/web3/networks/stellar/permission/models/account.dart';
+import 'package:stealth_stash/wallet/web3/networks/substrate/permission/models/account.dart';
+import 'package:stealth_stash/wallet/web3/networks/sui/permission/models/account.dart';
+import 'package:stealth_stash/wallet/web3/networks/ton/permission/models/account.dart';
+import 'package:stealth_stash/wallet/web3/networks/tron/permission/models/account.dart';
 
 abstract class Web3ChainAccount<NETWORKADDRESS>
     with CborSerializable, Equality {

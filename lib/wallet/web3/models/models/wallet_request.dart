@@ -1,4 +1,4 @@
-import 'package:on_chain_wallet/wallet/web3/core/core.dart';
+import 'package:stealth_stash/wallet/web3/core/core.dart';
 
 class WalletWeb3Request {
   final Web3RequestParams message;

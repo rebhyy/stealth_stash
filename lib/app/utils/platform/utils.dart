@@ -1,7 +1,7 @@
 import 'package:blockchain_utils/utils/utils.dart';
 import 'package:on_chain_bridge/models/files/picked_file_data.dart';
 import 'package:on_chain_bridge/platform_interface.dart';
-import 'package:on_chain_wallet/app/platform_methods/cross/methods.dart';
+import 'package:stealth_stash/app/platform_methods/cross/methods.dart';
 
 class PlatformUtils {
   static Future<String> writeString(String data, String fileName,

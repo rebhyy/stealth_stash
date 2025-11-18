@@ -1,6 +1,6 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/app/http/isolate/models/message.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/app/http/isolate/models/message.dart';
 
 class HttpCallerUtils {
   static const Map<String, String> applicationJsonContentType = {

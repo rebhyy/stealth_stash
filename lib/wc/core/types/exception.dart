@@ -1,4 +1,4 @@
-import 'package:on_chain_wallet/app/core.dart';
+import 'package:stealth_stash/app/core.dart';
 
 class WalletConnectException extends AppException {
   const WalletConnectException(super.message);

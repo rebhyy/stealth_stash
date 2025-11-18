@@ -1,8 +1,8 @@
 import 'package:on_chain_bridge/io/io_platforms.dart';
 import 'package:on_chain_bridge/models/biometric/types.dart';
-import 'package:on_chain_wallet/app/error/exception/wallet_ex.dart';
-import 'package:on_chain_wallet/app/native_impl/core/core.dart';
-import 'package:on_chain_wallet/crypto/types/credential.dart';
+import 'package:stealth_stash/app/error/exception/wallet_ex.dart';
+import 'package:stealth_stash/app/native_impl/core/core.dart';
+import 'package:stealth_stash/crypto/types/credential.dart';
 
 Future<WalletPlatformCredentialIo?> createPlatformCredential({
   required String appName,

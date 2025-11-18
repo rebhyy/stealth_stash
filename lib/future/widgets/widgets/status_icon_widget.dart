@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/state_managment/extension/extension.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/progress_bar/widgets/stream_bottun.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/state_managment/extension/extension.dart';
+import 'package:stealth_stash/future/widgets/widgets/progress_bar/widgets/stream_bottun.dart';
 
 import 'animated/widgets/animated_switcher.dart';
 

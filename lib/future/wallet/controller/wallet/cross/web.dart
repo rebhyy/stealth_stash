@@ -4,13 +4,13 @@ import 'package:blockchain_utils/utils/atomic/atomic.dart';
 import 'package:flutter/material.dart';
 import 'package:on_chain_bridge/platform_interface.dart';
 import 'package:on_chain_bridge/web/api/chrome/api/core.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/impl/worker_impl.dart';
-import 'package:on_chain_wallet/future/wallet/controller/extension/impl/extention_wallet.dart';
-import 'package:on_chain_wallet/future/wallet/controller/wallet/ui_wallet.dart';
-import 'package:on_chain_wallet/future/wallet/web3/controller/web3_request_controller.dart';
-import 'package:on_chain_wallet/wallet/models/access/wallet_access.dart';
-import 'package:on_chain_wallet/wallet/provider/wallet_provider.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/impl/worker_impl.dart';
+import 'package:stealth_stash/future/wallet/controller/extension/impl/extention_wallet.dart';
+import 'package:stealth_stash/future/wallet/controller/wallet/ui_wallet.dart';
+import 'package:stealth_stash/future/wallet/web3/controller/web3_request_controller.dart';
+import 'package:stealth_stash/wallet/models/access/wallet_access.dart';
+import 'package:stealth_stash/wallet/provider/wallet_provider.dart';
 
 import 'io.dart';
 

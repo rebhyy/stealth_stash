@@ -1,5 +1,5 @@
 import 'package:on_chain_bridge/database/database.dart';
-import 'package:on_chain_wallet/app/core.dart';
+import 'package:stealth_stash/app/core.dart';
 
 mixin BaseRepository {
   String get tableId;

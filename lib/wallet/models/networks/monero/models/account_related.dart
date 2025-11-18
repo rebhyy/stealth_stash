@@ -1,14 +1,14 @@
 import 'dart:async';
 import 'package:blockchain_utils/blockchain_utils.dart';
 import 'package:monero_dart/monero_dart.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/isolate/types/types.dart';
-import 'package:on_chain_wallet/crypto/worker.dart';
-import 'package:on_chain_wallet/wallet/constant/networks/monero.dart';
-import 'package:on_chain_wallet/wallet/constant/tags/constant.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/models/network/core/network.dart';
-import 'package:on_chain_wallet/wallet/models/others/models/receipt_address.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/isolate/types/types.dart';
+import 'package:stealth_stash/crypto/worker.dart';
+import 'package:stealth_stash/wallet/constant/networks/monero.dart';
+import 'package:stealth_stash/wallet/constant/tags/constant.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/models/network/core/network.dart';
+import 'package:stealth_stash/wallet/models/others/models/receipt_address.dart';
 
 enum MoneroBlockTrackingStatus {
   complete(2),

@@ -1,7 +1,7 @@
-import 'package:on_chain_wallet/app/isolate/types.dart';
-import 'package:on_chain_wallet/wallet/api/provider/core/provider.dart';
-import 'package:on_chain_wallet/wallet/api/services/core/tracker.dart';
-import 'package:on_chain_wallet/wallet/api/services/models/models/protocols.dart';
+import 'package:stealth_stash/app/isolate/types.dart';
+import 'package:stealth_stash/wallet/api/provider/core/provider.dart';
+import 'package:stealth_stash/wallet/api/services/core/tracker.dart';
+import 'package:stealth_stash/wallet/api/services/models/models/protocols.dart';
 
 abstract class BaseServiceProtocol<T extends APIProvider> {
   // void disposeService();

@@ -2,14 +2,14 @@ import 'dart:async';
 
 import 'package:blockchain_utils/utils/atomic/atomic.dart';
 import 'package:flutter/widgets.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/future.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/global/pages/types.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/fields/fields.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/pages/state_warning.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/types/types.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/future.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/global/pages/types.dart';
+import 'package:stealth_stash/future/wallet/transaction/fields/fields.dart';
+import 'package:stealth_stash/future/wallet/transaction/pages/state_warning.dart';
+import 'package:stealth_stash/future/wallet/transaction/types/types.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 
 mixin TransactionStatePageController<
     SUCCESS extends SubmitTransactionSuccess,

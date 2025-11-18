@@ -1,15 +1,15 @@
 import 'package:blockchain_utils/utils/numbers/rational/big_rational.dart';
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/constant/global/app.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/global/pages/token_details_view.dart';
-import 'package:on_chain_wallet/future/wallet/network/ripple/transaction/operations/transfer/transfer.dart';
-import 'package:on_chain_wallet/future/wallet/network/ripple/transaction/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/network/ripple/transaction/widgets/memo/memo.dart';
-import 'package:on_chain_wallet/future/wallet/network/ripple/transaction/widgets/choose_token.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/wallet/constant/networks/ripple.dart';
+import 'package:stealth_stash/app/constant/global/app.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/global/pages/token_details_view.dart';
+import 'package:stealth_stash/future/wallet/network/ripple/transaction/operations/transfer/transfer.dart';
+import 'package:stealth_stash/future/wallet/network/ripple/transaction/types/types.dart';
+import 'package:stealth_stash/future/wallet/network/ripple/transaction/widgets/memo/memo.dart';
+import 'package:stealth_stash/future/wallet/network/ripple/transaction/widgets/choose_token.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/wallet/constant/networks/ripple.dart';
 import 'package:xrpl_dart/xrpl_dart.dart';
 
 class RippleTransactionTransferWidget extends StatelessWidget {

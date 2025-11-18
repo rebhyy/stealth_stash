@@ -1,5 +1,5 @@
 import 'package:monero_dart/monero_dart.dart';
-import 'package:on_chain_wallet/crypto/crypto/types/types.dart';
+import 'package:stealth_stash/crypto/crypto/types/types.dart';
 
 import '../cross/cross.dart'
     if (dart.library.js_interop) '../cross/web/crypto.dart'

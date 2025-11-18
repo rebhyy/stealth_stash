@@ -1,9 +1,9 @@
 import 'package:blockchain_utils/crypto/crypto/crypto.dart';
 import 'package:blockchain_utils/crypto/quick_crypto.dart';
 import 'package:blockchain_utils/utils/utils.dart';
-import 'package:on_chain_wallet/crypto/isolate/controller/message_controller.dart';
-import 'package:on_chain_wallet/crypto/requets/argruments/argruments.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/models/models.dart';
+import 'package:stealth_stash/crypto/isolate/controller/message_controller.dart';
+import 'package:stealth_stash/crypto/requets/argruments/argruments.dart';
+import 'package:stealth_stash/crypto/requets/messages/models/models.dart';
 import 'dart:js_interop';
 
 @JS("postMessage")

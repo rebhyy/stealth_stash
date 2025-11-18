@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/webview/controller/controller/controller.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/webview/controller/controller/controller.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
 
 class WebViewTabsView extends StatelessWidget {
   const WebViewTabsView(this.controller, {super.key});

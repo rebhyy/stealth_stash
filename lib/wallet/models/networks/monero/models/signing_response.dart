@@ -1,8 +1,8 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
 import 'package:monero_dart/monero_dart.dart';
-import 'package:on_chain_wallet/app/serialization/cbor/cbor.dart';
-import 'package:on_chain_wallet/crypto/utils/utils.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/app/serialization/cbor/cbor.dart';
+import 'package:stealth_stash/crypto/utils/utils.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 
 class MoneroViewTxDestinationWithProof with CborSerializable {
   final MoneroTxDestination destination;

@@ -1,6 +1,6 @@
-import 'package:on_chain_wallet/wallet/api/provider/networks/ripple.dart';
-import 'package:on_chain_wallet/wallet/api/services/impl/socket/protocols/websocket.dart';
-import 'package:on_chain_wallet/wallet/api/services/models/models/request_completer.dart';
+import 'package:stealth_stash/wallet/api/provider/networks/ripple.dart';
+import 'package:stealth_stash/wallet/api/services/impl/socket/protocols/websocket.dart';
+import 'package:stealth_stash/wallet/api/services/models/models/request_completer.dart';
 import 'package:xrpl_dart/xrpl_dart.dart';
 
 class RippleWebsocketService extends WebSocketService<RippleAPIProvider>

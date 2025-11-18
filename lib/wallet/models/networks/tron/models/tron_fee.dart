@@ -1,6 +1,6 @@
-import 'package:on_chain_wallet/crypto/utils/tron/tron.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/models/network/core/network/network.dart';
+import 'package:stealth_stash/crypto/utils/tron/tron.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/models/network/core/network/network.dart';
 import 'package:on_chain/on_chain.dart';
 
 import 'tron_account_info.dart';

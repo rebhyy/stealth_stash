@@ -2,8 +2,8 @@ import 'dart:async';
 import 'dart:ui' as ui;
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/impl/worker_impl.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/impl/worker_impl.dart';
 
 class CacheMemoryImageProvider extends ImageProvider<CacheMemoryImageProvider>
     with CryptoWokerImpl, HttpImpl {

@@ -1,7 +1,7 @@
 import 'dart:async';
-import 'package:on_chain_wallet/app/error/exception/app_exception.dart';
-import 'package:on_chain_wallet/app/error/exception/exception.dart';
-import 'package:on_chain_wallet/app/http/http.dart';
+import 'package:stealth_stash/app/error/exception/app_exception.dart';
+import 'package:stealth_stash/app/error/exception/exception.dart';
+import 'package:stealth_stash/app/http/http.dart';
 
 enum HTTPRequestType {
   get("GET"),

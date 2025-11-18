@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/constant/global/app.dart';
-import 'package:on_chain_wallet/future/state_managment/extension/app_extensions/context.dart';
-import 'package:on_chain_wallet/future/state_managment/typdef/typedef.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/widget_constant.dart';
+import 'package:stealth_stash/app/constant/global/app.dart';
+import 'package:stealth_stash/future/state_managment/extension/app_extensions/context.dart';
+import 'package:stealth_stash/future/state_managment/typdef/typedef.dart';
+import 'package:stealth_stash/future/widgets/widgets/widget_constant.dart';
 
 class ToolTipView extends StatelessWidget {
   const ToolTipView(

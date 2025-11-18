@@ -5,15 +5,15 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:on_chain_bridge/on_chain_bridge.dart';
 import 'package:on_chain_bridge/platform_interface.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/impl/worker_impl.dart';
-import 'package:on_chain_wallet/future/router/page_router.dart';
-import 'package:on_chain_wallet/future/state_managment/core/observer.dart';
-import 'package:on_chain_wallet/future/wallet/web3/controller/web3_request_controller.dart';
-import 'package:on_chain_wallet/future/wallet/webview/controller/controller/tab_controller.dart';
-import 'package:on_chain_wallet/future/wallet/webview/repository/webview_repository.dart';
-import 'package:on_chain_wallet/future/wallet/webview/view/native_view.dart';
-import 'package:on_chain_wallet/wallet/web3/core/core.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/impl/worker_impl.dart';
+import 'package:stealth_stash/future/router/page_router.dart';
+import 'package:stealth_stash/future/state_managment/core/observer.dart';
+import 'package:stealth_stash/future/wallet/web3/controller/web3_request_controller.dart';
+import 'package:stealth_stash/future/wallet/webview/controller/controller/tab_controller.dart';
+import 'package:stealth_stash/future/wallet/webview/repository/webview_repository.dart';
+import 'package:stealth_stash/future/wallet/webview/view/native_view.dart';
+import 'package:stealth_stash/wallet/web3/core/core.dart';
 
 class WebViewStateControllerConst {
   static const int viewIdLength = 12;

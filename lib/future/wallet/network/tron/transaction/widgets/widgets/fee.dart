@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/network/tron/transaction/controllers/fee.dart';
-import 'package:on_chain_wallet/future/wallet/network/tron/transaction/types/types.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/network/tron/transaction/controllers/fee.dart';
+import 'package:stealth_stash/future/wallet/network/tron/transaction/types/types.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
 
 class TronTransactionFeeDataView extends StatelessWidget {
   const TronTransactionFeeDataView({super.key, required this.controller});

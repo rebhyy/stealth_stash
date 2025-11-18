@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/router/page_router.dart';
-import 'package:on_chain_wallet/future/state_managment/extension/extension.dart';
-import 'package:on_chain_wallet/future/wallet/global/global.dart';
-import 'package:on_chain_wallet/future/wallet/network/substrate/substrate.dart';
-import 'package:on_chain_wallet/future/wallet/network/substrate/transaction/operations/multisig_operation.dart';
-import 'package:on_chain_wallet/future/wallet/network/substrate/transaction/operations/xcm_transfer.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/future/router/page_router.dart';
+import 'package:stealth_stash/future/state_managment/extension/extension.dart';
+import 'package:stealth_stash/future/wallet/global/global.dart';
+import 'package:stealth_stash/future/wallet/network/substrate/substrate.dart';
+import 'package:stealth_stash/future/wallet/network/substrate/transaction/operations/multisig_operation.dart';
+import 'package:stealth_stash/future/wallet/network/substrate/transaction/operations/xcm_transfer.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 
 class SubstrateAccountPageView extends StatelessWidget {
   const SubstrateAccountPageView({required this.chainAccount, super.key});

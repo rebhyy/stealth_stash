@@ -2,14 +2,14 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:on_chain/aptos/src/address/address/address.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/network/aptos/transaction/controllers/controller.dart';
-import 'package:on_chain_wallet/future/wallet/network/aptos/transaction/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/network/aptos/transaction/widgets/transfer_token.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
-import 'package:on_chain_wallet/wallet/models/networks/aptos/models/types.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/network/aptos/transaction/controllers/controller.dart';
+import 'package:stealth_stash/future/wallet/network/aptos/transaction/types/types.dart';
+import 'package:stealth_stash/future/wallet/network/aptos/transaction/widgets/transfer_token.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/wallet/models/networks/aptos/models/types.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 
 class AptosTransactionTransferTokenOperation
     extends AptosTransactionStateController<

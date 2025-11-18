@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/router/page_router.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/network/substrate/multisig/pending_multisig_txes.dart';
-import 'package:on_chain_wallet/future/wallet/network/substrate/transaction/controllers/controller.dart';
-import 'package:on_chain_wallet/future/wallet/network/substrate/transaction/types/types.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/wallet/models/models.dart';
+import 'package:stealth_stash/future/router/page_router.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/network/substrate/multisig/pending_multisig_txes.dart';
+import 'package:stealth_stash/future/wallet/network/substrate/transaction/controllers/controller.dart';
+import 'package:stealth_stash/future/wallet/network/substrate/transaction/types/types.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/wallet/models/models.dart';
 
 class SubstrateTransactionStateSendTransaction<
     T extends ISubstrateTransactionData> extends StatelessWidget {

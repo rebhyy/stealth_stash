@@ -1,7 +1,7 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/fields/fields.dart';
-import 'package:on_chain_wallet/future/wallet/network/ethereum/transaction/types/types.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/transaction/fields/fields.dart';
+import 'package:stealth_stash/future/wallet/network/ethereum/transaction/types/types.dart';
 
 mixin EthereumTransactionMemoController<T extends IEthereumTransactionData>
     on BaseEthereumTransactionController<T> {

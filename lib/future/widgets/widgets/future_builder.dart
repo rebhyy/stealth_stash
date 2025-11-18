@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/state_managment/typdef/typedef.dart';
+import 'package:stealth_stash/future/state_managment/typdef/typedef.dart';
 
 import 'animated/widgets/animated_switcher.dart';
 

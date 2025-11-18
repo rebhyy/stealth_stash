@@ -1,5 +1,5 @@
 import 'package:blockchain_utils/cbor/cbor.dart';
-import 'package:on_chain_wallet/app/serialization/serialization.dart';
+import 'package:stealth_stash/app/serialization/serialization.dart';
 
 class ExtentionRequestEvent with CborSerializable {
   final String id;

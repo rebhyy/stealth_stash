@@ -1,17 +1,17 @@
 import 'package:blockchain_utils/exception/exception/rpc_error.dart';
 import 'package:blockchain_utils/utils/numbers/rational/big_rational.dart';
 import 'package:cosmos_sdk/cosmos_sdk.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/wallet/network/cosmos/transaction/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/network/cosmos/web3/types/fee.dart';
-import 'package:on_chain_wallet/wallet/api/client/networks/networks.dart';
-import 'package:on_chain_wallet/wallet/constant/networks/cosmos.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/models/network/core/network.dart';
-import 'package:on_chain_wallet/wallet/models/networks/cosmos/models/network_types.dart';
-import 'package:on_chain_wallet/wallet/models/token/token/token.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/cosmos/constant/constants/exception.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/wallet/network/cosmos/transaction/types/types.dart';
+import 'package:stealth_stash/future/wallet/network/cosmos/web3/types/fee.dart';
+import 'package:stealth_stash/wallet/api/client/networks/networks.dart';
+import 'package:stealth_stash/wallet/constant/networks/cosmos.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/models/network/core/network.dart';
+import 'package:stealth_stash/wallet/models/networks/cosmos/models/network_types.dart';
+import 'package:stealth_stash/wallet/models/token/token/token.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant/exception.dart';
+import 'package:stealth_stash/wallet/web3/networks/cosmos/constant/constants/exception.dart';
 
 mixin CosmosTransactionApiController on DisposableMixin {
   CosmosClient get client;

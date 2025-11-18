@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/router/page_router.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/global/global.dart';
-import 'package:on_chain_wallet/future/wallet/network/cosmos/transaction/operations/ibc.dart';
-import 'package:on_chain_wallet/future/wallet/network/cosmos/transaction/operations/transfer.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/future/router/page_router.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/global/global.dart';
+import 'package:stealth_stash/future/wallet/network/cosmos/transaction/operations/ibc.dart';
+import 'package:stealth_stash/future/wallet/network/cosmos/transaction/operations/transfer.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 
 class CosmosAccountPageView extends StatelessWidget {
   const CosmosAccountPageView({required this.chainAccount, super.key});

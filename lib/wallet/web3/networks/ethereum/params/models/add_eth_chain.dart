@@ -1,10 +1,10 @@
 import 'package:blockchain_utils/cbor/cbor.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/web3/core/core.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/ethereum/methods/methods.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/ethereum/params/core/request.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/ethereum/permission/models/account.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/web3/core/core.dart';
+import 'package:stealth_stash/wallet/web3/networks/ethereum/methods/methods.dart';
+import 'package:stealth_stash/wallet/web3/networks/ethereum/params/core/request.dart';
+import 'package:stealth_stash/wallet/web3/networks/ethereum/permission/models/account.dart';
 
 class Web3EthereumAddNewChain extends Web3EthereumRequestParam<String> {
   final BigInt newChainId;

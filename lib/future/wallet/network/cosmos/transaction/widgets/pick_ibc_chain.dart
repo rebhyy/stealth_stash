@@ -1,12 +1,12 @@
 import 'package:cosmos_sdk/cosmos_sdk.dart';
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/constant/constant.dart';
-import 'package:on_chain_wallet/app/http/impl/impl.dart';
-import 'package:on_chain_wallet/app/utils/utils.dart';
-import 'package:on_chain_wallet/future/future.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/app/constant/constant.dart';
+import 'package:stealth_stash/app/http/impl/impl.dart';
+import 'package:stealth_stash/app/utils/utils.dart';
+import 'package:stealth_stash/future/future.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
 
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 
 typedef ONIBCSELECTDESTINATIONCHAIN = void Function(
     BuildContext context, CosmosIbcChainData chain);

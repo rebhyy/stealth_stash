@@ -1,6 +1,6 @@
 import 'dart:async';
-import 'package:on_chain_wallet/app/error/exception/app_exception.dart';
-import 'package:on_chain_wallet/crypto/requets/argruments/argruments.dart';
+import 'package:stealth_stash/app/error/exception/app_exception.dart';
+import 'package:stealth_stash/crypto/requets/argruments/argruments.dart';
 
 class WorkerMessageCompleter {
   final int id;

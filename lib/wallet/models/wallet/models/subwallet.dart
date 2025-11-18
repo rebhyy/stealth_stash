@@ -1,4 +1,4 @@
-import 'package:on_chain_wallet/crypto/keys/access/crypto_keys/crypto_keys.dart';
+import 'package:stealth_stash/crypto/keys/access/crypto_keys/crypto_keys.dart';
 
 class WalletImportSubWalletData {
   final String mnemonic;

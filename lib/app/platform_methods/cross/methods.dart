@@ -1,6 +1,6 @@
 import 'package:on_chain_bridge/exception/exception.dart';
 import 'package:on_chain_bridge/platform_interface.dart';
-import 'package:on_chain_wallet/app/error/exception/wallet_ex.dart';
+import 'package:stealth_stash/app/error/exception/wallet_ex.dart';
 import 'cross_platform.dart'
     if (dart.library.js_interop) 'web.dart'
     if (dart.library.io) 'io.dart';

@@ -1,16 +1,16 @@
 import 'dart:async';
 
 import 'package:blockchain_utils/utils/atomic/atomic.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/state_managment/core/observer.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/controller/wallet/ui_wallet.dart';
-import 'package:on_chain_wallet/future/wallet/swap/controller/controller/controller.dart';
-import 'package:on_chain_wallet/future/wallet/webview/controller/controller/controller.dart';
-import 'package:on_chain_wallet/marketcap/prices/live_currency.dart';
-import 'package:on_chain_wallet/wallet/api/provider/core/provider.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/models/others/models/wallet.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/state_managment/core/observer.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/controller/wallet/ui_wallet.dart';
+import 'package:stealth_stash/future/wallet/swap/controller/controller/controller.dart';
+import 'package:stealth_stash/future/wallet/webview/controller/controller/controller.dart';
+import 'package:stealth_stash/marketcap/prices/live_currency.dart';
+import 'package:stealth_stash/wallet/api/provider/core/provider.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/models/others/models/wallet.dart';
 
 enum WalletPage {
   wallet,

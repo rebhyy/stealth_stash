@@ -1,4 +1,4 @@
-import 'package:on_chain_wallet/wallet/models/networks/tron/models/tron_account_info.dart';
+import 'package:stealth_stash/wallet/models/networks/tron/models/tron_account_info.dart';
 import 'package:on_chain/tron/tron.dart';
 
 /// Query information about an account, including TRX balance, TRC-10 balances, stake information and vote information and permissions etc.

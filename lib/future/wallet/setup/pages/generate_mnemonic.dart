@@ -2,13 +2,13 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:on_chain_wallet/app/constant/global/app.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/setup/controller/form.dart';
-import 'package:on_chain_wallet/future/wallet/setup/pages/mnemonic_view.dart';
-import 'package:on_chain_wallet/future/wallet/setup/pages/verify_mnemonic.dart';
-import 'package:on_chain_wallet/future/wallet/setup/types/types.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/app/constant/global/app.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/setup/controller/form.dart';
+import 'package:stealth_stash/future/wallet/setup/pages/mnemonic_view.dart';
+import 'package:stealth_stash/future/wallet/setup/pages/verify_mnemonic.dart';
+import 'package:stealth_stash/future/wallet/setup/types/types.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
 
 class SetupMnemonicView extends StatefulWidget {
   const SetupMnemonicView({super.key});

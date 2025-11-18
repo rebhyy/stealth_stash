@@ -1,7 +1,7 @@
-import 'package:on_chain_wallet/app/live_listener/live.dart';
-import 'package:on_chain_wallet/app/utils/utils.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/ton/ton.dart';
+import 'package:stealth_stash/app/live_listener/live.dart';
+import 'package:stealth_stash/app/utils/utils.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
+import 'package:stealth_stash/wallet/web3/networks/ton/ton.dart';
 import 'package:ton_dart/ton_dart.dart';
 
 mixin TonWeb3TransactionApiController on DisposableMixin {

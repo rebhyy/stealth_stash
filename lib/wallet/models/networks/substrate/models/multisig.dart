@@ -2,8 +2,8 @@ import 'package:blockchain_utils/cbor/cbor.dart';
 import 'package:blockchain_utils/helper/helper.dart';
 import 'package:blockchain_utils/utils/binary/utils.dart';
 import 'package:blockchain_utils/utils/equatable/equatable.dart';
-import 'package:on_chain_wallet/app/serialization/serialization.dart';
-import 'package:on_chain_wallet/wallet/constant/constant.dart';
+import 'package:stealth_stash/app/serialization/serialization.dart';
+import 'package:stealth_stash/wallet/constant/constant.dart';
 import 'package:polkadot_dart/polkadot_dart.dart';
 
 class SubstrateMultisigCall with CborSerializable, Equality {

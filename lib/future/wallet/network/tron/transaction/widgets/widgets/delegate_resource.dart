@@ -1,10 +1,10 @@
 import 'package:blockchain_utils/utils/numbers/rational/big_rational.dart';
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/crypto/utils/tron/tron.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/future/state_managment/extension/extension.dart';
-import 'package:on_chain_wallet/future/wallet/network/tron/transaction/operations/resource/delegated_resource.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/crypto/utils/tron/tron.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/future/state_managment/extension/extension.dart';
+import 'package:stealth_stash/future/wallet/network/tron/transaction/operations/resource/delegated_resource.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
 import 'fee.dart';
 
 class TronTransactionDelegateResourceContractWidget extends StatelessWidget {

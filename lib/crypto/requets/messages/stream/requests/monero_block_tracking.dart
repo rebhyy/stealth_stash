@@ -2,12 +2,12 @@ import 'dart:async';
 
 import 'package:blockchain_utils/blockchain_utils.dart';
 import 'package:monero_dart/monero_dart.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/crypto/core/app_crypto.dart';
-import 'package:on_chain_wallet/crypto/requets/argruments/argruments.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/core/message.dart';
-import 'package:on_chain_wallet/wallet/api/api.dart';
-import 'package:on_chain_wallet/wallet/models/networks/monero/models/account_related.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/crypto/core/app_crypto.dart';
+import 'package:stealth_stash/crypto/requets/argruments/argruments.dart';
+import 'package:stealth_stash/crypto/requets/messages/core/message.dart';
+import 'package:stealth_stash/wallet/api/api.dart';
+import 'package:stealth_stash/wallet/models/networks/monero/models/account_related.dart';
 
 final class StreamRequestMoneroBlockTracking extends IsolateStreamRequest<
     MoneroSyncBlocksResponse, MoneroDefaultBlockTrackingInfo> {

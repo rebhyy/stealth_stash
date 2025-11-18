@@ -1,5 +1,5 @@
 import 'package:on_chain_bridge/platform_interface.dart';
-import 'package:on_chain_wallet/app/native_impl/core/core.dart';
+import 'package:stealth_stash/app/native_impl/core/core.dart';
 
 mixin ShareImpl {
   static Future<bool> shareFile(String path, String fileName,

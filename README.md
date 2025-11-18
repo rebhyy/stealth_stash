@@ -1,6 +1,6 @@
-# About OnChain Wallet
+# About Stealth Stash
 
-Welcome to OnChain Wallet, the open-source wallet crafted for the decentralized future of finance. Our mission is to provide users with a secure and versatile solution supporting a wide range of cryptocurrencies, including Bitcoin, Bitcoin Cash, Litecoin, Dogecoin, Dash, Ethereum, Tron, Ripple, Solana, Cardano, Cosmos, Monero, Sui, Aptos, Polkadot, and Kusama. Our roadmap includes cross-platform support across Android, Windows, macOS, web, and extensions for Chrome, Brave, and Mozilla Firefox.
+Welcome to Stealth Stash, the open-source wallet crafted for the decentralized future of finance. Our mission is to provide users with a secure and versatile solution supporting a wide range of cryptocurrencies, including Bitcoin, Bitcoin Cash, Litecoin, Dogecoin, Dash, Ethereum, Tron, Ripple, Solana, Cardano, Cosmos, Monero, Sui, Aptos, Polkadot, and Kusama. Our roadmap includes cross-platform support across Android, Windows, macOS, web, and extensions for Chrome, Brave, and Mozilla Firefox.
 
 ## Networks
 
@@ -147,15 +147,15 @@ Welcome to OnChain Wallet, the open-source wallet crafted for the decentralized 
 
 ## Platform Support
 
-OnChain Wallet is available on multiple platforms to provide a seamless experience:
+Stealth Stash is available on multiple platforms to provide a seamless experience:
 
 - **Android:** Take your wallet on the go with our Android app, ensuring you have secure access to your funds anytime, anywhere.
 
-- **Windows:** Enjoy the convenience of OnChain Wallet on your desktop. Our Windows version brings the power of decentralized finance to your fingertips.
+- **Windows:** Enjoy the convenience of Stealth Stash on your desktop. Our Windows version brings the power of decentralized finance to your fingertips.
 
-- **Macos:** Enjoy the convenience of OnChain Wallet on your desktop. Our Mac version brings the power of decentralized finance to your fingertips.
+- **Macos:** Enjoy the convenience of Stealth Stash on your desktop. Our Mac version brings the power of decentralized finance to your fingertips.
 
-- **Web:** Access your wallet from any web browser with our web platform. Manage your assets with ease, all while enjoying the security and privacy OnChain Wallet provides.
+- **Web:** Access your wallet from any web browser with our web platform. Manage your assets with ease, all while enjoying the security and privacy Stealth Stash provides.
 
 - **Browser Extensions:** Integrate seamlessly with your browser using our extensions for Chrome, Brave, and Mozilla Firefox, enhancing your web-based financial interactions.
 
@@ -166,11 +166,11 @@ Clone the repository and build using Flutter:
 
 - **WEB**
 
- you can view the web version of OnChain Wallet at <https://mrtnetwork.github.io/onchain_wallet/>.
+ you can view the web version of Stealth Stash at <https://rebhyy.github.io/stealth_stash/>.
 
 ```shell
-gh repo clone mrtnetwork/onchain_wallet
-cd onchain_wallet
+gh repo clone rebhyy/stealth_stash
+cd stealth_stash
 flutter pub get
 dart run app_builder.dart -web
 ```
@@ -178,8 +178,8 @@ dart run app_builder.dart -web
 - **Chrome, Edge, Brave extention**
 
 ```shell
-gh repo clone mrtnetwork/onchain_wallet
-cd onchain_wallet
+gh repo clone rebhyy/stealth_stash
+cd stealth_stash
 flutter pub get
 dart run app_builder.dart -chrome
 ```
@@ -187,8 +187,8 @@ dart run app_builder.dart -chrome
 - **Opera extention**
 
 ```shell
-gh repo clone mrtnetwork/onchain_wallet
-cd onchain_wallet
+gh repo clone rebhyy/stealth_stash
+cd stealth_stash
 flutter pub get
 dart run app_builder.dart -opera
 ```
@@ -197,8 +197,8 @@ dart run app_builder.dart -opera
 - **Firefox extention**
 
 ```shell
-gh repo clone mrtnetwork/onchain_wallet
-cd onchain_wallet
+gh repo clone rebhyy/stealth_stash
+cd stealth_stash
 flutter pub get
 dart run app_builder.dart -firefox
 ```
@@ -207,8 +207,8 @@ dart run app_builder.dart -firefox
 - **Android**
 
 ```shell
-gh repo clone mrtnetwork/onchain_wallet
-cd onchain_wallet
+gh repo clone rebhyy/stealth_stash
+cd stealth_stash
 flutter pub get
 dart run app_builder.dart -apk
 ```
@@ -216,8 +216,8 @@ dart run app_builder.dart -apk
 - **Windows**
 
 ```shell
-gh repo clone mrtnetwork/onchain_wallet
-cd onchain_wallet
+gh repo clone rebhyy/stealth_stash
+cd stealth_stash
 flutter pub get
 dart run app_builder.dart -windows
 ```
@@ -225,8 +225,8 @@ dart run app_builder.dart -windows
 - **Macos**
 
 ```shell
-gh repo clone mrtnetwork/onchain_wallet
-cd onchain_wallet
+gh repo clone rebhyy/stealth_stash
+cd stealth_stash
 flutter pub get
 dart run app_builder.dart -macos
 ```
@@ -234,7 +234,7 @@ dart run app_builder.dart -macos
 
 ## Community-Driven Development
 
-OnChain Wallet is not just a wallet; it's a community-driven project. We welcome collaboration, feedback, and contributions from the community. Together, we're building a decentralized future that prioritizes security, privacy, and inclusivity.
+Stealth Stash is not just a wallet; it's a community-driven project. We welcome collaboration, feedback, and contributions from the community. Together, we're building a decentralized future that prioritizes security, privacy, and inclusivity.
 
 
 ## Contributing
@@ -251,9 +251,9 @@ Please file feature requests and bugs in the issue tracker.
 
 ## Get Involved
 
-Join us on our mission to redefine the landscape of decentralized finance. Contribute to our open-source project on [GitHub](https://github.com/mrtnetwork/mrtwallet) or connect with our community on [Telegram](https://t.me/blockchain_web3_solidity).
+Join us on our mission to redefine the landscape of decentralized finance. Contribute to our open-source project on [GitHub](https://github.com/rebhyy/stealth_stash) or connect with our community on [Telegram](https://t.me/blockchain_web3_solidity).
 
-Thank you for choosing OnChain Wallet as your trusted partner in the world of decentralized finance.
+Thank you for choosing Stealth Stash as your trusted partner in the world of decentralized finance.
 
 ## Support
 

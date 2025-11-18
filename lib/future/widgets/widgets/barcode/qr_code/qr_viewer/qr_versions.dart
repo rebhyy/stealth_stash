@@ -1,4 +1,4 @@
-part of 'package:on_chain_wallet/future/widgets/widgets/barcode/qr_code/qr_view.dart';
+part of 'package:stealth_stash/future/widgets/widgets/barcode/qr_code/qr_view.dart';
 
 /// This class only contains special version codes. QR codes support version
 /// numbers from 1-40 and you should just use the numeric version directly.

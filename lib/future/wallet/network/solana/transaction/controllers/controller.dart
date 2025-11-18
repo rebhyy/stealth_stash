@@ -1,12 +1,12 @@
 import 'dart:async';
 import 'package:on_chain/on_chain.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/network/solana/transaction/controllers/memo.dart';
-import 'package:on_chain_wallet/future/wallet/network/solana/transaction/controllers/signer.dart';
-import 'package:on_chain_wallet/future/wallet/network/solana/transaction/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/network/solana/transaction/controllers/memo.dart';
+import 'package:stealth_stash/future/wallet/network/solana/transaction/controllers/signer.dart';
+import 'package:stealth_stash/future/wallet/network/solana/transaction/types/types.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
 import 'fee.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 
 import 'provider.dart';
 

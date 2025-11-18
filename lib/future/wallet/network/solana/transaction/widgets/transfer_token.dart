@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:on_chain/on_chain.dart';
-import 'package:on_chain_wallet/app/constant/global/app.dart';
-import 'package:on_chain_wallet/future/state_managment/extension/extension.dart';
-import 'package:on_chain_wallet/future/wallet/global/global.dart';
-import 'package:on_chain_wallet/future/wallet/network/solana/transaction/operations/transfer_token.dart';
-import 'package:on_chain_wallet/future/wallet/network/solana/transaction/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/app/constant/global/app.dart';
+import 'package:stealth_stash/future/state_managment/extension/extension.dart';
+import 'package:stealth_stash/future/wallet/global/global.dart';
+import 'package:stealth_stash/future/wallet/network/solana/transaction/operations/transfer_token.dart';
+import 'package:stealth_stash/future/wallet/network/solana/transaction/types/types.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
 
 class SolanaTransactionTransferTokenWidget extends StatelessWidget {
   final SolanaTransactionTransferTokenOperation form;

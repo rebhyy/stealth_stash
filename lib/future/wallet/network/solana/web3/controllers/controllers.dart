@@ -1,6 +1,6 @@
-import 'package:on_chain_wallet/future/wallet/network/solana/transaction/controllers/signer.dart';
-import 'package:on_chain_wallet/future/wallet/network/solana/web3/types/types.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/solana/params/core/request.dart';
+import 'package:stealth_stash/future/wallet/network/solana/transaction/controllers/signer.dart';
+import 'package:stealth_stash/future/wallet/network/solana/web3/types/types.dart';
+import 'package:stealth_stash/wallet/web3/networks/solana/params/core/request.dart';
 import 'provider.dart';
 
 abstract class Web3SolanaTransactionStateController<

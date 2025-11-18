@@ -4,10 +4,10 @@ import 'package:blockchain_utils/utils/numbers/rational/big_rational.dart';
 import 'package:blockchain_utils/utils/string/string.dart';
 import 'package:cosmos_sdk/cosmos_sdk.dart';
 import 'package:monero_dart/monero_dart.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/types/networks.dart';
-import 'package:on_chain_wallet/wallet/constant/constant.dart';
-import 'package:on_chain_wallet/wallet/models/models.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/types/networks.dart';
+import 'package:stealth_stash/wallet/constant/constant.dart';
+import 'package:stealth_stash/wallet/models/models.dart';
 import 'package:polkadot_dart/polkadot_dart.dart'
     show
         SS58Const,

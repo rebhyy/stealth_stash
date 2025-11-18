@@ -1,10 +1,10 @@
 import 'package:blockchain_utils/utils/numbers/rational/big_rational.dart';
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/network/ripple/transaction/operations/escrow/finish.dart';
-import 'package:on_chain_wallet/future/wallet/network/ripple/transaction/widgets/memo/memo.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/network/ripple/transaction/operations/escrow/finish.dart';
+import 'package:stealth_stash/future/wallet/network/ripple/transaction/widgets/memo/memo.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
 
 class RippleTransactionEscrowFinishWidget extends StatelessWidget {
   final RippleTransactionEscrowFinishOperation form;

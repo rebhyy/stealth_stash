@@ -1,6 +1,6 @@
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/repository/core/repository.dart';
-import 'package:on_chain_wallet/crypto/impl/worker_impl.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/repository/core/repository.dart';
+import 'package:stealth_stash/crypto/impl/worker_impl.dart';
 
 class WebViewRepository with BaseRepository, CryptoWokerImpl {
   WebViewTabStorage _tabs = WebViewTabStorage(const []);

@@ -2,17 +2,17 @@ import 'package:blockchain_utils/base58/base58_base.dart';
 import 'package:blockchain_utils/cbor/cbor.dart';
 import 'package:blockchain_utils/helper/helper.dart';
 import 'package:blockchain_utils/utils/utils.dart';
-import 'package:on_chain_wallet/app/serialization/cbor/cbor.dart';
-import 'package:on_chain_wallet/wallet/constant/tags/constant.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/core/core.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/solana/methods/methods.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/solana/params/core/request.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/solana/permission/models/account.dart';
+import 'package:stealth_stash/app/serialization/cbor/cbor.dart';
+import 'package:stealth_stash/wallet/constant/tags/constant.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant/exception.dart';
+import 'package:stealth_stash/wallet/web3/core/core.dart';
+import 'package:stealth_stash/wallet/web3/networks/solana/methods/methods.dart';
+import 'package:stealth_stash/wallet/web3/networks/solana/params/core/request.dart';
+import 'package:stealth_stash/wallet/web3/networks/solana/permission/models/account.dart';
 import 'package:on_chain/ethereum/src/eip_4361/eip_4361.dart';
 import 'package:on_chain/solana/solana.dart';
-import 'package:on_chain_wallet/wallet/web3/utils/web3_validator_utils.dart';
+import 'package:stealth_stash/wallet/web3/utils/web3_validator_utils.dart';
 
 class Web3SolanaSignInParams extends Web3SolanaSignParams {
   final EIP4631 message;

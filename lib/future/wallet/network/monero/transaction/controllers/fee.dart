@@ -1,11 +1,11 @@
 import 'package:blockchain_utils/utils/atomic/atomic.dart';
 import 'package:monero_dart/monero_dart.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/non_encrypted/requests/monero_build_fake_tx.dart';
-import 'package:on_chain_wallet/future/wallet/network/monero/transaction/controllers/provider.dart';
-import 'package:on_chain_wallet/future/wallet/network/monero/transaction/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/requets/messages/non_encrypted/requests/monero_build_fake_tx.dart';
+import 'package:stealth_stash/future/wallet/network/monero/transaction/controllers/provider.dart';
+import 'package:stealth_stash/future/wallet/network/monero/transaction/types/types.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 
 mixin MoneroTransactionFeeController on MoneroTransactionApiController {
   final Cancelable _cancelable = Cancelable();

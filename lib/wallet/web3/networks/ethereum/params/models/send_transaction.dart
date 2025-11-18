@@ -1,12 +1,12 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
-import 'package:on_chain_wallet/app/serialization/serialization.dart';
-import 'package:on_chain_wallet/app/utils/list/extension.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/ethereum/constant/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/ethereum/methods/methods.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/ethereum/params/core/request.dart';
-import 'package:on_chain_wallet/wallet/web3/core/core.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/ethereum/permission/models/account.dart';
+import 'package:stealth_stash/app/serialization/serialization.dart';
+import 'package:stealth_stash/app/utils/list/extension.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
+import 'package:stealth_stash/wallet/web3/networks/ethereum/constant/exception.dart';
+import 'package:stealth_stash/wallet/web3/networks/ethereum/methods/methods.dart';
+import 'package:stealth_stash/wallet/web3/networks/ethereum/params/core/request.dart';
+import 'package:stealth_stash/wallet/web3/core/core.dart';
+import 'package:stealth_stash/wallet/web3/networks/ethereum/permission/models/account.dart';
 import 'package:on_chain/ethereum/ethereum.dart';
 
 class Web3EthreumTransactionAccessList with CborSerializable {

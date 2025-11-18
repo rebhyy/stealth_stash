@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart' show APPConst;
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/animated/animation.dart';
+import 'package:stealth_stash/app/core.dart' show APPConst;
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/widgets/widgets/animated/animation.dart';
 
 import 'conditional_widget.dart';
 import 'widget_constant.dart';

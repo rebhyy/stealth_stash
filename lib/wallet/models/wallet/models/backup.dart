@@ -1,10 +1,10 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/keys/access/crypto_keys/crypto_keys.dart';
-import 'package:on_chain_wallet/wallet/constant/constant.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/models/wallet/models/hd_wallet.dart';
-import 'package:on_chain_wallet/wallet/web3/core/permission/models/authenticated.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/keys/access/crypto_keys/crypto_keys.dart';
+import 'package:stealth_stash/wallet/constant/constant.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/models/wallet/models/hd_wallet.dart';
+import 'package:stealth_stash/wallet/web3/core/permission/models/authenticated.dart';
 
 enum WalletBackupTypes {
   walletV3(CborTagsConst.walletBackupWalletV3, "walletsV3"),

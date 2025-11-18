@@ -2,9 +2,9 @@ import 'package:on_chain/aptos/src/account/authenticator/authenticator.dart';
 import 'package:on_chain/aptos/src/address/address/address.dart';
 import 'package:on_chain/aptos/src/provider/models/fullnode/types.dart';
 import 'package:on_chain/aptos/src/transaction/types/types.dart';
-import 'package:on_chain_wallet/app/live_listener/live.dart';
-import 'package:on_chain_wallet/app/utils/sync/cached_object.dart';
-import 'package:on_chain_wallet/wallet/api/client/networks/aptos/aptos.dart';
+import 'package:stealth_stash/app/live_listener/live.dart';
+import 'package:stealth_stash/app/utils/sync/cached_object.dart';
+import 'package:stealth_stash/wallet/api/client/networks/aptos/aptos.dart';
 
 mixin AptosTransactionApiController on DisposableMixin {
   int? _chainId;

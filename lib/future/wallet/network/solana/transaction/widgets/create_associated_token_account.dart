@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/future/wallet/network/solana/transaction/operations/create_associated_token_account.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/future/wallet/network/solana/transaction/operations/create_associated_token_account.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
 
 class SolanaTransactionCreateAssociatedTokenAccountWidget
     extends StatelessWidget {

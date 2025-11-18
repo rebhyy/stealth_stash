@@ -2,13 +2,13 @@ import 'package:blockchain_utils/helper/helper.dart';
 import 'package:blockchain_utils/utils/numbers/utils/bigint_utils.dart';
 import 'package:on_chain/bcs/move/types/types.dart';
 import 'package:on_chain/sui/sui.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/network/sui/web3/types/types.dart';
-import 'package:on_chain_wallet/wallet/api/client/networks/sui/models/types.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/sui/constant/constants/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/sui/params/models/transaction.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/network/sui/web3/types/types.dart';
+import 'package:stealth_stash/wallet/api/client/networks/sui/models/types.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
+import 'package:stealth_stash/wallet/web3/networks/sui/constant/constants/exception.dart';
+import 'package:stealth_stash/wallet/web3/networks/sui/params/models/transaction.dart';
 
 class _MoveNormalizedArguments {
   final List<SuiApiMoveNormalizedType> parameters;

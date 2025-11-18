@@ -1,6 +1,6 @@
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/app/http/isolate/core/service.dart';
-import 'package:on_chain_wallet/app/http/isolate/models/message.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/app/http/isolate/core/service.dart';
+import 'package:stealth_stash/app/http/isolate/models/message.dart';
 
 mixin HttpImpl {
   static final HTTPServiceWorker _serviceCaller = HTTPServiceWorker.instance;

@@ -1,8 +1,8 @@
 import 'package:flutter/widgets.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/animated/animation.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/container_with_border.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/widget_constant.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/widgets/widgets/animated/animation.dart';
+import 'package:stealth_stash/future/widgets/widgets/container_with_border.dart';
+import 'package:stealth_stash/future/widgets/widgets/widget_constant.dart';
 
 typedef SHIMMERBUILDER = Widget Function(bool enable, BuildContext context);
 

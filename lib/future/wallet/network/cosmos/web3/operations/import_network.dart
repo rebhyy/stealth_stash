@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/error/exception/app_exception.dart';
-import 'package:on_chain_wallet/future/wallet/network/cosmos/network/import/controller/form.dart';
-import 'package:on_chain_wallet/future/wallet/network/cosmos/web3/pages/import_network.dart';
-import 'package:on_chain_wallet/future/wallet/network/cosmos/web3/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/web3/core/state.dart';
-import 'package:on_chain_wallet/wallet/api/api.dart';
-import 'package:on_chain_wallet/wallet/models/network/core/network/network.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/cosmos/params/models/add_new_chain.dart';
+import 'package:stealth_stash/app/error/exception/app_exception.dart';
+import 'package:stealth_stash/future/wallet/network/cosmos/network/import/controller/form.dart';
+import 'package:stealth_stash/future/wallet/network/cosmos/web3/pages/import_network.dart';
+import 'package:stealth_stash/future/wallet/network/cosmos/web3/types/types.dart';
+import 'package:stealth_stash/future/wallet/web3/core/state.dart';
+import 'package:stealth_stash/wallet/api/api.dart';
+import 'package:stealth_stash/wallet/models/network/core/network/network.dart';
+import 'package:stealth_stash/wallet/web3/networks/cosmos/params/models/add_new_chain.dart';
 
 class Web3CosmosImportNetworkStateController extends Web3CosmosStateController<
     bool, CosmosClient?, Web3CosmosAddNewChain> {

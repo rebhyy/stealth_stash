@@ -5,13 +5,13 @@ import 'package:blockchain_utils/utils/string/string.dart';
 import 'package:on_chain/ethereum/src/address/evm_address.dart';
 import 'package:on_chain/ethereum/src/transaction/eth_transaction.dart';
 import 'package:on_chain/solidity/abi/abi.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/types/networks.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/types/networks.dart';
 
-import 'package:on_chain_wallet/wallet/api/services/models/models/protocols.dart';
-import 'package:on_chain_wallet/wallet/constant/networks/ethereum.dart';
-import 'package:on_chain_wallet/wallet/web3/utils/web3_validator_utils.dart';
-import 'package:on_chain_wallet/wallet/web3/web3.dart';
+import 'package:stealth_stash/wallet/api/services/models/models/protocols.dart';
+import 'package:stealth_stash/wallet/constant/networks/ethereum.dart';
+import 'package:stealth_stash/wallet/web3/utils/web3_validator_utils.dart';
+import 'package:stealth_stash/wallet/web3/web3.dart';
 
 mixin EthereumWeb3StateHandler<
         STATEADDRESS,

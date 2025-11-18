@@ -1,6 +1,6 @@
 import 'package:blockchain_utils/bip/bip/conf/bip44/bip44_coins.dart';
 import 'package:blockchain_utils/bip/ecc/bip_ecc.dart';
-import 'package:on_chain_wallet/app/core.dart';
+import 'package:stealth_stash/app/core.dart';
 import 'package:on_chain/sui/sui.dart';
 
 enum SuiSupportKeyScheme {

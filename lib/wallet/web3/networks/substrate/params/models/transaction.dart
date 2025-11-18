@@ -1,13 +1,13 @@
 import 'package:blockchain_utils/cbor/cbor.dart';
 import 'package:blockchain_utils/helper/helper.dart';
 import 'package:blockchain_utils/utils/utils.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
-import 'package:on_chain_wallet/wallet/web3/core/core.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/substrate/methods/methods.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/substrate/params/core/request.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/substrate/permission/models/account.dart';
-import 'package:on_chain_wallet/wallet/web3/utils/web3_validator_utils.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
+import 'package:stealth_stash/wallet/web3/core/core.dart';
+import 'package:stealth_stash/wallet/web3/networks/substrate/methods/methods.dart';
+import 'package:stealth_stash/wallet/web3/networks/substrate/params/core/request.dart';
+import 'package:stealth_stash/wallet/web3/networks/substrate/permission/models/account.dart';
+import 'package:stealth_stash/wallet/web3/utils/web3_validator_utils.dart';
 
 class Web3SubstrateSendTransactionResponse with CborSerializable {
   final int id;

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/state_managment/typdef/typedef.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/sliver/widgets/animated_switcher.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/widget_constant.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/state_managment/typdef/typedef.dart';
+import 'package:stealth_stash/future/widgets/widgets/sliver/widgets/animated_switcher.dart';
+import 'package:stealth_stash/future/widgets/widgets/widget_constant.dart';
 
 class APPAnimatedSwitcher<T> extends StatelessWidget {
   const APPAnimatedSwitcher(

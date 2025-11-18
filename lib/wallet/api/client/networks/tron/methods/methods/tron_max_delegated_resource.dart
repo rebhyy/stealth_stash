@@ -1,6 +1,6 @@
 import 'package:on_chain/tron/tron.dart';
-import 'package:on_chain_wallet/wallet/models/network/core/network/network.dart';
-import 'package:on_chain_wallet/wallet/models/networks/tron/models/delegated_resouce_balance.dart';
+import 'package:stealth_stash/wallet/models/network/core/network/network.dart';
+import 'package:stealth_stash/wallet/models/networks/tron/models/delegated_resouce_balance.dart';
 
 class TronRequestGetCanDelegatedMaxSizeV2
     extends TronRequest<MaxDelegatedResourceAmount, Map<String, dynamic>> {

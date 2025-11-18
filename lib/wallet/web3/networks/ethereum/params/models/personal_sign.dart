@@ -1,13 +1,13 @@
 import 'package:blockchain_utils/cbor/cbor.dart';
 import 'package:blockchain_utils/utils/utils.dart';
-import 'package:on_chain_wallet/app/serialization/cbor/cbor.dart';
-import 'package:on_chain_wallet/app/utils/utils.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant.dart';
-import 'package:on_chain_wallet/wallet/web3/core/core.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/ethereum/methods/methods.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/ethereum/params/core/request.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/ethereum/permission/models/account.dart';
+import 'package:stealth_stash/app/serialization/cbor/cbor.dart';
+import 'package:stealth_stash/app/utils/utils.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant.dart';
+import 'package:stealth_stash/wallet/web3/core/core.dart';
+import 'package:stealth_stash/wallet/web3/networks/ethereum/methods/methods.dart';
+import 'package:stealth_stash/wallet/web3/networks/ethereum/params/core/request.dart';
+import 'package:stealth_stash/wallet/web3/networks/ethereum/permission/models/account.dart';
 
 class Web3EthreumPersonalSign extends Web3EthereumRequestParam<String> {
   final Web3EthereumChainAccount accessAccount;

@@ -1,4 +1,4 @@
-part of 'package:on_chain_wallet/crypto/keys/access/crypto_keys/crypto_keys.dart';
+part of 'package:stealth_stash/crypto/keys/access/crypto_keys/crypto_keys.dart';
 
 enum SeedTypes {
   bip39(name: "Bip39", value: 0),

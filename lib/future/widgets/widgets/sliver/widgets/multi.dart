@@ -1,5 +1,5 @@
 import 'package:flutter/widgets.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/sliver/widgets/rendering/multi.dart';
+import 'package:stealth_stash/future/widgets/widgets/sliver/widgets/rendering/multi.dart';
 
 /// [MultiSliver] allows for returning multiple slivers from a single build method
 class MultiSliver extends MultiChildRenderObjectWidget {

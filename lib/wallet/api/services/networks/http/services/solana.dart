@@ -1,7 +1,7 @@
 import 'package:blockchain_utils/service/service.dart';
-import 'package:on_chain_wallet/app/isolate/types.dart';
-import 'package:on_chain_wallet/wallet/api/provider/networks/solana.dart';
-import 'package:on_chain_wallet/wallet/api/services/impl/http/http.dart';
+import 'package:stealth_stash/app/isolate/types.dart';
+import 'package:stealth_stash/wallet/api/provider/networks/solana.dart';
+import 'package:stealth_stash/wallet/api/services/impl/http/http.dart';
 import 'package:on_chain/solana/solana.dart';
 
 class SolanaHTTPService extends HTTPService<SolanaAPIProvider>

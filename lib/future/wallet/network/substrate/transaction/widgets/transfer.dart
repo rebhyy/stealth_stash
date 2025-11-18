@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/future.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/network/substrate/transaction/widgets/prick_token.dart';
-import 'package:on_chain_wallet/future/wallet/network/substrate/transaction/widgets/send_transaction.dart';
-import 'package:on_chain_wallet/future/wallet/network/substrate/transaction/widgets/substrate_transaction_fee.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/future.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/network/substrate/transaction/widgets/prick_token.dart';
+import 'package:stealth_stash/future/wallet/network/substrate/transaction/widgets/send_transaction.dart';
+import 'package:stealth_stash/future/wallet/network/substrate/transaction/widgets/substrate_transaction_fee.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
 import 'package:polkadot_dart/polkadot_dart.dart';
 
 class SubstrateTransactionTransferWidget extends StatelessWidget {

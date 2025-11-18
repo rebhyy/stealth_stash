@@ -1,9 +1,9 @@
 import 'package:blockchain_utils/utils/atomic/atomic.dart';
 import 'package:on_chain/sui/src/transaction/const/constant.dart';
 import 'package:on_chain/sui/src/transaction/types/types.dart';
-import 'package:on_chain_wallet/app/utils/method/utiils.dart';
-import 'package:on_chain_wallet/future/wallet/network/sui/transaction/types/types.dart';
-import 'package:on_chain_wallet/wallet/models/network/core/network/network.dart';
+import 'package:stealth_stash/app/utils/method/utiils.dart';
+import 'package:stealth_stash/future/wallet/network/sui/transaction/types/types.dart';
+import 'package:stealth_stash/wallet/models/network/core/network/network.dart';
 
 import 'provider.dart';
 

@@ -2,16 +2,16 @@ import 'package:blockchain_utils/blockchain_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:on_chain/sui/src/keypair/types/types.dart';
 import 'package:on_chain/sui/src/keypair/utils/utils.dart';
-import 'package:on_chain_wallet/app/error/exception/app_exception.dart';
-import 'package:on_chain_wallet/crypto/keys/access/crypto_keys/crypto_keys.dart';
-import 'package:on_chain_wallet/crypto/requets/messages.dart';
-import 'package:on_chain_wallet/future/wallet/network/sui/web3/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/web3/pages/web3_request_page_builder.dart';
-import 'package:on_chain_wallet/future/wallet/web3/core/state.dart';
-import 'package:on_chain_wallet/wallet/api/api.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/models/signing/signing.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/sui/params/models/sign_message.dart';
+import 'package:stealth_stash/app/error/exception/app_exception.dart';
+import 'package:stealth_stash/crypto/keys/access/crypto_keys/crypto_keys.dart';
+import 'package:stealth_stash/crypto/requets/messages.dart';
+import 'package:stealth_stash/future/wallet/network/sui/web3/types/types.dart';
+import 'package:stealth_stash/future/wallet/web3/pages/web3_request_page_builder.dart';
+import 'package:stealth_stash/future/wallet/web3/core/state.dart';
+import 'package:stealth_stash/wallet/api/api.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/models/signing/signing.dart';
+import 'package:stealth_stash/wallet/web3/networks/sui/params/models/sign_message.dart';
 
 class Web3SuiSignMessageStateController extends Web3SuiStateController<
     Web3SuiSignMessageResponse, SuiClient?, Web3SuiSignMessage> {

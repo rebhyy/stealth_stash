@@ -1,5 +1,5 @@
-import 'package:on_chain_wallet/wallet/web3/constant/constant/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/core/exception/exception.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant/exception.dart';
+import 'package:stealth_stash/wallet/web3/core/exception/exception.dart';
 
 class Web3BitcoinCashExceptionConstant {
   static Web3RequestException get invalidRequestAccounts =>

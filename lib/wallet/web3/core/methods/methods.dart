@@ -1,20 +1,20 @@
-import 'package:on_chain_wallet/app/utils/list/extension.dart';
-import 'package:on_chain_wallet/crypto/types/networks.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/aptos/aptos.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/bitcoin/methods/methods.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/bitcoin_cash/methods/methods.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/cardano/cardano.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/cosmos/methods/methods.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/ethereum/methods/methods.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/monero/methods/methods.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/ripple/methods/methods.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/solana/solana.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/stellar/stellar.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/substrate/substrate.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/sui/methods/methods.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/ton/ton.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/tron/methods/methods.dart';
+import 'package:stealth_stash/app/utils/list/extension.dart';
+import 'package:stealth_stash/crypto/types/networks.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant/exception.dart';
+import 'package:stealth_stash/wallet/web3/networks/aptos/aptos.dart';
+import 'package:stealth_stash/wallet/web3/networks/bitcoin/methods/methods.dart';
+import 'package:stealth_stash/wallet/web3/networks/bitcoin_cash/methods/methods.dart';
+import 'package:stealth_stash/wallet/web3/networks/cardano/cardano.dart';
+import 'package:stealth_stash/wallet/web3/networks/cosmos/methods/methods.dart';
+import 'package:stealth_stash/wallet/web3/networks/ethereum/methods/methods.dart';
+import 'package:stealth_stash/wallet/web3/networks/monero/methods/methods.dart';
+import 'package:stealth_stash/wallet/web3/networks/ripple/methods/methods.dart';
+import 'package:stealth_stash/wallet/web3/networks/solana/solana.dart';
+import 'package:stealth_stash/wallet/web3/networks/stellar/stellar.dart';
+import 'package:stealth_stash/wallet/web3/networks/substrate/substrate.dart';
+import 'package:stealth_stash/wallet/web3/networks/sui/methods/methods.dart';
+import 'package:stealth_stash/wallet/web3/networks/ton/ton.dart';
+import 'package:stealth_stash/wallet/web3/networks/tron/methods/methods.dart';
 
 enum Web3RequestMode { silent, user }
 

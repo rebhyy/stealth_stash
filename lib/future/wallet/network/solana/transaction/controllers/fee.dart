@@ -1,7 +1,7 @@
-import 'package:on_chain_wallet/app/error/exception/app_exception.dart';
-import 'package:on_chain_wallet/app/utils/method/utiils.dart';
-import 'package:on_chain_wallet/future/wallet/network/solana/transaction/types/types.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/app/error/exception/app_exception.dart';
+import 'package:stealth_stash/app/utils/method/utiils.dart';
+import 'package:stealth_stash/future/wallet/network/solana/transaction/types/types.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 
 mixin SolanaTransactionFeeController on BaseSolanaTransactionController {
   final Cancelable _cancelable = Cancelable();

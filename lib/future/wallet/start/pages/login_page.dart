@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/future.dart';
-import 'package:on_chain_wallet/future/wallet/security/pages/login.dart';
-import 'package:on_chain_wallet/future/wallet/setting/color_selector.dart';
-import 'package:on_chain_wallet/future/wallet/start/pages/platform_widgets/widgets.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/wallet/models/access/wallet_access.dart';
-import 'package:on_chain_wallet/wallet/models/wallet/models/hd_wallet.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/future.dart';
+import 'package:stealth_stash/future/wallet/security/pages/login.dart';
+import 'package:stealth_stash/future/wallet/setting/color_selector.dart';
+import 'package:stealth_stash/future/wallet/start/pages/platform_widgets/widgets.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/wallet/models/access/wallet_access.dart';
+import 'package:stealth_stash/wallet/models/wallet/models/hd_wallet.dart';
 
 class WalletLoginPageView extends StatelessWidget {
   const WalletLoginPageView({super.key});

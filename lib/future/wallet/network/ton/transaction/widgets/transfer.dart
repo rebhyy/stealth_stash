@@ -1,15 +1,15 @@
 import 'package:blockchain_utils/utils/numbers/rational/big_rational.dart';
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/constant/global/link.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/utils/ton/ton.dart';
-import 'package:on_chain_wallet/future/future.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/network/ton/transaction/types/transfer.dart';
-import 'package:on_chain_wallet/future/wallet/network/ton/transaction/widgets/token_list.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
-import 'package:on_chain_wallet/wallet/constant/networks/ton.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
+import 'package:stealth_stash/app/constant/global/link.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/utils/ton/ton.dart';
+import 'package:stealth_stash/future/future.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/network/ton/transaction/types/transfer.dart';
+import 'package:stealth_stash/future/wallet/network/ton/transaction/widgets/token_list.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/wallet/constant/networks/ton.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
 import 'package:ton_dart/ton_dart.dart';
 
 import 'fee.dart';

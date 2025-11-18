@@ -1,11 +1,11 @@
 import 'dart:async';
 
 import 'package:blockchain_utils/utils/utils.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/app/live_listener/timout.dart';
-import 'package:on_chain_wallet/wallet/api/provider/core/provider.dart';
-import 'package:on_chain_wallet/wallet/api/services/core/base_service.dart';
-import 'package:on_chain_wallet/wallet/api/services/models/models.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/app/live_listener/timout.dart';
+import 'package:stealth_stash/wallet/api/provider/core/provider.dart';
+import 'package:stealth_stash/wallet/api/services/core/base_service.dart';
+import 'package:stealth_stash/wallet/api/services/models/models.dart';
 
 abstract class BaseSocketService<T extends APIProvider>
     extends NetworkServiceProtocol<T> with TimerEvent {

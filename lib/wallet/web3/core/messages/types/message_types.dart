@@ -1,5 +1,5 @@
 import 'package:blockchain_utils/utils/utils.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant/exception.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant/exception.dart';
 
 enum Web3MessageTypes {
   chains([100, 11]),

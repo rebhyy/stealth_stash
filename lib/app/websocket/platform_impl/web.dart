@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'dart:js_interop';
 import 'package:on_chain_bridge/web/web.dart';
-import 'package:on_chain_wallet/app/error/exception/exception.dart';
-import 'package:on_chain_wallet/app/websocket/websocket.dart';
+import 'package:stealth_stash/app/error/exception/exception.dart';
+import 'package:stealth_stash/app/websocket/websocket.dart';
 
 Future<PlatformWebScoket> connectSoc(
         {required String url,

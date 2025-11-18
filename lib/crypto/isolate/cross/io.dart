@@ -2,14 +2,14 @@ import 'dart:async';
 import 'dart:isolate';
 
 import 'package:blockchain_utils/blockchain_utils.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/isolate/controller/message_controller.dart';
-import 'package:on_chain_wallet/crypto/isolate/controller/stream_message_controller.dart';
-import 'package:on_chain_wallet/crypto/isolate/core/worker.dart';
-import 'package:on_chain_wallet/crypto/isolate/types/types.dart';
-import 'package:on_chain_wallet/crypto/requets/argruments/argruments.dart';
-import 'package:on_chain_wallet/crypto/requets/completer/completer.dart';
-import 'package:on_chain_wallet/crypto/requets/messages/models/models.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/isolate/controller/message_controller.dart';
+import 'package:stealth_stash/crypto/isolate/controller/stream_message_controller.dart';
+import 'package:stealth_stash/crypto/isolate/core/worker.dart';
+import 'package:stealth_stash/crypto/isolate/types/types.dart';
+import 'package:stealth_stash/crypto/requets/argruments/argruments.dart';
+import 'package:stealth_stash/crypto/requets/completer/completer.dart';
+import 'package:stealth_stash/crypto/requets/messages/models/models.dart';
 
 import 'exception.dart';
 

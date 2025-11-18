@@ -1,12 +1,12 @@
 import 'dart:async';
 
 import 'package:blockchain_utils/utils/atomic/atomic.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/utils/ethereum/utils.dart';
-import 'package:on_chain_wallet/future/wallet/network/ethereum/transaction/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
-import 'package:on_chain_wallet/wallet/api/client/networks/ethereum/client/ethereum.dart';
-import 'package:on_chain_wallet/wallet/models/network/core/network/network.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/utils/ethereum/utils.dart';
+import 'package:stealth_stash/future/wallet/network/ethereum/transaction/types/types.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/wallet/api/client/networks/ethereum/client/ethereum.dart';
+import 'package:stealth_stash/wallet/models/network/core/network/network.dart';
 
 mixin EthereumTransactionFeeController on DisposableMixin {
   WalletEthereumNetwork get network;

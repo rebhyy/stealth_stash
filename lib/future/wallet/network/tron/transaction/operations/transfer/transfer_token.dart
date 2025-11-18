@@ -3,16 +3,16 @@ import 'dart:async';
 import 'package:blockchain_utils/utils/string/string.dart';
 import 'package:flutter/material.dart';
 import 'package:on_chain/tron/tron.dart';
-import 'package:on_chain_wallet/crypto/utils/utils.dart';
-import 'package:on_chain_wallet/future/state_managment/extension/app_extensions/string.dart';
-import 'package:on_chain_wallet/future/wallet/network/tron/transaction/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/network/tron/transaction/widgets/widgets/transfer.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
-import 'package:on_chain_wallet/wallet/api/client/networks/tron/client/tron.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/models/token/token/token.dart';
-import 'package:on_chain_wallet/wallet/models/transaction/core/transaction.dart';
-import 'package:on_chain_wallet/wallet/models/transaction/networks/tron.dart';
+import 'package:stealth_stash/crypto/utils/utils.dart';
+import 'package:stealth_stash/future/state_managment/extension/app_extensions/string.dart';
+import 'package:stealth_stash/future/wallet/network/tron/transaction/types/types.dart';
+import 'package:stealth_stash/future/wallet/network/tron/transaction/widgets/widgets/transfer.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/wallet/api/client/networks/tron/client/tron.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/models/token/token/token.dart';
+import 'package:stealth_stash/wallet/models/transaction/core/transaction.dart';
+import 'package:stealth_stash/wallet/models/transaction/networks/tron.dart';
 
 import 'transfer.dart';
 

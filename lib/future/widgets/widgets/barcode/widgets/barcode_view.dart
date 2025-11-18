@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:on_chain_bridge/models/models.dart';
-import 'package:on_chain_wallet/app/core.dart' show APPConst, ShareUtils;
-import 'package:on_chain_wallet/future/widgets/widgets/animated/widgets/animated_switcher.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/progress_bar/widgets/progress.dart';
+import 'package:stealth_stash/app/core.dart' show APPConst, ShareUtils;
+import 'package:stealth_stash/future/widgets/widgets/animated/widgets/animated_switcher.dart';
+import 'package:stealth_stash/future/widgets/widgets/progress_bar/widgets/progress.dart';
 import '../../constraints_box_view.dart';
 import '../qr_code/qr_view.dart';
 import '../../widget_constant.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
 
 class BarcodeImageView extends StatefulWidget {
   final String data;

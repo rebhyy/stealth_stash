@@ -1,12 +1,12 @@
 import 'package:blockchain_utils/crypto/quick_crypto.dart';
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/constant/global/app.dart';
-import 'package:on_chain_wallet/app/utils/method/utiils.dart' show MethodUtils;
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/network/ripple/transaction/operations/escrow/create.dart';
-import 'package:on_chain_wallet/future/wallet/network/ripple/transaction/widgets/memo/memo.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/transaction.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/app/constant/global/app.dart';
+import 'package:stealth_stash/app/utils/method/utiils.dart' show MethodUtils;
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/network/ripple/transaction/operations/escrow/create.dart';
+import 'package:stealth_stash/future/wallet/network/ripple/transaction/widgets/memo/memo.dart';
+import 'package:stealth_stash/future/wallet/transaction/transaction.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
 import 'package:xrpl_dart/xrpl_dart.dart';
 
 class RippleTransactionEscrowCreateWidget extends StatelessWidget {

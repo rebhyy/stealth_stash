@@ -1,4 +1,4 @@
-import 'package:on_chain_wallet/wallet/models/networks/tron/models/issue_token.dart';
+import 'package:stealth_stash/wallet/models/networks/tron/models/issue_token.dart';
 import 'package:on_chain/tron/src/provider/provider.dart';
 
 class TronRequestListOfIssueTRC10

@@ -1,5 +1,5 @@
 import 'package:on_chain_bridge/models/models.dart';
-import 'package:on_chain_wallet/app/native_impl/cross/share.dart';
+import 'package:stealth_stash/app/native_impl/cross/share.dart';
 
 class ShareUtils {
   static Future<bool> shareFile(String path, String fileName,

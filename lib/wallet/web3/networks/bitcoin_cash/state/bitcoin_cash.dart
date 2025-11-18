@@ -1,18 +1,18 @@
 import 'package:bitcoin_base/bitcoin_base.dart';
 import 'package:blockchain_utils/utils/utils.dart';
-import 'package:on_chain_wallet/crypto/types/networks.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/core/messages/models/models/wallet_response.dart';
-import 'package:on_chain_wallet/wallet/web3/core/messages/types/message.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/bitcoin/params/models/send_transaction.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/bitcoin_cash/constant/constants/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/bitcoin_cash/methods/methods.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/bitcoin_cash/params/models/send_transaction.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/bitcoin_cash/params/models/sign_message.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/bitcoin_cash/params/models/transaction.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/bitcoin_cash/permission/models/account.dart';
-import 'package:on_chain_wallet/wallet/web3/state/state.dart';
-import 'package:on_chain_wallet/wallet/web3/utils/web3_validator_utils.dart';
+import 'package:stealth_stash/crypto/types/networks.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant/exception.dart';
+import 'package:stealth_stash/wallet/web3/core/messages/models/models/wallet_response.dart';
+import 'package:stealth_stash/wallet/web3/core/messages/types/message.dart';
+import 'package:stealth_stash/wallet/web3/networks/bitcoin/params/models/send_transaction.dart';
+import 'package:stealth_stash/wallet/web3/networks/bitcoin_cash/constant/constants/exception.dart';
+import 'package:stealth_stash/wallet/web3/networks/bitcoin_cash/methods/methods.dart';
+import 'package:stealth_stash/wallet/web3/networks/bitcoin_cash/params/models/send_transaction.dart';
+import 'package:stealth_stash/wallet/web3/networks/bitcoin_cash/params/models/sign_message.dart';
+import 'package:stealth_stash/wallet/web3/networks/bitcoin_cash/params/models/transaction.dart';
+import 'package:stealth_stash/wallet/web3/networks/bitcoin_cash/permission/models/account.dart';
+import 'package:stealth_stash/wallet/web3/state/state.dart';
+import 'package:stealth_stash/wallet/web3/utils/web3_validator_utils.dart';
 
 mixin BitcoinCashWeb3StateHandler<
         STATEADDRESS,

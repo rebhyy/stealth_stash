@@ -1,12 +1,12 @@
 import 'package:blockchain_utils/cbor/cbor.dart';
 import 'package:blockchain_utils/helper/extensions/extensions.dart';
 import 'package:blockchain_utils/utils/string/string.dart';
-import 'package:on_chain_wallet/app/serialization/cbor/cbor.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
-import 'package:on_chain_wallet/wallet/web3/core/core.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/cosmos/methods/methods.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/cosmos/params/core/request.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/cosmos/permission/models/account.dart';
+import 'package:stealth_stash/app/serialization/cbor/cbor.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
+import 'package:stealth_stash/wallet/web3/core/core.dart';
+import 'package:stealth_stash/wallet/web3/networks/cosmos/methods/methods.dart';
+import 'package:stealth_stash/wallet/web3/networks/cosmos/params/core/request.dart';
+import 'package:stealth_stash/wallet/web3/networks/cosmos/permission/models/account.dart';
 
 class Web3CosmosSignMessageResponse with CborSerializable {
   final List<int> messageBytes;

@@ -1,4 +1,4 @@
-part of 'package:on_chain_wallet/future/state_managment/state_managment.dart';
+part of 'package:stealth_stash/future/state_managment/state_managment.dart';
 
 mixin SafeState<T extends StatefulWidget> on State<T> {
   bool _closed = false;

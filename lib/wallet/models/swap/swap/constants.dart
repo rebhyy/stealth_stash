@@ -1,9 +1,9 @@
 import 'package:blockchain_utils/bip/bip/bip.dart';
 import 'package:on_chain_swap/on_chain_swap.dart';
-import 'package:on_chain_wallet/app/http/models/auth.dart';
-import 'package:on_chain_wallet/wallet/api/provider/core/provider.dart';
-import 'package:on_chain_wallet/wallet/api/provider/networks/cosmos.dart';
-import 'package:on_chain_wallet/wallet/api/provider/networks/custom.dart';
+import 'package:stealth_stash/app/http/models/auth.dart';
+import 'package:stealth_stash/wallet/api/provider/core/provider.dart';
+import 'package:stealth_stash/wallet/api/provider/networks/cosmos.dart';
+import 'package:stealth_stash/wallet/api/provider/networks/custom.dart';
 
 class APPSwapConstants {
   static final Map<SwapServiceType, Map<ChainType, List<APIProvider>>>

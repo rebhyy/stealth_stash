@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/state_managment/typdef/typedef.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/state_managment/typdef/typedef.dart';
 
 class APPAnimatedSize extends StatelessWidget {
   const APPAnimatedSize(

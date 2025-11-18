@@ -1,4 +1,4 @@
-import 'package:on_chain_wallet/app/live_listener/live.dart';
+import 'package:stealth_stash/app/live_listener/live.dart';
 
 class LivePercentProgressBar {
   int _total = 0;

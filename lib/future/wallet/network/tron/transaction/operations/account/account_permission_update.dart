@@ -3,15 +3,15 @@ import 'dart:async';
 import 'package:blockchain_utils/blockchain_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:on_chain/on_chain.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/utils/tron/tron.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/network/tron/transaction/controllers/controller.dart';
-import 'package:on_chain_wallet/future/wallet/network/tron/transaction/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/network/tron/transaction/widgets/widgets/update_account_permission.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/core/controller.dart';
-import 'package:on_chain_wallet/future/wallet/transaction/fields/fields.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/utils/tron/tron.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/network/tron/transaction/controllers/controller.dart';
+import 'package:stealth_stash/future/wallet/network/tron/transaction/types/types.dart';
+import 'package:stealth_stash/future/wallet/network/tron/transaction/widgets/widgets/update_account_permission.dart';
+import 'package:stealth_stash/future/wallet/transaction/core/controller.dart';
+import 'package:stealth_stash/future/wallet/transaction/fields/fields.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 
 class TronTransactionAccountPermissionUpdateContractOperation
     extends TronTransactionStateController2<AccountPermissionUpdateContract> {

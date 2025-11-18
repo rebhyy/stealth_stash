@@ -1,8 +1,8 @@
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/wallet/swap/controller/controller/controller.dart';
-import 'package:on_chain_wallet/wallet/models/swap/swap/models.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/wallet/swap/controller/controller/controller.dart';
+import 'package:stealth_stash/wallet/models/swap/swap/models.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
 import 'package:flutter/material.dart';
 
 class SwapAmountOutView extends StatelessWidget {

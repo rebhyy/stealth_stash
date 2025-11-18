@@ -1,11 +1,11 @@
-import 'package:on_chain_wallet/app/live_listener/live.dart';
-import 'package:on_chain_wallet/app/utils/list/extension.dart';
-import 'package:on_chain_wallet/crypto/utils/ripple/ripple.dart';
-import 'package:on_chain_wallet/future/wallet/network/ripple/transaction/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/network/ripple/web3/types/types.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/ripple/methods/methods.dart';
+import 'package:stealth_stash/app/live_listener/live.dart';
+import 'package:stealth_stash/app/utils/list/extension.dart';
+import 'package:stealth_stash/crypto/utils/ripple/ripple.dart';
+import 'package:stealth_stash/future/wallet/network/ripple/transaction/types/types.dart';
+import 'package:stealth_stash/future/wallet/network/ripple/web3/types/types.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant.dart';
+import 'package:stealth_stash/wallet/web3/networks/ripple/methods/methods.dart';
 import 'package:xrpl_dart/xrpl_dart.dart';
 
 mixin XRPWeb3TransactionApiController on DisposableMixin {

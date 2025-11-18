@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/wallet/network/ethereum/network/import/controller/controller.dart';
-import 'package:on_chain_wallet/future/wallet/network/ethereum/web3/pages/import_network.dart';
-import 'package:on_chain_wallet/future/wallet/network/ethereum/web3/types/types.dart';
-import 'package:on_chain_wallet/future/wallet/web3/core/state.dart';
-import 'package:on_chain_wallet/wallet/api/api.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/models/network/core/network/network.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/ethereum/params/models/add_eth_chain.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/wallet/network/ethereum/network/import/controller/controller.dart';
+import 'package:stealth_stash/future/wallet/network/ethereum/web3/pages/import_network.dart';
+import 'package:stealth_stash/future/wallet/network/ethereum/web3/types/types.dart';
+import 'package:stealth_stash/future/wallet/web3/core/state.dart';
+import 'package:stealth_stash/wallet/api/api.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/models/network/core/network/network.dart';
+import 'package:stealth_stash/wallet/web3/networks/ethereum/params/models/add_eth_chain.dart';
 
 class Web3EthereumImportNetworkStateController
     extends Web3EthereumStateController<String, EthereumClient?,

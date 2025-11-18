@@ -1,5 +1,5 @@
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/models/token/token/token.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/models/token/token/token.dart';
 import 'package:on_chain/solana/solana.dart';
 
 class SolanaAccountSPLTokenInfo {

@@ -1,7 +1,7 @@
-import 'package:on_chain_wallet/app/utils/utils.dart';
-import 'package:on_chain_wallet/wallet/constant/networks/stellar.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/models/token/token.dart';
+import 'package:stealth_stash/app/utils/utils.dart';
+import 'package:stealth_stash/wallet/constant/networks/stellar.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/models/token/token.dart';
 import 'package:stellar_dart/stellar_dart.dart';
 
 extension StellarAccountResponseUtils on StellarAccountResponse {

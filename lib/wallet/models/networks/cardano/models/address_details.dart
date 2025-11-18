@@ -1,10 +1,10 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
 import 'package:on_chain/ada/src/models/models.dart';
 import 'package:on_chain/ada/src/provider/blockfrost/models/models/utxo.dart';
-import 'package:on_chain_wallet/app/core.dart';
+import 'package:stealth_stash/app/core.dart';
 
-import 'package:on_chain_wallet/wallet/constant/tags/constant.dart';
-import 'package:on_chain_wallet/crypto/keys/keys.dart';
+import 'package:stealth_stash/wallet/constant/tags/constant.dart';
+import 'package:stealth_stash/crypto/keys/keys.dart';
 import 'package:on_chain/ada/src/address/address.dart';
 
 abstract class BaseCardanoAddressDetails with Equality, CborSerializable {

@@ -1,6 +1,6 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/wallet/constant/constant.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/wallet/constant/constant.dart';
 import 'package:xrpl_dart/xrpl_dart.dart';
 
 class RippleUtils {

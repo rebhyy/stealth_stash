@@ -1,12 +1,12 @@
 import 'package:blockchain_utils/cbor/cbor.dart';
 import 'package:blockchain_utils/utils/utils.dart';
-import 'package:on_chain_wallet/app/serialization/cbor/cbor.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/models/networks/ethereum/models/typed_data.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/ethereum/methods/methods.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/ethereum/params/core/request.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/ethereum/permission/models/account.dart';
-import 'package:on_chain_wallet/wallet/web3/core/core.dart';
+import 'package:stealth_stash/app/serialization/cbor/cbor.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/models/networks/ethereum/models/typed_data.dart';
+import 'package:stealth_stash/wallet/web3/networks/ethereum/methods/methods.dart';
+import 'package:stealth_stash/wallet/web3/networks/ethereum/params/core/request.dart';
+import 'package:stealth_stash/wallet/web3/networks/ethereum/permission/models/account.dart';
+import 'package:stealth_stash/wallet/web3/core/core.dart';
 import 'package:on_chain/solidity/solidity.dart';
 
 class Web3EthreumTypdedData extends Web3EthereumRequestParam<String> {

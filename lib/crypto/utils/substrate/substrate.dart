@@ -1,6 +1,6 @@
 import 'package:blockchain_utils/bip/ecc/curve/elliptic_curve_types.dart';
 import 'package:blockchain_utils/crypto/quick_crypto.dart';
-import 'package:on_chain_wallet/app/error/exception/wallet_ex.dart';
+import 'package:stealth_stash/app/error/exception/wallet_ex.dart';
 import 'package:polkadot_dart/polkadot_dart.dart';
 
 class SubstrateUtils {

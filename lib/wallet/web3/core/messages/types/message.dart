@@ -1,9 +1,9 @@
 import 'package:blockchain_utils/cbor/cbor.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/core/exception/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/core/messages/models/models.dart';
-import 'package:on_chain_wallet/wallet/web3/core/request/params.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant/exception.dart';
+import 'package:stealth_stash/wallet/web3/core/exception/exception.dart';
+import 'package:stealth_stash/wallet/web3/core/messages/models/models.dart';
+import 'package:stealth_stash/wallet/web3/core/request/params.dart';
 import 'message_types.dart';
 
 abstract class Web3MessageCore with CborSerializable {

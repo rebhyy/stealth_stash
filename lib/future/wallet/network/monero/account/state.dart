@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:monero_dart/monero_dart.dart';
-import 'package:on_chain_wallet/future/wallet/global/pages/account_state.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/future/wallet/global/pages/account_state.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 
 abstract class MoneroAccountState<W extends StatefulWidget>
     extends ChainAccountState<

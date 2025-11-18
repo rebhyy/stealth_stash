@@ -7,12 +7,12 @@ import 'package:blockchain_utils/utils/atomic/atomic.dart';
 import 'package:blockchain_utils/utils/binary/utils.dart';
 import 'package:blockchain_utils/uuid/uuid.dart';
 import 'package:on_chain_bridge/platform_interface.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/crypto/worker.dart';
-import 'package:on_chain_wallet/future/wallet/web3/types/types.dart';
-import 'package:on_chain_wallet/wallet/models/others/models/wallet.dart';
-import 'package:on_chain_wallet/wallet/provider/wallet_provider.dart';
-import 'package:on_chain_wallet/wallet/web3/web3.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/crypto/worker.dart';
+import 'package:stealth_stash/future/wallet/web3/types/types.dart';
+import 'package:stealth_stash/wallet/models/others/models/wallet.dart';
+import 'package:stealth_stash/wallet/provider/wallet_provider.dart';
+import 'package:stealth_stash/wallet/web3/web3.dart';
 
 typedef ONUPDATEWEB3PERMISSION = void Function(
     Web3UpdatePermissionRequest?, ONWEB3PERMISSIONUPDATED);

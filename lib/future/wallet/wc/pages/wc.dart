@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/future/router/page_router.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/controller/controller.dart';
-import 'package:on_chain_wallet/future/wallet/web3/pages/permission_view.dart';
-import 'package:on_chain_wallet/future/wallet/web3/types/types.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/web3/core/permission/models/authenticated.dart';
-import 'package:on_chain_wallet/wc/wallet/core/wallet.dart';
-import 'package:on_chain_wallet/wc/wc.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/future/router/page_router.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/controller/controller.dart';
+import 'package:stealth_stash/future/wallet/web3/pages/permission_view.dart';
+import 'package:stealth_stash/future/wallet/web3/types/types.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/web3/core/permission/models/authenticated.dart';
+import 'package:stealth_stash/wc/wallet/core/wallet.dart';
+import 'package:stealth_stash/wc/wc.dart';
 
 enum _PairingStatus {
   idle,

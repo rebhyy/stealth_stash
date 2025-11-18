@@ -1,5 +1,5 @@
 import 'package:blockchain_utils/utils/numbers/rational/big_rational.dart';
-import 'package:on_chain_wallet/app/core.dart';
+import 'package:stealth_stash/app/core.dart';
 
 class PriceUtils {
   static BigInt? tryDecodePrice<T>(String price, int decimal) {

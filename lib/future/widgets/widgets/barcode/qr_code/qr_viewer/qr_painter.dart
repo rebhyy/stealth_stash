@@ -1,4 +1,4 @@
-part of 'package:on_chain_wallet/future/widgets/widgets/barcode/qr_code/qr_view.dart';
+part of 'package:stealth_stash/future/widgets/widgets/barcode/qr_code/qr_view.dart';
 
 const _finderPatternLimit = 7;
 

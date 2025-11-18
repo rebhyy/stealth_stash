@@ -1,4 +1,4 @@
-import 'package:on_chain_wallet/wallet/models/networks/networks.dart';
+import 'package:stealth_stash/wallet/models/networks/networks.dart';
 import 'package:xrpl_dart/xrpl_dart.dart';
 
 class XRPRPCFetchTokens

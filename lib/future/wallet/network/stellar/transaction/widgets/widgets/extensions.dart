@@ -1,7 +1,7 @@
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/progress_bar/widgets/stream_bottun.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/widgets/widgets/progress_bar/widgets/stream_bottun.dart';
 import 'package:stellar_dart/stellar_dart.dart';
-import 'package:on_chain_wallet/future/wallet/network/stellar/transaction/types/types.dart';
+import 'package:stealth_stash/future/wallet/network/stellar/transaction/types/types.dart';
 
 extension AccountReceivementStatusExtension on AccountReceivementStatus {
   StreamWidgetStatus get toProgressStatus {

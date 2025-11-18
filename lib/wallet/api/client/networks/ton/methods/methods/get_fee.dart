@@ -1,6 +1,6 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
-import 'package:on_chain_wallet/wallet/models/network/core/network.dart';
-import 'package:on_chain_wallet/wallet/models/networks/ton/ton.dart';
+import 'package:stealth_stash/wallet/models/network/core/network.dart';
+import 'package:stealth_stash/wallet/models/networks/ton/ton.dart';
 import 'package:ton_dart/ton_dart.dart';
 
 class TonRquestGetFee extends TonApiRequest<TonTransactionFeeDetails, dynamic> {

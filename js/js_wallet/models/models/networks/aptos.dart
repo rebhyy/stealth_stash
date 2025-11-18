@@ -1,7 +1,7 @@
 import 'dart:js_interop';
 import 'package:blockchain_utils/blockchain_utils.dart';
-import 'package:on_chain_wallet/wallet/web3/constant/constant/exception.dart';
-import 'package:on_chain_wallet/wallet/web3/networks/aptos/aptos.dart';
+import 'package:stealth_stash/wallet/web3/constant/constant/exception.dart';
+import 'package:stealth_stash/wallet/web3/networks/aptos/aptos.dart';
 import 'wallet_standard.dart';
 import '../../models.dart';
 

@@ -1,6 +1,6 @@
 import 'package:blockchain_utils/utils/binary/utils.dart';
-import 'package:on_chain_wallet/app/error/exception/wallet_ex.dart';
-import 'package:on_chain_wallet/crypto/constant/tags.dart';
+import 'package:stealth_stash/app/error/exception/wallet_ex.dart';
+import 'package:stealth_stash/crypto/constant/tags.dart';
 
 class NetworkType {
   final String name;

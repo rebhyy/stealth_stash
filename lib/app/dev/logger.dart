@@ -1,7 +1,7 @@
 // ignore_for_file: avoid_print
 
 import 'package:blockchain_utils/blockchain_utils.dart';
-import 'package:on_chain_wallet/app/error/exception/exception.dart';
+import 'package:stealth_stash/app/error/exception/exception.dart';
 
 enum LoggerMode {
   dev,

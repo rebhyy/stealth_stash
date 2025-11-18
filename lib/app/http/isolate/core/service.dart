@@ -1,8 +1,8 @@
-import 'package:on_chain_wallet/app/http/http.dart';
-import 'package:on_chain_wallet/app/isolate/types.dart';
-import 'package:on_chain_wallet/crypto/isolate/cross/exception.dart';
-import 'package:on_chain_wallet/app/http/isolate/impl/caller/caller.dart';
-import 'package:on_chain_wallet/app/http/isolate/models/message.dart';
+import 'package:stealth_stash/app/http/http.dart';
+import 'package:stealth_stash/app/isolate/types.dart';
+import 'package:stealth_stash/crypto/isolate/cross/exception.dart';
+import 'package:stealth_stash/app/http/isolate/impl/caller/caller.dart';
+import 'package:stealth_stash/app/http/isolate/models/message.dart';
 
 import '../impl/cross.dart'
     if (dart.library.js_interop) '../impl/web/service.dart'

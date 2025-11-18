@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/utils/datetime/datetime.dart';
+import 'package:stealth_stash/app/utils/datetime/datetime.dart';
 
 extension QuickDateTimeFormater on DateTime {
   static String _twoDigits(int n) {

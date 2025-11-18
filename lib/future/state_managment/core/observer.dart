@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/app/utils/method/utiils.dart';
+import 'package:stealth_stash/app/utils/method/utiils.dart';
 
 typedef OBSERVERLISTENER = void Function(Route route, Route? previousRoute);
 

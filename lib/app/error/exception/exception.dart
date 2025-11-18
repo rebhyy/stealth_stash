@@ -4,7 +4,7 @@ import 'dart:io';
 import 'package:blockchain_utils/exception/exception/rpc_error.dart';
 import 'package:blockchain_utils/utils/string/string.dart';
 import 'package:http/http.dart' show ClientException;
-import 'package:on_chain_wallet/app/utils/string/utils.dart';
+import 'package:stealth_stash/app/utils/string/utils.dart';
 
 class ApiProviderExceptionConst {
   static const int timeoutStatucCode = 10001;

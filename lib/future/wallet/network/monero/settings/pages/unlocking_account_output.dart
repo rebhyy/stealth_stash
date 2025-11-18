@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/future.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/security/pages/accsess_wallet.dart';
-import 'package:on_chain_wallet/wallet/api/api.dart';
-import 'package:on_chain_wallet/wallet/chain/chain/chain.dart';
-import 'package:on_chain_wallet/wallet/models/access/wallet_access.dart';
+import 'package:stealth_stash/future/future.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/security/pages/accsess_wallet.dart';
+import 'package:stealth_stash/wallet/api/api.dart';
+import 'package:stealth_stash/wallet/chain/chain/chain.dart';
+import 'package:stealth_stash/wallet/models/access/wallet_access.dart';
 
 class MoneroUnlockingAccountOutputView extends StatelessWidget {
   const MoneroUnlockingAccountOutputView({super.key});

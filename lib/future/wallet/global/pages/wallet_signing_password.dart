@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/wallet/global/pages/address_details.dart';
-import 'package:on_chain_wallet/future/wallet/security/pages/login.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
-import 'package:on_chain_wallet/crypto/worker.dart' show AddressDerivationIndex;
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/global/pages/address_details.dart';
+import 'package:stealth_stash/future/wallet/security/pages/login.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
+import 'package:stealth_stash/crypto/worker.dart' show AddressDerivationIndex;
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
 
 typedef ONSIGNINGCREDENTIAL = Future<WalletCredentialResponseVerify> Function(
     WalletCredentialRequest<WalletCredentialResponseVerify> request);

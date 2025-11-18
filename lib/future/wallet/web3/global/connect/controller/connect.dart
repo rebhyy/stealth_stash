@@ -1,9 +1,9 @@
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/controller/controller.dart';
-import 'package:on_chain_wallet/future/wallet/web3/global/core/controller.dart';
-import 'package:on_chain_wallet/future/wallet/web3/pages/page_progress.dart';
-import 'package:on_chain_wallet/future/wallet/web3/types/types.dart';
-import 'package:on_chain_wallet/wallet/web3/web3.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/controller/controller.dart';
+import 'package:stealth_stash/future/wallet/web3/global/core/controller.dart';
+import 'package:stealth_stash/future/wallet/web3/pages/page_progress.dart';
+import 'package:stealth_stash/future/wallet/web3/types/types.dart';
+import 'package:stealth_stash/wallet/web3/web3.dart';
 
 class Web3GlobalRequestConnectStateController
     extends Web3StateContoller<Web3GlobalRequest>

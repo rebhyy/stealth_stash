@@ -1,7 +1,7 @@
 import 'package:on_chain_bridge/models/biometric/types.dart';
-import 'package:on_chain_wallet/app/dev/logger.dart';
-import 'package:on_chain_wallet/app/native_impl/core/core.dart';
-import 'package:on_chain_wallet/crypto/types/credential.dart';
+import 'package:stealth_stash/app/dev/logger.dart';
+import 'package:stealth_stash/app/native_impl/core/core.dart';
+import 'package:stealth_stash/crypto/types/credential.dart';
 
 import 'cross_platform.dart'
     if (dart.library.js_interop) 'web.dart'

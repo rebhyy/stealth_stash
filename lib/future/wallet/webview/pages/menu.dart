@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/router/page_router.dart';
-import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
-import 'package:on_chain_wallet/future/wallet/webview/controller/controller/controller.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/list_tile.dart';
-import 'package:on_chain_wallet/future/widgets/widgets/widget_constant.dart';
+import 'package:stealth_stash/future/router/page_router.dart';
+import 'package:stealth_stash/future/state_managment/state_managment.dart';
+import 'package:stealth_stash/future/wallet/webview/controller/controller/controller.dart';
+import 'package:stealth_stash/future/widgets/widgets/list_tile.dart';
+import 'package:stealth_stash/future/widgets/widgets/widget_constant.dart';
 
 class WebViewPopupMenu extends StatelessWidget {
   const WebViewPopupMenu(this.controller, {super.key});

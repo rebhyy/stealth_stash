@@ -1,4 +1,4 @@
-import 'package:on_chain_wallet/app/native_impl/cross/lunch_url.dart';
+import 'package:stealth_stash/app/native_impl/cross/lunch_url.dart';
 
 class UriUtils {
   static Future<bool> lunch(String? uri) async {

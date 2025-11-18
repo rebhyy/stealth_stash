@@ -1,8 +1,8 @@
 import 'package:bitcoin_base/bitcoin_base.dart';
 import 'package:flutter/material.dart';
-import 'package:on_chain_wallet/future/state_managment/extension/extension.dart';
-import 'package:on_chain_wallet/future/wallet/network/bitcoin/transaction/types/types.dart';
-import 'package:on_chain_wallet/future/widgets/custom_widgets.dart';
+import 'package:stealth_stash/future/state_managment/extension/extension.dart';
+import 'package:stealth_stash/future/wallet/network/bitcoin/transaction/types/types.dart';
+import 'package:stealth_stash/future/widgets/custom_widgets.dart';
 
 class BCHCashTokenDetailsView extends StatelessWidget {
   const BCHCashTokenDetailsView({

@@ -1,6 +1,6 @@
 import 'package:blockchain_utils/blockchain_utils.dart';
-import 'package:on_chain_wallet/app/constant/global/app.dart';
-import 'package:on_chain_wallet/crypto/utils/solidity/solidity.dart';
+import 'package:stealth_stash/app/constant/global/app.dart';
+import 'package:stealth_stash/crypto/utils/solidity/solidity.dart';
 import 'package:on_chain/on_chain.dart';
 import 'package:on_chain/solidity/address/core.dart';
 

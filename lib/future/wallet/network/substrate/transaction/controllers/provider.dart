@@ -1,6 +1,6 @@
-import 'package:on_chain_wallet/app/live_listener/live.dart';
-import 'package:on_chain_wallet/app/utils/sync/cached_object.dart';
-import 'package:on_chain_wallet/wallet/wallet.dart';
+import 'package:stealth_stash/app/live_listener/live.dart';
+import 'package:stealth_stash/app/utils/sync/cached_object.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
 import 'package:polkadot_dart/polkadot_dart.dart';
 
 mixin SubstrateTransactionApiController on DisposableMixin {

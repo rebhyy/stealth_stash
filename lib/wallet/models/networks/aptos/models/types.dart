@@ -1,10 +1,10 @@
 import 'package:blockchain_utils/bip/bip/conf/bip44/bip44_coins.dart';
 import 'package:blockchain_utils/bip/ecc/bip_ecc.dart';
-import 'package:on_chain_wallet/app/core.dart';
-import 'package:on_chain_wallet/wallet/chain/account.dart';
-import 'package:on_chain_wallet/wallet/models/token/token/token.dart';
+import 'package:stealth_stash/app/core.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
+import 'package:stealth_stash/wallet/models/token/token/token.dart';
 import 'package:on_chain/on_chain.dart';
-import 'package:on_chain_wallet/wallet/models/transaction/types/types.dart';
+import 'package:stealth_stash/wallet/models/transaction/types/types.dart';
 
 enum AptosSupportKeyScheme {
   ed25519(value: 0, name: "ED25519"),

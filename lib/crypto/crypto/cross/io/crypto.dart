@@ -1,7 +1,7 @@
 import 'package:monero_dart/monero_dart.dart';
-import 'package:on_chain_wallet/crypto/crypto/core/app_crypto.dart';
-import 'package:on_chain_wallet/crypto/crypto/cross/io/native/native_crypto.dart';
-import 'package:on_chain_wallet/crypto/crypto/types/types.dart';
+import 'package:stealth_stash/crypto/crypto/core/app_crypto.dart';
+import 'package:stealth_stash/crypto/crypto/cross/io/native/native_crypto.dart';
+import 'package:stealth_stash/crypto/crypto/types/types.dart';
 
 AppCrypto getAppCrypto() => AppCryptoIo._();
 

@@ -1,5 +1,5 @@
-import 'package:on_chain_wallet/wallet/wallet.dart';
-import 'package:on_chain_wallet/wallet/web3/core/permission/types/account.dart';
+import 'package:stealth_stash/wallet/wallet.dart';
+import 'package:stealth_stash/wallet/web3/core/permission/types/account.dart';
 
 typedef APPCHAINNETWORK<NETWORKADDRESS> = Chain<
     APIProvider,

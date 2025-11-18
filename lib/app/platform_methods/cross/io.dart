@@ -2,8 +2,8 @@ import 'dart:io';
 import 'package:blockchain_utils/crypto/crypto/crc32/crc32.dart';
 import 'package:blockchain_utils/utils/utils.dart';
 import 'package:flutter/services.dart';
-import 'package:on_chain_wallet/app/error/exception/wallet_ex.dart';
-import 'package:on_chain_wallet/app/native_impl/io/path_provider.dart';
+import 'package:stealth_stash/app/error/exception/wallet_ex.dart';
+import 'package:stealth_stash/app/native_impl/io/path_provider.dart';
 
 Future<String> writeTOFile(String data, String fileName,
     {bool validate = true}) async {
