@@ -347,10 +347,8 @@ abstract class WalletCore extends _WalletCore with WalletsManager {
   Future<MethodResult<RESPONSE>>
       login_<RESPONSE extends WalletCredentialResponse>(
           WalletCredentialRequest<RESPONSE> request) async {
-    final duration = isUnlock &&
-            (request.password == null && request.platformCredential != true)
-        ? null
-        : APPConst.animationDuraion;
+    // Remove artificial delay to speed up the unlock transition.
+    const Duration? duration = null;
     final result = await _callSynchronized(
       () async {
         if (!isUnlock ||
