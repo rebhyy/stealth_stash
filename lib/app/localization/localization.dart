@@ -511,6 +511,23 @@ class Localization {
           "token_info": "Token info",
           "manage_tokens": "Manage Tokens",
           "add_or_remove_tokens": "Add or Remove Tokens from Your Account",
+          "panic_mode": "Panic Mode",
+          "panic_mode_desc": "Emergency actions for this device.",
+          "panic_mode_body":
+              "Soft panic wipes local wallet data and locks the app. Hard panic (Tron) will also be available for opt-in sweeping.",
+          "panic_trigger_tap": "Tap trigger",
+          "panic_trigger_tap_desc":
+              "Tap the settings title 5 times to trigger soft panic.",
+          "panic_trigger_tap_hint": "Tap the settings title 5 times to panic.",
+          "trigger_soft_panic_now": "Trigger Soft Panic Now",
+          "panic_soft_title": "Trigger soft panic?",
+          "panic_soft_desc":
+              "Soft panic wipes local wallet data and logs you out on this device.",
+          "panic_soft_warning":
+              "This cannot be undone. Funds remain on-chain; you'll need your backup to restore.",
+          "panic_soft_done": "Soft panic triggered. Returning to home.",
+          "panic_hard_placeholder_tron":
+              "Hard panic for Tron (sweeping to a recovery address) will require a recovery address and TRX for fees. Not enabled yet.",
           "nfts": "NFTs",
           "manage_nfts": "Manage NFTs",
           "manage_nfts_desc":

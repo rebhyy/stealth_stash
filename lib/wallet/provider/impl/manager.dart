@@ -182,4 +182,15 @@ mixin WalletsManager on _WalletCore {
       _controller._logout();
     }, delay: null, action: () => WalletActionEventType.lock);
   }
+
+  Future<MethodResult<void>> softPanic() async {
+    // Soft panic: wipe local wallet data and lock without requiring credential.
+    return await _walletAction(() async {
+      _controller._logout();
+      await _wallets.removeWallet(_controller._wallet);
+      await _removeWalletStorage(_controller._wallet);
+      await _initPage();
+      await _writeHdWallet(_wallets);
+    }, delay: null);
+  }
 }

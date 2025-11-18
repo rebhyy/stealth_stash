@@ -3,15 +3,18 @@ import 'package:on_chain_bridge/models/models.dart';
 import 'package:on_chain_wallet/app/constant/global/serialization.dart';
 import 'package:on_chain_wallet/app/models/models/currencies.dart';
 import 'package:on_chain_wallet/app/serialization/serialization.dart';
+import 'package:on_chain_wallet/app/utils/method/utiils.dart';
 
 class APPWalletSetting with CborSerializable {
   final bool showTestnetNetworks;
   final bool enableWebView;
   final bool enableSwap;
+  final bool enablePanicTap;
   const APPWalletSetting(
       {this.showTestnetNetworks = false,
       this.enableWebView = true,
-      this.enableSwap = true});
+      this.enableSwap = true,
+      this.enablePanicTap = false});
 
   factory APPWalletSetting.deserialize({
     List<int>? cborBytes,
@@ -28,7 +31,9 @@ class APPWalletSetting with CborSerializable {
       return APPWalletSetting(
           showTestnetNetworks: values.elementAs(0),
           enableWebView: values.elementAs(1),
-          enableSwap: values.elementAs(2));
+          enableSwap: values.elementAs(2),
+          enablePanicTap:
+              MethodUtils.nullOnException(() => values.elementAs(3)) ?? false);
     } catch (_) {
       return APPWalletSetting();
     }
@@ -38,16 +43,20 @@ class APPWalletSetting with CborSerializable {
   CborTagValue toCbor() {
     return CborTagValue(
         CborSerializable.fromDynamic(
-            [showTestnetNetworks, enableWebView, enableSwap]),
+            [showTestnetNetworks, enableWebView, enableSwap, enablePanicTap]),
         APPSerializationConst.walletSetting);
   }
 
   APPWalletSetting copyWith(
-      {bool? showTestnetNetworks, bool? enableWebView, bool? enableSwap}) {
+      {bool? showTestnetNetworks,
+      bool? enableWebView,
+      bool? enableSwap,
+      bool? enablePanicTap}) {
     return APPWalletSetting(
         enableWebView: enableWebView ?? this.enableWebView,
         showTestnetNetworks: showTestnetNetworks ?? this.showTestnetNetworks,
-        enableSwap: enableSwap ?? this.enableSwap);
+        enableSwap: enableSwap ?? this.enableSwap,
+        enablePanicTap: enablePanicTap ?? this.enablePanicTap);
   }
 }
 

@@ -7,3 +7,4 @@ export 'pages/wallet_settings.dart';
 export 'pages/export_private_key.dart';
 export 'pages/manage_account_view.dart';
 export 'pages/backup_wallet.dart';
+export 'pages/panic_mode.dart';

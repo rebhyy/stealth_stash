@@ -35,6 +35,19 @@ class _AppSettingView extends StatefulWidget {
 class _AppSettingViewState extends State<_AppSettingView>
     with SafeState<_AppSettingView> {
   WalletProvider get wallet => widget.wallet;
+  int _tapCounter = 0;
+  DateTime? _lastTap;
+  static const int _tapThreshold = 5;
+  static const Duration _tapWindow = Duration(seconds: 3);
+
+  void _resetTapIfIdle() {
+    final last = _lastTap;
+    if (last == null) return;
+    if (DateTime.now().difference(last) > _tapWindow) {
+      _tapCounter = 0;
+      _lastTap = null;
+    }
+  }
   void toggleBrightness() {
     wallet.toggleBrightness();
     updateState(() {});
@@ -57,12 +70,35 @@ class _AppSettingViewState extends State<_AppSettingView>
     updateState(() {});
   }
 
+  void togglePanicTap() {
+    wallet.togglePanicTap();
+    updateState(() {});
+  }
+
+  void _maybeTriggerPanic() {
+    if (!wallet.appSetting.walletSetting.enablePanicTap) return;
+    _resetTapIfIdle();
+    _tapCounter += 1;
+    _lastTap = DateTime.now();
+    if (_tapCounter >= _tapThreshold) {
+      _tapCounter = 0;
+      _lastTap = null;
+      wallet.softPanic();
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     // final wallet = context.watch<WalletProvider>(StateConst.main);
     final setting = PageRouter.networkSettings(wallet.wallet.network);
+    _resetTapIfIdle();
     return ScaffoldPageView(
-      appBar: AppBar(title: Text("wallet_preferences".tr)),
+      appBar: AppBar(
+          title: GestureDetector(
+        behavior: HitTestBehavior.opaque,
+        onTap: _maybeTriggerPanic,
+        child: Text("wallet_preferences".tr),
+      )),
       child: SingleChildScrollView(
         child: ConstraintsBoxView(
           padding: WidgetConstant.paddingHorizontal20,
@@ -135,6 +171,17 @@ class _AppSettingViewState extends State<_AppSettingView>
                   context.to(PageRouter.updateSetting).then((value) {
                     setState(() {});
                   });
+                },
+              ),
+              AppListTile(
+                leading: const Icon(Icons.warning_amber_rounded),
+                title: Text("panic_mode".tr),
+                subtitle: Text("panic_mode_desc".tr),
+                trailing: Switch(
+                    value: wallet.appSetting.walletSetting.enablePanicTap,
+                    onChanged: (_) => togglePanicTap()),
+                onTap: () {
+                  context.to(PageRouter.panicMode);
                 },
               ),
               AppListTile(

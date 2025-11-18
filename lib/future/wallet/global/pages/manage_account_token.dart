@@ -91,8 +91,15 @@ mixin ManageAccountTokenState<
   final StreamPageProgressController progressKey =
       StreamPageProgressController(initialStatus: StreamWidgetStatus.progress);
 
+  String _tokenId(BaseNetworkToken token) => token.token.identifier;
+
   void onNewToken(List<BaseNetworkToken> token) {
-    tokens.addAll(token);
+    final existing = tokens.map(_tokenId).toSet();
+    for (final t in token) {
+      if (existing.contains(_tokenId(t))) continue;
+      existing.add(_tokenId(t));
+      tokens.add(t);
+    }
     updateState();
     if (progressKey.inProgress) progressKey.backToIdle();
   }

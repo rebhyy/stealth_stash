@@ -99,6 +99,7 @@ class PageRouter {
 
   /// security
   static const String changePassword = "/security/password";
+  static const String panicMode = "/security/panic_mode";
   static const String eraswWallet = "/security/erase";
   static const String backupWallet = "/security/backup";
   static const String exportPrivateKey = "/security/privateKey";
@@ -196,6 +197,8 @@ class PageRouter {
         return const ExportSeedView();
       case changePassword:
         return const ChangeWalletPasswordView();
+      case panicMode:
+        return const PanicModeView();
       case eraswWallet:
         return const EraseWalletView();
       case exportPrivateKey:

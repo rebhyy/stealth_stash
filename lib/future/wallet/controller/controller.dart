@@ -172,4 +172,18 @@ class WalletProvider extends StateController
 
   @override
   bool get supportWebView => _appSetting.config.supportWebView;
+
+  void togglePanicTap() {
+    final setting = _appSetting.walletSetting;
+    _appSetting = _appSetting.copyWith(
+        walletSetting:
+            setting.copyWith(enablePanicTap: !setting.enablePanicTap));
+    _saveAppSetting();
+    notify(StateConst.main);
+    notify();
+  }
+
+  Future<MethodResult<void>> softPanic() {
+    return wallet.softPanic();
+  }
 }
