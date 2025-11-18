@@ -455,15 +455,16 @@ class _SwapSuccessDialogState extends State<_SwapSuccessDialog> with SingleTicke
                   ),
                 ),
 
-                // Transaction steps with animation
-                Padding(
-                  padding: const EdgeInsets.all(24),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
+                // Transaction steps with animation (scrollable)
+                Flexible(
+                  child: SingleChildScrollView(
+                    padding: const EdgeInsets.all(24),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
                       _buildAnimatedStep(0, Icons.sync_alt, 'Building Swap', 'Parameters configured'),
                       _buildAnimatedStep(1, Icons.route, 'Route Found', 'TRX → ${widget.tokenSymbol}'),
-                      _buildAnimatedStep(2, Icons.calculate, 'Amount Calculated', '${widget.quote.estimatedAmountOut} ${widget.tokenSymbol}'),
+                      _buildAnimatedStep(2, Icons.calculate, 'Amount Calculated', '${widget.quote.amountOut} ${widget.tokenSymbol}'),
                       _buildAnimatedStep(3, Icons.done_all, 'Ready to Sign', 'Transaction prepared'),
                       
                       const SizedBox(height: 24),
@@ -560,7 +561,8 @@ class _SwapSuccessDialogState extends State<_SwapSuccessDialog> with SingleTicke
                           child: const Text('Close', style: TextStyle(fontSize: 16)),
                         ),
                       ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
               ],
