@@ -3,7 +3,6 @@ import 'dart:js_interop';
 
 import 'package:blockchain_utils/utils/atomic/atomic.dart';
 import 'package:on_chain_bridge/web/web.dart';
-import 'package:stealth_stash/app/core.dart';
 
 import '../constant/constant.dart';
 import '../models/models.dart';

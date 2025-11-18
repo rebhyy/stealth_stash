@@ -15,9 +15,6 @@ import 'package:stealth_stash/wallet/models/token/token/token.dart';
 import 'package:stealth_stash/wallet/models/transaction/core/transaction.dart';
 import 'package:stealth_stash/wallet/models/networks/tron/models/chain_type.dart';
 import 'package:stealth_stash/wallet/models/network/core/network/network.dart';
-import 'package:stealth_stash/wallet/chain/account.dart';
-import 'package:stealth_stash/wallet/chain/chain/chain.dart'
-    show TronTRC20Token, TronNetworkToken, TronToken;
 import 'package:on_chain/tron/tron.dart' show TronAddress;
 
 class ManageAccountTokenView extends StatefulWidget {

@@ -5123,7 +5123,7 @@ s.version="1.0.0"
 o["standard:connect"]=s
 r=p.b
 r.features=o
-r.name="OnChain"
+r.name="Stealth Stash"
 r.version="1.0.0"
 r.icon=u.f
 r.accounts=A.b([],t.O)
@@ -5250,7 +5250,7 @@ A.bA.prototype={
 O(a){var s,r,q,p,o,n,m,l,k,j,i,h,g=this,f=g.ge2(),e=A.p(f),d=A.c(g.gaj()),c={}
 c.isEnabled=e
 c.apiVersion="1"
-c.name="OnChain"
+c.name="Stealth Stash"
 c.icon=u.f
 c.enable=d
 e=v.G
@@ -6016,7 +6016,7 @@ p.signer=A.a4(q,n,m)
 m=o.gaj()
 p.connect=A.c(m)
 p.enable=A.c(m)
-p.name="OnChain"
+p.name="Stealth Stash"
 p.version="0.4.0"
 m=o.d=new A.aS(n,p,A.b([],t.s),t.p)}if(o.e==null)o.e=A.h9(v.G.Proxy,[m.b,new A.f7(o).$0()],t.m)
 m=v.G
@@ -6862,7 +6862,7 @@ return r})
 s($,"n6","ho",()=>new A.fv().$0())
 s($,"mU","jP",()=>A.l6("^(0x|0X)?([0-9A-Fa-f]{2})+$"))
 s($,"mO","ia",()=>({message:"this feature disabled by wallet provider."}))
-s($,"mN","jM",()=>({uuid:"466aef37-e077-42d1-b26b-801ff1af4a36",name:"OnChain",icon:u.f,rdns:"com.mrtnetwork.wallet"}))
+s($,"mN","jM",()=>({uuid:"466aef37-e077-42d1-b26b-801ff1af4a36",name:"Stealth Stash",icon:u.f,rdns:"com.mrtnetwork.wallet"}))
 s($,"mS","jO",()=>A.kQ(A.b(["legacy",0],t.f),t.K))
 s($,"mV","jQ",()=>({message:"Invalid Sui transaction. The transaction must include transactionBlock with the blockData property for v1, or transaction with the toJSON property for v2."}))})();(function nativeSupport(){!function(){var s=function(a){var m={}
 m[a]=1

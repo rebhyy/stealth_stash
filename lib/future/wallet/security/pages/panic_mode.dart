@@ -2,12 +2,10 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:stealth_stash/app/core.dart';
-import 'package:stealth_stash/app/dev/logger.dart';
 import 'package:stealth_stash/future/state_managment/state_managment.dart';
 import 'package:stealth_stash/future/wallet/controller/controller.dart';
 import 'package:stealth_stash/future/wallet/security/widgets/volume_panic_listener.dart';
 import 'package:stealth_stash/future/widgets/custom_widgets.dart';
-import 'package:stealth_stash/wallet/wallet.dart';
 import 'package:volume_controller/volume_controller.dart';
 
 class PanicModeView extends StatefulWidget {
@@ -64,25 +62,16 @@ class _PanicModeViewState extends State<PanicModeView>
     super.onInitOnce();
     _volumeListener = VolumePanicListener(onMatch: () async {
       context.showAlert("panic_sequence_started".tr);
-      appLogger.debug(
-          runtime: runtimeType,
-          functionName: "volumePattern",
-          msg: "Panic pattern matched");
     });
     _volumeController = VolumeController();
     _volumeController.listener((volume) {
       if (!wallet.appSetting.walletSetting.enablePanicVolume) return;
-      if (volume == null) return;
       final dir = volume > _lastVolume ? VolumePress.up : VolumePress.down;
-      appLogger.debug(
-          runtime: runtimeType,
-          functionName: "volumeListener",
-          msg: "volume=$volume dir=${dir.name} last=$_lastVolume");
       _lastVolume = volume;
       _volumeListener.handleVolume(dir);
     });
     _volumeController.getVolume().then((v) {
-      _lastVolume = v ?? 0;
+      _lastVolume = v;
     });
   }
 
@@ -158,4 +147,3 @@ class _PanicModeViewState extends State<PanicModeView>
     );
   }
 }
-//fdfdf fd dfdf dfqfqd fqdf qfqdf qfqdf qdfqdfqdf q

@@ -174,7 +174,7 @@ flutter_native_splash:
     fullscreen: true
 
 msix_config:
-    # display_name: OnChain Wallet
+    # display_name: Stealth Stash
     # publisher_display_name: mrtnetwork
     # identity_name: com.mrtnetwork.mrtnetwork
     msix_version: 5.0.0.0

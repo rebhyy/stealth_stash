@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "OnChain Wallet",
+    "name": "Stealth Stash",
     "version": "2.0",
-    "description": "OnChain browser extension.",
+    "description": "Stealth Stash browser extension.",
     "action": {
       "default_popup": "index.html?context=action",
       "default_icon": {

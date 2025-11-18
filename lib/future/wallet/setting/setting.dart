@@ -35,19 +35,7 @@ class _AppSettingView extends StatefulWidget {
 class _AppSettingViewState extends State<_AppSettingView>
     with SafeState<_AppSettingView> {
   WalletProvider get wallet => widget.wallet;
-  int _tapCounter = 0;
-  DateTime? _lastTap;
-  static const int _tapThreshold = 5;
-  static const Duration _tapWindow = Duration(seconds: 3);
 
-  void _resetTapIfIdle() {
-    final last = _lastTap;
-    if (last == null) return;
-    if (DateTime.now().difference(last) > _tapWindow) {
-      _tapCounter = 0;
-      _lastTap = null;
-    }
-  }
   void toggleBrightness() {
     wallet.toggleBrightness();
     updateState(() {});

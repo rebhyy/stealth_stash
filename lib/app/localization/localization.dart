@@ -3,7 +3,7 @@ enum APPLocale { en }
 class Localization {
   static Map<APPLocale, Map<String, String>> get languages => {
         APPLocale.en: {
-          "wellcome": "Welcome To OnChain Wallet",
+          "wellcome": "Welcome To Stealth Stash",
           "your_gateway_to_decentralized_world":
               "Your Gateway to Decentralized World",
           "setup": "Setup wallet",
@@ -129,7 +129,7 @@ class Localization {
               "At present, only your mnemonic is stored in the Web3 storage definition.",
           "encoding": "Encoding type",
           "backup_encoding_desc":
-              "This type of backup can only be decoded by the OnChain Wallet application.",
+              "This type of backup can only be decoded by the Stealth Stash application.",
           "create_backup": "Create a backup",
           "creating_backup_desc":
               "Creating a backup, this process may take a few seconds",
@@ -341,7 +341,7 @@ class Localization {
           "request_cancelled": "The request was cancelled",
           "invalid_request": "Invalid request",
           "settings": "Settings",
-          "about_onchain_wallet": "About OnChain Wallet",
+          "about_onchain_wallet": "About Stealth Stash",
           "active": "Active",
           "network_all_request_error": "All requests have encountered errors",
           "network_some_request_error": "Some requests have encountered errors",
