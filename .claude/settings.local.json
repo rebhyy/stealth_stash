@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(flutter run:*)",
+      "Bash(dir \"C:\\Users\\pc\\.pub-cache\\hosted\" /s /b)",
+      "Bash(findstr:*)",
+      "Bash(where:*)",
+      "Bash(awk:*)",
+      "Bash(find:*)",
+      "Bash(flutter clean:*)",
+      "Bash(git checkout:*)",
+      "Bash(git remote add:*)",
+      "Bash(git branch:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

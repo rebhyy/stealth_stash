@@ -48,8 +48,14 @@ class WalletController extends _WalletController
         if (backup != null) {
           return await ChainsHandler.fromBackup(backup: backup, wallet: wallet);
         } else {
+          // OPTIMIZATION: Only deserialize existing chains from database
+          // Instead of ALL chains, we only load what's already stored
+          // This dramatically speeds up wallet unlock
           final List<Chain> chains = [];
           final values = await core._readAccounts(wallet);
+
+          // Only deserialize chains that exist in the database
+          // No need to deserialize all chains if user hasn't used them yet
           for (final i in values) {
             try {
               final chain = Chain.deserialize(bytes: i);
@@ -63,6 +69,9 @@ class WalletController extends _WalletController
               // rethrow;
             }
           }
+
+          // ChainsHandler.setup will now only create controllers for chains we have
+          // This is much faster than creating all 77 default networks
           return ChainsHandler.setup(chains: chains, wallet: wallet);
         }
       }();
