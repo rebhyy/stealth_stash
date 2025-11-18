@@ -134,4 +134,14 @@ class TronSwapToken {
   });
 
   bool get isTRX => address.toAddress() == 'T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb';
+  
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      other is TronSwapToken &&
+          runtimeType == other.runtimeType &&
+          address.toAddress() == other.address.toAddress();
+
+  @override
+  int get hashCode => address.toAddress().hashCode;
 }
