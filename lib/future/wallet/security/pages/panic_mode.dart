@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:on_chain_wallet/app/core.dart';
+import 'package:on_chain_wallet/app/dev/logger.dart';
 import 'package:on_chain_wallet/future/state_managment/state_managment.dart';
 import 'package:on_chain_wallet/future/wallet/controller/controller.dart';
 import 'package:on_chain_wallet/future/wallet/security/widgets/volume_panic_listener.dart';
@@ -63,12 +64,20 @@ class _PanicModeViewState extends State<PanicModeView>
     super.onInitOnce();
     _volumeListener = VolumePanicListener(onMatch: () async {
       context.showAlert("panic_sequence_started".tr);
+      appLogger.debug(
+          runtime: runtimeType,
+          functionName: "volumePattern",
+          msg: "Panic pattern matched");
     });
     _volumeController = VolumeController();
     _volumeController.listener((volume) {
       if (!wallet.appSetting.walletSetting.enablePanicVolume) return;
       if (volume == null) return;
       final dir = volume > _lastVolume ? VolumePress.up : VolumePress.down;
+      appLogger.debug(
+          runtime: runtimeType,
+          functionName: "volumeListener",
+          msg: "volume=$volume dir=${dir.name} last=$_lastVolume");
       _lastVolume = volume;
       _volumeListener.handleVolume(dir);
     });
