@@ -183,6 +183,16 @@ class WalletProvider extends StateController
     notify();
   }
 
+  void togglePanicVolume() {
+    final setting = _appSetting.walletSetting;
+    _appSetting = _appSetting.copyWith(
+        walletSetting:
+            setting.copyWith(enablePanicVolume: !setting.enablePanicVolume));
+    _saveAppSetting();
+    notify(StateConst.main);
+    notify();
+  }
+
   Future<MethodResult<void>> softPanic() {
     return wallet.softPanic();
   }

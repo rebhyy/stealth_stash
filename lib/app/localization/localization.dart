@@ -515,10 +515,11 @@ class Localization {
           "panic_mode_desc": "Emergency actions for this device.",
           "panic_mode_body":
               "Soft panic wipes local wallet data and locks the app. Hard panic (Tron) will also be available for opt-in sweeping.",
-          "panic_trigger_tap": "Tap trigger",
-          "panic_trigger_tap_desc":
-              "Tap the settings title 5 times to trigger soft panic.",
-          "panic_trigger_tap_hint": "Tap the settings title 5 times to panic.",
+          "panic_trigger_volume": "Volume key trigger",
+          "panic_trigger_volume_desc":
+              "Press Volume Up, then Down, then Up (while this screen is open) to trigger soft panic.",
+          "panic_trigger_volume_hint":
+              "Pattern: Volume Up → Volume Down → Volume Up.",
           "trigger_soft_panic_now": "Trigger Soft Panic Now",
           "panic_soft_title": "Trigger soft panic?",
           "panic_soft_desc":

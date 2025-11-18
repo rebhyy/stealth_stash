@@ -70,35 +70,17 @@ class _AppSettingViewState extends State<_AppSettingView>
     updateState(() {});
   }
 
-  void togglePanicTap() {
-    wallet.togglePanicTap();
+  void togglePanicVolume() {
+    wallet.togglePanicVolume();
     updateState(() {});
-  }
-
-  void _maybeTriggerPanic() {
-    if (!wallet.appSetting.walletSetting.enablePanicTap) return;
-    _resetTapIfIdle();
-    _tapCounter += 1;
-    _lastTap = DateTime.now();
-    if (_tapCounter >= _tapThreshold) {
-      _tapCounter = 0;
-      _lastTap = null;
-      wallet.softPanic();
-    }
   }
 
   @override
   Widget build(BuildContext context) {
     // final wallet = context.watch<WalletProvider>(StateConst.main);
     final setting = PageRouter.networkSettings(wallet.wallet.network);
-    _resetTapIfIdle();
     return ScaffoldPageView(
-      appBar: AppBar(
-          title: GestureDetector(
-        behavior: HitTestBehavior.opaque,
-        onTap: _maybeTriggerPanic,
-        child: Text("wallet_preferences".tr),
-      )),
+      appBar: AppBar(title: Text("wallet_preferences".tr)),
       child: SingleChildScrollView(
         child: ConstraintsBoxView(
           padding: WidgetConstant.paddingHorizontal20,
@@ -178,8 +160,8 @@ class _AppSettingViewState extends State<_AppSettingView>
                 title: Text("panic_mode".tr),
                 subtitle: Text("panic_mode_desc".tr),
                 trailing: Switch(
-                    value: wallet.appSetting.walletSetting.enablePanicTap,
-                    onChanged: (_) => togglePanicTap()),
+                    value: wallet.appSetting.walletSetting.enablePanicVolume,
+                    onChanged: (_) => togglePanicVolume()),
                 onTap: () {
                   context.to(PageRouter.panicMode);
                 },

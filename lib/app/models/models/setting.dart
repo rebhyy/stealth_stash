@@ -10,11 +10,13 @@ class APPWalletSetting with CborSerializable {
   final bool enableWebView;
   final bool enableSwap;
   final bool enablePanicTap;
+  final bool enablePanicVolume;
   const APPWalletSetting(
       {this.showTestnetNetworks = false,
       this.enableWebView = true,
       this.enableSwap = true,
-      this.enablePanicTap = false});
+      this.enablePanicTap = false,
+      this.enablePanicVolume = false});
 
   factory APPWalletSetting.deserialize({
     List<int>? cborBytes,
@@ -33,7 +35,9 @@ class APPWalletSetting with CborSerializable {
           enableWebView: values.elementAs(1),
           enableSwap: values.elementAs(2),
           enablePanicTap:
-              MethodUtils.nullOnException(() => values.elementAs(3)) ?? false);
+              MethodUtils.nullOnException(() => values.elementAs(3)) ?? false,
+          enablePanicVolume:
+              MethodUtils.nullOnException(() => values.elementAs(4)) ?? false);
     } catch (_) {
       return APPWalletSetting();
     }
@@ -43,7 +47,13 @@ class APPWalletSetting with CborSerializable {
   CborTagValue toCbor() {
     return CborTagValue(
         CborSerializable.fromDynamic(
-            [showTestnetNetworks, enableWebView, enableSwap, enablePanicTap]),
+            [
+              showTestnetNetworks,
+              enableWebView,
+              enableSwap,
+              enablePanicTap,
+              enablePanicVolume
+            ]),
         APPSerializationConst.walletSetting);
   }
 
@@ -51,12 +61,14 @@ class APPWalletSetting with CborSerializable {
       {bool? showTestnetNetworks,
       bool? enableWebView,
       bool? enableSwap,
-      bool? enablePanicTap}) {
+      bool? enablePanicTap,
+      bool? enablePanicVolume}) {
     return APPWalletSetting(
         enableWebView: enableWebView ?? this.enableWebView,
         showTestnetNetworks: showTestnetNetworks ?? this.showTestnetNetworks,
         enableSwap: enableSwap ?? this.enableSwap,
-        enablePanicTap: enablePanicTap ?? this.enablePanicTap);
+        enablePanicTap: enablePanicTap ?? this.enablePanicTap,
+        enablePanicVolume: enablePanicVolume ?? this.enablePanicVolume);
   }
 }
 
