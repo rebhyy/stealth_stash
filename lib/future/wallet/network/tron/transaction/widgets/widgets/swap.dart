@@ -81,8 +81,9 @@ class TronSwapTransactionWidget extends StatelessWidget {
                     ),
                     const SizedBox(height: 4),
                     Text(
-                      controller.routerAddress.toAddress(),
+                      '${controller.routerAddress.toAddress().substring(0, 15)}...',
                       style: const TextStyle(fontSize: 11, fontFamily: 'monospace'),
+                      overflow: TextOverflow.ellipsis,
                     ),
                   ],
                 ),
@@ -102,17 +103,27 @@ class TronSwapTransactionWidget extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(label, style: context.textTheme.bodySmall),
-            const SizedBox(height: 4),
-            Text(symbol, style: context.textTheme.titleMedium),
-          ],
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(label, style: context.textTheme.bodySmall),
+              const SizedBox(height: 4),
+              Text(
+                symbol,
+                style: context.textTheme.titleMedium,
+                overflow: TextOverflow.ellipsis,
+              ),
+            ],
+          ),
         ),
-        Text(
-          amount,
-          style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+        const SizedBox(width: 8),
+        Flexible(
+          child: Text(
+            amount,
+            style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+            overflow: TextOverflow.ellipsis,
+          ),
         ),
       ],
     );
@@ -124,8 +135,18 @@ class TronSwapTransactionWidget extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(label, style: context.textTheme.bodySmall),
-          Text(value, style: const TextStyle(fontWeight: FontWeight.w500)),
+          Expanded(
+            child: Text(
+              label,
+              style: context.textTheme.bodySmall,
+              overflow: TextOverflow.ellipsis,
+            ),
+          ),
+          const SizedBox(width: 8),
+          Text(
+            value,
+            style: const TextStyle(fontWeight: FontWeight.w500),
+          ),
         ],
       ),
     );

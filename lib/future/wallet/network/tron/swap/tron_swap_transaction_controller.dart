@@ -113,6 +113,27 @@ class TronSwapTransactionController
   List<LiveFormField<Object?, Object>> get fields => [];
 
   @override
+  TransactionStateStatus getStateStatus() {
+    // Check if user has enough balance for swap amount + fees
+    final status = super.getStateStatus();
+    if (!status.isReady) {
+      return status;
+    }
+    
+    // Check if user has enough TRX for the swap amount + fees
+    final totalNeeded = params.amountIn + txFee.fee.fee.balance;
+    final available = address.address.currencyBalance;
+    
+    if (totalNeeded > available) {
+      final deficit = IntegerBalance.zero(network.token);
+      deficit.updateBalance(totalNeeded - available);
+      return TransactionStateStatus.insufficient(deficit);
+    }
+    
+    return TransactionStateStatus.ready();
+  }
+
+  @override
   Widget widgetBuilder(BuildContext context) {
     return TronSwapTransactionWidget(controller: this);
   }
