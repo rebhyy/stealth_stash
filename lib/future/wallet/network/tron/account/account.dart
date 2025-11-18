@@ -61,6 +61,15 @@ class _Services extends StatelessWidget {
             ),
             WidgetConstant.divider,
             AppListTile(
+              title: const Text("Swap Tokens"),
+              subtitle: const Text("TRX ↔ Stablecoins via SunSwap"),
+              trailing: const Icon(Icons.swap_horiz),
+              onTap: () {
+                context.to(PageRouter.tronSwap, argruments: chainAccount);
+              },
+            ),
+            WidgetConstant.divider,
+            AppListTile(
               title: Text("update_account_permission".tr),
               subtitle: Text("update_account_permissions".tr),
               trailing: const Icon(Icons.arrow_forward),

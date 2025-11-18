@@ -3,6 +3,8 @@ import 'package:stealth_stash/crypto/types/networks.dart';
 import 'package:stealth_stash/future/future.dart';
 import 'package:stealth_stash/future/wallet/transaction/pages/transaction_state_builder.dart';
 import 'package:stealth_stash/wallet/models/network/core/network.dart';
+import 'package:stealth_stash/future/wallet/network/tron/swap/tron_swap_page.dart';
+import 'package:stealth_stash/wallet/chain/account.dart';
 
 class PageRouter {
   ///TransactionStateBuilder
@@ -31,6 +33,7 @@ class PageRouter {
   static const String tronTransfer = "/tron/transfer";
   static const String tronTransaction = "/tron/transaction";
   static const String tronMultiSigAddress = "/tron/setup_multisig_address";
+  static const String tronSwap = "/tron/swap";
   // solana transfer
   static const String solanaTransfer = "/solana/transfer";
   static const String solanaTransaction = "/solana/transaction";
@@ -175,7 +178,7 @@ class PageRouter {
 
   static const String publicKeyDeration = "account/public_key_derivation";
 
-  static Widget _page(String? name) {
+  static Widget _page(String? name, {dynamic argruments}) {
     switch (name) {
       case cardanoMultisigAccountInfo:
         return const CardanoMultisigAccountInfoView();
@@ -227,6 +230,8 @@ class PageRouter {
         return const MonitorTronTokenView();
       case tronMultiSigAddress:
         return const SetupTronMultiSigAddressView();
+      case tronSwap:
+        return TronSwapPage(account: argruments as TronChain);
       case importEthereumNetwork:
         return const ImportEthereumNetwork();
       case updateElectrumProviders:
